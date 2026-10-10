@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>grapes</title>
+<defs>
+<g id="seen-grapes">
+<path fill="none" d="M50 20V10"/>
+<path fill="#9bc53d" d="M52 14c6-8 18-8 24-2-6 8-18 8-24 2z"/>
+<circle fill="#7d5fd0" cx="26" cy="30" r="12"/>
+<circle fill="#7d5fd0" cx="50" cy="30" r="12"/>
+<circle fill="#7d5fd0" cx="74" cy="30" r="12"/>
+<circle fill="#7d5fd0" cx="38" cy="50" r="12"/>
+<circle fill="#7d5fd0" cx="62" cy="50" r="12"/>
+<circle fill="#7d5fd0" cx="50" cy="70" r="12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-grapes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-grapes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

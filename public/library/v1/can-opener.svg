@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>can opener</title>
+<defs>
+<g id="seen-can-opener">
+<g transform="rotate(-30 50 50)">
+<path fill="#4a66d4" d="M54 44L14 30a5 5 0 0 0-4 9l40 15z"/>
+<path fill="#4a66d4" d="M54 56L14 70a5 5 0 0 1-4-9l40-15z"/>
+<path fill="#cfd6dc" d="M46 38h22a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H46z"/>
+<circle fill="#8d99a6" cx="60" cy="50" r="7"/>
+<path fill="#2c3f96" d="M74 46h4l10-10v28L78 54h-4z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-can-opener" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-can-opener" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

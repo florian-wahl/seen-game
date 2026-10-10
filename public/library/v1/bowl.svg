@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bowl</title>
+<defs>
+<g id="seen-bowl">
+<path fill="#c25e12" d="M36 74h28l4 10H32z"/>
+<path fill="#f08a3c" d="M10 40h80c0 22-18 38-40 38S10 62 10 40z"/>
+<ellipse fill="#fbf3e0" cx="50" cy="40" rx="40" ry="8"/>
+<path fill="none" d="M24 58q26 10 52 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bowl" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bowl" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

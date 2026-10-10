@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>frying pan</title>
+<defs>
+<g id="seen-frying-pan">
+<path fill="#6f3f1f" d="M60 58l28 20a5 5 0 0 1-6 8L54 66z"/>
+<circle fill="#4d5968" cx="38" cy="40" r="30"/>
+<circle fill="#8d99a6" cx="38" cy="40" r="22"/>
+<path fill="none" d="M26 30a16 16 0 0 1 10-6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-frying-pan" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-frying-pan" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

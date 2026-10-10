@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>kiwi</title>
+<defs>
+<g id="seen-kiwi">
+<circle fill="#a9683c" cx="50" cy="50" r="38"/>
+<circle fill="#9bc53d" cx="50" cy="50" r="31"/>
+<ellipse fill="#fbf3e0" cx="50" cy="50" rx="10" ry="8"/>
+<path fill="none" stroke-width="5" d="M70 50h.01M30 50h.01M50 30h.01M50 70h.01M64 36h.01M36 36h.01M64 64h.01M36 64h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-kiwi" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-kiwi" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

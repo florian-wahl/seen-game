@@ -143,6 +143,10 @@ create function tests.retire(gid uuid, n int) returns void language plpgsql as
 $$ begin perform tests.login(n); perform public.retire(gid); perform tests.logout(); end $$;
 select no_plan();
 
+-- sweep_turns is global: neutralise rows left by local dev/e2e (rolled back at the end)
+update public.notification_outbox set sent_at = now() where sent_at is null;
+update public.games set status = 'abandoned' where status in ('lobby', 'in_progress');
+
 -- ============================================================ 24 h reminder
 select tests.put('gid', tests.new_game(3, 3, 100)::text);
 select tests.put('t1', tests.cur_turn(tests.gid())::text);
@@ -153,7 +157,7 @@ select is((select reminded_at from public.turns where id = tests.get('t1')::uuid
 
 select tests.age(tests.gid(), interval '23 hours');
 select public.sweep_turns();
-select is((select count(*)::int from public.notification_outbox where kind = 'reminder'), 0, 'no reminder at 23 h');
+select is((select count(*)::int from public.notification_outbox where kind = 'reminder' and game_id = tests.gid()), 0, 'no reminder at 23 h');
 
 select tests.age(tests.gid(), interval '2 hours');   -- 25 h
 select is((public.sweep_turns() ->> 'reminded')::int, 1, 'sweep reports one reminder');
@@ -161,7 +165,7 @@ select is((select count(*)::int from public.notification_outbox where kind = 're
           'reminder queued for the waiting player');
 select isnt((select reminded_at from public.turns where id = tests.get('t1')::uuid), null, 'reminded_at set');
 select public.sweep_turns();
-select is((select count(*)::int from public.notification_outbox where kind = 'reminder'), 1, 'reminder sent only once');
+select is((select count(*)::int from public.notification_outbox where kind = 'reminder' and game_id = tests.gid()), 1, 'reminder sent only once');
 select is((select status::text from public.turns where id = tests.get('t1')::uuid), 'pending', 'still pending at 25 h');
 
 -- ============================================================ 72 h forfeit

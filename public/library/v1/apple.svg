@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>apple</title>
+<defs>
+<g id="seen-apple">
+<path fill="#e5484d" d="M50 36c-8-8-28-4-28 16 0 18 12 32 20 32 4 0 5-2 8-2s4 2 8 2c8 0 20-14 20-32 0-20-20-24-28-16z"/>
+<path fill="none" d="M50 36c0-8 2-14 6-18"/>
+<path fill="#9bc53d" d="M56 26c4-10 14-10 20-8-2 8-10 12-20 8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-apple" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-apple" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

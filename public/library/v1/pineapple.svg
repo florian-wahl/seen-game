@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pineapple</title>
+<defs>
+<g id="seen-pineapple">
+<path fill="#2f9e6b" d="M50 38c-10-4-18-12-20-22 8 2 14 6 18 12 0-8 2-14 6-20 4 6 6 12 6 20 4-6 10-10 18-12-2 10-10 18-20 22z"/>
+<ellipse fill="#f5b93f" cx="50" cy="62" rx="24" ry="27"/>
+<path fill="none" d="M34 46l32 32M46 40l24 24M30 58l24 24M34 78l32-32M54 40L30 64M70 58L46 82"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pineapple" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pineapple" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>blender</title>
+<defs>
+<g id="seen-blender">
+<path fill="none" d="M66 28h10v26h-8"/>
+<path fill="#8fd0f5" d="M30 18h40l-6 50H36z"/>
+<path fill="#1c1b22" d="M28 10h44v8H28z"/>
+<path fill="#7d5fd0" d="M28 68h44l4 20H24z"/>
+<path fill="none" stroke-width="6" d="M50 78h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-blender" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-blender" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

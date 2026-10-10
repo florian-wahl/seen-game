@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>plate</title>
+<defs>
+<g id="seen-plate">
+<circle fill="#8fd0f5" cx="50" cy="50" r="40"/>
+<circle fill="#ffffff" cx="50" cy="50" r="26"/>
+<path fill="none" d="M22 36a32 32 0 0 1 14-16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-plate" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-plate" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

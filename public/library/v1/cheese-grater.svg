@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cheese grater</title>
+<defs>
+<g id="seen-cheese-grater">
+<path fill="none" d="M38 16c0-10 24-10 24 0"/>
+<path fill="#8d99a6" d="M34 18h32l10 66H24z"/>
+<path fill="#1c1b22" d="M32 14h36v6H32z"/>
+<path fill="none" d="M40 34h6M54 34h6M38 48h6M56 48h6M36 62h6M58 62h6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cheese-grater" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cheese-grater" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

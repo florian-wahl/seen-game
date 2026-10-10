@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>banana</title>
+<defs>
+<g id="seen-banana">
+<path fill="#6f3f1f" d="M14 28l-2-14h10l4 14z"/>
+<path fill="#f5b93f" d="M18 26C14 60 44 88 86 72c-30 0-52-16-60-46z"/>
+<path fill="none" d="M24 40c6 18 22 30 44 34"/>
+<path fill="none" stroke-width="6" d="M84 73h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-banana" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-banana" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

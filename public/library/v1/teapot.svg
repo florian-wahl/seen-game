@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>teapot</title>
+<defs>
+<g id="seen-teapot">
+<path fill="#e0559a" d="M30 52c-8-2-14-8-18-18l-5 3c4 13 10 21 21 25z"/>
+<path fill="none" d="M74 44c16-2 16 24 0 24"/>
+<path fill="#e0559a" d="M24 62c0-18 12-30 26-30s26 12 26 30c0 14-10 22-26 22s-26-8-26-22z"/>
+<circle fill="#a52c69" cx="50" cy="22" r="6"/>
+<path fill="#a52c69" d="M33 35c2-9 32-9 34 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-teapot" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-teapot" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tomato</title>
+<defs>
+<g id="seen-tomato">
+<path fill="none" d="M50 26V14"/>
+<path fill="#e5484d" d="M50 26c-24 0-38 12-38 32 0 18 16 30 38 30s38-12 38-30c0-20-14-32-38-32z"/>
+<path fill="#2f9e6b" d="M50 24l8 8 14-2-10 10-12-4-12 4-10-10 14 2z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tomato" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tomato" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

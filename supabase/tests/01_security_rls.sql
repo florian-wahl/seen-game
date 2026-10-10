@@ -263,7 +263,7 @@ select is((select count(*)::int from public.taps), 0, 'other members cannot read
 select tests.logout();
 
 -- ------------------------------------------------------ outbox rows exist
-select is((select count(*)::int from public.notification_outbox where kind = 'your_turn'), 1,
+select is((select count(*)::int from public.notification_outbox where kind = 'your_turn' and game_id = tests.gid()), 1,
           'your_turn queued at start');
 
 -- ---------------------------------------------------------------- storage

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fork</title>
+<defs>
+<g id="seen-fork">
+<g transform="rotate(-40 50 50)">
+<path fill="#7d5fd0" d="M10 45h36v10H10a5 5 0 0 1 0-10z"/>
+<path fill="#cfd6dc" d="M44 46c4-6 10-9 16-9h30v6H64v4h26v6H64v4h26v6H60c-6 0-12-3-16-9z"/>
+<path fill="none" stroke-width="6" d="M16 50h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fork" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fork" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

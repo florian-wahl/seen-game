@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>spoon</title>
+<defs>
+<g id="seen-spoon">
+<g transform="rotate(-40 50 50)">
+<path fill="#2aa7a0" d="M8 45h44v10H8a5 5 0 0 1 0-10z"/>
+<ellipse fill="#cfd6dc" cx="72" cy="50" rx="20" ry="14"/>
+<path fill="none" d="M64 43q8-3 14 2"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-spoon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-spoon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

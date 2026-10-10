@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>watermelon</title>
+<defs>
+<g id="seen-watermelon">
+<path fill="#2f9e6b" d="M8 34h84c0 26-18 46-42 46S8 60 8 34z"/>
+<path fill="#e5484d" d="M16 34h68c0 20-14 38-34 38S16 54 16 34z"/>
+<path fill="none" stroke-width="6" d="M34 44h.01M50 48h.01M66 44h.01M42 58h.01M58 58h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-watermelon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-watermelon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

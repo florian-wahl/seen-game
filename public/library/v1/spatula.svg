@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>spatula</title>
+<defs>
+<g id="seen-spatula">
+<g transform="rotate(-40 50 50)">
+<path fill="none" d="M40 50h16"/>
+<path fill="#1c1b22" d="M10 45h32v10H10a5 5 0 0 1 0-10z"/>
+<path fill="#9bc53d" d="M54 32h30a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H54z"/>
+<path fill="none" d="M62 42h20M62 50h20M62 58h20"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-spatula" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-spatula" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

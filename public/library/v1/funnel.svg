@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>funnel</title>
+<defs>
+<g id="seen-funnel">
+<path fill="#9bc53d" d="M14 18h72L56 56v28a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V56z"/>
+<path fill="#6a8f1a" d="M14 12h72a4 4 0 0 1 0 8H14a4 4 0 0 1 0-8z"/>
+<path fill="none" d="M44 58h12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-funnel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-funnel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

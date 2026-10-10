@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>mango</title>
+<defs>
+<g id="seen-mango">
+<path fill="none" d="M58 22l4-8"/>
+<path fill="#ffb074" d="M24 72c-12-16-6-44 18-54 22-8 42 6 42 26 0 24-22 42-42 42-8 0-14-6-18-14z"/>
+<path fill="#2f9e6b" d="M62 20c2-8 10-12 20-10-2 8-10 12-20 10z"/>
+<path fill="none" d="M34 34q6-8 16-10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-mango" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-mango" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

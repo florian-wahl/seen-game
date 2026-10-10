@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pizza cutter</title>
+<defs>
+<g id="seen-pizza-cutter">
+<path fill="#f08a3c" d="M56 52l30 26a6 6 0 0 1-8 8L48 60z"/>
+<circle fill="#cfd6dc" cx="34" cy="34" r="24"/>
+<path fill="#8d99a6" d="M31 37l6-6 22 22-6 6z"/>
+<path fill="none" stroke-width="6" d="M34 34h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pizza-cutter" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pizza-cutter" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

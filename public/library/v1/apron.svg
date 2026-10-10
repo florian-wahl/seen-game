@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>apron</title>
+<defs>
+<g id="seen-apron">
+<path fill="none" d="M38 22c0-14 24-14 24 0"/>
+<path fill="none" d="M24 46l-14 8M76 46l14 8"/>
+<path fill="#2f9e6b" d="M36 20h28v14l12 8v38a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V42l12-8z"/>
+<path fill="#7fd3a0" d="M38 56h24v14a4 4 0 0 1-4 4H42a4 4 0 0 1-4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-apron" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-apron" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

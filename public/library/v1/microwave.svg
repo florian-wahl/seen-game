@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>microwave</title>
+<defs>
+<g id="seen-microwave">
+<path fill="#ffffff" d="M14 22h72a6 6 0 0 1 6 6v46a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V28a6 6 0 0 1 6-6z"/>
+<path fill="#4d5968" d="M16 30h50v42H16z"/>
+<path fill="none" d="M74 30v42M24 44l12-8"/>
+<path fill="none" stroke-width="6" d="M83 38h.01M83 50h.01"/>
+<circle fill="#8d99a6" cx="83" cy="63" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-microwave" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-microwave" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

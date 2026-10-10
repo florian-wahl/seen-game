@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>strawberry</title>
+<defs>
+<g id="seen-strawberry">
+<path fill="none" d="M50 26c0-8 2-12 6-16"/>
+<path fill="#e5484d" d="M50 88C30 78 16 58 18 42c2-12 14-16 32-16s30 4 32 16c2 16-12 36-32 46z"/>
+<path fill="#2f9e6b" d="M28 30c6-8 14-8 22-4 8-4 16-4 22 4-8 6-16 6-22 4-6 2-14 2-22-4z"/>
+<path fill="none" stroke-width="5" d="M36 46h.01M64 46h.01M50 56h.01M40 66h.01M60 66h.01M50 76h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-strawberry" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-strawberry" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

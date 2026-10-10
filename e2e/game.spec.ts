@@ -12,10 +12,12 @@ import {
   type TestUser,
 } from "./helpers/game";
 
+const E2E_BASE_URL = process.env.E2E_BASE_URL ?? "http://localhost:3001";
+
 async function asUser(browser: Browser, user: TestUser, next: string): Promise<Page> {
   const { defaultBrowserType: _ignored, ...iphone } = devices["iPhone 14"];
   void _ignored;
-  const ctx = await browser.newContext({ ...iphone, baseURL: "http://localhost:3002" });
+  const ctx = await browser.newContext({ ...iphone, baseURL: E2E_BASE_URL });
   const page = await ctx.newPage();
   await page.goto(`/dev/login?email=${encodeURIComponent(user.email)}&name=${user.name}&next=${encodeURIComponent(next)}`);
   return page;

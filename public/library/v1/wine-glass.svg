@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wine glass</title>
+<defs>
+<g id="seen-wine-glass">
+<path fill="none" d="M50 50v32"/>
+<path fill="#ffffff" d="M30 10h40c2 24-4 42-20 42S28 34 30 10z"/>
+<path fill="#b3262d" d="M31 28h38c-2 14-8 21-19 21s-17-7-19-21z"/>
+<path fill="#ffffff" d="M30 88c0-8 40-8 40 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wine-glass" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wine-glass" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

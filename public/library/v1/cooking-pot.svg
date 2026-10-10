@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cooking pot</title>
+<defs>
+<g id="seen-cooking-pot">
+<path fill="none" d="M18 46h-8v10h8M82 46h8v10h-8"/>
+<path fill="#4a66d4" d="M18 38h64v36a10 10 0 0 1-10 10H28a10 10 0 0 1-10-10z"/>
+<path fill="#2c3f96" d="M14 38c0-10 16-16 36-16s36 6 36 16z"/>
+<path fill="#1c1b22" d="M43 23v-7h14v7z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cooking-pot" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cooking-pot" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

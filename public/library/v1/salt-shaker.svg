@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>salt shaker</title>
+<defs>
+<g id="seen-salt-shaker">
+<path fill="#ffffff" d="M30 38h40l4 40a8 8 0 0 1-8 8H34a8 8 0 0 1-8-8z"/>
+<path fill="#8d99a6" d="M30 40c0-16 9-26 20-26s20 10 20 26z"/>
+<path fill="none" stroke-width="5" d="M43 28h.01M57 28h.01M50 21h.01"/>
+<path fill="none" d="M30 52h40"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-salt-shaker" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-salt-shaker" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

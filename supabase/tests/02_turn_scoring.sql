@@ -210,7 +210,7 @@ select is((select wrong_taps from public.game_players where game_id = tests.gid(
 select is((select turns_done from public.game_players where game_id = tests.gid() and user_id = tests.u(tests.get('u1')::int)),
           1, 'turns_done incremented');
 select is((select count(*)::int from public.turns where game_id = tests.gid() and status = 'pending'), 1, 'next turn is pending');
-select is((select count(*)::int from public.notification_outbox where kind = 'your_turn'), 2, 'your_turn queued for next player');
+select is((select count(*)::int from public.notification_outbox where kind = 'your_turn' and game_id = tests.gid()), 2, 'your_turn queued for next player');
 
 -- ------------------------------------------ 3 wrong taps -> deadline at 75 s
 select tests.draw(tests.gid());

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pear</title>
+<defs>
+<g id="seen-pear">
+<path fill="none" d="M50 22c0-6 2-10 4-14"/>
+<path fill="#2f9e6b" d="M54 16c6-6 14-6 20-2-6 6-14 6-20 2z"/>
+<path fill="#9bc53d" d="M50 20c-8 0-10 8-10 16 0 10-18 16-18 32 0 12 12 20 28 20s28-8 28-20c0-16-18-22-18-32 0-8-2-16-10-16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pear" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pear" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

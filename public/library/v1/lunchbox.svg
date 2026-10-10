@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lunchbox</title>
+<defs>
+<g id="seen-lunchbox">
+<path fill="none" d="M36 30V20a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v10"/>
+<path fill="#7d5fd0" d="M16 30h68a6 6 0 0 1 6 6v42a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V36a6 6 0 0 1 6-6z"/>
+<path fill="none" d="M10 46h80"/>
+<path fill="#f5b93f" d="M44 40h12v14H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-lunchbox" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-lunchbox" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

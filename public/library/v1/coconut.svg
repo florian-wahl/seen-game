@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>coconut</title>
+<defs>
+<g id="seen-coconut">
+<circle fill="#6f3f1f" cx="38" cy="40" r="28"/>
+<path fill="none" d="M24 30l6 6M38 20l2 8M52 30l-6 4"/>
+<path fill="#a9683c" d="M36 62h56c0 16-12 28-28 28S36 78 36 62z"/>
+<ellipse fill="#ffffff" cx="64" cy="62" rx="28" ry="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-coconut" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-coconut" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

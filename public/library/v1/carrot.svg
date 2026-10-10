@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>carrot</title>
+<defs>
+<g id="seen-carrot">
+<path fill="#2f9e6b" d="M66 26C62 16 64 10 70 6c4 6 4 14 0 20zM74 32c6-8 12-10 18-8-2 8-10 12-18 8z"/>
+<path fill="#f08a3c" d="M80 30c-6-8-16-8-24-2L12 88c20-10 48-28 64-42 6-6 8-12 4-16z"/>
+<path fill="none" d="M46 44l6 6M32 62l6 6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-carrot" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-carrot" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>
