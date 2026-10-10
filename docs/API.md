@@ -52,7 +52,7 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
 ## Realtime contract
 Private Broadcast channel per game: topic `game:<game_id>`, event `changed`, payload `{game_id, table}`.
 Sent by DB triggers on `games`, `game_players`, `turns` changes. Only members may subscribe.
-Payloads carry no game data: clients re-fetch `game_state` when they receive one.
+Payloads carry no game data (Supabase adds a random message `id`): clients re-fetch `game_state` when they receive one.
 `useGameState(gameId)` in `lib/game/useGameState.ts` wraps this (plus a 20 s polling fallback).
 
 ## Pictures
