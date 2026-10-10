@@ -15,7 +15,7 @@ import {
   type Viewport,
 } from "./camera";
 import { hitTest } from "./hitTest";
-import { BitmapCache } from "./bitmapCache";
+import { sharedBitmapCache, type BitmapCache } from "./bitmapCache";
 import { useBoardGestures } from "./useBoardGestures";
 
 export interface BoardCanvasHandle {
@@ -204,16 +204,15 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
     },
   }));
 
-  // Bitmap cache and image preloading.
+  // Shared bitmap cache (warmed by the Ready screen); load anything missing.
   useEffect(() => {
-    const cache = new BitmapCache();
-    cache.onLoad = requestRender;
+    const cache = sharedBitmapCache;
+    const unsubscribe = cache.subscribe(requestRender);
     cacheRef.current = cache;
     void cache.preload(images);
     requestRender();
     return () => {
-      cache.onLoad = null;
-      cache.clear();
+      unsubscribe();
       cacheRef.current = null;
     };
   }, [images, requestRender]);

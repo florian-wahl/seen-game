@@ -50,8 +50,13 @@ export async function rasterize(url: string, size: number): Promise<Raster> {
 export class BitmapCache {
   private ready = new Map<string, Raster>();
   private pending = new Map<string, Promise<void>>();
-  /** Called whenever a new bitmap becomes available. */
-  onLoad: (() => void) | null = null;
+  private listeners = new Set<() => void>();
+
+  /** Notifies `fn` whenever a new bitmap becomes available. Returns unsubscribe. */
+  subscribe(fn: () => void): () => void {
+    this.listeners.add(fn);
+    return () => this.listeners.delete(fn);
+  }
 
   private key(id: string, size: number) {
     return `${id}@${size}`;
@@ -65,7 +70,7 @@ export class BitmapCache {
       p = rasterize(url, size)
         .then((r) => {
           this.ready.set(key, r);
-          this.onLoad?.();
+          for (const fn of this.listeners) fn();
         })
         .catch(() => {
           /* leave missing; tile just isn't drawn */
@@ -106,6 +111,10 @@ export class BitmapCache {
   }
 }
 
+/**
+ * One cache for the whole app: the Ready screen preloads into it so a board
+ * rendered after "Draw" never waits on rasterizing (the clock is running).
+ */
 export const sharedBitmapCache = new BitmapCache();
 
 export function preload(images: Record<string, string>): Promise<void> {
