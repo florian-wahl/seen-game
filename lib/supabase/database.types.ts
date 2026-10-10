@@ -346,6 +346,12 @@ isOneToOne: false
                            },
 "update_profile":
 { Args: { "avatar_url"?: string,"display_name"?: string }; Returns: Json
+                           },
+"save_push_subscription":
+{ Args: { "auth": string,"endpoint": string,"p256dh": string }; Returns: undefined
+                           },
+"delete_push_subscription":
+{ Args: { "endpoint": string }; Returns: undefined
                            }
           }
           Enums: {

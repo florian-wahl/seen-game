@@ -43,6 +43,7 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
 - `rematch({game_id})` → `{game_id, token, expires_at, previous_game_id, players:[uuid]}`.
 - `update_profile({display_name?, avatar_url?})` → `{id, display_name, avatar_url}` (only way to edit a profile).
 - `game_state({game_id})` → see `GameState` in `lib/game/types.ts`. Lazily closes an expired live turn.
+- `save_push_subscription({endpoint, p256dh, auth})` → void (upsert for the caller; https endpoints only). `delete_push_subscription({endpoint})` → void.
 - `sweep_turns()` — service role / cron only.
 
 ## Tables readable directly (RLS)
