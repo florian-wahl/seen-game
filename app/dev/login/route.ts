@@ -3,11 +3,12 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { supabaseServer } from "@/lib/supabase/server";
+import { testHooksEnabled } from "@/lib/testHooks";
 
 const DEV_PASSWORD = "dev-password-not-secret";
 
 export async function GET(request: NextRequest) {
-  if (process.env.NODE_ENV === "production") return new NextResponse(null, { status: 404 });
+  if (!testHooksEnabled) return new NextResponse(null, { status: 404 });
   const url = new URL(request.url);
   const email = url.searchParams.get("email");
   const name = url.searchParams.get("name") ?? email?.split("@")[0];

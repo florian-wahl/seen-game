@@ -12,7 +12,7 @@ import {
   type TestUser,
 } from "./helpers/game";
 
-const E2E_BASE_URL = process.env.E2E_BASE_URL ?? "http://localhost:3001";
+const E2E_BASE_URL = process.env.E2E_BASE_URL ?? "http://localhost:3006";
 
 async function asUser(browser: Browser, user: TestUser, next: string): Promise<Page> {
   const { defaultBrowserType: _ignored, ...iphone } = devices["iPhone 14"];
@@ -77,7 +77,8 @@ test.describe("game loop", () => {
 
     // Out-of-turn play redirects away from /play (to /g/[id]).
     await pageB.goto(`/g/${game.gameId}/play`);
-    expect(new URL(pageB.url()).pathname).not.toBe(`/g/${game.gameId}/play`);
+    await expect(pageB).toHaveURL(new RegExp(`/g/${game.gameId}$`));
+    await expect(pageB.getByTestId("play-turn")).toHaveCount(0);
     await pageB.goto(`/dev/game/${game.gameId}`);
 
     // A: ready screen, draw enabled after preload.
@@ -112,7 +113,7 @@ test.describe("game loop", () => {
     // B's scoreboard shows A's score and B's turn (polling / realtime).
     await expect(pageB.getByTestId("play-turn")).toBeVisible({ timeout: 25_000 });
     await expect(pageB.getByTestId(`row-${a.id}`).locator('[data-kind="done"]')).toHaveCount(1);
-    await expect(pageB.getByTestId("turn-order").locator('[data-current="true"]')).toContainText("Ben");
+    await expect(pageB.getByTestId("turn-order").locator('[data-current="true"]')).toContainText(b.name);
     await pageB.screenshot({ path: test.info().outputPath("scoreboard.png") });
 
     // B plays (RPC) -> board unlocks for B, A's second turn starts.
@@ -131,19 +132,20 @@ test.describe("game loop", () => {
     const t2 = await openTurn(game.gameId);
     const target2 = t2!.target_picture_id!;
     expect(target2).not.toBe(targetId);
-    await pageA.waitForTimeout(2500);
-    const before = seconds(await pageA.getByTestId("clock").textContent());
-    expect(before).toBeGreaterThanOrEqual(2);
+    async function readClock() {
+      return seconds(await pageA.getByTestId("clock").textContent());
+    }
+    await expect.poll(readClock, { timeout: 15_000 }).toBeGreaterThanOrEqual(2);
+    const before = await readClock();
 
     await pageA.reload();
     // No Ready screen: resumes straight into the round.
     await expect(pageA.getByTestId("round-screen")).toBeVisible({ timeout: 30_000 });
     await expect(pageA.getByTestId("target")).toHaveAttribute("data-picture-id", target2);
-    const after1 = seconds(await pageA.getByTestId("clock").textContent());
+    const after1 = await readClock();
     expect(after1).toBeGreaterThanOrEqual(before);
-    await pageA.waitForTimeout(1200);
-    const after2 = seconds(await pageA.getByTestId("clock").textContent());
-    expect(after2).toBeGreaterThan(after1);
+    // Clock keeps running (web-first poll instead of a sleep).
+    await expect.poll(readClock, { timeout: 15_000 }).toBeGreaterThan(after1);
 
     // Tap sequence continues after reload (no seq reuse): a wrong tap still works.
     const wrong2 = await wrongTileOnScreen(pageA, game, target2);
@@ -160,10 +162,11 @@ test.describe("game loop", () => {
       size: 100,
     });
     const a = game.firstUser;
-    // Draw over RPC, then pretend the draw happened 86 s ago.
+    // Draw over RPC, then pretend the draw happened 80 s ago: the 90 s cap is ~10 s away, enough
+    // to load the page on a slow machine yet short enough to wait for the local cap to fire.
     await a.client.rpc("draw_target", { game_id: game.gameId });
     const t = await openTurn(game.gameId);
-    const drawnAt = new Date(Date.now() - 86_000);
+    const drawnAt = new Date(Date.now() - 80_000);
     const { error } = await admin()
       .from("turns")
       .update({ drawn_at: drawnAt.toISOString(), deadline_at: new Date(drawnAt.getTime() + 90_000).toISOString() })
@@ -173,7 +176,7 @@ test.describe("game loop", () => {
     const page = await asUser(browser, a, `/g/${game.gameId}/play`);
     await expect(page.getByTestId("round-screen")).toBeVisible({ timeout: 30_000 });
     const result = page.getByTestId("round-result");
-    await expect(result).toBeVisible({ timeout: 30_000 });
+    await expect(result).toBeVisible({ timeout: 45_000 });
     await expect(result).toHaveAttribute("data-status", "capped");
     await expect(page.getByTestId("result-score")).toHaveText("90.0 s");
     await page.screenshot({ path: test.info().outputPath("capped.png") });

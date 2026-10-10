@@ -1,6 +1,11 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const baseURL = process.env.E2E_BASE_URL ?? "http://localhost:3001";
+// `npm run test:e2e` (E2E_START_SERVER=1, or CI): builds and serves a production bundle with the
+// test hooks compiled in, on :3006. E2E_BASE_URL=<url> targets an already-running server instead
+// (`npm run test:e2e:dev` against `next dev -p 3001`) and never starts one.
+const externalURL = process.env.E2E_BASE_URL;
+const baseURL = externalURL ?? "http://localhost:3006";
+const startServer = !externalURL && (process.env.E2E_START_SERVER === "1" || !!process.env.CI);
 
 export default defineConfig({
   testDir: "./e2e",
@@ -8,7 +13,7 @@ export default defineConfig({
   expect: { timeout: 15_000 },
   fullyParallel: false,
   workers: 1,
-  reporter: [["list"]],
+  reporter: process.env.CI ? [["list"], ["html", { open: "never" }]] : [["list"]],
   use: {
     baseURL,
     trace: "retain-on-failure",
@@ -21,8 +26,16 @@ export default defineConfig({
       use: { ...devices["iPhone 14"], browserName: "chromium", defaultBrowserType: "chromium" },
     },
   ],
-  // Run `npx next dev -p 3001` yourself, or set E2E_START_SERVER=1 to have Playwright start it.
-  webServer: process.env.E2E_START_SERVER
-    ? { command: "npx next dev -p 3001", url: baseURL, reuseExistingServer: true, timeout: 120_000 }
+  // `next build`/`next start` load .env.local themselves. NEXT_PUBLIC_E2E_TEST_HOOKS is inlined at
+  // build time. NEVER set that flag for a deployed build (see lib/testHooks.ts).
+  webServer: startServer
+    ? {
+        command: "npx next build && npx next start -p 3006",
+        env: { NEXT_PUBLIC_E2E_TEST_HOOKS: "1" },
+        url: baseURL,
+        reuseExistingServer: false,
+        timeout: 300_000,
+        stdout: "pipe",
+      }
     : undefined,
 });

@@ -8,6 +8,10 @@
 - TypeScript strict. Path alias `@/*` → repo root.
 - Tests: `npm test` (Vitest, `*.test.ts` next to code), `npm run test:db` (pgTAP in `supabase/tests/`),
   `npm run typecheck`, `npm run lint`. All must pass before a commit.
+- E2E: `npm run test:e2e` builds and serves a production bundle on :3006 with `NEXT_PUBLIC_E2E_TEST_HOOKS=1`
+  (needs local Supabase + imported pictures). `npm run test:e2e:dev` runs against a running `next dev -p 3001`
+  (or `E2E_BASE_URL`). Dev/test surfaces (`/dev/*`, `window.__seenTest`) are gated on `lib/testHooks.ts`;
+  never set that flag on a deployed environment. CI: `.github/workflows/ci.yml`.
 - Database: migrations in `supabase/migrations/` (timestamped, via `supabase migration new`).
   Apply locally with `supabase db reset`. Local stack is shared — Docker is already running.
 - Secrets live in `.env.local` (gitignored). Never commit keys.

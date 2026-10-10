@@ -12,6 +12,7 @@ import { drawTarget, fetchGameState, friendlyError, RpcError, submitTap, withRet
 import { formatTotal } from "@/lib/game/format";
 import type { DrawResult, GameState, Turn } from "@/lib/game/types";
 import type { Tile } from "@/lib/board/types";
+import { testHooksEnabled } from "@/lib/testHooks";
 
 export interface PlayScreenProps {
   gameId: string;
@@ -39,7 +40,7 @@ const PRELOAD_CHUNK = 40;
 
 declare global {
   interface Window {
-    /** Dev/test only (NODE_ENV !== production). */
+    /** Test only (see lib/testHooks.ts). */
     __seenTest?: { tap(pictureId: string | null): void; target(): string | null };
   }
 }
@@ -275,7 +276,7 @@ export function PlayScreen(props: PlayScreenProps) {
 
   // Dev/test hook.
   useEffect(() => {
-    if (process.env.NODE_ENV === "production") return;
+    if (!testHooksEnabled) return;
     window.__seenTest = { tap: (id) => void onTap(id), target: () => roundRef.current?.target ?? null };
     return () => {
       delete window.__seenTest;

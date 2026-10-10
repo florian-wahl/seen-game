@@ -11,7 +11,8 @@
     "test:db": "supabase test db",
     "typecheck": "next typegen && tsc --noEmit",
     "db:import-library": "tsx --env-file=.env.local scripts/import-library.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "E2E_START_SERVER=1 playwright test",
+    "test:e2e:dev": "E2E_BASE_URL=${E2E_BASE_URL:-http://localhost:3001} playwright test"
   },
   "dependencies": {
     "@react-email/components": "^1.0.12",

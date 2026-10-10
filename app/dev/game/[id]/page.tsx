@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { GameView } from "@/components/game/GameView";
 import type { GameState } from "@/lib/game/types";
 import { supabaseServer } from "@/lib/supabase/server";
+import { testHooksEnabled } from "@/lib/testHooks";
 
 async function Loaded({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -14,7 +15,7 @@ async function Loaded({ params }: { params: Promise<{ id: string }> }) {
 }
 
 export default function DevGamePage({ params }: PageProps<"/dev/game/[id]">) {
-  if (process.env.NODE_ENV === "production") notFound();
+  if (!testHooksEnabled) notFound();
   return (
     <Suspense fallback={<p className="p-4">Loading…</p>}>
       <Loaded params={params} />

@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Lint, types, unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+
+  e2e:
+    name: Database tests and e2e
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.120.0
+
+      # Skip services the app and tests never touch (names from `supabase start --help`).
+      # Kept: postgres, gotrue (auth), postgrest (api), realtime, storage-api, kong, mailpit (magic-link e2e).
+      - name: Start local Supabase
+        run: supabase start -x studio,imgproxy,logflare,vector,supavisor,postgres-meta,edge-runtime
+
+      - name: Database tests (pgTAP)
+        run: supabase test db
+
+      # `supabase status -o env` prints KEY="value" lines; map them to the names the app expects.
+      - name: Write .env.local
+        run: |
+          supabase status -o env > "$RUNNER_TEMP/supabase.env"
+          get() { grep "^$1=" "$RUNNER_TEMP/supabase.env" | head -n1 | cut -d= -f2- | sed -e 's/^"//' -e 's/"$//'; }
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$(get API_URL)"
+            echo "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$(get PUBLISHABLE_KEY)"
+            echo "SUPABASE_SECRET_KEY=$(get SECRET_KEY)"
+          } > .env.local
+          # Fail early (without printing secrets) if any value is empty.
+          ! grep -q '=$' .env.local
+
+      - name: Import picture library
+        run: npm run db:import-library
+
+      - name: Cache Playwright browsers
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Install Playwright Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+      - name: Install Playwright system deps (browsers cached)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+
+      # playwright.config.ts builds with NEXT_PUBLIC_E2E_TEST_HOOKS=1 and serves on :3006.
+      # That flag is for this throwaway test build only, never for a deployed environment.
+      - name: End-to-end tests
+        run: npm run test:e2e
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
