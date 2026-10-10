@@ -15,3 +15,4 @@
 - After `supabase db reset`, re-import pictures: `npm run db:import-library` (games can't start without them).
 - Worktrees: copy env with `cp /Users/flwahl/Code/seen-game/.env.local .` and run `npm install`.
 - Contracts for front end: `docs/API.md` (RPCs, errors, Realtime), `lib/game/types.ts`.
+- Dev sign-in (local only): open `/dev/login?email=alice@test.local&name=Alice&next=/` to become that user.
