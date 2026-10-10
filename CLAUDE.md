@@ -21,3 +21,4 @@
 - Contracts for front end: `docs/API.md` (RPCs, errors, Realtime), `lib/game/types.ts`.
 - Dev sign-in (local only): open `/dev/login?email=alice@test.local&name=Alice&next=/` to become that user.
 - Never stage `public/library/v1/` (the owner's in-progress picture set). Stage explicit paths, not `git add -A`.
+- Notifications (M6): `npm run db:setup-notify` stores Vault secrets `notify_url` (→ `host.docker.internal:3004`) and `notify_secret` so the outbox trigger can POST `/api/jobs/notify`; env: `NOTIFY_SECRET`, `APP_URL` (base URL for links; fallback is the request origin), `RESEND_API_KEY` + `EMAIL_FROM` (without a key, email goes by SMTP to Mailpit on `SMTP_PORT`, default 54325), `NEXT_PUBLIC_VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY`/`VAPID_SUBJECT`. Icons: `npx tsx scripts/make-icons.ts`.

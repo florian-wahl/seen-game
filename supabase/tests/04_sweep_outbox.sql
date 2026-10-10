@@ -6,6 +6,9 @@ create extension if not exists pgtap with schema extensions;
 create schema tests;
 grant usage on schema tests to public;
 
+-- A dev stack may have Vault secrets from `npm run db:setup-notify`; clear them (rolled back with the transaction).
+delete from vault.secrets where name in ('notify_url', 'notify_secret');
+
 create function tests.u(n int) returns uuid language sql immutable as
 $$ select ('00000000-0000-0000-0000-' || lpad(n::text, 12, '0'))::uuid $$;
 

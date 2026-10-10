@@ -6,6 +6,7 @@ import { groupGames, joinNames, type HomeGame } from "@/lib/game/home";
 import { Avatar } from "@/components/ui/Avatar";
 import { LinkButton } from "@/components/ui/Button";
 import { Page, PageSpinner } from "@/components/ui/Shell";
+import { EnableNotifications } from "@/components/notifications/EnableNotifications";
 
 export default function HomePage() {
   return (
@@ -87,6 +88,8 @@ async function Home() {
       <LinkButton href="/new" className="min-h-14 w-full text-lg" data-testid="new-game">
         New game
       </LinkButton>
+
+      <EnableNotifications />
 
       {empty ? (
         <div className="flex flex-col items-center gap-2 rounded-2xl bg-white p-8 text-center ring-1 ring-slate-200">

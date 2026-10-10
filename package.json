@@ -10,6 +10,7 @@
     "test": "vitest run",
     "test:db": "supabase test db",
     "typecheck": "next typegen && tsc --noEmit",
+    "db:setup-notify": "tsx --env-file=.env.local scripts/setup-local-notify.ts",
     "db:import-library": "tsx --env-file=.env.local scripts/import-library.ts",
     "test:e2e": "E2E_START_SERVER=1 playwright test",
     "test:e2e:dev": "E2E_BASE_URL=${E2E_BASE_URL:-http://localhost:3001} playwright test"
@@ -20,6 +21,7 @@
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.3",
     "next": "16.4.0",
+    "nodemailer": "^10.1.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "resend": "^6.32.1",
@@ -30,6 +32,7 @@
     "@playwright/test": "^1.64.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^24.19.2",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/web-push": "^3.6.4",
