@@ -12,3 +12,6 @@
   Apply locally with `supabase db reset`. Local stack is shared — Docker is already running.
 - Secrets live in `.env.local` (gitignored). Never commit keys.
 - Commit messages end with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+- After `supabase db reset`, re-import pictures: `npm run db:import-library` (games can't start without them).
+- Worktrees: copy env with `cp /Users/flwahl/Code/seen-game/.env.local .` and run `npm install`.
+- Contracts for front end: `docs/API.md` (RPCs, errors, Realtime), `lib/game/types.ts`.
