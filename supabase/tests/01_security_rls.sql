@@ -152,7 +152,9 @@ select is((select count(*)::int from pg_class c join pg_namespace n on n.oid = c
           'every public table has RLS enabled');
 
 -- --------------------------------------------------------------- profiles
-select is((select count(*)::int from public.profiles), 4, 'profile auto-created per auth user');
+select is((select count(*)::int from public.profiles
+            where id in (tests.u(1), tests.u(2), tests.u(3), tests.u(4))), 4,
+          'profile auto-created per auth user');
 select is((select display_name from public.profiles where id = tests.u(1)), 'user1',
           'display_name defaults to email local part');
 insert into auth.users (id, email, aud, role, raw_user_meta_data)
@@ -205,7 +207,10 @@ select is((select count(*)::int from public.games), 0, 'outsider sees no games')
 select is((select count(*)::int from public.game_players), 0, 'outsider sees no game_players');
 select is((select count(*)::int from public.turns_public), 0, 'outsider sees no turns');
 select is((select count(*)::int from public.invites), 0, 'outsider sees no invites');
-select is((select count(*)::int from public.profiles), 5, 'any signed-in user reads profiles');
+select is((select count(*)::int from public.profiles
+            where id in (tests.u(1), tests.u(2), tests.u(3), tests.u(4),
+                         '11111111-1111-1111-1111-111111111111')), 5,
+          'any signed-in user reads profiles');
 select tests.logout();
 
 select tests.login(2);
