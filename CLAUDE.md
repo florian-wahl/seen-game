@@ -16,3 +16,4 @@
 - Worktrees: copy env with `cp /Users/flwahl/Code/seen-game/.env.local .` and run `npm install`.
 - Contracts for front end: `docs/API.md` (RPCs, errors, Realtime), `lib/game/types.ts`.
 - Dev sign-in (local only): open `/dev/login?email=alice@test.local&name=Alice&next=/` to become that user.
+- Never stage `public/library/v1/` (the owner's in-progress picture set). Stage explicit paths, not `git add -A`.
