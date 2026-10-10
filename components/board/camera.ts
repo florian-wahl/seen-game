@@ -26,6 +26,13 @@ export interface ZoomLimits {
 /** CSS px a tile (one grid cell) occupies at maximum zoom. */
 export const MAX_TILE_PX = 160;
 
+/**
+ * Minimum CSS px of the smallest picture at default zoom (spec: pictures are at
+ * least 44 px wide). Pictures are scaled to as little as SCALE_MIN of a cell.
+ */
+export const MIN_PICTURE_PX = 44;
+const SCALE_MIN = 0.78;
+
 export function worldToScreen(camera: Camera, viewport: Viewport, p: Point): Point {
   return {
     x: (p.x - camera.x) * camera.zoom + viewport.width / 2,
@@ -42,12 +49,14 @@ export function screenToWorld(camera: Camera, viewport: Viewport, p: Point): Poi
 
 /**
  * min = whole board width fits the viewport width; default = half the board
- * width visible; max = one tile (grid cell) is MAX_TILE_PX CSS px.
+ * width visible, but never so small that a picture drops under MIN_PICTURE_PX;
+ * max = one tile (grid cell) is MAX_TILE_PX CSS px.
  */
 export function zoomLimits(board: Board, viewport: Viewport): ZoomLimits {
   const min = viewport.width / board.width;
   const max = Math.max(MAX_TILE_PX / CELL, min * 2);
-  const def = Math.min(Math.max(min * 2, min), max);
+  const floor = MIN_PICTURE_PX / (SCALE_MIN * CELL);
+  const def = Math.min(Math.max(min * 2, floor), max);
   return { min, default: def, max };
 }
 

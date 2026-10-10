@@ -2,7 +2,15 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoardCanvas, type BoardCanvasHandle, type BoardCanvasStats } from "@/components/board/BoardCanvas";
-import { fakeBoard, fakeImages } from "./fakeBoard";
+import { generateBoard } from "@/lib/board/generate";
+import type { LibraryManifest } from "@/lib/board/types";
+import manifestJson from "@/public/library/placeholder/manifest.json";
+
+const manifest = manifestJson as unknown as LibraryManifest;
+const LIBRARY_ROOT = "/library/placeholder";
+const ALL_IMAGES: Record<string, string> = Object.fromEntries(
+  manifest.pictures.map((p) => [p.id, `${LIBRARY_ROOT}/${p.file}`]),
+);
 
 const SIZES = [100, 200, 300] as const;
 
@@ -14,8 +22,17 @@ function pickTarget(ids: string[], avoid?: string | null): string {
 
 export default function DevBoard() {
   const [size, setSize] = useState<(typeof SIZES)[number]>(200);
-  const board = useMemo(() => fakeBoard(size, 42), [size]);
-  const images = useMemo(() => fakeImages(board), [board]);
+  const board = useMemo(
+    () =>
+      generateBoard({
+        pictures: manifest.pictures,
+        confusables: manifest.confusables,
+        size,
+        seed: `dev-${size}`,
+      }),
+    [size],
+  );
+  const images = ALL_IMAGES;
   const ids = useMemo(() => board.tiles.map((t) => t.pictureId), [board]);
 
   const [target, setTarget] = useState<string | null>(null);

@@ -60,15 +60,16 @@ describe("camera", () => {
     const b = board(n);
     const lim = zoomLimits(b, vp);
     expect(lim.min * b.width).toBeCloseTo(390); // full width fits
-    expect(lim.default).toBeCloseTo(lim.min * 2); // half the width visible
+    // half the width visible, raised so the smallest picture stays >= 44 px
+    expect(lim.default).toBeCloseTo(Math.max(lim.min * 2, 44 / (0.78 * CELL)));
     expect(lim.max * CELL).toBeCloseTo(160); // one tile ~160 px
     expect(lim.min).toBeLessThan(lim.default);
     expect(lim.default).toBeLessThan(lim.max);
   });
 
-  it("gives at least 44 CSS px per tile at default zoom for 200", () => {
-    const lim = zoomLimits(board(200), vp);
-    expect(lim.default * CELL).toBeGreaterThanOrEqual(44);
+  it.each([100, 200, 300])("keeps the smallest picture >= 44 CSS px at default zoom (%i)", (n) => {
+    const lim = zoomLimits(board(n), vp);
+    expect(lim.default * CELL * 0.78).toBeGreaterThanOrEqual(44 - 1e-9);
   });
 
   it("clamps the camera inside the board", () => {
