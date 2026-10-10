@@ -2,12 +2,12 @@
 //   notify_url    = http://host.docker.internal:<port>/api/jobs/notify
 //   notify_secret = $NOTIFY_SECRET
 // Idempotent (updates when the secret already exists). Does not touch any other data.
-// Usage: npm run db:setup-notify [-- --port 3004]
+// Usage: npm run db:setup-notify [-- --port 3000]
 import { spawnSync } from "node:child_process";
 
 const argPort = process.argv.indexOf("--port") > 0 ? process.argv[process.argv.indexOf("--port") + 1] : undefined;
 const port = argPort ?? (process.env.APP_URL ? new URL(process.env.APP_URL).port : "") ?? "";
-const url = `http://host.docker.internal:${port || "3004"}/api/jobs/notify`;
+const url = `http://host.docker.internal:${port || "3000"}/api/jobs/notify`;
 const secret = process.env.NOTIFY_SECRET;
 if (!secret) {
   console.error("NOTIFY_SECRET is not set (.env.local)");

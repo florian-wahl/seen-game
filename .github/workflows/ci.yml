@@ -59,6 +59,9 @@ jobs:
             echo "NEXT_PUBLIC_SUPABASE_URL=$(get API_URL)"
             echo "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$(get PUBLISHABLE_KEY)"
             echo "SUPABASE_SECRET_KEY=$(get SECRET_KEY)"
+            echo "NOTIFY_SECRET=$(openssl rand -hex 24)"
+            echo "APP_URL=http://localhost:3006"
+            echo "EMAIL_FROM=Seen! <noreply@localhost>"
           } > .env.local
           # Fail early (without printing secrets) if any value is empty.
           ! grep -q '=$' .env.local
