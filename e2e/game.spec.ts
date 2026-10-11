@@ -169,6 +169,46 @@ test.describe("game loop", () => {
     await expect(pageA.getByTestId("wrong-count")).toContainText("1 wrong");
   });
 
+  test("second turn via in-app links starts fresh (no stale play screen)", async ({ browser }) => {
+    test.setTimeout(120_000);
+    const game = await createStartedGame({
+      emails: [uniqueEmail("e2e-h"), uniqueEmail("e2e-i")],
+      names: ["Hal", "Ivy"],
+      rounds: 3,
+      size: 100,
+    });
+    const a = game.firstUser;
+    const b = game.users.find((u) => u.id !== a.id)!;
+
+    // Turn 1 through the UI, starting from the game page like a player would.
+    const page = await asUser(browser, a, `/g/${game.gameId}`);
+    await page.getByTestId("play-turn").click();
+    await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
+    await page.getByTestId("draw").click();
+    await expect(page.getByTestId("round-screen")).toBeVisible();
+    const t1 = (await openTurn(game.gameId))!;
+    await page.evaluate((id) => window.__seenTest!.tap(id), t1.target_picture_id!);
+    await expect(page.getByTestId("round-result")).toBeVisible();
+
+    // Back to the game (client-side link), B plays, A's turn again.
+    await page.getByTestId("back-to-game").click();
+    await expect(page).toHaveURL(new RegExp(`/g/${game.gameId}$`));
+    await playTurnViaRpc(b, game.gameId, 0);
+    await expect(page.getByTestId("play-turn")).toBeVisible({ timeout: 25_000 });
+
+    // Turn 2 through the same links, no reload: a fresh Ready screen and a working Draw.
+    await page.getByTestId("play-turn").click();
+    await expect(page.getByTestId("round-result")).toHaveCount(0);
+    await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
+    await page.getByTestId("draw").click();
+    await expect(page.getByTestId("round-screen")).toBeVisible();
+    const t2 = (await openTurn(game.gameId))!;
+    expect(t2.round).toBe(2);
+    await expect(page.getByTestId("target")).toHaveAttribute("data-picture-id", t2.target_picture_id!);
+    await page.evaluate((id) => window.__seenTest!.tap(id), t2.target_picture_id!);
+    await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
+  });
+
   test("round caps locally at the deadline and shows the closed turn", async ({ browser }) => {
     test.setTimeout(90_000);
     const game = await createStartedGame({

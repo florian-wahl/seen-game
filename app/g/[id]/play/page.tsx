@@ -30,8 +30,11 @@ async function Loaded({ params }: { params: Promise<{ id: string }> }) {
   const turn = state.current_turn;
   if (state.game.status !== "in_progress" || !state.is_my_turn || !turn) redirect(`/g/${id}`);
 
+  // Keyed by turn: Cache Components keeps visited routes alive (React Activity) with their
+  // state, so without a key the next turn would reuse the previous turn's finished screen.
   return (
     <PlayScreen
+      key={turn.id}
       gameId={id}
       initialTurn={turn}
       penaltyMs={state.game.penalty_ms}
