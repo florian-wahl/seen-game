@@ -31,3 +31,6 @@ Vault secrets (once, or when NOTIFY_SECRET changes): `bash scripts/setup-remote-
 - URL Configuration: Site URL `https://seen.imjustbored.com`; redirect URL `https://seen.imjustbored.com/auth/callback`.
 - SMTP: host `smtp.resend.com`, port 465, user `resend`, password = Resend API key,
   sender `noreply@seen.imjustbored.com`, name `Seen!`.
+- Google provider: enabled with an OAuth client from Google Cloud project `Seen` (Google Auth Platform,
+  External, published). Client: Web application; JS origin `https://seen.imjustbored.com`; redirect URI
+  `https://vzqudzbdpiuhzddsunit.supabase.co/auth/v1/callback`. Client ID/secret live only in the Supabase dashboard.
