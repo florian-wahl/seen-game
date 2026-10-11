@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chicken drumstick</title>
+<defs>
+<g id="seen-chicken-drumstick">
+<path fill="#ffffff" d="M56 56l14 14c2-6 10-6 12 0s-2 12-8 10c2 6-4 12-10 10s-6-8-2-12L50 64z"/>
+<path fill="#c25e12" d="M22 18c14-10 36-4 42 14 6 16 2 28-4 32-8 6-20 4-34-6S12 26 22 18z"/>
+<path fill="none" d="M28 26q8-5 14-1"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chicken-drumstick" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chicken-drumstick" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

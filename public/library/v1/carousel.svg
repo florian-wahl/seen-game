@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>carousel</title>
+<defs>
+<g id="seen-carousel">
+<path fill="none" d="M24 42v36M50 42v36M76 42v36M42 70v-8M54 70v-8"/>
+<path fill="#e5484d" d="M50 8l40 26H10z"/>
+<path fill="#ffffff" d="M50 8l-14 26h10zM50 8l14 26H54z"/>
+<path fill="#f5b93f" d="M10 34h80v6c-5 5-11 5-16 0-5 5-11 5-16 0-5 5-11 5-16 0-5 5-11 5-16 0-5 5-11 5-16 0z"/>
+<path fill="#ffffff" d="M38 56h18l6-8 6 4-6 8v6H38z"/>
+<path fill="#a52c69" d="M8 78h84v10H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-carousel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-carousel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

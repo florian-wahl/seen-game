@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dumbbell</title>
+<defs>
+<g id="seen-dumbbell">
+<g transform="translate(6 6) scale(.88) rotate(-20 50 50)">
+<path fill="#8d99a6" d="M20 46h60v8H20z"/>
+<path fill="#2c3f96" d="M8 34h6a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V36a2 2 0 0 1 2-2zM86 34h6a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V36a2 2 0 0 1 2-2z"/>
+<path fill="#4a66d4" d="M20 26h8a4 4 0 0 1 4 4v40a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V30a4 4 0 0 1 4-4zM72 26h8a4 4 0 0 1 4 4v40a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V30a4 4 0 0 1 4-4z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dumbbell" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dumbbell" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

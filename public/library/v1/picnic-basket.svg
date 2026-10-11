@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>picnic basket</title>
+<defs>
+<g id="seen-picnic-basket">
+<path fill="none" d="M24 44c0-36 52-36 52 0"/>
+<path fill="#e5484d" d="M18 38h64l-4 10H22z"/>
+<path fill="#ffffff" d="M30 38h8v8h-8zM46 38h8v8h-8zM62 38h8v8h-8z"/>
+<path fill="#d9a47a" d="M12 46h76l-8 40H20z"/>
+<path fill="none" d="M18 60h64M20 72h60M36 46l-2 40M50 46v40M64 46l2 40"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-picnic-basket" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-picnic-basket" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

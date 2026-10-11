@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>glue stick</title>
+<defs>
+<g id="seen-glue-stick">
+<path fill="#ffffff" d="M32 40h36v44a6 6 0 0 1-6 6H38a6 6 0 0 1-6-6z"/>
+<path fill="#7d5fd0" d="M32 54h36v20H32z"/>
+<path fill="#7d5fd0" d="M34 12h32a4 4 0 0 1 4 4v26H30V16a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M38 18v18"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-glue-stick" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-glue-stick" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

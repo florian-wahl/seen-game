@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>kick scooter</title>
+<defs>
+<g id="seen-kick-scooter">
+<path fill="none" d="M72 74L64 16M54 14h18"/>
+<path fill="#1c1b22" d="M50 10h8v8h-8z"/>
+<path fill="#7d5fd0" d="M18 68h54a4 4 0 0 1 0 8H18a4 4 0 0 1 0-8z"/>
+<circle fill="#1c1b22" cx="22" cy="82" r="8"/>
+<circle fill="#1c1b22" cx="74" cy="82" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-kick-scooter" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-kick-scooter" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>t-shirt</title>
+<defs>
+<g id="seen-t-shirt">
+<path fill="#f08a3c" d="M36 14c4 6 24 6 28 0l26 12-8 18-10-4v46H28V40l-10 4-8-18z"/>
+<path fill="none" d="M38 15c4 8 20 8 24 0"/>
+<path fill="none" d="M28 40V30M72 40V30"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-t-shirt" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-t-shirt" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gas can</title>
+<defs>
+<g id="seen-gas-can">
+<path fill="#e5484d" fill-rule="evenodd" d="M24 10h28v18H24zM30 15h16v8H30z"/>
+<path fill="#1c1b22" d="M68 22l10-12 6 5-10 12z"/>
+<path fill="#e5484d" d="M18 26h52l12 12v44a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z"/>
+<path fill="none" d="M30 44l40 32M70 44L30 76"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gas-can" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gas-can" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

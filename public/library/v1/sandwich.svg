@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sandwich</title>
+<defs>
+<g id="seen-sandwich">
+<path fill="#e8d5b0" d="M12 68h76v8a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6z"/>
+<path fill="#f7a8cf" d="M12 60h76a4 4 0 0 1 0 8H12a4 4 0 0 1 0-8z"/>
+<path fill="#9bc53d" d="M10 52h80l-4 10-8-4-8 4-8-4-8 4-8-4-8 4-8-4-8 4-8-4-4 0z"/>
+<path fill="#f5b93f" d="M14 46h72l-6 8H58l-6 6-6-6H20z"/>
+<path fill="#e8d5b0" d="M18 24h64a6 6 0 0 1 6 6v16H12V30a6 6 0 0 1 6-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sandwich" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sandwich" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

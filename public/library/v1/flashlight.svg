@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>flashlight</title>
+<defs>
+<g id="seen-flashlight">
+<g transform="translate(6 6) scale(.88) rotate(-30 50 50)">
+<path fill="#ffe07a" d="M76 34l16-8v48l-16-8z"/>
+<path fill="#4a66d4" d="M14 40h48v20H14a4 4 0 0 1-4-4v-12a4 4 0 0 1 4-4z"/>
+<path fill="#2c3f96" d="M60 34h18v32H60z"/>
+<path fill="#1c1b22" d="M30 44h10v6H30z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-flashlight" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-flashlight" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>diploma</title>
+<defs>
+<g id="seen-diploma">
+<g transform="rotate(-30 50 50)">
+<path fill="#fbf3e0" d="M14 38h72v24H14z"/>
+<ellipse fill="#e8d5b0" cx="86" cy="50" rx="6" ry="12"/>
+<path fill="#e5484d" d="M46 62l-4 18 6-3 4 5 2-20z"/>
+<path fill="#e5484d" d="M44 36h10v28H44z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-diploma" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-diploma" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

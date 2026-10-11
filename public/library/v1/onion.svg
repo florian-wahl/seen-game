@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>onion</title>
+<defs>
+<g id="seen-onion">
+<path fill="none" d="M50 24c0-6-2-10 2-16"/>
+<path fill="#a52c69" d="M50 22c-6 10-34 18-34 40 0 16 16 24 34 24s34-8 34-24c0-22-28-30-34-40z"/>
+<path fill="none" d="M50 30c-10 10-14 26-8 54M50 30c10 10 14 26 8 54"/>
+<path fill="none" d="M44 88l-2 3M56 88l2 3"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-onion" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-onion" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

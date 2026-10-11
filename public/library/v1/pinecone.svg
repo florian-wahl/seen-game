@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pinecone</title>
+<defs>
+<g id="seen-pinecone">
+<path fill="#6f3f1f" d="M46 6h8v10h-8z"/>
+<path fill="#a9683c" d="M50 90c-16-8-26-26-26-44 0-20 12-34 26-34s26 14 26 34c0 18-10 36-26 44z"/>
+<path fill="none" d="M30 32q10 8 20 0q10 8 20 0M26 48q12 8 24 0q12 8 24 0M28 64q11 8 22 0q11 8 22 0M38 78q6 6 12 0q6 6 12 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pinecone" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pinecone" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

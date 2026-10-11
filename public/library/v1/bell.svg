@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bell</title>
+<defs>
+<g id="seen-bell">
+<path fill="none" d="M44 16a6 6 0 0 1 12 0"/>
+<circle fill="#c98a0c" cx="50" cy="84" r="6"/>
+<path fill="#f5b93f" d="M50 16c-14 0-20 12-20 28v14c0 8-8 12-12 16h64c-4-4-12-8-12-16V44c0-16-6-28-20-28z"/>
+<path fill="#c98a0c" d="M14 72h72a4 4 0 0 1 0 8H14a4 4 0 0 1 0-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bell" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bell" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

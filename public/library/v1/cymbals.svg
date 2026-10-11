@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cymbals</title>
+<defs>
+<g id="seen-cymbals">
+<path fill="none" d="M50 44v36M50 80L32 92M50 80l18 12"/>
+<ellipse fill="#f5b93f" cx="50" cy="40" rx="40" ry="12"/>
+<path fill="#c98a0c" d="M41 36c0-8 18-8 18 0z"/>
+<path fill="none" d="M24 44c10 4 42 4 52 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cymbals" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cymbals" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

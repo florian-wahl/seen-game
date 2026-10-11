@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>matchbox</title>
+<defs>
+<g id="seen-matchbox">
+<path fill="#e8d5b0" d="M50 44h40v26H50z"/>
+<path fill="#b3262d" d="M56 36h8v10h-8zM68 36h8v10h-8zM80 36h8v10h-8z"/>
+<path fill="#4a66d4" d="M10 40h52v34H10z"/>
+<path fill="#e8d5b0" d="M12 82h54v6H12z"/>
+<circle fill="#e5484d" cx="70" cy="85" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-matchbox" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-matchbox" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

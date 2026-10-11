@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>donut</title>
+<defs>
+<g id="seen-donut">
+<path fill="#d9a47a" fill-rule="evenodd" d="M12 50a38 38 0 1 0 76 0a38 38 0 1 0-76 0zM40 50a10 10 0 1 0 20 0a10 10 0 1 0-20 0z"/>
+<path fill="#e0559a" fill-rule="evenodd" d="M18 50c0-18 14-32 32-32s32 14 32 32c0 6-4 4-6 10-2 8-8 6-12 12-4 4-10 2-14 4-6 2-12 0-18-2s-8-6-10-12c-2-4-4-6-4-12zM38 50a12 12 0 1 0 24 0a12 12 0 1 0-24 0z"/>
+<path fill="none" d="M30 34l4 4M62 28l5-2M70 48l2 5M27 56l6 1M46 26h6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-donut" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-donut" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

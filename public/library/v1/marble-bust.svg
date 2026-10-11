@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>marble bust</title>
+<defs>
+<g id="seen-marble-bust">
+<path fill="#ffffff" d="M42 44h16v14H42z"/>
+<path fill="#ffffff" d="M18 76c0-16 14-24 32-24s32 8 32 24z"/>
+<path fill="#8d99a6" d="M32 76h36v8H32zM26 84h48v6H26z"/>
+<path fill="#ffffff" d="M50 10c-12 0-18 8-18 20 0 10 8 18 18 18s18-8 18-18c0-12-6-20-18-20z"/>
+<path fill="none" d="M34 24q4-8 10-10M56 14q8 2 10 10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-marble-bust" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-marble-bust" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

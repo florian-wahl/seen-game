@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hard hat</title>
+<defs>
+<g id="seen-hard-hat">
+<path fill="#f5b93f" d="M18 66c0-24 14-40 32-40s32 16 32 40z"/>
+<path fill="#c98a0c" d="M44 27h12v38H44z"/>
+<path fill="#f5b93f" d="M12 64h76a4 4 0 0 1 0 8H12a4 4 0 0 1 0-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hard-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hard-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

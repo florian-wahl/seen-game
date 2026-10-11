@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>steering wheel</title>
+<defs>
+<g id="seen-steering-wheel">
+<path fill="#8d99a6" d="M20 46h60v10H20zM45 56h10v24H45z"/>
+<path fill="#4d5968" fill-rule="evenodd" d="M10 50a40 40 0 1 0 80 0a40 40 0 1 0-80 0zM20 50a30 30 0 1 0 60 0a30 30 0 1 0-60 0z"/>
+<circle fill="#4d5968" cx="50" cy="52" r="11"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-steering-wheel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-steering-wheel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

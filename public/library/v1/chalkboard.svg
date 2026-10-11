@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chalkboard</title>
+<defs>
+<g id="seen-chalkboard">
+<path fill="none" d="M20 82l-6 10M80 82l6 10"/>
+<path fill="#a9683c" d="M8 16h84v60H8z"/>
+<path fill="#2f9e6b" d="M14 22h72v48H14z"/>
+<path fill="none" d="M22 36q8-8 16 0t16 0M24 54h30"/>
+<path fill="#6f3f1f" d="M8 76h84v6H8z"/>
+<path fill="#ffffff" d="M60 70h14v6H60z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chalkboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chalkboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

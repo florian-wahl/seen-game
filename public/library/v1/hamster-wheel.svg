@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hamster wheel</title>
+<defs>
+<g id="seen-hamster-wheel">
+<path fill="none" d="M50 46L32 88M50 46l18 42M50 46V16M50 46h30M50 46v30M50 46H20"/>
+<path fill="#4d5968" d="M24 86h52v6H24z"/>
+<path fill="#f08a3c" fill-rule="evenodd" d="M12 46a38 38 0 1 0 76 0a38 38 0 1 0-76 0zM20 46a30 30 0 1 0 60 0a30 30 0 1 0-60 0z"/>
+<path fill="none" d="M50 8v8M76.9 19.1l-5.7 5.7M88 46h-8M76.9 72.9l-5.7-5.7M50 84v-8M23.1 72.9l5.7-5.7M12 46h8M23.1 19.1l5.7 5.7"/>
+<path fill="none" stroke-width="7" d="M50 46h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hamster-wheel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hamster-wheel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

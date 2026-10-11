@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ATM</title>
+<defs>
+<g id="seen-atm">
+<path fill="#4d5968" d="M14 10h72v80H14z"/>
+<path fill="#8fd0f5" d="M24 18h52v24H24z"/>
+<path fill="#ffffff" d="M24 50h8v6h-8zM36 50h8v6h-8zM48 50h8v6h-8zM24 60h8v6h-8zM36 60h8v6h-8zM48 60h8v6h-8z"/>
+<path fill="#9bc53d" d="M62 52h14v6H62z"/>
+<path fill="#1c1b22" d="M30 76h40v6H30z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-atm" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-atm" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

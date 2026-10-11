@@ -1,0 +1,3815 @@
+{
+ "version": 1,
+ "pictures": [
+  {
+   "id": "mug",
+   "name": "mug",
+   "category": "kitchen",
+   "file": "mug.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wine-glass",
+   "name": "wine glass",
+   "category": "kitchen",
+   "file": "wine-glass.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fork",
+   "name": "fork",
+   "category": "kitchen",
+   "file": "fork.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spoon",
+   "name": "spoon",
+   "category": "kitchen",
+   "file": "spoon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "kitchen-knife",
+   "name": "kitchen knife",
+   "category": "kitchen",
+   "file": "kitchen-knife.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chopsticks",
+   "name": "chopsticks",
+   "category": "kitchen",
+   "file": "chopsticks.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "plate",
+   "name": "plate",
+   "category": "kitchen",
+   "file": "plate.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bowl",
+   "name": "bowl",
+   "category": "kitchen",
+   "file": "bowl.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "frying-pan",
+   "name": "frying pan",
+   "category": "kitchen",
+   "file": "frying-pan.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cooking-pot",
+   "name": "cooking pot",
+   "category": "kitchen",
+   "file": "cooking-pot.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "teapot",
+   "name": "teapot",
+   "category": "kitchen",
+   "file": "teapot.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toaster",
+   "name": "toaster",
+   "category": "kitchen",
+   "file": "toaster.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "blender",
+   "name": "blender",
+   "category": "kitchen",
+   "file": "blender.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "microwave",
+   "name": "microwave",
+   "category": "kitchen",
+   "file": "microwave.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "refrigerator",
+   "name": "refrigerator",
+   "category": "kitchen",
+   "file": "refrigerator.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "oven-mitt",
+   "name": "oven mitt",
+   "category": "kitchen",
+   "file": "oven-mitt.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "apron",
+   "name": "apron",
+   "category": "kitchen",
+   "file": "apron.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "whisk",
+   "name": "whisk",
+   "category": "kitchen",
+   "file": "whisk.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spatula",
+   "name": "spatula",
+   "category": "kitchen",
+   "file": "spatula.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rolling-pin",
+   "name": "rolling pin",
+   "category": "kitchen",
+   "file": "rolling-pin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cutting-board",
+   "name": "cutting board",
+   "category": "kitchen",
+   "file": "cutting-board.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "colander",
+   "name": "colander",
+   "category": "kitchen",
+   "file": "colander.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cheese-grater",
+   "name": "cheese grater",
+   "category": "kitchen",
+   "file": "cheese-grater.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "can-opener",
+   "name": "can opener",
+   "category": "kitchen",
+   "file": "can-opener.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "corkscrew",
+   "name": "corkscrew",
+   "category": "kitchen",
+   "file": "corkscrew.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "salt-shaker",
+   "name": "salt shaker",
+   "category": "kitchen",
+   "file": "salt-shaker.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lunchbox",
+   "name": "lunchbox",
+   "category": "kitchen",
+   "file": "lunchbox.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pizza-cutter",
+   "name": "pizza cutter",
+   "category": "kitchen",
+   "file": "pizza-cutter.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "funnel",
+   "name": "funnel",
+   "category": "kitchen",
+   "file": "funnel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baby-bottle",
+   "name": "baby bottle",
+   "category": "kitchen",
+   "file": "baby-bottle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "water-bottle",
+   "name": "water bottle",
+   "category": "kitchen",
+   "file": "water-bottle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tea-bag",
+   "name": "tea bag",
+   "category": "kitchen",
+   "file": "tea-bag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sponge",
+   "name": "sponge",
+   "category": "kitchen",
+   "file": "sponge.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "apple",
+   "name": "apple",
+   "category": "fruit-veg",
+   "file": "apple.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "banana",
+   "name": "banana",
+   "category": "fruit-veg",
+   "file": "banana.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "orange",
+   "name": "orange",
+   "category": "fruit-veg",
+   "file": "orange.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lemon",
+   "name": "lemon",
+   "category": "fruit-veg",
+   "file": "lemon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "strawberry",
+   "name": "strawberry",
+   "category": "fruit-veg",
+   "file": "strawberry.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "grapes",
+   "name": "grapes",
+   "category": "fruit-veg",
+   "file": "grapes.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "watermelon",
+   "name": "watermelon",
+   "category": "fruit-veg",
+   "file": "watermelon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pineapple",
+   "name": "pineapple",
+   "category": "fruit-veg",
+   "file": "pineapple.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cherries",
+   "name": "cherries",
+   "category": "fruit-veg",
+   "file": "cherries.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pear",
+   "name": "pear",
+   "category": "fruit-veg",
+   "file": "pear.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "kiwi",
+   "name": "kiwi",
+   "category": "fruit-veg",
+   "file": "kiwi.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "mango",
+   "name": "mango",
+   "category": "fruit-veg",
+   "file": "mango.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "coconut",
+   "name": "coconut",
+   "category": "fruit-veg",
+   "file": "coconut.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "avocado",
+   "name": "avocado",
+   "category": "fruit-veg",
+   "file": "avocado.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "carrot",
+   "name": "carrot",
+   "category": "fruit-veg",
+   "file": "carrot.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "broccoli",
+   "name": "broccoli",
+   "category": "fruit-veg",
+   "file": "broccoli.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tomato",
+   "name": "tomato",
+   "category": "fruit-veg",
+   "file": "tomato.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "potato",
+   "name": "potato",
+   "category": "fruit-veg",
+   "file": "potato.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "onion",
+   "name": "onion",
+   "category": "fruit-veg",
+   "file": "onion.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "garlic",
+   "name": "garlic",
+   "category": "fruit-veg",
+   "file": "garlic.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "corn-on-the-cob",
+   "name": "corn on the cob",
+   "category": "fruit-veg",
+   "file": "corn-on-the-cob.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bell-pepper",
+   "name": "bell pepper",
+   "category": "fruit-veg",
+   "file": "bell-pepper.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chili-pepper",
+   "name": "chili pepper",
+   "category": "fruit-veg",
+   "file": "chili-pepper.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cucumber",
+   "name": "cucumber",
+   "category": "fruit-veg",
+   "file": "cucumber.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "eggplant",
+   "name": "eggplant",
+   "category": "fruit-veg",
+   "file": "eggplant.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "mushroom",
+   "name": "mushroom",
+   "category": "fruit-veg",
+   "file": "mushroom.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pumpkin",
+   "name": "pumpkin",
+   "category": "fruit-veg",
+   "file": "pumpkin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pea-pod",
+   "name": "pea pod",
+   "category": "fruit-veg",
+   "file": "pea-pod.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pizza-slice",
+   "name": "pizza slice",
+   "category": "food",
+   "file": "pizza-slice.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hamburger",
+   "name": "hamburger",
+   "category": "food",
+   "file": "hamburger.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hot-dog",
+   "name": "hot dog",
+   "category": "food",
+   "file": "hot-dog.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "french-fries",
+   "name": "french fries",
+   "category": "food",
+   "file": "french-fries.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "taco",
+   "name": "taco",
+   "category": "food",
+   "file": "taco.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sandwich",
+   "name": "sandwich",
+   "category": "food",
+   "file": "sandwich.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sushi-roll",
+   "name": "sushi roll",
+   "category": "food",
+   "file": "sushi-roll.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spaghetti",
+   "name": "spaghetti",
+   "category": "food",
+   "file": "spaghetti.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fried-egg",
+   "name": "fried egg",
+   "category": "food",
+   "file": "fried-egg.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pancakes",
+   "name": "pancakes",
+   "category": "food",
+   "file": "pancakes.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "croissant",
+   "name": "croissant",
+   "category": "food",
+   "file": "croissant.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baguette",
+   "name": "baguette",
+   "category": "food",
+   "file": "baguette.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pretzel",
+   "name": "pretzel",
+   "category": "food",
+   "file": "pretzel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "donut",
+   "name": "donut",
+   "category": "food",
+   "file": "donut.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cupcake",
+   "name": "cupcake",
+   "category": "food",
+   "file": "cupcake.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "birthday-cake",
+   "name": "birthday cake",
+   "category": "food",
+   "file": "birthday-cake.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cookie",
+   "name": "cookie",
+   "category": "food",
+   "file": "cookie.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chocolate-bar",
+   "name": "chocolate bar",
+   "category": "food",
+   "file": "chocolate-bar.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ice-cream-cone",
+   "name": "ice cream cone",
+   "category": "food",
+   "file": "ice-cream-cone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "popsicle",
+   "name": "popsicle",
+   "category": "food",
+   "file": "popsicle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lollipop",
+   "name": "lollipop",
+   "category": "food",
+   "file": "lollipop.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "candy-cane",
+   "name": "candy cane",
+   "category": "food",
+   "file": "candy-cane.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "popcorn",
+   "name": "popcorn",
+   "category": "food",
+   "file": "popcorn.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cheese-wedge",
+   "name": "cheese wedge",
+   "category": "food",
+   "file": "cheese-wedge.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chicken-drumstick",
+   "name": "chicken drumstick",
+   "category": "food",
+   "file": "chicken-drumstick.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "shrimp",
+   "name": "shrimp",
+   "category": "food",
+   "file": "shrimp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "peanut",
+   "name": "peanut",
+   "category": "food",
+   "file": "peanut.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "honey-jar",
+   "name": "honey jar",
+   "category": "food",
+   "file": "honey-jar.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ketchup-bottle",
+   "name": "ketchup bottle",
+   "category": "food",
+   "file": "ketchup-bottle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "milk-carton",
+   "name": "milk carton",
+   "category": "food",
+   "file": "milk-carton.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "soda-can",
+   "name": "soda can",
+   "category": "food",
+   "file": "soda-can.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "egg-carton",
+   "name": "egg carton",
+   "category": "food",
+   "file": "egg-carton.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cotton-candy",
+   "name": "cotton candy",
+   "category": "food",
+   "file": "cotton-candy.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "teddy-bear",
+   "name": "teddy bear",
+   "category": "toys",
+   "file": "teddy-bear.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rubber-duck",
+   "name": "rubber duck",
+   "category": "toys",
+   "file": "rubber-duck.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "yo-yo",
+   "name": "yo-yo",
+   "category": "toys",
+   "file": "yo-yo.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "kite",
+   "name": "kite",
+   "category": "toys",
+   "file": "kite.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spinning-top",
+   "name": "spinning top",
+   "category": "toys",
+   "file": "spinning-top.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "building-blocks",
+   "name": "building blocks",
+   "category": "toys",
+   "file": "building-blocks.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toy-robot",
+   "name": "toy robot",
+   "category": "toys",
+   "file": "toy-robot.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jack-in-the-box",
+   "name": "jack-in-the-box",
+   "category": "toys",
+   "file": "jack-in-the-box.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rocking-horse",
+   "name": "rocking horse",
+   "category": "toys",
+   "file": "rocking-horse.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jump-rope",
+   "name": "jump rope",
+   "category": "toys",
+   "file": "jump-rope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "frisbee",
+   "name": "frisbee",
+   "category": "toys",
+   "file": "frisbee.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "slinky",
+   "name": "slinky",
+   "category": "toys",
+   "file": "slinky.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "puzzle-cube",
+   "name": "puzzle cube",
+   "category": "toys",
+   "file": "puzzle-cube.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jigsaw-puzzle-piece",
+   "name": "jigsaw puzzle piece",
+   "category": "toys",
+   "file": "jigsaw-puzzle-piece.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dice",
+   "name": "dice",
+   "category": "toys",
+   "file": "dice.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "playing-cards",
+   "name": "playing cards",
+   "category": "toys",
+   "file": "playing-cards.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chess-knight",
+   "name": "chess knight",
+   "category": "toys",
+   "file": "chess-knight.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dominoes",
+   "name": "dominoes",
+   "category": "toys",
+   "file": "dominoes.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "balloon",
+   "name": "balloon",
+   "category": "toys",
+   "file": "balloon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "water-gun",
+   "name": "water gun",
+   "category": "toys",
+   "file": "water-gun.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pinwheel",
+   "name": "pinwheel",
+   "category": "toys",
+   "file": "pinwheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paper-airplane",
+   "name": "paper airplane",
+   "category": "toys",
+   "file": "paper-airplane.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "snow-globe",
+   "name": "snow globe",
+   "category": "toys",
+   "file": "snow-globe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "piggy-bank",
+   "name": "piggy bank",
+   "category": "toys",
+   "file": "piggy-bank.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "skateboard",
+   "name": "skateboard",
+   "category": "toys",
+   "file": "skateboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "kick-scooter",
+   "name": "kick scooter",
+   "category": "toys",
+   "file": "kick-scooter.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "boomerang",
+   "name": "boomerang",
+   "category": "toys",
+   "file": "boomerang.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pinata",
+   "name": "piñata",
+   "category": "toys",
+   "file": "pinata.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "game-controller",
+   "name": "game controller",
+   "category": "toys",
+   "file": "game-controller.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "soccer-ball",
+   "name": "soccer ball",
+   "category": "sports",
+   "file": "soccer-ball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "basketball",
+   "name": "basketball",
+   "category": "sports",
+   "file": "basketball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baseball",
+   "name": "baseball",
+   "category": "sports",
+   "file": "baseball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tennis-ball",
+   "name": "tennis ball",
+   "category": "sports",
+   "file": "tennis-ball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "american-football",
+   "name": "American football",
+   "category": "sports",
+   "file": "american-football.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bowling-pin",
+   "name": "bowling pin",
+   "category": "sports",
+   "file": "bowling-pin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tennis-racket",
+   "name": "tennis racket",
+   "category": "sports",
+   "file": "tennis-racket.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baseball-bat",
+   "name": "baseball bat",
+   "category": "sports",
+   "file": "baseball-bat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hockey-stick",
+   "name": "hockey stick",
+   "category": "sports",
+   "file": "hockey-stick.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "boxing-glove",
+   "name": "boxing glove",
+   "category": "sports",
+   "file": "boxing-glove.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dumbbell",
+   "name": "dumbbell",
+   "category": "sports",
+   "file": "dumbbell.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "yoga-mat",
+   "name": "yoga mat",
+   "category": "sports",
+   "file": "yoga-mat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "whistle",
+   "name": "whistle",
+   "category": "sports",
+   "file": "whistle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "trophy",
+   "name": "trophy",
+   "category": "sports",
+   "file": "trophy.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "skis",
+   "name": "skis",
+   "category": "sports",
+   "file": "skis.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ice-skate",
+   "name": "ice skate",
+   "category": "sports",
+   "file": "ice-skate.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "surfboard",
+   "name": "surfboard",
+   "category": "sports",
+   "file": "surfboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fishing-rod",
+   "name": "fishing rod",
+   "category": "sports",
+   "file": "fishing-rod.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bow-and-arrow",
+   "name": "bow and arrow",
+   "category": "sports",
+   "file": "bow-and-arrow.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "t-shirt",
+   "name": "t-shirt",
+   "category": "clothing",
+   "file": "t-shirt.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jeans",
+   "name": "jeans",
+   "category": "clothing",
+   "file": "jeans.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dress",
+   "name": "dress",
+   "category": "clothing",
+   "file": "dress.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "socks",
+   "name": "socks",
+   "category": "clothing",
+   "file": "socks.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sneaker",
+   "name": "sneaker",
+   "category": "clothing",
+   "file": "sneaker.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "high-heel",
+   "name": "high heel",
+   "category": "clothing",
+   "file": "high-heel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "flip-flop",
+   "name": "flip-flop",
+   "category": "clothing",
+   "file": "flip-flop.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baseball-cap",
+   "name": "baseball cap",
+   "category": "clothing",
+   "file": "baseball-cap.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "top-hat",
+   "name": "top hat",
+   "category": "clothing",
+   "file": "top-hat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cowboy-hat",
+   "name": "cowboy hat",
+   "category": "clothing",
+   "file": "cowboy-hat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "scarf",
+   "name": "scarf",
+   "category": "clothing",
+   "file": "scarf.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gloves",
+   "name": "gloves",
+   "category": "clothing",
+   "file": "gloves.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "necktie",
+   "name": "necktie",
+   "category": "clothing",
+   "file": "necktie.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "belt",
+   "name": "belt",
+   "category": "clothing",
+   "file": "belt.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sunglasses",
+   "name": "sunglasses",
+   "category": "clothing",
+   "file": "sunglasses.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wristwatch",
+   "name": "wristwatch",
+   "category": "clothing",
+   "file": "wristwatch.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ring",
+   "name": "ring",
+   "category": "clothing",
+   "file": "ring.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "necklace",
+   "name": "necklace",
+   "category": "clothing",
+   "file": "necklace.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "crown",
+   "name": "crown",
+   "category": "clothing",
+   "file": "crown.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "handbag",
+   "name": "handbag",
+   "category": "clothing",
+   "file": "handbag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "backpack",
+   "name": "backpack",
+   "category": "clothing",
+   "file": "backpack.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "suitcase",
+   "name": "suitcase",
+   "category": "clothing",
+   "file": "suitcase.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "umbrella",
+   "name": "umbrella",
+   "category": "clothing",
+   "file": "umbrella.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "button",
+   "name": "button",
+   "category": "clothing",
+   "file": "button.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "clothes-hanger",
+   "name": "clothes hanger",
+   "category": "clothing",
+   "file": "clothes-hanger.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toothbrush",
+   "name": "toothbrush",
+   "category": "bathroom-health",
+   "file": "toothbrush.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toothpaste-tube",
+   "name": "toothpaste tube",
+   "category": "bathroom-health",
+   "file": "toothpaste-tube.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "comb",
+   "name": "comb",
+   "category": "bathroom-health",
+   "file": "comb.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hair-dryer",
+   "name": "hair dryer",
+   "category": "bathroom-health",
+   "file": "hair-dryer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "razor",
+   "name": "razor",
+   "category": "bathroom-health",
+   "file": "razor.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bar-of-soap",
+   "name": "bar of soap",
+   "category": "bathroom-health",
+   "file": "bar-of-soap.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "towel",
+   "name": "towel",
+   "category": "bathroom-health",
+   "file": "towel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toilet",
+   "name": "toilet",
+   "category": "bathroom-health",
+   "file": "toilet.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toilet-paper-roll",
+   "name": "toilet paper roll",
+   "category": "bathroom-health",
+   "file": "toilet-paper-roll.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "plunger",
+   "name": "plunger",
+   "category": "bathroom-health",
+   "file": "plunger.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bathtub",
+   "name": "bathtub",
+   "category": "bathroom-health",
+   "file": "bathtub.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lipstick",
+   "name": "lipstick",
+   "category": "bathroom-health",
+   "file": "lipstick.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "band-aid",
+   "name": "band-aid",
+   "category": "bathroom-health",
+   "file": "band-aid.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "thermometer",
+   "name": "thermometer",
+   "category": "bathroom-health",
+   "file": "thermometer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "syringe",
+   "name": "syringe",
+   "category": "bathroom-health",
+   "file": "syringe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "stethoscope",
+   "name": "stethoscope",
+   "category": "bathroom-health",
+   "file": "stethoscope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wheelchair",
+   "name": "wheelchair",
+   "category": "bathroom-health",
+   "file": "wheelchair.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chair",
+   "name": "chair",
+   "category": "furniture-decor",
+   "file": "chair.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sofa",
+   "name": "sofa",
+   "category": "furniture-decor",
+   "file": "sofa.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "table",
+   "name": "table",
+   "category": "furniture-decor",
+   "file": "table.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bed",
+   "name": "bed",
+   "category": "furniture-decor",
+   "file": "bed.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pillow",
+   "name": "pillow",
+   "category": "furniture-decor",
+   "file": "pillow.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bookshelf",
+   "name": "bookshelf",
+   "category": "furniture-decor",
+   "file": "bookshelf.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "table-lamp",
+   "name": "table lamp",
+   "category": "furniture-decor",
+   "file": "table-lamp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "light-bulb",
+   "name": "light bulb",
+   "category": "furniture-decor",
+   "file": "light-bulb.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "candle",
+   "name": "candle",
+   "category": "furniture-decor",
+   "file": "candle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "flashlight",
+   "name": "flashlight",
+   "category": "furniture-decor",
+   "file": "flashlight.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "desk-fan",
+   "name": "desk fan",
+   "category": "furniture-decor",
+   "file": "desk-fan.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "alarm-clock",
+   "name": "alarm clock",
+   "category": "furniture-decor",
+   "file": "alarm-clock.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hourglass",
+   "name": "hourglass",
+   "category": "furniture-decor",
+   "file": "hourglass.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "picture-frame",
+   "name": "picture frame",
+   "category": "furniture-decor",
+   "file": "picture-frame.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "vase",
+   "name": "vase",
+   "category": "furniture-decor",
+   "file": "vase.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "potted-plant",
+   "name": "potted plant",
+   "category": "furniture-decor",
+   "file": "potted-plant.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "window",
+   "name": "window",
+   "category": "furniture-decor",
+   "file": "window.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "door",
+   "name": "door",
+   "category": "furniture-decor",
+   "file": "door.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "key",
+   "name": "key",
+   "category": "household",
+   "file": "key.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "padlock",
+   "name": "padlock",
+   "category": "household",
+   "file": "padlock.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "doorbell",
+   "name": "doorbell",
+   "category": "household",
+   "file": "doorbell.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "mailbox",
+   "name": "mailbox",
+   "category": "household",
+   "file": "mailbox.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "trash-can",
+   "name": "trash can",
+   "category": "household",
+   "file": "trash-can.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "broom",
+   "name": "broom",
+   "category": "household",
+   "file": "broom.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "mop",
+   "name": "mop",
+   "category": "household",
+   "file": "mop.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bucket",
+   "name": "bucket",
+   "category": "household",
+   "file": "bucket.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "vacuum-cleaner",
+   "name": "vacuum cleaner",
+   "category": "household",
+   "file": "vacuum-cleaner.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "clothes-iron",
+   "name": "clothes iron",
+   "category": "household",
+   "file": "clothes-iron.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "washing-machine",
+   "name": "washing machine",
+   "category": "household",
+   "file": "washing-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sewing-machine",
+   "name": "sewing machine",
+   "category": "household",
+   "file": "sewing-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "needle-and-thread",
+   "name": "needle and thread",
+   "category": "household",
+   "file": "needle-and-thread.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ball-of-yarn",
+   "name": "ball of yarn",
+   "category": "household",
+   "file": "ball-of-yarn.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "scissors",
+   "name": "scissors",
+   "category": "household",
+   "file": "scissors.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tape-measure",
+   "name": "tape measure",
+   "category": "household",
+   "file": "tape-measure.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fireplace",
+   "name": "fireplace",
+   "category": "furniture-decor",
+   "file": "fireplace.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fire-extinguisher",
+   "name": "fire extinguisher",
+   "category": "household",
+   "file": "fire-extinguisher.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "electric-plug",
+   "name": "electric plug",
+   "category": "household",
+   "file": "electric-plug.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "battery",
+   "name": "battery",
+   "category": "household",
+   "file": "battery.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "matchbox",
+   "name": "matchbox",
+   "category": "household",
+   "file": "matchbox.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "stroller",
+   "name": "stroller",
+   "category": "bathroom-health",
+   "file": "stroller.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fish-tank",
+   "name": "fish tank",
+   "category": "household",
+   "file": "fish-tank.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "birdcage",
+   "name": "birdcage",
+   "category": "household",
+   "file": "birdcage.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dog-bone",
+   "name": "dog bone",
+   "category": "household",
+   "file": "dog-bone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "birdhouse",
+   "name": "birdhouse",
+   "category": "household",
+   "file": "birdhouse.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "safe",
+   "name": "safe",
+   "category": "household",
+   "file": "safe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pencil",
+   "name": "pencil",
+   "category": "school-office",
+   "file": "pencil.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pen",
+   "name": "pen",
+   "category": "school-office",
+   "file": "pen.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "crayon",
+   "name": "crayon",
+   "category": "school-office",
+   "file": "crayon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paintbrush",
+   "name": "paintbrush",
+   "category": "school-office",
+   "file": "paintbrush.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paint-palette",
+   "name": "paint palette",
+   "category": "school-office",
+   "file": "paint-palette.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "eraser",
+   "name": "eraser",
+   "category": "school-office",
+   "file": "eraser.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pencil-sharpener",
+   "name": "pencil sharpener",
+   "category": "school-office",
+   "file": "pencil-sharpener.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ruler",
+   "name": "ruler",
+   "category": "school-office",
+   "file": "ruler.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "calculator",
+   "name": "calculator",
+   "category": "school-office",
+   "file": "calculator.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "stapler",
+   "name": "stapler",
+   "category": "school-office",
+   "file": "stapler.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paper-clip",
+   "name": "paper clip",
+   "category": "school-office",
+   "file": "paper-clip.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pushpin",
+   "name": "pushpin",
+   "category": "school-office",
+   "file": "pushpin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "glue-stick",
+   "name": "glue stick",
+   "category": "school-office",
+   "file": "glue-stick.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "notebook",
+   "name": "notebook",
+   "category": "school-office",
+   "file": "notebook.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "book",
+   "name": "book",
+   "category": "school-office",
+   "file": "book.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "envelope",
+   "name": "envelope",
+   "category": "school-office",
+   "file": "envelope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "postage-stamp",
+   "name": "postage stamp",
+   "category": "school-office",
+   "file": "postage-stamp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sticky-notes",
+   "name": "sticky notes",
+   "category": "school-office",
+   "file": "sticky-notes.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "clipboard",
+   "name": "clipboard",
+   "category": "school-office",
+   "file": "clipboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "calendar",
+   "name": "calendar",
+   "category": "school-office",
+   "file": "calendar.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chalkboard",
+   "name": "chalkboard",
+   "category": "school-office",
+   "file": "chalkboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chalk",
+   "name": "chalk",
+   "category": "school-office",
+   "file": "chalk.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "globe",
+   "name": "globe",
+   "category": "school-office",
+   "file": "globe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "microscope",
+   "name": "microscope",
+   "category": "school-office",
+   "file": "microscope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "telescope",
+   "name": "telescope",
+   "category": "school-office",
+   "file": "telescope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "magnifying-glass",
+   "name": "magnifying glass",
+   "category": "school-office",
+   "file": "magnifying-glass.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "test-tube",
+   "name": "test tube",
+   "category": "school-office",
+   "file": "test-tube.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "horseshoe-magnet",
+   "name": "horseshoe magnet",
+   "category": "school-office",
+   "file": "horseshoe-magnet.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "abacus",
+   "name": "abacus",
+   "category": "school-office",
+   "file": "abacus.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "newspaper",
+   "name": "newspaper",
+   "category": "school-office",
+   "file": "newspaper.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "typewriter",
+   "name": "typewriter",
+   "category": "electronics",
+   "file": "typewriter.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "printer",
+   "name": "printer",
+   "category": "electronics",
+   "file": "printer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "laptop",
+   "name": "laptop",
+   "category": "electronics",
+   "file": "laptop.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "computer-monitor",
+   "name": "computer monitor",
+   "category": "electronics",
+   "file": "computer-monitor.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "keyboard",
+   "name": "keyboard",
+   "category": "electronics",
+   "file": "keyboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "computer-mouse",
+   "name": "computer mouse",
+   "category": "electronics",
+   "file": "computer-mouse.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "usb-drive",
+   "name": "USB drive",
+   "category": "electronics",
+   "file": "usb-drive.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "headphones",
+   "name": "headphones",
+   "category": "electronics",
+   "file": "headphones.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "microphone",
+   "name": "microphone",
+   "category": "electronics",
+   "file": "microphone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "smartphone",
+   "name": "smartphone",
+   "category": "electronics",
+   "file": "smartphone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rotary-phone",
+   "name": "rotary phone",
+   "category": "electronics",
+   "file": "rotary-phone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "camera",
+   "name": "camera",
+   "category": "electronics",
+   "file": "camera.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tripod",
+   "name": "tripod",
+   "category": "electronics",
+   "file": "tripod.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "television",
+   "name": "television",
+   "category": "electronics",
+   "file": "television.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "remote-control",
+   "name": "remote control",
+   "category": "electronics",
+   "file": "remote-control.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "radio",
+   "name": "radio",
+   "category": "electronics",
+   "file": "radio.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "vinyl-record",
+   "name": "vinyl record",
+   "category": "electronics",
+   "file": "vinyl-record.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cd",
+   "name": "CD",
+   "category": "electronics",
+   "file": "cd.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cassette-tape",
+   "name": "cassette tape",
+   "category": "electronics",
+   "file": "cassette-tape.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "speaker",
+   "name": "speaker",
+   "category": "electronics",
+   "file": "speaker.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "vr-headset",
+   "name": "VR headset",
+   "category": "electronics",
+   "file": "vr-headset.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "drone",
+   "name": "drone",
+   "category": "electronics",
+   "file": "drone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "charging-cable",
+   "name": "charging cable",
+   "category": "electronics",
+   "file": "charging-cable.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "diploma",
+   "name": "diploma",
+   "category": "school-office",
+   "file": "diploma.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "graduation-cap",
+   "name": "graduation cap",
+   "category": "school-office",
+   "file": "graduation-cap.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "name-tag",
+   "name": "name tag",
+   "category": "school-office",
+   "file": "name-tag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hammer",
+   "name": "hammer",
+   "category": "tools",
+   "file": "hammer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "screwdriver",
+   "name": "screwdriver",
+   "category": "tools",
+   "file": "screwdriver.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wrench",
+   "name": "wrench",
+   "category": "tools",
+   "file": "wrench.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pliers",
+   "name": "pliers",
+   "category": "tools",
+   "file": "pliers.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "handsaw",
+   "name": "handsaw",
+   "category": "tools",
+   "file": "handsaw.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "power-drill",
+   "name": "power drill",
+   "category": "tools",
+   "file": "power-drill.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "axe",
+   "name": "axe",
+   "category": "tools",
+   "file": "axe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "shovel",
+   "name": "shovel",
+   "category": "garden-farm",
+   "file": "shovel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rake",
+   "name": "rake",
+   "category": "garden-farm",
+   "file": "rake.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pitchfork",
+   "name": "pitchfork",
+   "category": "garden-farm",
+   "file": "pitchfork.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wheelbarrow",
+   "name": "wheelbarrow",
+   "category": "garden-farm",
+   "file": "wheelbarrow.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "watering-can",
+   "name": "watering can",
+   "category": "garden-farm",
+   "file": "watering-can.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "garden-hose",
+   "name": "garden hose",
+   "category": "garden-farm",
+   "file": "garden-hose.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lawn-mower",
+   "name": "lawn mower",
+   "category": "garden-farm",
+   "file": "lawn-mower.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "trowel",
+   "name": "trowel",
+   "category": "garden-farm",
+   "file": "trowel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "nail",
+   "name": "nail",
+   "category": "tools",
+   "file": "nail.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "screw",
+   "name": "screw",
+   "category": "tools",
+   "file": "screw.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "nut-and-bolt",
+   "name": "nut and bolt",
+   "category": "tools",
+   "file": "nut-and-bolt.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "duct-tape",
+   "name": "duct tape",
+   "category": "tools",
+   "file": "duct-tape.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "toolbox",
+   "name": "toolbox",
+   "category": "tools",
+   "file": "toolbox.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spirit-level",
+   "name": "spirit level",
+   "category": "tools",
+   "file": "spirit-level.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paint-roller",
+   "name": "paint roller",
+   "category": "tools",
+   "file": "paint-roller.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "paint-can",
+   "name": "paint can",
+   "category": "tools",
+   "file": "paint-can.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ladder",
+   "name": "ladder",
+   "category": "tools",
+   "file": "ladder.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chainsaw",
+   "name": "chainsaw",
+   "category": "tools",
+   "file": "chainsaw.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "crowbar",
+   "name": "crowbar",
+   "category": "tools",
+   "file": "crowbar.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "anvil",
+   "name": "anvil",
+   "category": "tools",
+   "file": "anvil.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hard-hat",
+   "name": "hard hat",
+   "category": "tools",
+   "file": "hard-hat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "traffic-cone",
+   "name": "traffic cone",
+   "category": "tools",
+   "file": "traffic-cone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rope",
+   "name": "rope",
+   "category": "tools",
+   "file": "rope.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "chain",
+   "name": "chain",
+   "category": "tools",
+   "file": "chain.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gear",
+   "name": "gear",
+   "category": "tools",
+   "file": "gear.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spring",
+   "name": "spring",
+   "category": "tools",
+   "file": "spring.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gas-can",
+   "name": "gas can",
+   "category": "tools",
+   "file": "gas-can.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tire",
+   "name": "tire",
+   "category": "tools",
+   "file": "tire.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jumper-cables",
+   "name": "jumper cables",
+   "category": "tools",
+   "file": "jumper-cables.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pocket-knife",
+   "name": "pocket knife",
+   "category": "outdoors",
+   "file": "pocket-knife.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "compass",
+   "name": "compass",
+   "category": "outdoors",
+   "file": "compass.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "binoculars",
+   "name": "binoculars",
+   "category": "outdoors",
+   "file": "binoculars.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tent",
+   "name": "tent",
+   "category": "outdoors",
+   "file": "tent.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sleeping-bag",
+   "name": "sleeping bag",
+   "category": "outdoors",
+   "file": "sleeping-bag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "campfire",
+   "name": "campfire",
+   "category": "outdoors",
+   "file": "campfire.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cooler",
+   "name": "cooler",
+   "category": "outdoors",
+   "file": "cooler.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "picnic-basket",
+   "name": "picnic basket",
+   "category": "outdoors",
+   "file": "picnic-basket.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "barbecue-grill",
+   "name": "barbecue grill",
+   "category": "outdoors",
+   "file": "barbecue-grill.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "anchor",
+   "name": "anchor",
+   "category": "outdoors",
+   "file": "anchor.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "life-buoy",
+   "name": "life buoy",
+   "category": "outdoors",
+   "file": "life-buoy.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "treasure-chest",
+   "name": "treasure chest",
+   "category": "outdoors",
+   "file": "treasure-chest.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "map",
+   "name": "map",
+   "category": "outdoors",
+   "file": "map.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ships-wheel",
+   "name": "ship's wheel",
+   "category": "outdoors",
+   "file": "ships-wheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "scarecrow",
+   "name": "scarecrow",
+   "category": "garden-farm",
+   "file": "scarecrow.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "garden-gnome",
+   "name": "garden gnome",
+   "category": "garden-farm",
+   "file": "garden-gnome.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "picket-fence",
+   "name": "picket fence",
+   "category": "garden-farm",
+   "file": "picket-fence.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sunflower",
+   "name": "sunflower",
+   "category": "nature",
+   "file": "sunflower.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rose",
+   "name": "rose",
+   "category": "nature",
+   "file": "rose.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tulip",
+   "name": "tulip",
+   "category": "nature",
+   "file": "tulip.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cactus",
+   "name": "cactus",
+   "category": "nature",
+   "file": "cactus.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "christmas-tree",
+   "name": "Christmas tree",
+   "category": "nature",
+   "file": "christmas-tree.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "maple-leaf",
+   "name": "maple leaf",
+   "category": "nature",
+   "file": "maple-leaf.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "acorn",
+   "name": "acorn",
+   "category": "nature",
+   "file": "acorn.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pinecone",
+   "name": "pinecone",
+   "category": "nature",
+   "file": "pinecone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "seashell",
+   "name": "seashell",
+   "category": "nature",
+   "file": "seashell.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "feather",
+   "name": "feather",
+   "category": "nature",
+   "file": "feather.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "four-leaf-clover",
+   "name": "four-leaf clover",
+   "category": "nature",
+   "file": "four-leaf-clover.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "log",
+   "name": "log",
+   "category": "nature",
+   "file": "log.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "car",
+   "name": "car",
+   "category": "vehicles",
+   "file": "car.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bus",
+   "name": "bus",
+   "category": "vehicles",
+   "file": "bus.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fire-truck",
+   "name": "fire truck",
+   "category": "vehicles",
+   "file": "fire-truck.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ambulance",
+   "name": "ambulance",
+   "category": "vehicles",
+   "file": "ambulance.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bicycle",
+   "name": "bicycle",
+   "category": "vehicles",
+   "file": "bicycle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "motorcycle",
+   "name": "motorcycle",
+   "category": "vehicles",
+   "file": "motorcycle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "steam-locomotive",
+   "name": "steam locomotive",
+   "category": "vehicles",
+   "file": "steam-locomotive.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "airplane",
+   "name": "airplane",
+   "category": "vehicles",
+   "file": "airplane.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "helicopter",
+   "name": "helicopter",
+   "category": "vehicles",
+   "file": "helicopter.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hot-air-balloon",
+   "name": "hot air balloon",
+   "category": "vehicles",
+   "file": "hot-air-balloon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rocket",
+   "name": "rocket",
+   "category": "vehicles",
+   "file": "rocket.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sailboat",
+   "name": "sailboat",
+   "category": "vehicles",
+   "file": "sailboat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "canoe",
+   "name": "canoe",
+   "category": "vehicles",
+   "file": "canoe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "submarine",
+   "name": "submarine",
+   "category": "vehicles",
+   "file": "submarine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tractor",
+   "name": "tractor",
+   "category": "vehicles",
+   "file": "tractor.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bulldozer",
+   "name": "bulldozer",
+   "category": "vehicles",
+   "file": "bulldozer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cement-mixer",
+   "name": "cement mixer",
+   "category": "vehicles",
+   "file": "cement-mixer.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "forklift",
+   "name": "forklift",
+   "category": "vehicles",
+   "file": "forklift.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cable-car",
+   "name": "cable car",
+   "category": "vehicles",
+   "file": "cable-car.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "camper-van",
+   "name": "camper van",
+   "category": "vehicles",
+   "file": "camper-van.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "shopping-cart",
+   "name": "shopping cart",
+   "category": "vehicles",
+   "file": "shopping-cart.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jet-ski",
+   "name": "jet ski",
+   "category": "vehicles",
+   "file": "jet-ski.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "parachute",
+   "name": "parachute",
+   "category": "vehicles",
+   "file": "parachute.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "unicycle",
+   "name": "unicycle",
+   "category": "vehicles",
+   "file": "unicycle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ufo",
+   "name": "UFO",
+   "category": "vehicles",
+   "file": "ufo.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "satellite",
+   "name": "satellite",
+   "category": "vehicles",
+   "file": "satellite.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "traffic-light",
+   "name": "traffic light",
+   "category": "street-places",
+   "file": "traffic-light.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "stop-sign",
+   "name": "stop sign",
+   "category": "street-places",
+   "file": "stop-sign.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "parking-meter",
+   "name": "parking meter",
+   "category": "street-places",
+   "file": "parking-meter.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fire-hydrant",
+   "name": "fire hydrant",
+   "category": "street-places",
+   "file": "fire-hydrant.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "street-lamp",
+   "name": "street lamp",
+   "category": "street-places",
+   "file": "street-lamp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gas-pump",
+   "name": "gas pump",
+   "category": "street-places",
+   "file": "gas-pump.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "license-plate",
+   "name": "license plate",
+   "category": "street-places",
+   "file": "license-plate.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "steering-wheel",
+   "name": "steering wheel",
+   "category": "street-places",
+   "file": "steering-wheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "park-bench",
+   "name": "park bench",
+   "category": "street-places",
+   "file": "park-bench.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lighthouse",
+   "name": "lighthouse",
+   "category": "street-places",
+   "file": "lighthouse.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "windmill",
+   "name": "windmill",
+   "category": "street-places",
+   "file": "windmill.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ferris-wheel",
+   "name": "Ferris wheel",
+   "category": "street-places",
+   "file": "ferris-wheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "carousel",
+   "name": "carousel",
+   "category": "street-places",
+   "file": "carousel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "roller-coaster",
+   "name": "roller coaster",
+   "category": "street-places",
+   "file": "roller-coaster.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "igloo",
+   "name": "igloo",
+   "category": "street-places",
+   "file": "igloo.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "castle",
+   "name": "castle",
+   "category": "street-places",
+   "file": "castle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pyramid",
+   "name": "pyramid",
+   "category": "street-places",
+   "file": "pyramid.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "barn",
+   "name": "barn",
+   "category": "street-places",
+   "file": "barn.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "doghouse",
+   "name": "doghouse",
+   "category": "street-places",
+   "file": "doghouse.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "guitar",
+   "name": "guitar",
+   "category": "music",
+   "file": "guitar.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "violin",
+   "name": "violin",
+   "category": "music",
+   "file": "violin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "piano",
+   "name": "piano",
+   "category": "music",
+   "file": "piano.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "drum",
+   "name": "drum",
+   "category": "music",
+   "file": "drum.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "trumpet",
+   "name": "trumpet",
+   "category": "music",
+   "file": "trumpet.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "saxophone",
+   "name": "saxophone",
+   "category": "music",
+   "file": "saxophone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "flute",
+   "name": "flute",
+   "category": "music",
+   "file": "flute.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "harmonica",
+   "name": "harmonica",
+   "category": "music",
+   "file": "harmonica.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "accordion",
+   "name": "accordion",
+   "category": "music",
+   "file": "accordion.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tambourine",
+   "name": "tambourine",
+   "category": "music",
+   "file": "tambourine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "maracas",
+   "name": "maracas",
+   "category": "music",
+   "file": "maracas.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "xylophone",
+   "name": "xylophone",
+   "category": "music",
+   "file": "xylophone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "harp",
+   "name": "harp",
+   "category": "music",
+   "file": "harp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "banjo",
+   "name": "banjo",
+   "category": "music",
+   "file": "banjo.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "triangle",
+   "name": "triangle",
+   "category": "music",
+   "file": "triangle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cymbals",
+   "name": "cymbals",
+   "category": "music",
+   "file": "cymbals.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bagpipes",
+   "name": "bagpipes",
+   "category": "music",
+   "file": "bagpipes.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "metronome",
+   "name": "metronome",
+   "category": "music",
+   "file": "metronome.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "music-stand",
+   "name": "music stand",
+   "category": "music",
+   "file": "music-stand.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bell",
+   "name": "bell",
+   "category": "music",
+   "file": "bell.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gong",
+   "name": "gong",
+   "category": "music",
+   "file": "gong.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tuba",
+   "name": "tuba",
+   "category": "music",
+   "file": "tuba.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gift-box",
+   "name": "gift box",
+   "category": "party-holiday",
+   "file": "gift-box.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "christmas-stocking",
+   "name": "Christmas stocking",
+   "category": "party-holiday",
+   "file": "christmas-stocking.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "christmas-ornament",
+   "name": "Christmas ornament",
+   "category": "party-holiday",
+   "file": "christmas-ornament.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wreath",
+   "name": "wreath",
+   "category": "party-holiday",
+   "file": "wreath.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "snowman",
+   "name": "snowman",
+   "category": "party-holiday",
+   "file": "snowman.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "menorah",
+   "name": "menorah",
+   "category": "party-holiday",
+   "file": "menorah.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "easter-egg",
+   "name": "Easter egg",
+   "category": "party-holiday",
+   "file": "easter-egg.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fireworks",
+   "name": "fireworks",
+   "category": "party-holiday",
+   "file": "fireworks.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "party-popper",
+   "name": "party popper",
+   "category": "party-holiday",
+   "file": "party-popper.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "disco-ball",
+   "name": "disco ball",
+   "category": "party-holiday",
+   "file": "disco-ball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "theater-mask",
+   "name": "theater mask",
+   "category": "party-holiday",
+   "file": "theater-mask.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "crystal-ball",
+   "name": "crystal ball",
+   "category": "fantasy-history",
+   "file": "crystal-ball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "witch-hat",
+   "name": "witch hat",
+   "category": "party-holiday",
+   "file": "witch-hat.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pirate-flag",
+   "name": "pirate flag",
+   "category": "fantasy-history",
+   "file": "pirate-flag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sword",
+   "name": "sword",
+   "category": "fantasy-history",
+   "file": "sword.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "shield",
+   "name": "shield",
+   "category": "fantasy-history",
+   "file": "shield.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "knight-helmet",
+   "name": "knight helmet",
+   "category": "fantasy-history",
+   "file": "knight-helmet.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cannon",
+   "name": "cannon",
+   "category": "fantasy-history",
+   "file": "cannon.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "horseshoe",
+   "name": "horseshoe",
+   "category": "garden-farm",
+   "file": "horseshoe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lasso",
+   "name": "lasso",
+   "category": "fantasy-history",
+   "file": "lasso.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sheriff-badge",
+   "name": "sheriff badge",
+   "category": "fantasy-history",
+   "file": "sheriff-badge.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "handcuffs",
+   "name": "handcuffs",
+   "category": "fantasy-history",
+   "file": "handcuffs.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gavel",
+   "name": "gavel",
+   "category": "fantasy-history",
+   "file": "gavel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "balance-scale",
+   "name": "balance scale",
+   "category": "money-games",
+   "file": "balance-scale.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "coin",
+   "name": "coin",
+   "category": "money-games",
+   "file": "coin.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "banknote",
+   "name": "banknote",
+   "category": "money-games",
+   "file": "banknote.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "credit-card",
+   "name": "credit card",
+   "category": "money-games",
+   "file": "credit-card.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cash-register",
+   "name": "cash register",
+   "category": "money-games",
+   "file": "cash-register.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "price-tag",
+   "name": "price tag",
+   "category": "money-games",
+   "file": "price-tag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "shopping-bag",
+   "name": "shopping bag",
+   "category": "money-games",
+   "file": "shopping-bag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "receipt",
+   "name": "receipt",
+   "category": "money-games",
+   "file": "receipt.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "ticket",
+   "name": "ticket",
+   "category": "money-games",
+   "file": "ticket.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "passport",
+   "name": "passport",
+   "category": "money-games",
+   "file": "passport.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "flag",
+   "name": "flag",
+   "category": "fantasy-history",
+   "file": "flag.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "megaphone",
+   "name": "megaphone",
+   "category": "electronics",
+   "file": "megaphone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "walkie-talkie",
+   "name": "walkie-talkie",
+   "category": "electronics",
+   "file": "walkie-talkie.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "dreamcatcher",
+   "name": "dreamcatcher",
+   "category": "fantasy-history",
+   "file": "dreamcatcher.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wind-chime",
+   "name": "wind chime",
+   "category": "fantasy-history",
+   "file": "wind-chime.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "sundial",
+   "name": "sundial",
+   "category": "fantasy-history",
+   "file": "sundial.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "weather-vane",
+   "name": "weather vane",
+   "category": "fantasy-history",
+   "file": "weather-vane.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tombstone",
+   "name": "tombstone",
+   "category": "fantasy-history",
+   "file": "tombstone.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "skull",
+   "name": "skull",
+   "category": "fantasy-history",
+   "file": "skull.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "rubber-chicken",
+   "name": "rubber chicken",
+   "category": "party-holiday",
+   "file": "rubber-chicken.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "whoopee-cushion",
+   "name": "whoopee cushion",
+   "category": "party-holiday",
+   "file": "whoopee-cushion.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "clown-nose",
+   "name": "clown nose",
+   "category": "party-holiday",
+   "file": "clown-nose.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "3d-glasses",
+   "name": "3D glasses",
+   "category": "party-holiday",
+   "file": "3d-glasses.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "clapperboard",
+   "name": "clapperboard",
+   "category": "money-games",
+   "file": "clapperboard.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "film-reel",
+   "name": "film reel",
+   "category": "money-games",
+   "file": "film-reel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "spotlight",
+   "name": "spotlight",
+   "category": "money-games",
+   "file": "spotlight.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "easel",
+   "name": "easel",
+   "category": "school-office",
+   "file": "easel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "marble-bust",
+   "name": "marble bust",
+   "category": "fantasy-history",
+   "file": "marble-bust.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "origami-crane",
+   "name": "origami crane",
+   "category": "fantasy-history",
+   "file": "origami-crane.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bonsai-tree",
+   "name": "bonsai tree",
+   "category": "furniture-decor",
+   "file": "bonsai-tree.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lava-lamp",
+   "name": "lava lamp",
+   "category": "furniture-decor",
+   "file": "lava-lamp.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "smoking-pipe",
+   "name": "smoking pipe",
+   "category": "fantasy-history",
+   "file": "smoking-pipe.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "poker-chip",
+   "name": "poker chip",
+   "category": "money-games",
+   "file": "poker-chip.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "slot-machine",
+   "name": "slot machine",
+   "category": "money-games",
+   "file": "slot-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "roulette-wheel",
+   "name": "roulette wheel",
+   "category": "money-games",
+   "file": "roulette-wheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pinball-machine",
+   "name": "pinball machine",
+   "category": "money-games",
+   "file": "pinball-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "arcade-cabinet",
+   "name": "arcade cabinet",
+   "category": "money-games",
+   "file": "arcade-cabinet.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "jukebox",
+   "name": "jukebox",
+   "category": "music",
+   "file": "jukebox.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "gumball-machine",
+   "name": "gumball machine",
+   "category": "money-games",
+   "file": "gumball-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "vending-machine",
+   "name": "vending machine",
+   "category": "street-places",
+   "file": "vending-machine.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "atm",
+   "name": "ATM",
+   "category": "street-places",
+   "file": "atm.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "phone-booth",
+   "name": "phone booth",
+   "category": "street-places",
+   "file": "phone-booth.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "lawn-sprinkler",
+   "name": "lawn sprinkler",
+   "category": "garden-farm",
+   "file": "lawn-sprinkler.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "pool-float",
+   "name": "pool float",
+   "category": "outdoors",
+   "file": "pool-float.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "beach-ball",
+   "name": "beach ball",
+   "category": "outdoors",
+   "file": "beach-ball.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "deck-chair",
+   "name": "deck chair",
+   "category": "furniture-decor",
+   "file": "deck-chair.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "tiki-torch",
+   "name": "tiki torch",
+   "category": "outdoors",
+   "file": "tiki-torch.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "message-in-a-bottle",
+   "name": "message in a bottle",
+   "category": "outdoors",
+   "file": "message-in-a-bottle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "fishing-net",
+   "name": "fishing net",
+   "category": "outdoors",
+   "file": "fishing-net.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "diaper",
+   "name": "diaper",
+   "category": "bathroom-health",
+   "file": "diaper.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "baby-mobile",
+   "name": "baby mobile",
+   "category": "bathroom-health",
+   "file": "baby-mobile.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bib",
+   "name": "bib",
+   "category": "bathroom-health",
+   "file": "bib.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hamster-wheel",
+   "name": "hamster wheel",
+   "category": "household",
+   "file": "hamster-wheel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "saddle",
+   "name": "saddle",
+   "category": "garden-farm",
+   "file": "saddle.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bird-nest",
+   "name": "bird nest",
+   "category": "nature",
+   "file": "bird-nest.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "hay-bale",
+   "name": "hay bale",
+   "category": "garden-farm",
+   "file": "hay-bale.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "barrel",
+   "name": "barrel",
+   "category": "garden-farm",
+   "file": "barrel.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "wooden-crate",
+   "name": "wooden crate",
+   "category": "garden-farm",
+   "file": "wooden-crate.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "cardboard-box",
+   "name": "cardboard box",
+   "category": "household",
+   "file": "cardboard-box.svg",
+   "reviewStatus": "approved"
+  },
+  {
+   "id": "bubble-wrap",
+   "name": "bubble wrap",
+   "category": "household",
+   "file": "bubble-wrap.svg",
+   "reviewStatus": "approved"
+  }
+ ],
+ "confusables": [
+  [
+   "fork",
+   "pitchfork"
+  ],
+  [
+   "kitchen-knife",
+   "pocket-knife"
+  ],
+  [
+   "shovel",
+   "trowel"
+  ],
+  [
+   "pitchfork",
+   "rake"
+  ],
+  [
+   "broom",
+   "mop"
+  ],
+  [
+   "nail",
+   "screw"
+  ],
+  [
+   "nut-and-bolt",
+   "screw"
+  ],
+  [
+   "gavel",
+   "hammer"
+  ],
+  [
+   "bell-pepper",
+   "chili-pepper"
+  ],
+  [
+   "basketball",
+   "orange"
+  ],
+  [
+   "lemon",
+   "mango"
+  ],
+  [
+   "apple",
+   "tomato"
+  ],
+  [
+   "cherries",
+   "grapes"
+  ],
+  [
+   "donut",
+   "tire"
+  ],
+  [
+   "coin",
+   "cookie"
+  ],
+  [
+   "coin",
+   "poker-chip"
+  ],
+  [
+   "button",
+   "coin"
+  ],
+  [
+   "pen",
+   "pencil"
+  ],
+  [
+   "crayon",
+   "pencil"
+  ],
+  [
+   "glue-stick",
+   "lipstick"
+  ],
+  [
+   "book",
+   "notebook"
+  ],
+  [
+   "receipt",
+   "ticket"
+  ],
+  [
+   "ruler",
+   "spirit-level"
+  ],
+  [
+   "duct-tape",
+   "tape-measure"
+  ],
+  [
+   "horseshoe",
+   "horseshoe-magnet"
+  ],
+  [
+   "christmas-stocking",
+   "socks"
+  ],
+  [
+   "3d-glasses",
+   "sunglasses"
+  ],
+  [
+   "crystal-ball",
+   "snow-globe"
+  ],
+  [
+   "christmas-ornament",
+   "disco-ball"
+  ],
+  [
+   "balloon",
+   "beach-ball"
+  ],
+  [
+   "balloon",
+   "hot-air-balloon"
+  ],
+  [
+   "life-buoy",
+   "pool-float"
+  ],
+  [
+   "slinky",
+   "spring"
+  ],
+  [
+   "ships-wheel",
+   "steering-wheel"
+  ],
+  [
+   "roulette-wheel",
+   "ships-wheel"
+  ],
+  [
+   "cd",
+   "vinyl-record"
+  ],
+  [
+   "computer-monitor",
+   "television"
+  ],
+  [
+   "computer-monitor",
+   "laptop"
+  ],
+  [
+   "remote-control",
+   "smartphone"
+  ],
+  [
+   "remote-control",
+   "walkie-talkie"
+  ],
+  [
+   "calculator",
+   "remote-control"
+  ],
+  [
+   "banjo",
+   "guitar"
+  ],
+  [
+   "guitar",
+   "violin"
+  ],
+  [
+   "trumpet",
+   "tuba"
+  ],
+  [
+   "saxophone",
+   "trumpet"
+  ],
+  [
+   "cymbals",
+   "gong"
+  ],
+  [
+   "drum",
+   "tambourine"
+  ],
+  [
+   "birdhouse",
+   "doghouse"
+  ],
+  [
+   "barn",
+   "doghouse"
+  ],
+  [
+   "easel",
+   "tripod"
+  ],
+  [
+   "flashlight",
+   "spotlight"
+  ],
+  [
+   "candle",
+   "menorah"
+  ],
+  [
+   "handbag",
+   "shopping-bag"
+  ],
+  [
+   "suitcase",
+   "toolbox"
+  ],
+  [
+   "cooler",
+   "lunchbox"
+  ],
+  [
+   "bucket",
+   "paint-can"
+  ],
+  [
+   "gas-can",
+   "paint-can"
+  ],
+  [
+   "apron",
+   "bib"
+  ],
+  [
+   "drone",
+   "helicopter"
+  ],
+  [
+   "bus",
+   "camper-van"
+  ],
+  [
+   "bulldozer",
+   "tractor"
+  ],
+  [
+   "slot-machine",
+   "vending-machine"
+  ],
+  [
+   "atm",
+   "vending-machine"
+  ],
+  [
+   "arcade-cabinet",
+   "pinball-machine"
+  ],
+  [
+   "arcade-cabinet",
+   "jukebox"
+  ],
+  [
+   "flag",
+   "pirate-flag"
+  ],
+  [
+   "rose",
+   "tulip"
+  ],
+  [
+   "pinwheel",
+   "windmill"
+  ],
+  [
+   "parachute",
+   "umbrella"
+  ],
+  [
+   "syringe",
+   "thermometer"
+  ],
+  [
+   "boxing-glove",
+   "gloves"
+  ],
+  [
+   "chair",
+   "deck-chair"
+  ],
+  [
+   "cardboard-box",
+   "gift-box"
+  ],
+  [
+   "charging-cable",
+   "electric-plug"
+  ],
+  [
+   "lasso",
+   "rope"
+  ],
+  [
+   "street-lamp",
+   "table-lamp"
+  ],
+  [
+   "ketchup-bottle",
+   "water-bottle"
+  ]
+ ]
+}

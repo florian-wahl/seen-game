@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>postage stamp</title>
+<defs>
+<g id="seen-postage-stamp">
+<path fill="#fbf3e0" d="M14 14a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 8 0a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0 0 8a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0-8 0a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8a4 4 0 0 0 0-8z"/>
+<path fill="#8fd0f5" d="M24 24h52v52H24z"/>
+<path fill="#e5484d" d="M50 68c-14-10-20-17-20-25a10 10 0 0 1 20-4 10 10 0 0 1 20 4c0 8-6 15-20 25z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-postage-stamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-postage-stamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

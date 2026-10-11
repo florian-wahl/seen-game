@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bonsai tree</title>
+<defs>
+<g id="seen-bonsai-tree">
+<path fill="#6f3f1f" d="M46 72c-2-10 4-16 0-24-4-6 2-12 8-14l4 4c-6 2-6 6-4 10 4 8-2 14 2 24z"/>
+<path fill="#2f9e6b" d="M14 42c0-8 8-12 16-10 4-6 14-6 18 0 6-2 12 2 10 8 2 6-4 10-10 8H22c-6 0-8-2-8-6z"/>
+<path fill="#2f9e6b" d="M52 26c0-8 8-12 14-8 6-4 16 0 14 8 6 2 6 10-2 10H58c-4 0-6-4-6-10z"/>
+<path fill="#4a66d4" d="M24 72h52l-6 16H30z"/>
+<path fill="#2c3f96" d="M18 68h64v6H18z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bonsai-tree" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bonsai-tree" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

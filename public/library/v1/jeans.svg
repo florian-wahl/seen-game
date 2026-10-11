@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>jeans</title>
+<defs>
+<g id="seen-jeans">
+<path fill="#4a66d4" d="M26 10h48l6 80H58L50 34l-8 56H20z"/>
+<path fill="#2c3f96" d="M26 10h48v8H26z"/>
+<path fill="none" d="M50 18v16M30 26c6 0 10-2 10-8M70 26c-6 0-10-2-10-8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-jeans" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-jeans" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

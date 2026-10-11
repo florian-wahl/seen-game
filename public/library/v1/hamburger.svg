@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hamburger</title>
+<defs>
+<g id="seen-hamburger">
+<path fill="#ffb074" d="M14 70h72v6a10 10 0 0 1-10 10H24a10 10 0 0 1-10-10z"/>
+<path fill="#6f3f1f" d="M16 58h68a6 6 0 0 1 0 12H16a6 6 0 0 1 0-12z"/>
+<path fill="#9bc53d" d="M10 50h80l-6 10-8-4-8 4-8-4-8 4-8-4-8 4-8-4-8 4-8-4z"/>
+<path fill="#ffb074" d="M12 50c0-20 18-34 38-34s38 14 38 34z"/>
+<path fill="none" stroke-width="5" d="M36 32h.01M52 26h.01M64 36h.01M44 40h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hamburger" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hamburger" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

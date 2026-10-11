@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>puzzle cube</title>
+<defs>
+<g id="seen-puzzle-cube">
+<path fill="#1c1b22" d="M16 10h68a6 6 0 0 1 6 6v68a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z"/>
+<path fill="#e5484d" d="M15 15h21v21H15zM63 39h21v21H63zM39 63h21v21H39z"/>
+<path fill="#f5b93f" d="M39 15h21v21H39zM15 63h21v21H15z"/>
+<path fill="#4a66d4" d="M63 15h21v21H63zM15 39h21v21H15z"/>
+<path fill="#2f9e6b" d="M39 39h21v21H39zM63 63h21v21H63z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-puzzle-cube" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-puzzle-cube" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

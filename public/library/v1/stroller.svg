@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>stroller</title>
+<defs>
+<g id="seen-stroller">
+<path fill="none" d="M76 44l8-22h6M30 70v4M70 70v4"/>
+<circle fill="#1c1b22" cx="30" cy="80" r="8"/>
+<circle fill="#1c1b22" cx="70" cy="80" r="8"/>
+<path fill="#93a8f0" d="M14 44h66c0 16-12 28-32 28h-6c-16 0-28-12-28-28z"/>
+<path fill="#4a66d4" d="M14 44c0-18 14-32 32-32v32z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-stroller" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-stroller" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

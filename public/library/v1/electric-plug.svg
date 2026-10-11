@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>electric plug</title>
+<defs>
+<g id="seen-electric-plug">
+<path fill="none" d="M50 76c0 10-6 14-16 14H18"/>
+<path fill="#8d99a6" d="M36 8h8v20h-8zM56 8h8v20h-8z"/>
+<path fill="#4d5968" d="M44 66h12v10H44z"/>
+<path fill="#ffffff" d="M26 26h48v20c0 14-10 24-24 24S26 60 26 46z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-electric-plug" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-electric-plug" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

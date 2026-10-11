@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>compass</title>
+<defs>
+<g id="seen-compass">
+<path fill="none" d="M45 14a5 5 0 1 1 10 0"/>
+<circle fill="#c98a0c" cx="50" cy="52" r="38"/>
+<circle fill="#fbf3e0" cx="50" cy="52" r="30"/>
+<path fill="#e5484d" d="M50 26l8 26H42z"/>
+<path fill="#4d5968" d="M50 78l-8-26h16z"/>
+<path fill="none" stroke-width="6" d="M50 52h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-compass" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-compass" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

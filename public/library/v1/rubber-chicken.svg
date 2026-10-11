@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rubber chicken</title>
+<defs>
+<g id="seen-rubber-chicken">
+<path fill="none" d="M54 78v12M66 76v14M50 90h8M62 90h8"/>
+<path fill="#f5b93f" d="M34 58C26 48 20 34 22 20h8c0 12 4 24 12 32z"/>
+<path fill="#f5b93f" d="M30 60c0-14 10-22 24-22 16 0 26 10 26 22s-10 20-26 20S30 74 30 60z"/>
+<path fill="#e5484d" d="M20 12c0-5 4-7 7-3 2-5 7-3 7 2z"/>
+<path fill="#f5b93f" d="M16 20c0-6 4-10 10-10s8 4 8 8-4 6-10 6z"/>
+<path fill="#f08a3c" d="M16 15l-8 3 8 4z"/>
+<path fill="none" stroke-width="5" d="M24 16h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rubber-chicken" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rubber-chicken" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

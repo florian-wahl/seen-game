@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>forklift</title>
+<defs>
+<g id="seen-forklift">
+<path fill="#4d5968" d="M70 14h6v66h-6z"/>
+<path fill="#4d5968" d="M76 62h16v6H76z"/>
+<path fill="none" d="M24 50V20h40l6 14"/>
+<path fill="#1c1b22" d="M30 40h12v10H30z"/>
+<path fill="#f08a3c" d="M10 50h60v24H10z"/>
+<circle fill="#1c1b22" cx="26" cy="78" r="10"/>
+<circle fill="#1c1b22" cx="60" cy="78" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-forklift" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-forklift" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

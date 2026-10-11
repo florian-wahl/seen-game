@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>duct tape</title>
+<defs>
+<g id="seen-duct-tape">
+<path fill="#8d99a6" d="M44 72l38 6-2 12-38-6z"/>
+<path fill="#8d99a6" fill-rule="evenodd" d="M10 46a36 36 0 1 0 72 0a36 36 0 1 0-72 0zM26 46a20 20 0 1 0 40 0a20 20 0 1 0-40 0z"/>
+<path fill="#e8d5b0" fill-rule="evenodd" d="M26 46a20 20 0 1 0 40 0a20 20 0 1 0-40 0zM32 46a14 14 0 1 0 28 0a14 14 0 1 0-28 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-duct-tape" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-duct-tape" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

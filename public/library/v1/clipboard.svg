@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clipboard</title>
+<defs>
+<g id="seen-clipboard">
+<path fill="#a9683c" d="M20 14h60a4 4 0 0 1 4 4v70a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/>
+<path fill="#ffffff" d="M24 22h52v62H24z"/>
+<path fill="#8d99a6" d="M36 8h28v16H36z"/>
+<path fill="none" d="M32 38h36M32 50h36M32 62h36M32 74h20"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clipboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clipboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>laptop</title>
+<defs>
+<g id="seen-laptop">
+<path fill="#4d5968" d="M20 16h60a4 4 0 0 1 4 4v46H16V20a4 4 0 0 1 4-4z"/>
+<path fill="#8fd0f5" d="M22 22h56v38H22z"/>
+<path fill="#8d99a6" d="M8 66h84l-4 10H12z"/>
+<path fill="none" d="M42 70h16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-laptop" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-laptop" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

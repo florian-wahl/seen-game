@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>Easter egg</title>
+<defs>
+<g id="seen-easter-egg">
+<path fill="#c3a8f0" d="M50 8c18 0 30 26 30 46 0 18-12 32-30 32S20 72 20 54c0-20 12-46 30-46z"/>
+<path fill="#f5b93f" d="M26 46l8-6 8 6 8-6 8 6 8-6 8 6v12l-8 6-8-6-8 6-8-6-8 6-8-6z"/>
+<path fill="none" stroke-width="6" d="M42 26h.01M58 28h.01M36 74h.01M52 78h.01M64 70h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-easter-egg" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-easter-egg" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

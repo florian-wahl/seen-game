@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>USB drive</title>
+<defs>
+<g id="seen-usb-drive">
+<g transform="rotate(-40 50 50)">
+<path fill="#cfd6dc" d="M64 38h24v24H64z"/>
+<path fill="#1c1b22" d="M72 43h8v5h-8zM72 52h8v5h-8z"/>
+<path fill="#e0559a" fill-rule="evenodd" d="M12 34h50a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V38a4 4 0 0 1 4-4zM15 50a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-usb-drive" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-usb-drive" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

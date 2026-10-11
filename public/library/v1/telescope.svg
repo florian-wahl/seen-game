@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>telescope</title>
+<defs>
+<g id="seen-telescope">
+<path fill="none" d="M46 54L28 90M50 54v36M54 54l18 36"/>
+<g transform="rotate(-25 50 44)">
+<path fill="#2c3f96" d="M8 40h10v10H8z"/>
+<path fill="#4a66d4" d="M18 36h56v18H18z"/>
+<path fill="#2c3f96" d="M74 31h14v28H74z"/>
+</g>
+<circle fill="#1c1b22" cx="50" cy="52" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-telescope" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-telescope" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

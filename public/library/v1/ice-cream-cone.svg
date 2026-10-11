@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ice cream cone</title>
+<defs>
+<g id="seen-ice-cream-cone">
+<circle fill="#a9683c" cx="50" cy="24" r="16"/>
+<path fill="#f5b93f" d="M30 52h40L50 92z"/>
+<path fill="none" d="M38 54l18 20M50 54l10 12M62 54L44 74M50 54L40 66"/>
+<path fill="#f7a8cf" d="M24 56c0-14 12-24 26-24s26 10 26 24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ice-cream-cone" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ice-cream-cone" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

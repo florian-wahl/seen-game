@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>film reel</title>
+<defs>
+<g id="seen-film-reel">
+<path fill="#1c1b22" d="M66 74c8 4 16 8 26 6v10c-12 2-20-2-30-8z"/>
+<path fill="#4d5968" fill-rule="evenodd" d="M10 46a38 38 0 1 0 76 0a38 38 0 1 0-76 0zM40 26a8 8 0 1 0 16 0a8 8 0 1 0-16 0zM40 66a8 8 0 1 0 16 0a8 8 0 1 0-16 0zM20 46a8 8 0 1 0 16 0a8 8 0 1 0-16 0zM60 46a8 8 0 1 0 16 0a8 8 0 1 0-16 0z"/>
+<circle fill="#8d99a6" cx="48" cy="46" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-film-reel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-film-reel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

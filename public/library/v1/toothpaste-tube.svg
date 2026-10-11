@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>toothpaste tube</title>
+<defs>
+<g id="seen-toothpaste-tube">
+<g transform="rotate(-40 50 50)">
+<path fill="#4a66d4" d="M78 42h6v16h-6z"/>
+<path fill="#ffffff" d="M10 34l8 0 58 6v20l-58 6H10z"/>
+<path fill="#4a66d4" d="M28 40h28v20H28z"/>
+<path fill="#e5484d" d="M84 44h8v12h-8z"/>
+<path fill="none" d="M14 34v32"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-toothpaste-tube" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-toothpaste-tube" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

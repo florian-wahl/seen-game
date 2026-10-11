@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>alarm clock</title>
+<defs>
+<g id="seen-alarm-clock">
+<path fill="none" d="M30 78l-8 10M70 78l8 10"/>
+<path fill="#1c1b22" d="M14 26a14 14 0 0 1 22-12zM86 26a14 14 0 0 0-22-12z"/>
+<circle fill="#e5484d" cx="50" cy="52" r="32"/>
+<circle fill="#ffffff" cx="50" cy="52" r="24"/>
+<path fill="none" d="M50 52V36M50 52l10 6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-alarm-clock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-alarm-clock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

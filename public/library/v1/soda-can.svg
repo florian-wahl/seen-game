@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>soda can</title>
+<defs>
+<g id="seen-soda-can">
+<path fill="#cfd6dc" d="M32 10h36l4 10H28z"/>
+<path fill="#1f6ea8" d="M28 18h44v66a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6z"/>
+<path fill="#8fd0f5" d="M28 50c14-8 30 8 44 0v14c-14 8-30-8-44 0z"/>
+<path fill="none" d="M44 14h12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-soda-can" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-soda-can" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

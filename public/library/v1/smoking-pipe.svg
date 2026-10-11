@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>smoking pipe</title>
+<defs>
+<g id="seen-smoking-pipe">
+<path fill="#1c1b22" d="M48 54l40-22 3 6-40 22z"/>
+<path fill="#a9683c" d="M14 30h32v24c0 12-7 20-16 20s-16-8-16-20z"/>
+<path fill="#6f3f1f" d="M17 30h26v7H17z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-smoking-pipe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-smoking-pipe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

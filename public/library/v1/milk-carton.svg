@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>milk carton</title>
+<defs>
+<g id="seen-milk-carton">
+<path fill="#4a66d4" d="M34 8h32v10H34z"/>
+<path fill="#4a66d4" d="M34 16h32l14 20H20z"/>
+<path fill="#ffffff" d="M20 36h60v54H20z"/>
+<path fill="#4a66d4" d="M20 54h60v18H20z"/>
+<path fill="#ffffff" d="M50 56c4 4 6 7 6 9a6 6 0 0 1-12 0c0-2 2-5 6-9z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-milk-carton" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-milk-carton" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

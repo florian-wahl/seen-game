@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tripod</title>
+<defs>
+<g id="seen-tripod">
+<path fill="#4d5968" d="M46 44L16 88l6 2 28-40zM54 44l30 44-6 2-28-40zM47 48h6v42h-6z"/>
+<path fill="#8d99a6" d="M46 20h8v28h-8z"/>
+<path fill="none" d="M62 18h16"/>
+<path fill="#1c1b22" d="M36 12h28v10H36z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tripod" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tripod" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

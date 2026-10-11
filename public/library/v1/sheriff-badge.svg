@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sheriff badge</title>
+<defs>
+<g id="seen-sheriff-badge">
+<path fill="#f5b93f" d="M50 14L60 32.7L81.2 32L70 50L81.2 68L60 67.3L50 86L40 67.3L18.8 68L30 50L18.8 32L40 32.7z"/>
+<path fill="#f5b93f" d="M45 14a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM76.2 32a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM76.2 68a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM45 86a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM13.8 68a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM13.8 32a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<circle fill="#c98a0c" cx="50" cy="50" r="11"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sheriff-badge" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sheriff-badge" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

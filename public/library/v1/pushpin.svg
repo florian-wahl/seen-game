@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pushpin</title>
+<defs>
+<g id="seen-pushpin">
+<g transform="rotate(35 50 50)">
+<path fill="#8d99a6" d="M47 64h6l-3 26z"/>
+<path fill="#e5484d" d="M36 12h28v6l-5 5v18l11 9v6H30v-6l11-9V23l-5-5z"/>
+<path fill="none" d="M46 26v14"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pushpin" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pushpin" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>Christmas ornament</title>
+<defs>
+<g id="seen-christmas-ornament">
+<path fill="none" d="M50 16c-6-6 0-12 4-8"/>
+<path fill="#f5b93f" d="M42 16h16v10H42z"/>
+<circle fill="#4a66d4" cx="50" cy="56" r="32"/>
+<path fill="#ffffff" d="M19 50h62v10H19z"/>
+<path fill="none" d="M24 55l6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-christmas-ornament" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-christmas-ornament" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

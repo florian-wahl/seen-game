@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>mushroom</title>
+<defs>
+<g id="seen-mushroom">
+<path fill="#fbf3e0" d="M38 52h24l4 28a8 8 0 0 1-8 8H42a8 8 0 0 1-8-8z"/>
+<path fill="#a9683c" d="M10 54c0-22 18-40 40-40s40 18 40 40c0 4-4 6-8 6H18c-4 0-8-2-8-6z"/>
+<circle fill="#fbf3e0" cx="34" cy="36" r="6"/>
+<circle fill="#fbf3e0" cx="62" cy="28" r="5"/>
+<circle fill="#fbf3e0" cx="70" cy="46" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-mushroom" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-mushroom" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

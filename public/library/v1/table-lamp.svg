@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>table lamp</title>
+<defs>
+<g id="seen-table-lamp">
+<path fill="none" d="M50 50v28"/>
+<path fill="#f5b93f" d="M30 14h40l14 36H16z"/>
+<path fill="#4d5968" d="M30 78h40a4 4 0 0 1 4 4v6H26v-6a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M36 24h28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-table-lamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-table-lamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

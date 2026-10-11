@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>camper van</title>
+<defs>
+<g id="seen-camper-van">
+<path fill="#2aa7a0" d="M8 52h84v14a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6z"/>
+<path fill="#ffffff" d="M20 24h60c8 0 12 8 12 16v12H8V36c0-8 4-12 12-12z"/>
+<path fill="#8fd0f5" d="M16 32h14v12H16zM36 32h14v12H36zM56 32h14v12H56zM76 32h10v12H76z"/>
+<circle fill="#1c1b22" cx="26" cy="72" r="9"/>
+<circle fill="#1c1b22" cx="74" cy="72" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-camper-van" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-camper-van" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

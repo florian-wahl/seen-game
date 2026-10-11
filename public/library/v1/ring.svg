@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ring</title>
+<defs>
+<g id="seen-ring">
+<path fill="#f5b93f" fill-rule="evenodd" d="M50 34c20 0 34 12 34 28s-14 28-34 28-34-12-34-28 14-28 34-28zM50 44c-14 0-24 8-24 18s10 18 24 18 24-8 24-18-10-18-24-18z"/>
+<path fill="#c98a0c" d="M40 36h20l-4-6H44z"/>
+<path fill="#8fd0f5" d="M50 8l16 14-16 14-16-14z"/>
+<path fill="none" d="M34 22h32M50 8v28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ring" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ring" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>campfire</title>
+<defs>
+<g id="seen-campfire">
+<path fill="#f08a3c" d="M50 10c10 14 22 24 22 40a22 22 0 0 1-44 0c0-10 6-16 10-22 2 6 4 10 8 10-2-10 0-20 4-28z"/>
+<path fill="#f5b93f" d="M50 40c6 6 10 10 10 18a10 10 0 0 1-20 0c0-6 4-10 10-18z"/>
+<path fill="#a9683c" d="M86 76L22 60l-4 10 64 16z"/>
+<path fill="#6f3f1f" d="M14 76l64-16 4 10-64 16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-campfire" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-campfire" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

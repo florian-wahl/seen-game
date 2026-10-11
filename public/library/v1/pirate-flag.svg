@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pirate flag</title>
+<defs>
+<g id="seen-pirate-flag">
+<path fill="#a9683c" d="M12 8h6v84h-6z"/>
+<path fill="#1c1b22" d="M18 12h70l-6 22 6 22H18z"/>
+<path fill="#ffffff" d="M34 48l24-14 3 5-24 14zM34 34l3-5 24 14-3 5z"/>
+<path fill="#ffffff" d="M48 16c8 0 12 5 12 11 0 4-2 6-4 7v5H40v-5c-2-1-4-3-4-7 0-6 4-11 12-11z"/>
+<path fill="none" stroke-width="5" d="M44 27h.01M52 27h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pirate-flag" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pirate-flag" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

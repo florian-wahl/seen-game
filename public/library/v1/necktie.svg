@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>necktie</title>
+<defs>
+<g id="seen-necktie">
+<path fill="#53389a" d="M40 10h20l-4 12h-12z"/>
+<path fill="#7d5fd0" d="M44 22h12l10 50-16 18-16-18z"/>
+<path fill="#c3a8f0" d="M47 36l11 8v8L46 44zM51 58l12 8v6L49 66z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-necktie" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-necktie" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

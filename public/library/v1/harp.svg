@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>harp</title>
+<defs>
+<g id="seen-harp">
+<path fill="none" d="M36 30v39M44 31v30M52 31v21M60 31v12"/>
+<path fill="#6f3f1f" d="M12 84h24v6H12z"/>
+<path fill="#c98a0c" fill-rule="evenodd" d="M18 90V16c0-6 6-8 10-5C40 20 60 22 80 16c6-2 10 4 6 8L30 90zM28 26v52l44-48C56 32 42 32 28 26z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-harp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-harp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

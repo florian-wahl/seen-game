@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>coin</title>
+<defs>
+<g id="seen-coin">
+<circle fill="#f5b93f" cx="50" cy="50" r="38"/>
+<circle fill="#ffe07a" cx="50" cy="50" r="28"/>
+<path fill="#c98a0c" d="M50 36L53.5 45.1L63.3 45.7L55.7 51.9L58.2 61.3L50 56L41.8 61.3L44.3 51.9L36.7 45.7L46.5 45.1z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-coin" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-coin" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

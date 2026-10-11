@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sticky notes</title>
+<defs>
+<g id="seen-sticky-notes">
+<g transform="rotate(7 54 40)">
+<path fill="#f7a8cf" d="M28 13h56v56H28z"/>
+</g>
+<path fill="#ffe07a" d="M14 28h60v44L58 88H14z"/>
+<path fill="#f5b93f" d="M74 72H58v16z"/>
+<path fill="none" d="M22 42h40M22 54h40M22 66h28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sticky-notes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sticky-notes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

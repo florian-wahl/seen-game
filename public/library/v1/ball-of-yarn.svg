@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ball of yarn</title>
+<defs>
+<g id="seen-ball-of-yarn">
+<path fill="none" d="M72 70c8 8 14 14 8 20"/>
+<circle fill="#e0559a" cx="46" cy="48" r="34"/>
+<path fill="none" d="M22 28c14 6 30 24 36 52M36 16c16 10 28 34 32 60"/>
+<path fill="none" d="M14 50c12-2 30 6 46 30M62 18c-10 14-30 22-48 22"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ball-of-yarn" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ball-of-yarn" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

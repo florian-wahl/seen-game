@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fire truck</title>
+<defs>
+<g id="seen-fire-truck">
+<path fill="#cfd6dc" d="M16 22h50v10H16z"/>
+<path fill="none" d="M26 22v10M36 22v10M46 22v10M56 22v10"/>
+<path fill="#e5484d" d="M8 34h58v6h14l10 12v16H8z"/>
+<path fill="#8fd0f5" d="M70 44h8l6 8H70z"/>
+<path fill="#4a66d4" d="M70 34h8v6h-8z"/>
+<circle fill="#1c1b22" cx="24" cy="70" r="9"/>
+<circle fill="#1c1b22" cx="72" cy="70" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fire-truck" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fire-truck" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

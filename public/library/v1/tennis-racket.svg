@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tennis racket</title>
+<defs>
+<g id="seen-tennis-racket">
+<g transform="rotate(-40 50 50)">
+<path fill="none" d="M52 42l12 6M52 58l12-6"/>
+<path fill="#1c1b22" d="M62 45h26a5 5 0 0 1 0 10H62z"/>
+<ellipse fill="#3f9fdc" cx="32" cy="50" rx="25" ry="21"/>
+<ellipse fill="#ffffff" cx="32" cy="50" rx="19" ry="15"/>
+<path fill="none" d="M24 37v26M32 35v30M40 37v26M15 44h34M14 50h36M15 56h34"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tennis-racket" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tennis-racket" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

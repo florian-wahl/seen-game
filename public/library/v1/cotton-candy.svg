@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cotton candy</title>
+<defs>
+<g id="seen-cotton-candy">
+<path fill="#ffffff" d="M42 58h16l-6 32h-4z"/>
+<path fill="#f7a8cf" d="M30 64c-14 0-20-14-12-24-6-14 8-28 22-22 6-12 26-12 30 2 14 0 20 16 12 26 6 12-6 22-16 18-6 6-16 6-22 0-4 2-10 2-14 0z"/>
+<path fill="none" d="M32 38q8-6 16 0M50 52q8-6 14 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cotton-candy" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cotton-candy" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

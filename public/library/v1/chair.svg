@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chair</title>
+<defs>
+<g id="seen-chair">
+<path fill="#a9683c" d="M26 10h8v78h-8zM66 50h8v38h-8z"/>
+<path fill="#a9683c" d="M26 10h48a4 4 0 0 1 4 4v8H26z"/>
+<path fill="#d9a47a" d="M22 46h56a4 4 0 0 1 4 4v4H18v-4a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M30 30h42"/>
+<path fill="#a9683c" d="M38 54h8v34h-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chair" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chair" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

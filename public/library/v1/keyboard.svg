@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>keyboard</title>
+<defs>
+<g id="seen-keyboard">
+<path fill="none" d="M50 30v-10c0-4 4-6 8-6"/>
+<path fill="#2c3f96" d="M12 30h76a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V34a4 4 0 0 1 4-4z"/>
+<path fill="#ffffff" d="M14 36h8v8h-8zM26 36h8v8h-8zM38 36h8v8h-8zM50 36h8v8h-8zM62 36h8v8h-8zM74 36h12v8H74zM14 48h12v8H14zM30 48h8v8h-8zM42 48h8v8h-8zM54 48h8v8h-8zM66 48h8v8h-8zM78 48h8v8h-8z"/>
+<path fill="#ffffff" d="M28 59h44v6H28z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-keyboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-keyboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

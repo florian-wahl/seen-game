@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>paint can</title>
+<defs>
+<g id="seen-paint-can">
+<path fill="none" d="M18 40c0-32 64-32 64 0"/>
+<path fill="#8d99a6" d="M18 40h64v44a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4z"/>
+<path fill="#4a66d4" d="M18 40h64v12c-4 0-6 4-6 10s-8 6-8 0-2-10-8-10H18z"/>
+<path fill="#4d5968" d="M14 34h72v8H14z"/>
+<path fill="#ffffff" d="M26 66h30v14H26z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-paint-can" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-paint-can" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

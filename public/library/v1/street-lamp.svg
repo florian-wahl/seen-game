@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>street lamp</title>
+<defs>
+<g id="seen-street-lamp">
+<path fill="#1b6b49" d="M46 34h8v52h-8z"/>
+<path fill="#1b6b49" d="M38 84h24v6H38z"/>
+<path fill="none" d="M38 50h24"/>
+<path fill="#ffe07a" d="M38 16h24l-4 18H42z"/>
+<path fill="#1b6b49" d="M34 16l16-10 16 10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-street-lamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-street-lamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

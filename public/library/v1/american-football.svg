@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>American football</title>
+<defs>
+<g id="seen-american-football">
+<g transform="rotate(-30 50 50)">
+<path fill="#a9683c" d="M8 50c10-16 26-24 42-24s32 8 42 24c-10 16-26 24-42 24S18 66 8 50z"/>
+<path fill="none" d="M38 50h24M42 45v10M50 45v10M58 45v10"/>
+<path fill="none" d="M24 38c-4 8-4 16 0 24M76 38c4 8 4 16 0 24"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-american-football" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-american-football" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

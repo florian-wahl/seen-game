@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clapperboard</title>
+<defs>
+<g id="seen-clapperboard">
+<g transform="translate(5 7) scale(.9)">
+<g transform="rotate(-15 12 34)">
+<path fill="#1c1b22" d="M12 20h76v12H12z"/>
+<path fill="#ffffff" d="M20 20h10l-6 12H14zM40 20h10l-6 12H34zM60 20h10l-6 12H54zM80 20h8v2l-5 10h-9z"/>
+</g>
+<path fill="#4d5968" d="M12 36h76v52H12z"/>
+<path fill="none" d="M12 54h76M12 70h76M50 54v34"/>
+<path fill="none" stroke-width="6" d="M14 34h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clapperboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clapperboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

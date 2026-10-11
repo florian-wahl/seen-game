@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hammer</title>
+<defs>
+<g id="seen-hammer">
+<g transform="translate(6 7) scale(.88) rotate(30 50 50)">
+<path fill="#d9a47a" d="M45 30h10v56a5 5 0 0 1-10 0z"/>
+<path fill="#e5484d" d="M45 62h10v24a5 5 0 0 1-10 0z"/>
+<path fill="#8d99a6" d="M64 16c10 0 18 4 22 12l-4 3c-4-4-10-6-18-6z"/>
+<path fill="#8d99a6" d="M24 14h40v18H24z"/>
+<path fill="#4d5968" d="M14 12h10v22H14z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hammer" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hammer" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

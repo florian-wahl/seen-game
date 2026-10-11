@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pretzel</title>
+<defs>
+<g id="seen-pretzel">
+<path fill="#a9683c" fill-rule="evenodd" d="M50 86c-20 0-40-12-40-36 0-18 10-30 24-30 8 0 14 4 16 10 2-6 8-10 16-10 14 0 24 12 24 30 0 24-20 36-40 36zM20 54a11 13 0 1 0 22 0a11 13 0 1 0-22 0zM58 54a11 13 0 1 0 22 0a11 13 0 1 0-22 0zM43 30h14l-7 11z"/>
+<path fill="none" d="M44 46l12 30M56 46L44 76"/>
+<path fill="none" stroke-width="5" d="M14 50h.01M86 50h.01M50 84h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pretzel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pretzel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

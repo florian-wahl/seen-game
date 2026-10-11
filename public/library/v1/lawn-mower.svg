@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lawn mower</title>
+<defs>
+<g id="seen-lawn-mower">
+<path fill="none" d="M56 44L80 12h10"/>
+<path fill="#1c1b22" d="M30 34h20v10H30z"/>
+<path fill="#f08a3c" d="M10 64c0-14 10-24 26-24h12c14 0 22 10 22 24z"/>
+<path fill="#c25e12" d="M8 60h66v8H8z"/>
+<circle fill="#1c1b22" cx="20" cy="74" r="10"/>
+<circle fill="#1c1b22" cx="62" cy="74" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-lawn-mower" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-lawn-mower" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

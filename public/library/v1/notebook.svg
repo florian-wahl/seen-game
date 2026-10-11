@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>notebook</title>
+<defs>
+<g id="seen-notebook">
+<path fill="#f08a3c" d="M24 10h56a4 4 0 0 1 4 4v72a4 4 0 0 1-4 4H24z"/>
+<path fill="#fbf3e0" d="M38 24h32v14H38z"/>
+<path fill="#1c1b22" d="M68 10h6v80h-6z"/>
+<path fill="none" d="M16 20h14M16 32h14M16 44h14M16 56h14M16 68h14M16 80h14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-notebook" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-notebook" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

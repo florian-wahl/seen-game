@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>xylophone</title>
+<defs>
+<g id="seen-xylophone">
+<path fill="#e5484d" d="M10 18h10v62H10z"/>
+<path fill="#f08a3c" d="M23 22h10v54H23z"/>
+<path fill="#f5b93f" d="M36 26h10v46H36z"/>
+<path fill="#2f9e6b" d="M49 30h10v38H49z"/>
+<path fill="#4a66d4" d="M62 34h10v30H62z"/>
+<path fill="#7d5fd0" d="M75 38h10v22H75z"/>
+<path fill="none" d="M56 90l26-16"/>
+<circle fill="#a9683c" cx="84" cy="73" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-xylophone" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-xylophone" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

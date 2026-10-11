@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>picket fence</title>
+<defs>
+<g id="seen-picket-fence">
+<path fill="#ffffff" d="M8 40h84v8H8zM8 64h84v8H8z"/>
+<path fill="#ffffff" d="M12 30l7-10 7 10v54H12zM34 30l7-10 7 10v54H34zM56 30l7-10 7 10v54H56zM78 30l7-10 7 10v54H78z"/>
+<path fill="#9bc53d" d="M8 80h84v10H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-picket-fence" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-picket-fence" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

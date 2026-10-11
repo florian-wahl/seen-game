@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>headphones</title>
+<defs>
+<g id="seen-headphones">
+<path fill="#7d5fd0" d="M16 58V48a34 34 0 0 1 68 0v10h-8V48a26 26 0 0 0-52 0v10z"/>
+<path fill="#1c1b22" d="M28 56h6v26h-6zM66 56h6v26h-6z"/>
+<path fill="#7d5fd0" d="M12 50h12a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V54a4 4 0 0 1 4-4z"/>
+<path fill="#7d5fd0" d="M76 50h12a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H76a4 4 0 0 1-4-4V54a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-headphones" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-headphones" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

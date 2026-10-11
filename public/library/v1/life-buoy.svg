@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>life buoy</title>
+<defs>
+<g id="seen-life-buoy">
+<path fill="#ffffff" fill-rule="evenodd" d="M10 50a40 40 0 1 0 80 0a40 40 0 1 0-80 0zM28 50a22 22 0 1 0 44 0a22 22 0 1 0-44 0z"/>
+<path fill="#e5484d" d="M87 65.3A40 40 0 0 1 65.3 87L58.4 70.3A22 22 0 0 0 70.3 58.4ZM34.7 87A40 40 0 0 1 13 65.3L29.7 58.4A22 22 0 0 0 41.6 70.3ZM13 34.7A40 40 0 0 1 34.7 13L41.6 29.7A22 22 0 0 0 29.7 41.6ZM65.3 13A40 40 0 0 1 87 34.7L70.3 41.6A22 22 0 0 0 58.4 29.7Z"/>
+<path fill="none" d="M10 50h18M72 50h18M50 10v18M50 72v18"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-life-buoy" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-life-buoy" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

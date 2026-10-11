@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tulip</title>
+<defs>
+<g id="seen-tulip">
+<path fill="#2f9e6b" d="M47 52h6v38h-6z"/>
+<path fill="#2f9e6b" d="M50 88c-16-6-24-22-22-38 12 8 20 22 22 38z"/>
+<path fill="#e0559a" d="M30 16l10 10 10-14 10 14 10-10v22c0 12-8 18-20 18s-20-6-20-18z"/>
+<path fill="none" d="M40 28c0 12 4 20 10 26M60 28c0 12-4 20-10 26"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tulip" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tulip" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

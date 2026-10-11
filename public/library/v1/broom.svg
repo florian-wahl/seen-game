@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>broom</title>
+<defs>
+<g id="seen-broom">
+<path fill="#a9683c" d="M78 6l6 4-30 44-6-4z"/>
+<path fill="#f5b93f" d="M38 52l14 10L38 92c-10 0-24-8-28-16z"/>
+<path fill="none" d="M38 64L22 82M44 68L32 90"/>
+<path fill="#e5484d" d="M40 44l14 10-4 6-14-10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-broom" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-broom" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

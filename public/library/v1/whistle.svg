@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>whistle</title>
+<defs>
+<g id="seen-whistle">
+<path fill="none" d="M20 48c-8-4-10-14-4-20"/>
+<path fill="#2f9e6b" d="M36 38h48a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H36z"/>
+<circle fill="#2f9e6b" cx="36" cy="60" r="22"/>
+<path fill="#1c1b22" d="M50 38h10v8H50z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-whistle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-whistle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

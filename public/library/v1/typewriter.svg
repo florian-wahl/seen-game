@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>typewriter</title>
+<defs>
+<g id="seen-typewriter">
+<path fill="#ffffff" d="M32 8h36v30H32z"/>
+<path fill="none" d="M38 18h24M38 26h18"/>
+<path fill="#1c1b22" d="M16 34h68a4 4 0 0 1 0 8H16a4 4 0 0 1 0-8z"/>
+<path fill="#2aa7a0" d="M18 42h64l8 40a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z"/>
+<path fill="none" stroke-width="6" d="M26 56h.01M38 56h.01M50 56h.01M62 56h.01M74 56h.01M32 68h.01M44 68h.01M56 68h.01M68 68h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-typewriter" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-typewriter" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

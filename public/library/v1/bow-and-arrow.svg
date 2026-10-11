@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bow and arrow</title>
+<defs>
+<g id="seen-bow-and-arrow">
+<path fill="none" d="M28 12v76M18 50h64"/>
+<path fill="#a9683c" d="M28 10c26 10 34 26 34 40s-8 30-34 40l-2-7c22-10 28-22 28-33s-6-23-28-33z"/>
+<path fill="#8d99a6" d="M80 42l12 8-12 8z"/>
+<path fill="#e5484d" d="M8 42h10l6 8-6 8H8l6-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bow-and-arrow" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bow-and-arrow" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

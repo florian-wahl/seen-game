@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>toilet paper roll</title>
+<defs>
+<g id="seen-toilet-paper-roll">
+<path fill="#ffffff" d="M18 16h54v50H18a10 25 0 0 1 0-50z"/>
+<ellipse fill="#ffffff" cx="72" cy="41" rx="12" ry="25"/>
+<ellipse fill="#cfd6dc" cx="72" cy="41" rx="5" ry="10"/>
+<path fill="#ffffff" d="M18 56h50v32l-5-4-5 4-5-4-5 4-5-4-5 4-5-4-5 4-5-4-5 4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-toilet-paper-roll" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-toilet-paper-roll" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

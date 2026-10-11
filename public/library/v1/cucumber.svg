@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cucumber</title>
+<defs>
+<g id="seen-cucumber">
+<g transform="rotate(-40 50 50)">
+<path fill="#2f9e6b" d="M8 50c0-10 8-14 18-14h48c10 0 18 6 18 14s-8 14-18 14H26c-10 0-18-4-18-14z"/>
+<path fill="none" d="M24 43h40"/>
+<path fill="none" stroke-width="5" d="M28 54h.01M46 56h.01M64 54h.01M80 50h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cucumber" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cucumber" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

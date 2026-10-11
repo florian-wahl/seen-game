@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cannon</title>
+<defs>
+<g id="seen-cannon">
+<g transform="rotate(-20 50 50)">
+<path fill="#4d5968" d="M14 40h66v16H14a8 8 0 0 1 0-16z"/>
+<path fill="#4d5968" d="M78 36h10v24H78z"/>
+</g>
+<path fill="#a9683c" d="M20 58h44l6 18H20z"/>
+<circle fill="#6f3f1f" cx="42" cy="74" r="14"/>
+<circle fill="#a9683c" cx="42" cy="74" r="5"/>
+<circle fill="#1c1b22" cx="80" cy="82" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cannon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cannon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

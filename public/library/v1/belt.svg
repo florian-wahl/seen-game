@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>belt</title>
+<defs>
+<g id="seen-belt">
+<g transform="rotate(-20 50 50)">
+<path fill="#6f3f1f" d="M8 42h84v16H8z"/>
+<path fill="#f5b93f" fill-rule="evenodd" d="M30 36h24v28H30zM36 42h12v16H36z"/>
+<path fill="none" d="M42 50h18"/>
+<path fill="none" stroke-width="5" d="M68 50h.01M78 50h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-belt" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-belt" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

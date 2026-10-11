@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lasso</title>
+<defs>
+<g id="seen-lasso">
+<path fill="none" d="M50 76c0 8 8 10 6 16"/>
+<path fill="#d9a47a" fill-rule="evenodd" d="M8 50a42 22 0 1 0 84 0a42 22 0 1 0-84 0zM16 50a34 15 0 1 0 68 0a34 15 0 1 0-68 0z"/>
+<path fill="#a9683c" d="M44 66h12v10H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-lasso" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-lasso" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

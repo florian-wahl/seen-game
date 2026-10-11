@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>guitar</title>
+<defs>
+<g id="seen-guitar">
+<g transform="rotate(-40 50 50)">
+<path fill="#6f3f1f" d="M60 46h24v8H60z"/>
+<path fill="#6f3f1f" d="M84 43h8v14h-8z"/>
+<path fill="#f08a3c" d="M24 34C32 34 36 38 40 40C44 38 46 38 50 38C58 38 62 44 62 50C62 56 58 62 50 62C46 62 44 62 40 60C36 62 32 66 24 66C14 66 8 58 8 50C8 42 14 34 24 34Z"/>
+<circle fill="#1c1b22" cx="40" cy="50" r="6"/>
+<path fill="#6f3f1f" d="M17 45h6v10h-6z"/>
+<path fill="none" d="M23 50h65"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-guitar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-guitar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

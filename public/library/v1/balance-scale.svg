@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>balance scale</title>
+<defs>
+<g id="seen-balance-scale">
+<path fill="none" d="M18 28L10 56M18 28l16 28M82 28l-16 28M82 28l8 28"/>
+<path fill="#c98a0c" d="M47 20h6v60h-6z"/>
+<path fill="#c98a0c" d="M14 22h72v6H14z"/>
+<path fill="#c98a0c" d="M30 80h40v8H30z"/>
+<path fill="#f5b93f" d="M8 56h28c0 8-6 12-14 12S8 64 8 56zM64 56h28c0 8-6 12-14 12s-14-4-14-12z"/>
+<circle fill="#f5b93f" cx="50" cy="18" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-balance-scale" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-balance-scale" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

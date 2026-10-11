@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>banjo</title>
+<defs>
+<g id="seen-banjo">
+<g transform="rotate(-40 50 50)">
+<path fill="#6f3f1f" d="M46 46h40v8H46z"/>
+<path fill="#6f3f1f" d="M84 43h8v14h-8z"/>
+<circle fill="#8d99a6" cx="28" cy="50" r="22"/>
+<circle fill="#fbf3e0" cx="28" cy="50" r="16"/>
+<path fill="#6f3f1f" d="M20 46h6v8h-6z"/>
+<path fill="none" d="M26 50h62"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-banjo" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-banjo" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

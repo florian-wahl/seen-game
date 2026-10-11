@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>barrel</title>
+<defs>
+<g id="seen-barrel">
+<path fill="#a9683c" d="M28 10h44c6 12 8 26 8 40s-2 28-8 40H28c-6-12-8-26-8-40s2-28 8-40z"/>
+<path fill="none" d="M40 10c-3 12-4 26-4 40s1 28 4 40M60 10c3 12 4 26 4 40s-1 28-4 40"/>
+<path fill="#4d5968" d="M24 24h52v6H24zM24 70h52v6H24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-barrel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-barrel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

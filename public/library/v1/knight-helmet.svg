@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>knight helmet</title>
+<defs>
+<g id="seen-knight-helmet">
+<path fill="#e5484d" d="M50 16c4-8 14-10 24-6-6 2-12 6-14 12z"/>
+<path fill="#8d99a6" d="M24 46c0-20 12-32 26-32s26 12 26 32v34c0 6-4 8-8 8H32c-4 0-8-2-8-8z"/>
+<path fill="none" d="M50 14v30"/>
+<path fill="#1c1b22" d="M30 46h40v6H30z"/>
+<path fill="none" stroke-width="5" d="M40 66h.01M50 66h.01M60 66h.01M45 75h.01M55 75h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-knight-helmet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-knight-helmet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

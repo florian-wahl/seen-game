@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pinball machine</title>
+<defs>
+<g id="seen-pinball-machine">
+<path fill="none" d="M20 66v24M76 56v34"/>
+<path fill="#7d5fd0" d="M62 10h22v40H62z"/>
+<path fill="#f5b93f" d="M66 16h14v14H66z"/>
+<path fill="#7d5fd0" d="M12 46l50-10h22v20L12 68z"/>
+<path fill="#53389a" d="M12 62l72-10v4L12 68z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pinball-machine" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pinball-machine" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

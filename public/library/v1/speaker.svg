@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>speaker</title>
+<defs>
+<g id="seen-speaker">
+<path fill="#a9683c" d="M28 8h44a4 4 0 0 1 4 4v76a4 4 0 0 1-4 4H28a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z"/>
+<circle fill="#4d5968" cx="50" cy="26" r="9"/>
+<circle fill="#4d5968" cx="50" cy="62" r="18"/>
+<circle fill="#1c1b22" cx="50" cy="62" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-speaker" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-speaker" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

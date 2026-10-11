@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>treasure chest</title>
+<defs>
+<g id="seen-treasure-chest">
+<path fill="#a9683c" d="M12 40c0-16 12-26 38-26s38 10 38 26z"/>
+<path fill="#a9683c" d="M12 40h76v44H12z"/>
+<path fill="#f5b93f" d="M24 42h8v42h-8zM68 42h8v42h-8z"/>
+<path fill="#f5b93f" d="M10 37h80v7H10z"/>
+<path fill="#f5b93f" d="M43 40h14v18H43z"/>
+<path fill="none" stroke-width="5" d="M50 50h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-treasure-chest" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-treasure-chest" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

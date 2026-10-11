@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>basketball</title>
+<defs>
+<g id="seen-basketball">
+<circle fill="#c25e12" cx="50" cy="50" r="38"/>
+<path fill="none" d="M12 50h76M50 12v76"/>
+<path fill="none" d="M24 22c10 8 14 18 14 28s-4 20-14 28M76 22c-10 8-14 18-14 28s4 20 14 28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-basketball" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-basketball" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>easel</title>
+<defs>
+<g id="seen-easel">
+<path fill="#6f3f1f" d="M47 10h6v80h-6z"/>
+<path fill="#a9683c" d="M46 8h8L30 92h-8z"/>
+<path fill="#a9683c" d="M46 8h8l24 84h-8z"/>
+<path fill="#ffffff" d="M22 20h56v40H22z"/>
+<path fill="#9bc53d" d="M22 60l18-16 14 10 10-6 14 12z"/>
+<circle fill="#f5b93f" cx="64" cy="32" r="6"/>
+<path fill="#6f3f1f" d="M18 60h64v6H18z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-easel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-easel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bagpipes</title>
+<defs>
+<g id="seen-bagpipes">
+<path fill="#1c1b22" d="M40 30L54 6l6 3-14 24zM50 34l22-22 5 5-22 22zM58 40l28-10 2 6-28 10z"/>
+<path fill="#e5484d" d="M18 46c0-12 12-20 26-20 18 0 30 12 30 28 0 18-14 30-30 30-16 0-26-14-26-38z"/>
+<path fill="none" d="M30 30v52M48 26v60M20 50h52M20 68h50"/>
+<path fill="#1c1b22" d="M30 76l-10 14 6 3 10-14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bagpipes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bagpipes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

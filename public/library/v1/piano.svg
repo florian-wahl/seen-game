@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>piano</title>
+<defs>
+<g id="seen-piano">
+<path fill="#6f3f1f" d="M14 70h6v18h-6zM80 70h6v18h-6z"/>
+<path fill="#6f3f1f" d="M12 16h76v40H12z"/>
+<path fill="#fbf3e0" d="M34 24h32v16H34z"/>
+<path fill="#ffffff" d="M8 54h84v16H8z"/>
+<path fill="#1c1b22" d="M16 54h6v9h-6zM28 54h6v9h-6zM46 54h6v9h-6zM58 54h6v9h-6zM70 54h6v9h-6zM82 54h6v9h-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-piano" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-piano" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

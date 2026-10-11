@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>french fries</title>
+<defs>
+<g id="seen-french-fries">
+<path fill="#f5b93f" d="M28 44V16h8v28zM40 44V10h8v34zM52 44V14h8v30zM64 44V20h8v24z"/>
+<path fill="#e5484d" d="M18 38h64l-8 50H26z"/>
+<path fill="none" d="M28 52q22 10 44 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-french-fries" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-french-fries" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

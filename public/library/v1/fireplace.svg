@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fireplace</title>
+<defs>
+<g id="seen-fireplace">
+<path fill="#b3262d" d="M12 24h76v66H12z"/>
+<path fill="#6f3f1f" d="M8 14h84v10H8z"/>
+<path fill="#1c1b22" d="M26 90V56a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v34z"/>
+<path fill="#f08a3c" d="M50 52c8 8 14 14 14 24a14 14 0 0 1-28 0c0-6 4-10 6-14 2 4 4 6 6 6-2-6 0-12 2-16z"/>
+<path fill="#f5b93f" d="M50 70c4 4 6 6 6 10a6 6 0 0 1-12 0c0-4 2-6 6-10z"/>
+<path fill="none" d="M12 36h14M74 36h14M12 60h14M74 60h14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fireplace" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fireplace" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>globe</title>
+<defs>
+<g id="seen-globe">
+<path fill="none" d="M30 14a34 34 0 0 0 8 60"/>
+<path fill="#a9683c" d="M46 72h8v14h-8z"/>
+<path fill="#6f3f1f" d="M30 84h40a4 4 0 0 1 4 4v2H26v-2a4 4 0 0 1 4-4z"/>
+<circle fill="#3f9fdc" cx="52" cy="42" r="30"/>
+<path fill="#9bc53d" d="M36 28c8-6 18-4 20 4s-6 10-4 18-10 8-14 0c-6-4-8-16-2-22zM62 50c6-4 14 0 14 8s-8 12-14 8-4-12 0-16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-globe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-globe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

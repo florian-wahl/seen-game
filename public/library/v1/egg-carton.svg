@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>egg carton</title>
+<defs>
+<g id="seen-egg-carton">
+<path fill="#d9a47a" d="M12 36L20 12h60l8 24z"/>
+<ellipse fill="#ffffff" cx="22" cy="44" rx="9" ry="12"/>
+<ellipse fill="#ffffff" cx="41" cy="44" rx="9" ry="12"/>
+<ellipse fill="#ffffff" cx="60" cy="44" rx="9" ry="12"/>
+<ellipse fill="#ffffff" cx="79" cy="44" rx="9" ry="12"/>
+<path fill="#e8d5b0" d="M8 50h84l-4 24c-5 5-14 5-19 0-5 5-14 5-19 0-5 5-14 5-19 0-5 5-14 5-19 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-egg-carton" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-egg-carton" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

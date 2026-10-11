@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>snowman</title>
+<defs>
+<g id="seen-snowman">
+<path fill="none" d="M38 46L20 36M62 46l18-10"/>
+<circle fill="#ffffff" cx="50" cy="72" r="18"/>
+<circle fill="#ffffff" cx="50" cy="46" r="14"/>
+<circle fill="#ffffff" cx="50" cy="26" r="10"/>
+<path fill="#e5484d" d="M38 34h24v6H38zM54 38h6v14h-6z"/>
+<path fill="#1c1b22" d="M42 6h16v12H42zM36 16h28v5H36z"/>
+<path fill="none" stroke-width="6" d="M50 50h.01M50 66h.01M50 78h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-snowman" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-snowman" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

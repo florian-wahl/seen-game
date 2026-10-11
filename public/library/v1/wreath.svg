@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wreath</title>
+<defs>
+<g id="seen-wreath">
+<path fill="#2f9e6b" fill-rule="evenodd" d="M10 50a40 40 0 1 0 80 0a40 40 0 1 0-80 0zM28 50a22 22 0 1 0 44 0a22 22 0 1 0-44 0z"/>
+<path fill="none" d="M20 30l6 4M14 52h8M50 14v8M80 30l-6 4M86 52h-8"/>
+<path fill="#e5484d" d="M28 38a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM64 38a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM44 20a4 4 0 1 0 8 0a4 4 0 1 0-8 0z"/>
+<path fill="#e5484d" d="M50 80l-16-10v20zM50 80l16-10v20z"/>
+<path fill="none" stroke-width="7" d="M50 80h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wreath" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wreath" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

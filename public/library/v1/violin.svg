@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>violin</title>
+<defs>
+<g id="seen-violin">
+<g transform="rotate(25 50 50)">
+<path fill="#1c1b22" d="M47 14h6v24h-6z"/>
+<circle fill="#6f3f1f" cx="50" cy="12" r="5"/>
+<path fill="#c25e12" d="M50 30c10 0 16 4 16 12 0 6-4 8-4 12s6 6 6 14c0 10-8 16-18 16s-18-6-18-16c0-8 6-10 6-14s-4-6-4-12c0-8 6-12 16-12z"/>
+<path fill="none" d="M41 52q-2 6 0 12M59 52q2 6 0 12"/>
+<path fill="#1c1b22" d="M46 70h8v12h-8z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-violin" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-violin" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

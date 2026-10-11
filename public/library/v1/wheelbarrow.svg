@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wheelbarrow</title>
+<defs>
+<g id="seen-wheelbarrow">
+<path fill="none" d="M24 72L62 58l28-10M60 58l-4 26"/>
+<circle fill="#1c1b22" cx="24" cy="72" r="12"/>
+<circle fill="#8d99a6" cx="24" cy="72" r="5"/>
+<path fill="#e5484d" d="M14 34h68l-12 26H30z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wheelbarrow" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wheelbarrow" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

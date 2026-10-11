@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>log</title>
+<defs>
+<g id="seen-log">
+<path fill="#a9683c" d="M58 30l6-12 8 4-4 10z"/>
+<path fill="#a9683c" d="M22 28h56a8 22 0 0 1 0 44H22z"/>
+<ellipse fill="#e8d5b0" cx="22" cy="50" rx="14" ry="22"/>
+<path fill="none" d="M14 50a8 14 0 1 0 16 0a8 14 0 1 0-16 0"/>
+<path fill="none" d="M44 40h20M52 60h22"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-log" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-log" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

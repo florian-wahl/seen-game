@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>trash can</title>
+<defs>
+<g id="seen-trash-can">
+<path fill="none" d="M42 16c0-6 16-6 16 0"/>
+<path fill="#2f9e6b" d="M20 28h60l-6 60H26z"/>
+<path fill="none" d="M36 36l2 44M50 36v44M64 36l-2 44"/>
+<path fill="#1b6b49" d="M18 18h64a4 4 0 0 1 4 4v8H14v-8a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-trash-can" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-trash-can" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

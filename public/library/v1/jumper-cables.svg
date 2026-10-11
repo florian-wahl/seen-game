@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>jumper cables</title>
+<defs>
+<g id="seen-jumper-cables">
+<path fill="none" d="M30 46c-6 20 0 40 20 40s26-20 20-40"/>
+<path fill="#e5484d" d="M20 8h20l-4 38H24z"/>
+<path fill="#1c1b22" d="M60 8h20l-4 38H64z"/>
+<path fill="none" d="M30 8v16"/>
+<path fill="#8d99a6" d="M24 46h12v6H24zM64 46h12v6H64z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-jumper-cables" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-jumper-cables" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

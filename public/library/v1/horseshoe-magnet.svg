@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>horseshoe magnet</title>
+<defs>
+<g id="seen-horseshoe-magnet">
+<path fill="#e5484d" d="M16 76V44a34 34 0 0 1 68 0v32H62V44a12 12 0 0 0-24 0v32z"/>
+<path fill="#cfd6dc" d="M16 72h22v16H16zM62 72h22v16H62z"/>
+<path fill="none" d="M24 44a26 26 0 0 1 10-20"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-horseshoe-magnet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-horseshoe-magnet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

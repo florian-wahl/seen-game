@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>horseshoe</title>
+<defs>
+<g id="seen-horseshoe">
+<path fill="#8d99a6" d="M14 14h18v34a18 18 0 0 0 36 0V14h18v34a36 36 0 0 1-72 0z"/>
+<path fill="none" stroke-width="5" d="M23 24h.01M23 38h.01M77 24h.01M77 38h.01M30 64h.01M70 64h.01"/>
+<path fill="none" d="M14 14h18M68 14h18"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-horseshoe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-horseshoe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

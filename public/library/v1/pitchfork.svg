@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pitchfork</title>
+<defs>
+<g id="seen-pitchfork">
+<g transform="translate(6 7) scale(.88) rotate(-25 50 50)">
+<path fill="#a9683c" d="M46 46h8v46h-8z"/>
+<path fill="#8d99a6" d="M30 8h6v32h10V8h8v32h10V8h6v36c0 6-4 8-10 8H40c-6 0-10-2-10-8z"/>
+<path fill="#4d5968" d="M44 50h12v8H44z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pitchfork" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pitchfork" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>flip-flop</title>
+<defs>
+<g id="seen-flip-flop">
+<g transform="rotate(-20 50 50)">
+<path fill="#7fdcd3" d="M50 8c14 0 22 12 20 28-2 14-4 22-2 34 2 12-6 22-18 22S30 82 32 70c2-12 0-20-2-34-2-16 6-28 20-28z"/>
+<path fill="none" d="M50 22L32 46M50 22l18 24"/>
+<path fill="none" stroke-width="7" d="M50 22h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-flip-flop" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-flip-flop" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>spirit level</title>
+<defs>
+<g id="seen-spirit-level">
+<g transform="rotate(-20 50 50)">
+<path fill="#f08a3c" d="M12 38h76a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V42a4 4 0 0 1 4-4z"/>
+<path fill="#c9e265" d="M36 43h28v14H36z"/>
+<circle fill="#ffffff" cx="50" cy="50" r="4"/>
+<path fill="none" d="M43 43v14M57 43v14"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-spirit-level" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-spirit-level" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

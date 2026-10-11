@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rocket</title>
+<defs>
+<g id="seen-rocket">
+<path fill="#f5b93f" d="M42 76h16l-8 16z"/>
+<path fill="#e5484d" d="M34 56L20 74v8l14-8zM66 56l14 18v8l-14-8z"/>
+<path fill="#ffffff" d="M50 8c12 10 16 26 16 40v28H34V48c0-14 4-30 16-40z"/>
+<path fill="#e5484d" d="M50 8c6 5 10 12 12 18H38c2-6 6-13 12-18z"/>
+<circle fill="#3f9fdc" cx="50" cy="44" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rocket" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rocket" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

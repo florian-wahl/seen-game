@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>scarf</title>
+<defs>
+<g id="seen-scarf">
+<path fill="#e5484d" d="M22 20c0-6 6-10 14-10h28c8 0 14 4 14 10v10c0 6-6 10-14 10H36c-8 0-14-4-14-10z"/>
+<path fill="#e5484d" d="M54 36h18v44H54z"/>
+<path fill="#f5b93f" d="M54 50h18v8H54zM54 64h18v8H54z"/>
+<path fill="none" d="M56 80v8M63 80v8M70 80v8"/>
+<path fill="none" d="M36 18v14M48 18v14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-scarf" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-scarf" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

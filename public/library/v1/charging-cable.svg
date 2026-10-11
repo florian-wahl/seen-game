@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>charging cable</title>
+<defs>
+<g id="seen-charging-cable">
+<path fill="none" d="M28 76c0 12 16 16 30 8s20-24 10-46"/>
+<path fill="#8d99a6" d="M20 40h6v8h-6zM32 40h6v8h-6z"/>
+<path fill="#ffffff" d="M16 48h24a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V52a4 4 0 0 1 4-4z"/>
+<path fill="#8d99a6" d="M62 6h12v10H62z"/>
+<path fill="#ffffff" d="M60 14h16a4 4 0 0 1 4 4v20H56V18a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-charging-cable" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-charging-cable" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

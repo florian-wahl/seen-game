@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>shopping bag</title>
+<defs>
+<g id="seen-shopping-bag">
+<path fill="none" d="M34 36V24a16 16 0 0 1 32 0v12"/>
+<path fill="#2aa7a0" d="M18 32h64l6 56H12z"/>
+<path fill="#17736f" d="M18 32h64v8H18z"/>
+<path fill="none" stroke-width="6" d="M34 42h.01M66 42h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-shopping-bag" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-shopping-bag" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

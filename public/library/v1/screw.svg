@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>screw</title>
+<defs>
+<g id="seen-screw">
+<g transform="rotate(-40 50 50)">
+<path fill="#f5b93f" d="M18 42h50l20 8-20 8H18z"/>
+<path fill="none" d="M28 42l4 16M38 42l4 16M48 42l4 16M58 42l4 16"/>
+<path fill="#c98a0c" d="M20 30v40c-8 0-12-10-12-20s4-20 12-20z"/>
+<path fill="none" d="M10 50h8"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-screw" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-screw" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

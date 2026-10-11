@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>snow globe</title>
+<defs>
+<g id="seen-snow-globe">
+<circle fill="#8fd0f5" cx="50" cy="44" r="32"/>
+<path fill="#2f9e6b" d="M50 26l14 32H36z"/>
+<path fill="#ffffff" d="M24 62h52c-4 8-14 14-26 14s-22-6-26-14z"/>
+<path fill="#a9683c" d="M22 72h56l6 18H16z"/>
+<path fill="none" d="M28 32q4-8 12-12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-snow-globe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-snow-globe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

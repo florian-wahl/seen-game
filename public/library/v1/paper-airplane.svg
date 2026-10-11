@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>paper airplane</title>
+<defs>
+<g id="seen-paper-airplane">
+<path fill="#ffffff" d="M8 46L92 14 44 60z"/>
+<path fill="#8fd0f5" d="M44 60L92 14 60 86z"/>
+<path fill="none" d="M44 60l6 22"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-paper-airplane" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-paper-airplane" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

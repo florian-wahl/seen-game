@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>battery</title>
+<defs>
+<g id="seen-battery">
+<g transform="rotate(-30 50 50)">
+<path fill="#8d99a6" d="M84 44h6v12h-6z"/>
+<path fill="#2f9e6b" d="M14 36h56v28H14a4 4 0 0 1-4-4V40a4 4 0 0 1 4-4z"/>
+<path fill="#f08a3c" d="M60 36h22a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H60z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-battery" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-battery" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

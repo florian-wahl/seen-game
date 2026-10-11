@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>table</title>
+<defs>
+<g id="seen-table">
+<path fill="#6f3f1f" d="M16 34h8v54h-8zM76 34h8v54h-8z"/>
+<path fill="#a9683c" d="M14 26h72a6 6 0 0 1 0 12H14a6 6 0 0 1 0-12z"/>
+<path fill="#a9683c" d="M24 38h52v8H24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-table" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-table" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

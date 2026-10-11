@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>skis</title>
+<defs>
+<g id="seen-skis">
+<g transform="rotate(-40 50 50)">
+<path fill="#f08a3c" d="M12 34h66c8 0 14 3 14 7s-6 7-14 7H12a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4z"/>
+<path fill="#f08a3c" d="M12 54h66c8 0 14 3 14 7s-6 7-14 7H12a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4z"/>
+<path fill="#1c1b22" d="M38 32h12v18H38zM38 52h12v18H38z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-skis" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-skis" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

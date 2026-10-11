@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pillow</title>
+<defs>
+<g id="seen-pillow">
+<path fill="#c3a8f0" d="M18 20c10 4 54 4 64 0 6 10 6 50 0 60-10-4-54-4-64 0-6-10-6-50 0-60z"/>
+<path fill="none" d="M18 20c6 6 10 8 14 8M82 20c-6 6-10 8-14 8"/>
+<path fill="none" d="M18 80c6-6 10-8 14-8M82 80c-6-6-10-8-14-8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pillow" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pillow" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

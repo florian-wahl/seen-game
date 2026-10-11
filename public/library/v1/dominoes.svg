@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dominoes</title>
+<defs>
+<g id="seen-dominoes">
+<g transform="rotate(-30 50 50)">
+<path fill="#ffffff" d="M38 14h24a6 6 0 0 1 6 6v60a6 6 0 0 1-6 6H38a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/>
+<path fill="none" d="M32 50h36"/>
+<path fill="none" stroke-width="7" d="M41 24h.01M50 32h.01M59 40h.01M41 60h.01M59 60h.01M41 76h.01M59 76h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dominoes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dominoes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

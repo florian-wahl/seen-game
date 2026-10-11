@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>washing machine</title>
+<defs>
+<g id="seen-washing-machine">
+<path fill="#ffffff" d="M18 10h64a4 4 0 0 1 4 4v72a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M14 28h72"/>
+<path fill="#4d5968" d="M22 15h22v8H22z"/>
+<circle fill="#e5484d" cx="74" cy="19" r="4"/>
+<circle fill="#8d99a6" cx="50" cy="58" r="24"/>
+<circle fill="#8fd0f5" cx="50" cy="58" r="16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-washing-machine" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-washing-machine" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

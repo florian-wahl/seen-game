@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>high heel</title>
+<defs>
+<g id="seen-high-heel">
+<path fill="#b3262d" d="M14 42h7l2 44h-6z"/>
+<path fill="#b3262d" d="M12 42c4-6 12-6 16 0 10 14 28 28 50 30 8 0 12 6 12 12H60c-14 0-28-12-40-26-2 0-6-4-8-16z"/>
+<path fill="#1c1b22" d="M30 48c10 10 24 20 40 22-16 2-30-6-40-22z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-high-heel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-high-heel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

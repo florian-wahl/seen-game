@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>skateboard</title>
+<defs>
+<g id="seen-skateboard">
+<path fill="#8d99a6" d="M24 50h16v8H24zM60 50h16v8H60z"/>
+<circle fill="#f5b93f" cx="30" cy="64" r="8"/>
+<circle fill="#f5b93f" cx="70" cy="64" r="8"/>
+<path fill="#e0559a" d="M8 36c4 4 8 6 14 6h56c6 0 10-2 14-6 2 4 0 10-4 12-3 2-6 3-10 3H22c-4 0-7-1-10-3-4-2-6-8-4-12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-skateboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-skateboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

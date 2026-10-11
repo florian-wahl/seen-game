@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bell pepper</title>
+<defs>
+<g id="seen-bell-pepper">
+<path fill="none" d="M50 26c0-8 4-12 10-16"/>
+<path fill="#2f9e6b" d="M50 30c-8-6-24-6-30 6-8 14-4 36 6 46 6 6 14 6 18 2 2 2 4 2 6 2s4 0 6-2c4 4 12 4 18-2 10-10 14-32 6-46-6-12-22-12-30-6z"/>
+<path fill="none" d="M40 44c-4 12-4 26 2 40M60 44c4 12 4 26-2 40"/>
+<path fill="#1b6b49" d="M38 32c0-6 4-8 12-8s12 2 12 8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bell-pepper" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bell-pepper" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

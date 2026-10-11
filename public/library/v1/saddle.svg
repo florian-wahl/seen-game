@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>saddle</title>
+<defs>
+<g id="seen-saddle">
+<path fill="#6f3f1f" d="M20 50h56v20c0 6-4 8-8 8H28c-4 0-8-2-8-8z"/>
+<path fill="#a9683c" d="M10 40c4-10 12-10 16 0 6 8 26 8 34-2l6-12h8l-2 8c0 6 4 10 10 12v8H10z"/>
+<path fill="#6f3f1f" d="M62 20h16v7H62z"/>
+<path fill="#6f3f1f" d="M42 54h8v20h-8z"/>
+<path fill="#a9683c" fill-rule="evenodd" d="M34 74h24v14H34zM40 78h12v6H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-saddle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-saddle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

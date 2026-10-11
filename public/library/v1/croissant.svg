@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>croissant</title>
+<defs>
+<g id="seen-croissant">
+<path fill="#f5b93f" d="M8 70c0-28 20-48 42-48s42 20 42 48c-8-6-14-8-20-6-6-8-14-12-22-12s-16 4-22 12c-6-2-12 0-20 6z"/>
+<path fill="none" d="M30 30l10 22M50 24v26M70 30l-10 22"/>
+<path fill="none" d="M16 56l12 6M84 56l-12 6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-croissant" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-croissant" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

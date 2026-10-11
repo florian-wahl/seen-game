@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>door</title>
+<defs>
+<g id="seen-door">
+<path fill="#a9683c" d="M24 8h52v84H24z"/>
+<path fill="#6f3f1f" d="M32 18h36v26H32zM32 52h36v32H32z"/>
+<circle fill="#f5b93f" cx="66" cy="50" r="4"/>
+<path fill="none" d="M12 92h76"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-door" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-door" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

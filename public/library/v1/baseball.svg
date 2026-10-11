@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baseball</title>
+<defs>
+<g id="seen-baseball">
+<circle fill="#ffffff" cx="50" cy="50" r="38"/>
+<path fill="none" d="M26 20c10 16 10 44 0 60M74 20c-10 16-10 44 0 60"/>
+<path fill="none" d="M30 30l6-2M32 42l6-1M32 54l6 1M30 66l6 2M70 30l-6-2M68 42l-6-1M68 54l-6 1M70 66l-6 2"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baseball" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baseball" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

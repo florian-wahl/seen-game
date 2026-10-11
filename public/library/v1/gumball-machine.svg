@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gumball machine</title>
+<defs>
+<g id="seen-gumball-machine">
+<path fill="#e5484d" d="M40 8h20v8H40z"/>
+<circle fill="#ffffff" cx="50" cy="38" r="26"/>
+<path fill="#f5b93f" d="M34 30a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM54 46a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="#4a66d4" d="M50 26a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM34 48a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="#2f9e6b" d="M44 40a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM60 34a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="#e5484d" d="M30 62h40l6 28H24z"/>
+<path fill="#cfd6dc" d="M42 70h16v10H42z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gumball-machine" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gumball-machine" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

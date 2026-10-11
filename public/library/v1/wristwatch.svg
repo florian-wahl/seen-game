@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wristwatch</title>
+<defs>
+<g id="seen-wristwatch">
+<path fill="#17736f" d="M38 8h24v20H38zM38 72h24v20H38z"/>
+<circle fill="#2aa7a0" cx="50" cy="50" r="26"/>
+<circle fill="#ffffff" cx="50" cy="50" r="19"/>
+<path fill="none" d="M50 50V38M50 50l9 5"/>
+<path fill="#2aa7a0" d="M76 46h6v8h-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wristwatch" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wristwatch" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

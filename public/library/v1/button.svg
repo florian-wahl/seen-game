@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>button</title>
+<defs>
+<g id="seen-button">
+<circle fill="#f08a3c" cx="50" cy="50" r="38"/>
+<circle fill="#ffb074" cx="50" cy="50" r="26"/>
+<path fill="none" stroke-width="7" d="M42 42h.01M58 42h.01M42 58h.01M58 58h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-button" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-button" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

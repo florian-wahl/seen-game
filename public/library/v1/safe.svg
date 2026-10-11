@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>safe</title>
+<defs>
+<g id="seen-safe">
+<path fill="#1c1b22" d="M16 84h10v6H16zM74 84h10v6H74z"/>
+<path fill="#4d5968" d="M14 12h72a4 4 0 0 1 4 4v64a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z"/>
+<path fill="#8d99a6" d="M20 20h60v56H20z"/>
+<circle fill="#cfd6dc" cx="44" cy="48" r="12"/>
+<path fill="none" d="M44 36v6M68 38v20"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-safe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-safe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

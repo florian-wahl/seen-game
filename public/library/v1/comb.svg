@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>comb</title>
+<defs>
+<g id="seen-comb">
+<g transform="translate(5 5) scale(.9) rotate(-30 50 50)">
+<path fill="#e0559a" d="M8 32h84a4 4 0 0 1 4 4v8H6v-8a4 4 0 0 1 4-4z"/>
+<path fill="#e0559a" d="M10 44h6v22h-6zM20 44h6v22h-6zM30 44h6v22h-6zM40 44h6v22h-6zM50 44h6v22h-6zM60 44h6v22h-6zM70 44h6v22h-6zM80 44h6v22h-6z"/>
+<path fill="none" d="M14 38h70"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-comb" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-comb" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

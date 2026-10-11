@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>necklace</title>
+<defs>
+<g id="seen-necklace">
+<path fill="none" d="M14 10c0 36 16 54 36 54s36-18 36-54"/>
+<path fill="none" stroke-width="6" d="M18 30h.01M24 44h.01M76 44h.01M82 30h.01M32 54h.01M68 54h.01"/>
+<path fill="#e0559a" d="M50 60c10 0 16 8 16 16s-8 14-16 14-16-6-16-14 6-16 16-16z"/>
+<path fill="#f5b93f" d="M44 56h12v8H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-necklace" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-necklace" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

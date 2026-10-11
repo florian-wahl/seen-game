@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sunflower</title>
+<defs>
+<g id="seen-sunflower">
+<path fill="#2f9e6b" d="M47 60h6v32h-6z"/>
+<path fill="#2f9e6b" d="M50 80c8-10 18-12 24-8-6 8-14 10-24 8z"/>
+<path fill="#f5b93f" d="M45.3 22.6L47.9 8.1L52.1 8.1L54.7 22.6L64.2 11.3L67.8 13.4L62.7 27.3L76.6 22.2L78.7 25.8L67.4 35.3L81.9 37.9L81.9 42.1L67.4 44.7L78.7 54.2L76.6 57.8L62.7 52.7L67.8 66.6L64.2 68.7L54.7 57.4L52.1 71.9L47.9 71.9L45.3 57.4L35.8 68.7L32.2 66.6L37.3 52.7L23.4 57.8L21.3 54.2L32.6 44.7L18.1 42.1L18.1 37.9L32.6 35.3L21.3 25.8L23.4 22.2L37.3 27.3L32.2 13.4L35.8 11.3z"/>
+<circle fill="#6f3f1f" cx="50" cy="40" r="15"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sunflower" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sunflower" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>disco ball</title>
+<defs>
+<g id="seen-disco-ball">
+<path fill="none" d="M50 6v10"/>
+<path fill="#4d5968" d="M44 14h12v6H44z"/>
+<circle fill="#93a8f0" cx="50" cy="54" r="36"/>
+<path fill="none" d="M14 54h72M18 38h64M18 70h64M28 26h44M28 82h44M50 18v72M36 21c-8 18-8 48 0 66M64 21c8 18 8 48 0 66"/>
+<path fill="#ffffff" d="M28 40h8v12h-8zM52 56h10v12H52z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-disco-ball" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-disco-ball" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

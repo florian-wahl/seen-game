@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>traffic cone</title>
+<defs>
+<g id="seen-traffic-cone">
+<path fill="#f08a3c" d="M44 10h12l18 66H26z"/>
+<path fill="#ffffff" d="M38 32h24l3 10H35zM33 52h34l3 10H30z"/>
+<path fill="#c25e12" d="M14 76h72v10H14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-traffic-cone" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-traffic-cone" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

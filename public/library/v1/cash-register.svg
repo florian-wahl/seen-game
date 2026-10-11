@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cash register</title>
+<defs>
+<g id="seen-cash-register">
+<path fill="none" d="M68 26v8"/>
+<path fill="#4d5968" d="M54 10h30v16H54z"/>
+<path fill="#c9e265" d="M58 14h22v8H58z"/>
+<path fill="#2aa7a0" d="M14 34h72l6 30H8z"/>
+<path fill="none" stroke-width="6" d="M24 44h.01M36 44h.01M48 44h.01M22 54h.01M34 54h.01M46 54h.01"/>
+<path fill="#17736f" d="M8 64h84v22H8z"/>
+<path fill="none" d="M42 74h16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cash-register" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cash-register" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

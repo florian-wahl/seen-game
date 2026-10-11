@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>menorah</title>
+<defs>
+<g id="seen-menorah">
+<path fill="none" d="M50 40v30M12 40c0 18 16 26 38 26s38-8 38-26M21 40c0 14 12 20 29 20s29-6 29-20M31 40c0 10 8 14 19 14s19-4 19-14M40 40c0 6 4 8 10 8s10-2 10-8"/>
+<path fill="#c98a0c" d="M36 70h28l6 16H30z"/>
+<path fill="#4a66d4" d="M9 28h6v12H9zM18 28h6v12h-6zM28 28h6v12h-6zM37 28h6v12h-6zM47 18h6v22h-6zM57 28h6v12h-6zM66 28h6v12h-6zM76 28h6v12h-6zM85 28h6v12h-6z"/>
+<path fill="#f5b93f" d="M12 17c4 4 4 9 0 9s-4-5 0-9zM21 17c4 4 4 9 0 9s-4-5 0-9zM31 17c4 4 4 9 0 9s-4-5 0-9zM40 17c4 4 4 9 0 9s-4-5 0-9zM50 7c4 4 4 9 0 9s-4-5 0-9zM60 17c4 4 4 9 0 9s-4-5 0-9zM69 17c4 4 4 9 0 9s-4-5 0-9zM79 17c4 4 4 9 0 9s-4-5 0-9zM88 17c4 4 4 9 0 9s-4-5 0-9z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-menorah" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-menorah" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

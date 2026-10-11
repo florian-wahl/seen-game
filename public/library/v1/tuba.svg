@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tuba</title>
+<defs>
+<g id="seen-tuba">
+<path fill="#c98a0c" d="M30 24h6v14h-6zM40 24h6v14h-6z"/>
+<path fill="none" d="M24 34h-10"/>
+<path fill="#f5b93f" fill-rule="evenodd" d="M18 62a26 26 0 1 0 52 0a26 26 0 1 0-52 0zM32 62a12 12 0 1 0 24 0a12 12 0 1 0-24 0z"/>
+<path fill="#f5b93f" d="M60 50V22l-6-14h36l-6 14v28z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tuba" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tuba" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

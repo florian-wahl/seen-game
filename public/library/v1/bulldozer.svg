@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bulldozer</title>
+<defs>
+<g id="seen-bulldozer">
+<path fill="none" d="M20 48V36M70 58h10"/>
+<path fill="#4d5968" d="M18 66h52a10 10 0 0 1 0 20H18a10 10 0 0 1 0-20z"/>
+<path fill="none" stroke-width="6" d="M20 76h.01M34 76h.01M48 76h.01M62 76h.01"/>
+<path fill="#f5b93f" d="M12 48h58v18H12z"/>
+<path fill="#f5b93f" d="M40 22h26v26H40z"/>
+<path fill="#8fd0f5" d="M46 28h14v14H46z"/>
+<path fill="#c98a0c" d="M80 42h10v44H80z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bulldozer" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bulldozer" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

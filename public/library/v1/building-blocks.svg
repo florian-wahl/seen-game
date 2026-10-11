@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>building blocks</title>
+<defs>
+<g id="seen-building-blocks">
+<path fill="#e5484d" d="M14 52h30a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V56a4 4 0 0 1 4-4z"/>
+<path fill="#4a66d4" d="M56 52h30a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H56a4 4 0 0 1-4-4V56a4 4 0 0 1 4-4z"/>
+<path fill="#f5b93f" d="M35 14h30a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H35a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/>
+<circle fill="#ffffff" cx="29" cy="71" r="9"/>
+<path fill="#ffffff" d="M62 62h18v18H62z"/>
+<path fill="#ffffff" d="M50 23l10 19H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-building-blocks" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-building-blocks" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

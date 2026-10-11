@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baseball cap</title>
+<defs>
+<g id="seen-baseball-cap">
+<path fill="#1b6b49" d="M60 58c10-2 26-2 32 4 2 4-2 8-8 8H58z"/>
+<path fill="#2f9e6b" d="M10 64c0-24 16-40 36-40s34 16 34 40z"/>
+<path fill="none" d="M46 24c-8 10-10 26-8 40"/>
+<path fill="#1b6b49" d="M42 20h8v6h-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baseball-cap" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baseball-cap" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

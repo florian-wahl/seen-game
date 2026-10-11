@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>nail</title>
+<defs>
+<g id="seen-nail">
+<g transform="rotate(-40 50 50)">
+<path fill="#8d99a6" d="M18 45h56v10H18z"/>
+<path fill="#8d99a6" d="M74 45l16 5-16 5z"/>
+<path fill="#4d5968" d="M10 34h8v32h-8z"/>
+<path fill="none" d="M24 45v10M30 45v10"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-nail" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-nail" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

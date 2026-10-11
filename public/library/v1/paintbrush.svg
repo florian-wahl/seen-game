@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>paintbrush</title>
+<defs>
+<g id="seen-paintbrush">
+<g transform="rotate(-40 50 50)">
+<path fill="#d9a47a" d="M12 44h40v12H12a6 6 0 0 1 0-12z"/>
+<path fill="#cfd6dc" d="M50 42h14v16H50z"/>
+<path fill="#4a66d4" d="M64 42h10c10 0 16 4 18 8-2 4-8 8-18 8H64z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-paintbrush" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-paintbrush" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>game controller</title>
+<defs>
+<g id="seen-game-controller">
+<path fill="#4d5968" d="M30 30h40c12 0 18 10 20 24 2 14-2 24-10 24-6 0-10-6-14-12H34c-4 6-8 12-14 12-8 0-12-10-10-24 2-14 8-24 20-24z"/>
+<path fill="#1c1b22" d="M26 42h6v6h6v6h-6v6h-6v-6h-6v-6h6z"/>
+<circle fill="#e5484d" cx="68" cy="44" r="4"/>
+<circle fill="#3f9fdc" cx="76" cy="52" r="4"/>
+<circle fill="#f5b93f" cx="60" cy="52" r="4"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-game-controller" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-game-controller" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

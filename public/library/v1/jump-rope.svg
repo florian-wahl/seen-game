@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>jump rope</title>
+<defs>
+<g id="seen-jump-rope">
+<path fill="none" d="M24 30c-6 40 4 58 26 58s32-18 26-58"/>
+<path fill="#2f9e6b" d="M18 8h12v22a6 6 0 0 1-12 0z"/>
+<path fill="#2f9e6b" d="M70 8h12v22a6 6 0 0 1-12 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-jump-rope" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-jump-rope" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

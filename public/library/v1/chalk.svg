@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chalk</title>
+<defs>
+<g id="seen-chalk">
+<g transform="rotate(-30 50 50)">
+<path fill="#ffffff" d="M14 32h60a6 6 0 0 1 0 12H14a6 6 0 0 1 0-12z"/>
+<path fill="#f7a8cf" d="M26 54h60a6 6 0 0 1 0 12H26a6 6 0 0 1 0-12z"/>
+<path fill="none" d="M70 34q4 4 0 8M82 56q4 4 0 8"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chalk" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chalk" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

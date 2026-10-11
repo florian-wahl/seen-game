@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>jet ski</title>
+<defs>
+<g id="seen-jet-ski">
+<path fill="none" d="M60 58l6-20h-8"/>
+<path fill="#e0559a" d="M8 60h60l24-10-8 22H16c-4 0-8-6-8-12z"/>
+<path fill="#1c1b22" d="M22 48h28a6 6 0 0 1 6 6v6H18v-4a8 8 0 0 1 4-8z"/>
+<path fill="none" d="M8 84q8-6 16 0t16 0 16 0 16 0 16 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-jet-ski" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-jet-ski" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rake</title>
+<defs>
+<g id="seen-rake">
+<g transform="translate(6 5) scale(.88) rotate(25 50 50)">
+<path fill="#d9a47a" d="M46 6h8v58h-8z"/>
+<path fill="none" d="M30 62l16-12M70 62L54 50"/>
+<path fill="none" d="M24 70v20M37 70v20M50 70v20M63 70v20M76 70v20"/>
+<path fill="#f08a3c" d="M20 62h60v8H20z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rake" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rake" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

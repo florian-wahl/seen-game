@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>thermometer</title>
+<defs>
+<g id="seen-thermometer">
+<g transform="rotate(-40 50 50)">
+<path fill="#ffffff" d="M24 42h58a8 8 0 0 1 0 16H24z"/>
+<circle fill="#e5484d" cx="20" cy="50" r="11"/>
+<path fill="#e5484d" d="M26 47h30v6H26z"/>
+<path fill="none" d="M60 42v6M68 42v6M76 42v6"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-thermometer" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-thermometer" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

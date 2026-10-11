@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hot air balloon</title>
+<defs>
+<g id="seen-hot-air-balloon">
+<path fill="none" d="M36 64l6 14M64 64l-6 14"/>
+<path fill="#e5484d" d="M50 8c-20 0-32 14-32 30 0 16 14 24 18 30h28c4-6 18-14 18-30 0-16-12-30-32-30z"/>
+<path fill="#f5b93f" d="M50 8c-8 4-12 16-12 30s6 24 6 30h12c0-6 6-16 6-30S58 12 50 8z"/>
+<path fill="#a9683c" d="M40 78h20v12H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hot-air-balloon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hot-air-balloon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

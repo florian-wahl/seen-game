@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>diaper</title>
+<defs>
+<g id="seen-diaper">
+<path fill="#ffffff" d="M10 26h80v14c-14 6-22 18-24 34H34c-2-16-10-28-24-34z"/>
+<path fill="#8fd0f5" d="M10 26h80v8H10z"/>
+<path fill="#f5b93f" d="M10 34h10v10H10zM80 34h10v10H80z"/>
+<path fill="none" d="M18 46c8 4 14 12 16 24M82 46c-8 4-14 12-16 24"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-diaper" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-diaper" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

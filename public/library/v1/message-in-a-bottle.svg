@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>message in a bottle</title>
+<defs>
+<g id="seen-message-in-a-bottle">
+<g transform="rotate(-30 50 50)">
+<path fill="#7fd3a0" d="M12 36h46c6 0 10 4 14 8h12v12H72c-4 4-8 8-14 8H12a6 6 0 0 1-6-6V42a6 6 0 0 1 6-6z"/>
+<path fill="#a9683c" d="M84 43h8v14h-8z"/>
+<path fill="#fbf3e0" d="M18 43h34v14H18z"/>
+<path fill="#e5484d" d="M32 43h6v14h-6z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-message-in-a-bottle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-message-in-a-bottle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

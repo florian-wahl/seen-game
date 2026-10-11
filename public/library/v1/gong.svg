@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gong</title>
+<defs>
+<g id="seen-gong">
+<path fill="#b3262d" d="M10 14h80v8H10zM14 22h8v68h-8zM78 22h8v68h-8z"/>
+<path fill="none" d="M38 22l6 12M62 22l-6 12"/>
+<circle fill="#f5b93f" cx="50" cy="56" r="24"/>
+<circle fill="#c98a0c" cx="50" cy="56" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gong" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gong" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

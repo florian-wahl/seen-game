@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>key</title>
+<defs>
+<g id="seen-key">
+<g transform="rotate(-40 50 50)">
+<path fill="#f5b93f" d="M36 45h54v10H36z"/>
+<path fill="#f5b93f" d="M70 55h8v10h-8zM82 55h8v8h-8z"/>
+<path fill="#f5b93f" fill-rule="evenodd" d="M6 50a16 16 0 1 0 32 0a16 16 0 1 0-32 0zM15 50a7 7 0 1 0 14 0a7 7 0 1 0-14 0z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-key" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-key" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gift box</title>
+<defs>
+<g id="seen-gift-box">
+<path fill="#e0559a" d="M16 40h68v48H16z"/>
+<path fill="#e0559a" d="M10 30h80v14H10z"/>
+<path fill="#f5b93f" d="M45 30h10v58H45z"/>
+<path fill="#f5b93f" d="M50 30c-10-14-26-14-22-4 2 4 12 4 22 4zM50 30c10-14 26-14 22-4-2 4-12 4-22 4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gift-box" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gift-box" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cheese wedge</title>
+<defs>
+<g id="seen-cheese-wedge">
+<path fill="#ffe07a" d="M10 50L74 22l16 28z"/>
+<path fill="#f5b93f" d="M10 50h80v30H10z"/>
+<circle fill="#c98a0c" cx="30" cy="64" r="6"/>
+<circle fill="#c98a0c" cx="62" cy="68" r="5"/>
+<ellipse fill="#c98a0c" cx="62" cy="40" rx="7" ry="4"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cheese-wedge" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cheese-wedge" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pocket knife</title>
+<defs>
+<g id="seen-pocket-knife">
+<g transform="rotate(-20 50 50)">
+<path fill="#cfd6dc" d="M52 44l34-26c4 2 5 6 2 9L62 52z"/>
+<path fill="#e5484d" d="M16 46h56a10 10 0 0 1 0 20H16a10 10 0 0 1 0-20z"/>
+<path fill="none" stroke-width="6" d="M66 56h.01"/>
+<path fill="none" d="M18 56h30"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pocket-knife" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pocket-knife" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

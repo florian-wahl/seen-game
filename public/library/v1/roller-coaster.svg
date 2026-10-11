@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>roller coaster</title>
+<defs>
+<g id="seen-roller-coaster">
+<path fill="none" d="M24 52v38M44 26v64M64 52v38M84 74v16"/>
+<path fill="none" d="M6 84C16 84 18 54 26 48S38 22 46 22s14 26 20 32 14 22 26 24"/>
+<path fill="#e5484d" d="M34 10h22a4 4 0 0 1 4 4v6H30v-6a4 4 0 0 1 4-4z"/>
+<path fill="none" stroke-width="6" d="M36 22h.01M54 22h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-roller-coaster" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-roller-coaster" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

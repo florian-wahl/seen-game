@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>UFO</title>
+<defs>
+<g id="seen-ufo">
+<path fill="none" d="M30 66l-6 12M70 66l6 12"/>
+<path fill="#8fd0f5" d="M30 46c0-14 8-24 20-24s20 10 20 24z"/>
+<path fill="#9bc53d" d="M8 54c0-8 18-12 42-12s42 4 42 12-18 14-42 14S8 62 8 54z"/>
+<path fill="#f5b93f" d="M20 56a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM46 58a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM72 56a4 4 0 1 0 8 0a4 4 0 1 0-8 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ufo" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ufo" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

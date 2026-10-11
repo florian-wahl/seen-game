@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>traffic light</title>
+<defs>
+<g id="seen-traffic-light">
+<path fill="#4d5968" d="M46 74h8v18h-8z"/>
+<path fill="#1c1b22" d="M34 6h32a6 6 0 0 1 6 6v56a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6V12a6 6 0 0 1 6-6z"/>
+<circle fill="#e5484d" cx="50" cy="22" r="8"/>
+<circle fill="#f5b93f" cx="50" cy="40" r="8"/>
+<circle fill="#2f9e6b" cx="50" cy="58" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-traffic-light" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-traffic-light" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

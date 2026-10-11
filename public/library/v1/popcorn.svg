@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>popcorn</title>
+<defs>
+<g id="seen-popcorn">
+<path fill="#fbf3e0" d="M22 40c-8-4-6-16 4-16 0-10 12-14 18-8 4-8 16-8 20 0 6-6 18-2 16 8 10 0 12 12 4 16z"/>
+<path fill="none" d="M40 28q4-3 7 2M58 24q4-3 7 2"/>
+<path fill="#ffffff" d="M20 36h60l-8 52H28z"/>
+<path fill="#e5484d" d="M30 36h10v52h-8zM60 36h10l-2 52h-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-popcorn" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-popcorn" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

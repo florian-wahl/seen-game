@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wind chime</title>
+<defs>
+<g id="seen-wind-chime">
+<path fill="none" d="M50 8v10M26 24v8M40 24v8M60 24v8M74 24v8M50 24v56"/>
+<path fill="#a9683c" d="M18 18h64v8H18z"/>
+<path fill="#8fd0f5" d="M22 32h8v40h-8zM36 32h8v50h-8zM56 32h8v46h-8zM70 32h8v36h-8z"/>
+<circle fill="#e5484d" cx="50" cy="58" r="5"/>
+<path fill="#e5484d" d="M43 80h14l-7 10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wind-chime" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wind-chime" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

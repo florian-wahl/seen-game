@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>flag</title>
+<defs>
+<g id="seen-flag">
+<path fill="#8d99a6" d="M14 12h6v80h-6z"/>
+<circle fill="#f5b93f" cx="17" cy="10" r="4"/>
+<path fill="#2aa7a0" d="M20 16c14-6 24 6 38 0s20-6 28 0v38c-8-6-14-6-28 0s-24-6-38 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-flag" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-flag" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

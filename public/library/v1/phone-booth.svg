@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>phone booth</title>
+<defs>
+<g id="seen-phone-booth">
+<path fill="#b3262d" d="M24 14c0-6 12-8 26-8s26 2 26 8v4H24z"/>
+<path fill="#e5484d" d="M26 18h48v74H26z"/>
+<path fill="#ffffff" d="M30 22h40v6H30z"/>
+<path fill="#8fd0f5" d="M32 32h36v40H32z"/>
+<path fill="none" d="M44 32v40M56 32v40M32 45h36M32 58h36"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-phone-booth" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-phone-booth" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

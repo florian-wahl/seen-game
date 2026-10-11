@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>credit card</title>
+<defs>
+<g id="seen-credit-card">
+<path fill="#7d5fd0" d="M14 22h72a6 6 0 0 1 6 6v44a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V28a6 6 0 0 1 6-6z"/>
+<path fill="#f5b93f" d="M18 36h16v14H18z"/>
+<path fill="none" d="M18 62h12M36 62h12M54 62h12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-credit-card" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-credit-card" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>towel</title>
+<defs>
+<g id="seen-towel">
+<path fill="#8d99a6" d="M16 18h68a4 4 0 0 1 0 8H16a4 4 0 0 1 0-8z"/>
+<path fill="#2aa7a0" d="M22 22h56v62a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4z"/>
+<path fill="#7fdcd3" d="M22 70h56v8H22z"/>
+<path fill="none" d="M34 26v38"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-towel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-towel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

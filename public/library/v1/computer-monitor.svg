@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>computer monitor</title>
+<defs>
+<g id="seen-computer-monitor">
+<path fill="#4d5968" d="M44 64h12v18H44z"/>
+<path fill="#4d5968" d="M30 80h40a4 4 0 0 1 4 4v4H26v-4a4 4 0 0 1 4-4z"/>
+<path fill="#1c1b22" d="M12 12h76a4 4 0 0 1 4 4v46a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z"/>
+<path fill="#7fdcd3" d="M14 18h72v42H14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-computer-monitor" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-computer-monitor" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>picture frame</title>
+<defs>
+<g id="seen-picture-frame">
+<path fill="#a9683c" d="M10 14h80v72H10z"/>
+<path fill="#8fd0f5" d="M20 24h60v52H20z"/>
+<path fill="#2f9e6b" d="M20 76l20-24 12 14 8-8 20 18z"/>
+<circle fill="#f5b93f" cx="64" cy="38" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-picture-frame" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-picture-frame" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>axe</title>
+<defs>
+<g id="seen-axe">
+<path fill="#d9a47a" d="M58 10l8 2-24 78-8-2z"/>
+<path fill="#e5484d" d="M62 22L30 12c-8 10-8 28 0 38l28-8z"/>
+<path fill="none" d="M34 18c-4 8-4 18 0 26"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-axe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-axe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

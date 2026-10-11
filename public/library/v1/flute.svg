@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>flute</title>
+<defs>
+<g id="seen-flute">
+<g transform="rotate(-40 50 50)">
+<path fill="#8d99a6" d="M6 45h88v10H6z"/>
+<path fill="#4d5968" d="M6 44h8v12H6z"/>
+<path fill="none" stroke-width="5" d="M24 50h.01M48 50h.01M58 50h.01M68 50h.01M78 50h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-flute" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-flute" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

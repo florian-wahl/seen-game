@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>potted plant</title>
+<defs>
+<g id="seen-potted-plant">
+<path fill="#2f9e6b" d="M50 52C30 50 20 36 22 20c14 2 24 12 28 32zM50 52c20-2 30-16 28-32-14 2-24 12-28 32zM50 52c-6-16-4-32 0-44 4 12 6 28 0 44z"/>
+<path fill="none" d="M50 52V40"/>
+<path fill="#c25e12" d="M26 52h48l-6 38H32z"/>
+<path fill="#f08a3c" d="M22 50h56v10H22z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-potted-plant" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-potted-plant" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

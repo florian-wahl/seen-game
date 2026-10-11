@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pliers</title>
+<defs>
+<g id="seen-pliers">
+<path fill="#8d99a6" d="M42 50L38 18c0-6 4-10 8-10l6 42z"/>
+<path fill="#8d99a6" d="M58 50l4-32c0-6-4-10-8-10l-6 42z"/>
+<path fill="#f08a3c" d="M44 52L22 90l-8-4 22-38z"/>
+<path fill="#f08a3c" d="M56 52l22 38 8-4-22-38z"/>
+<circle fill="#4d5968" cx="50" cy="50" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pliers" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pliers" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

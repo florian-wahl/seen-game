@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>maracas</title>
+<defs>
+<g id="seen-maracas">
+<g transform="rotate(-25 50 50)">
+<path fill="#a9683c" d="M27 50h6v38h-6z"/>
+<ellipse fill="#e0559a" cx="30" cy="32" rx="15" ry="20"/>
+<path fill="#f5b93f" d="M16 30h28v6H16z"/>
+</g>
+<g transform="rotate(25 50 50)">
+<path fill="#a9683c" d="M67 50h6v38h-6z"/>
+<ellipse fill="#2aa7a0" cx="70" cy="32" rx="15" ry="20"/>
+<path fill="#f5b93f" d="M56 30h28v6H56z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-maracas" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-maracas" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

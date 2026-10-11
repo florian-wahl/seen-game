@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>power drill</title>
+<defs>
+<g id="seen-power-drill">
+<path fill="#8d99a6" d="M78 34h14v7H78z"/>
+<path fill="#1c1b22" d="M70 30h10v15H70z"/>
+<path fill="#7d5fd0" d="M22 22h42a8 8 0 0 1 8 8v12a8 8 0 0 1-8 8H48l-6 28H26l4-28h-8a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8z"/>
+<path fill="#1c1b22" d="M20 76h30a4 4 0 0 1 4 4v8H16v-8a4 4 0 0 1 4-4z"/>
+<path fill="#1c1b22" d="M48 50h6v8h-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-power-drill" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-power-drill" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

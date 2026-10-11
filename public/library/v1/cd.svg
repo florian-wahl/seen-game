@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>CD</title>
+<defs>
+<g id="seen-cd">
+<path fill="#8fd0f5" fill-rule="evenodd" d="M10 50a40 40 0 1 0 80 0a40 40 0 1 0-80 0zM44 50a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+<path fill="#f7a8cf" d="M24 28a34 34 0 0 1 24-14l1 8a26 26 0 0 0-18 11z"/>
+<path fill="#ffe07a" d="M76 72a34 34 0 0 1-24 14l-1-8a26 26 0 0 0 18-11z"/>
+<path fill="#ffffff" fill-rule="evenodd" d="M36 50a14 14 0 1 0 28 0a14 14 0 1 0-28 0zM44 50a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cd" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cd" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>top hat</title>
+<defs>
+<g id="seen-top-hat">
+<path fill="#1c1b22" d="M30 14h40a4 4 0 0 1 4 4v52H26V18a4 4 0 0 1 4-4z"/>
+<path fill="#e5484d" d="M26 56h48v10H26z"/>
+<path fill="#1c1b22" d="M12 70h76a4 4 0 0 1 0 8H12a4 4 0 0 1 0-8z"/>
+<path fill="none" d="M34 22v28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-top-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-top-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

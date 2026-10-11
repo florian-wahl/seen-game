@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wooden crate</title>
+<defs>
+<g id="seen-wooden-crate">
+<path fill="#d9a47a" d="M12 12h76v76H12z"/>
+<path fill="none" d="M22 40h56M22 60h56"/>
+<path fill="#a9683c" d="M22 70L70 22h8v8L30 78h-8z"/>
+<path fill="#a9683c" fill-rule="evenodd" d="M12 12h76v76H12zM22 22h56v56H22z"/>
+<path fill="none" stroke-width="5" d="M17 17h.01M83 17h.01M17 83h.01M83 83h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wooden-crate" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wooden-crate" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

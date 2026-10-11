@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>teddy bear</title>
+<defs>
+<g id="seen-teddy-bear">
+<circle fill="#a9683c" cx="30" cy="16" r="9"/>
+<circle fill="#a9683c" cx="70" cy="16" r="9"/>
+<path fill="#a9683c" d="M30 52l-14 10a6 6 0 0 0 8 9l10-7zM70 52l14 10a6 6 0 0 1-8 9l-10-7z"/>
+<path fill="#a9683c" d="M28 60c0-10 10-16 22-16s22 6 22 16v18c0 8-10 12-22 12s-22-4-22-12z"/>
+<ellipse fill="#d9a47a" cx="50" cy="70" rx="12" ry="12"/>
+<circle fill="#a9683c" cx="50" cy="32" r="20"/>
+<ellipse fill="#d9a47a" cx="50" cy="39" rx="9" ry="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-teddy-bear" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-teddy-bear" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

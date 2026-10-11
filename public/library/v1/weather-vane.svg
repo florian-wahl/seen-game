@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>weather vane</title>
+<defs>
+<g id="seen-weather-vane">
+<path fill="none" d="M50 30v62M26 62h48"/>
+<path fill="none" stroke-width="7" d="M26 62h.01M74 62h.01"/>
+<path fill="#1c1b22" d="M12 36l12 8-12 8h10l8-6h40v6l14-8-14-8v6H30l-8-6z"/>
+<path fill="#e5484d" d="M38 38c-6-4-6-14 2-16 2-4 8-6 10-2 4 0 6 4 4 6 8 0 14 4 14 12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-weather-vane" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-weather-vane" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

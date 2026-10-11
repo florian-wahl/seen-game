@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hockey stick</title>
+<defs>
+<g id="seen-hockey-stick">
+<path fill="#4a66d4" d="M68 8l8 2-24 70-8-2z"/>
+<path fill="#1c1b22" d="M68 8l8 2-4 14-8-2z"/>
+<path fill="#1c1b22" d="M44 76l10 4-4 10H18a6 6 0 0 1 0-12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hockey-stick" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hockey-stick" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

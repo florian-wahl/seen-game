@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bird nest</title>
+<defs>
+<g id="seen-bird-nest">
+<ellipse fill="#8fd0f5" cx="38" cy="44" rx="10" ry="12"/>
+<ellipse fill="#8fd0f5" cx="60" cy="42" rx="10" ry="12"/>
+<path fill="#a9683c" d="M8 48c4 22 20 34 42 34s38-12 42-34c-8 6-26 10-42 10S16 54 8 48z"/>
+<path fill="none" d="M18 62c14 6 50 6 64 0M28 72c12 4 32 4 44 0M12 50l10 4M88 50l-10 4"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bird-nest" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bird-nest" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

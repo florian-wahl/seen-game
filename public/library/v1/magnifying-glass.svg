@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>magnifying glass</title>
+<defs>
+<g id="seen-magnifying-glass">
+<path fill="#6f3f1f" d="M58 62l6-6 26 24a4 4 0 0 1-6 6z"/>
+<circle fill="#4d5968" cx="40" cy="40" r="28"/>
+<circle fill="#8fd0f5" cx="40" cy="40" r="21"/>
+<path fill="none" d="M28 32q4-8 12-10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-magnifying-glass" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-magnifying-glass" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

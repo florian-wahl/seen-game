@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>umbrella</title>
+<defs>
+<g id="seen-umbrella">
+<path fill="none" d="M50 14v60c0 10 14 10 14 2"/>
+<path fill="#7d5fd0" d="M8 52c0-24 20-42 42-42s42 18 42 42c-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0z"/>
+<path fill="none" d="M50 10c-10 10-14 26-14 42M50 10c10 10 14 26 14 42"/>
+<path fill="none" d="M50 10V6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-umbrella" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-umbrella" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

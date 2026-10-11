@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baseball bat</title>
+<defs>
+<g id="seen-baseball-bat">
+<g transform="rotate(-40 50 50)">
+<path fill="#a9683c" d="M12 46h18c20 0 40-6 54-6a8 8 0 0 1 0 18c-14 0-34-6-54-6H12z"/>
+<path fill="#1c1b22" d="M12 45h16v10H12z"/>
+<path fill="#6f3f1f" d="M6 40h6v20H6z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baseball-bat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baseball-bat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

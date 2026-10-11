@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baby mobile</title>
+<defs>
+<g id="seen-baby-mobile">
+<path fill="none" d="M50 8v12M16 20h68M22 20v22M50 20v38M78 20v28"/>
+<path fill="#f5b93f" d="M22 42L24.4 48.8L31.5 48.9L25.8 53.2L27.9 60.1L22 56L16.1 60.1L18.2 53.2L12.5 48.9L19.6 48.8z"/>
+<path fill="#c3a8f0" d="M54 58a14 14 0 1 0 8 24 11 11 0 1 1-8-24z"/>
+<path fill="#8fd0f5" d="M66 54c0-6 6-8 10-5 2-5 10-5 12 1 4 1 4 8-1 8H69c-2 0-3-2-3-4z"/>
+<circle fill="#e0559a" cx="50" cy="20" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baby-mobile" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baby-mobile" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

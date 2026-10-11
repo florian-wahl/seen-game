@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>park bench</title>
+<defs>
+<g id="seen-park-bench">
+<path fill="none" d="M18 24v36M82 24v36"/>
+<path fill="#1c1b22" d="M16 64h6v22h-6zM78 64h6v22h-6z"/>
+<path fill="#a9683c" d="M10 24h80v10H10zM10 40h80v10H10z"/>
+<path fill="#a9683c" d="M8 58h84v8H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-park-bench" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-park-bench" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

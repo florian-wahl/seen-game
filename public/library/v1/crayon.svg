@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>crayon</title>
+<defs>
+<g id="seen-crayon">
+<g transform="rotate(-40 50 50)">
+<path fill="#7d5fd0" d="M66 42h4l18 6v4l-18 6h-4z"/>
+<path fill="#7d5fd0" d="M14 40h54v20H14a4 4 0 0 1-4-4V44a4 4 0 0 1 4-4z"/>
+<path fill="#c3a8f0" d="M22 40h36v20H22z"/>
+<path fill="none" d="M28 50h24"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-crayon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-crayon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>whoopee cushion</title>
+<defs>
+<g id="seen-whoopee-cushion">
+<path fill="#a52c69" d="M78 48h12v14H78z"/>
+<path fill="#e0559a" d="M8 54c0-16 18-26 38-26s38 10 38 26-18 24-38 24S8 70 8 54z"/>
+<path fill="none" d="M14 56c10 8 54 8 64 0"/>
+<path fill="none" d="M24 40q10-6 22-6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-whoopee-cushion" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-whoopee-cushion" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

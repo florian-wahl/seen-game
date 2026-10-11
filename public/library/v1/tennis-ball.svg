@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tennis ball</title>
+<defs>
+<g id="seen-tennis-ball">
+<circle fill="#c9e265" cx="50" cy="50" r="36"/>
+<g transform="rotate(-35 50 50)">
+<path fill="none" d="M26 22c14 10 14 46 0 56"/>
+<path fill="none" d="M74 22c-14 10-14 46 0 56"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tennis-ball" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tennis-ball" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

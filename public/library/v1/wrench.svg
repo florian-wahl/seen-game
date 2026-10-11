@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wrench</title>
+<defs>
+<g id="seen-wrench">
+<g transform="rotate(-40 50 50)">
+<path fill="#8d99a6" d="M30 44h38v12H30z"/>
+<path fill="#8d99a6" d="M64 34h12a14 14 0 0 1 14 12h-10v8h10a14 14 0 0 1-14 12H64z"/>
+<path fill="#8d99a6" fill-rule="evenodd" d="M8 50a14 14 0 1 0 28 0a14 14 0 1 0-28 0zM16 50a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wrench" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wrench" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

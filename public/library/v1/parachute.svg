@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>parachute</title>
+<defs>
+<g id="seen-parachute">
+<path fill="none" d="M8 44l34 34M92 44L58 78M36 44l10 34M64 44l-10 34"/>
+<path fill="#7d5fd0" d="M8 44c0-20 18-36 42-36s42 16 42 36c-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0-4-4-10-4-14 0z"/>
+<path fill="#ffffff" d="M50 8c-8 8-12 22-12 36 4-4 8-4 12 0 4-4 8-4 12 0 0-14-4-28-12-36z"/>
+<path fill="#a9683c" d="M40 76h20v14H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-parachute" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-parachute" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

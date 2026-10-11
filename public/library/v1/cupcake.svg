@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cupcake</title>
+<defs>
+<g id="seen-cupcake">
+<circle fill="#e5484d" cx="50" cy="16" r="7"/>
+<path fill="#3f9fdc" d="M22 52h56l-8 36H30z"/>
+<path fill="none" d="M38 54l2 32M50 54v32M62 54l-2 32"/>
+<path fill="#f7a8cf" d="M18 54c-6-8 0-18 10-16 0-12 10-18 22-18s22 6 22 18c10-2 16 8 10 16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cupcake" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cupcake" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

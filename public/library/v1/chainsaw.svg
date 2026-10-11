@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chainsaw</title>
+<defs>
+<g id="seen-chainsaw">
+<path fill="#cfd6dc" d="M50 42h34a8 8 0 0 1 0 16H50z"/>
+<path fill="none" d="M18 36c0-14 10-20 22-20h8"/>
+<path fill="#f08a3c" d="M12 36h40v28H12a4 4 0 0 1-4-4V40a4 4 0 0 1 4-4z"/>
+<path fill="#1c1b22" d="M18 64h20v8H18z"/>
+<path fill="none" stroke-width="5" d="M60 50h.01M70 50h.01M80 50h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chainsaw" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chainsaw" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>steam locomotive</title>
+<defs>
+<g id="seen-steam-locomotive">
+<path fill="#1c1b22" d="M16 16h18v6h-4v18H20V22h-4z"/>
+<path fill="#2f9e6b" d="M12 40h48v28H12z"/>
+<path fill="#1b6b49" d="M54 20h36v6h-4v42H58V26h-4z"/>
+<path fill="#8fd0f5" d="M64 32h14v12H64z"/>
+<path fill="#e5484d" d="M12 60L6 76h12z"/>
+<circle fill="#1c1b22" cx="26" cy="76" r="9"/>
+<circle fill="#1c1b22" cx="46" cy="76" r="9"/>
+<circle fill="#1c1b22" cx="72" cy="74" r="12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-steam-locomotive" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-steam-locomotive" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

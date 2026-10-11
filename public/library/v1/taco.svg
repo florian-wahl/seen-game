@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>taco</title>
+<defs>
+<g id="seen-taco">
+<path fill="#9bc53d" d="M10 70c0-30 18-50 40-50s40 20 40 50z"/>
+<circle fill="#e5484d" cx="30" cy="36" r="6"/>
+<circle fill="#e5484d" cx="64" cy="33" r="5"/>
+<path fill="#f5b93f" d="M8 80c0-26 20-46 42-46s42 20 42 46z"/>
+<path fill="none" d="M26 64q6-6 12 0M54 56q6-6 12 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-taco" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-taco" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

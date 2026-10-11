@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sewing machine</title>
+<defs>
+<g id="seen-sewing-machine">
+<path fill="#f5b93f" d="M50 10h8v12h-8z"/>
+<path fill="#2aa7a0" d="M68 72V36H30v14H18V30a10 10 0 0 1 10-10h48a10 10 0 0 1 10 10v42z"/>
+<path fill="none" d="M24 50v12M30 28h30"/>
+<path fill="#e8d5b0" d="M8 72h84v12H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sewing-machine" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sewing-machine" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

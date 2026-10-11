@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>trophy</title>
+<defs>
+<g id="seen-trophy">
+<path fill="none" d="M28 22H16c0 16 8 24 16 24M72 22h12c0 16-8 24-16 24"/>
+<path fill="#f5b93f" d="M44 54h12v18H44z"/>
+<path fill="#f5b93f" d="M28 12h44v20c0 14-10 24-22 24S28 46 28 32z"/>
+<path fill="#6f3f1f" d="M30 70h40v18H30z"/>
+<path fill="#ffe07a" d="M40 76h20v6H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-trophy" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-trophy" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cowboy hat</title>
+<defs>
+<g id="seen-cowboy-hat">
+<path fill="#a9683c" d="M8 60c0-6 6-8 12-4 8 6 20 8 30 8s22-2 30-8c6-4 12-2 12 4 0 10-18 20-42 20S8 70 8 60z"/>
+<path fill="#a9683c" d="M28 60c0-20 4-38 12-38 4 0 6 4 10 4s6-4 10-4c8 0 12 18 12 38-6 2-14 4-22 4s-16-2-22-4z"/>
+<path fill="#6f3f1f" d="M29 50c6 2 14 3 21 3s15-1 21-3l1 8c-6 2-14 3-22 3s-16-1-22-3z"/>
+<path fill="none" d="M50 26v20"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cowboy-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cowboy-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

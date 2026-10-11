@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chocolate bar</title>
+<defs>
+<g id="seen-chocolate-bar">
+<path fill="#6f3f1f" d="M28 10h44a4 4 0 0 1 4 4v46H24V14a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M50 12v42M26 26h48M26 42h48"/>
+<path fill="#4a66d4" d="M22 52l6 4 6-4 6 4 6-4 6 4 6-4 6 4 6-4 6 4 4-4v34a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chocolate-bar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chocolate-bar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

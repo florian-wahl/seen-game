@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lighthouse</title>
+<defs>
+<g id="seen-lighthouse">
+<path fill="#ffffff" d="M36 34h28l6 52H30z"/>
+<path fill="#e5484d" d="M34.6 46h30.8l1.4 12H33.2zM31.8 70h36.4L70 86H30z"/>
+<path fill="#1c1b22" d="M30 30h40v6H30z"/>
+<path fill="#ffe07a" d="M40 16h20v14H40z"/>
+<path fill="#e5484d" d="M36 16l14-10 14 10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-lighthouse" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-lighthouse" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

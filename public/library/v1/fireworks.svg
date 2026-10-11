@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fireworks</title>
+<defs>
+<g id="seen-fireworks">
+<path fill="none" d="M50 50V18M50 50l22-22M50 50h32M50 50l22 22M50 50v32M50 50L28 72M50 50H18M50 50L28 28"/>
+<path fill="#e5484d" d="M44 12a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM82 50a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM44 88a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM6 50a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+<path fill="#4a66d4" d="M72 24a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM72 76a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM18 76a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM18 24a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<circle fill="#f5b93f" cx="50" cy="50" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fireworks" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fireworks" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,5 +1,5 @@
 // Imports a picture library manifest into the database (pictures + confusables).
-// Usage: npx tsx --env-file=.env.local scripts/import-library.ts [--library <dir>] (default: public/library/$NEXT_PUBLIC_LIBRARY_DIR or placeholder)
+// Usage: npx tsx --env-file=.env.local scripts/import-library.ts [--library <dir>] (default: public/library/$NEXT_PUBLIC_LIBRARY_DIR or v1)
 // Idempotent: upserts every manifest picture; pictures missing from the manifest are marked rejected.
 import { readFileSync } from "node:fs";
 import path from "node:path";

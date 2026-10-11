@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>toothbrush</title>
+<defs>
+<g id="seen-toothbrush">
+<g transform="rotate(-40 50 50)">
+<path fill="#3f9fdc" d="M10 46h60a6 6 0 0 1 6 6v2H10a4 4 0 0 1 0-8z"/>
+<path fill="#3f9fdc" d="M66 50h22a4 4 0 0 1 0 8H66z"/>
+<path fill="#ffffff" d="M64 34h26v16H64z"/>
+<path fill="none" d="M71 34v16M77 34v16M83 34v16"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-toothbrush" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-toothbrush" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

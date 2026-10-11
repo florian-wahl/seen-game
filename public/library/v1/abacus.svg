@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>abacus</title>
+<defs>
+<g id="seen-abacus">
+<path fill="#a9683c" fill-rule="evenodd" d="M10 14h80v72H10zM18 22h64v56H18z"/>
+<path fill="none" d="M18 36h64M18 50h64M18 64h64"/>
+<path fill="#e5484d" d="M22 36a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM34 36a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM66 36a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="#f5b93f" d="M22 50a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM54 50a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM66 50a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="#4a66d4" d="M22 64a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM34 64a5 5 0 1 0 10 0a5 5 0 1 0-10 0zM46 64a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-abacus" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-abacus" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

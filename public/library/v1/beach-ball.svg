@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>beach ball</title>
+<defs>
+<g id="seen-beach-ball">
+<g transform="rotate(-20 50 50)">
+<circle fill="#ffffff" cx="50" cy="50" r="38"/>
+<path fill="#e5484d" d="M50 12c-14 10-18 26-18 38s4 28 18 38c-24-2-38-20-38-38s14-36 38-38z"/>
+<path fill="#4a66d4" d="M50 12c14 10 18 26 18 38s-4 28-18 38c24-2 38-20 38-38S74 14 50 12z"/>
+<path fill="#f5b93f" d="M50 12c-6 10-8 26-8 38s2 28 8 38c6-10 8-26 8-38s-2-28-8-38z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-beach-ball" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-beach-ball" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

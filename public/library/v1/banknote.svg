@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>banknote</title>
+<defs>
+<g id="seen-banknote">
+<g transform="translate(7 7) scale(.86)">
+<g transform="rotate(-10 50 50)">
+<path fill="#7fd3a0" d="M8 26h84v48H8z"/>
+<path fill="none" d="M15 33h70v34H15z"/>
+<circle fill="#2f9e6b" cx="50" cy="50" r="12"/>
+<path fill="none" stroke-width="6" d="M24 42h.01M76 58h.01"/>
+</g>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-banknote" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-banknote" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

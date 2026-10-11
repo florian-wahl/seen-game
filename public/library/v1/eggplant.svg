@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>eggplant</title>
+<defs>
+<g id="seen-eggplant">
+<g transform="rotate(-40 50 50)">
+<path fill="none" d="M80 50h10"/>
+<path fill="#53389a" d="M84 50c0-6-8-8-18-8-14 0-20-10-36-10-14 0-22 8-22 18s8 18 22 18c16 0 22-10 36-10 10 0 18-2 18-8z"/>
+<path fill="#6a8f1a" d="M62 42c8-2 16 2 20 8-4 6-12 10-20 8 2-6 2-10 0-16z"/>
+<path fill="none" d="M22 42q10-4 18 0"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-eggplant" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-eggplant" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

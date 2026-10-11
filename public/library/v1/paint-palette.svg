@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>paint palette</title>
+<defs>
+<g id="seen-paint-palette">
+<path fill="#d9a47a" fill-rule="evenodd" d="M50 12c24 0 42 14 42 34 0 14-12 18-22 16-8-2-12 4-10 10 2 8-4 16-14 16-24 0-38-18-38-40s18-36 42-36zM24 60a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+<circle fill="#e5484d" cx="30" cy="36" r="7"/>
+<circle fill="#f5b93f" cx="48" cy="26" r="7"/>
+<circle fill="#4a66d4" cx="68" cy="28" r="7"/>
+<circle fill="#2f9e6b" cx="76" cy="46" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-paint-palette" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-paint-palette" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>windmill</title>
+<defs>
+<g id="seen-windmill">
+<path fill="#a9683c" d="M38 44h24l8 46H30z"/>
+<path fill="#6f3f1f" d="M46 76h8v14h-8z"/>
+<g transform="rotate(20 50 40)">
+<path fill="#fbf3e0" d="M47 8h6v64h-6zM18 37h64v6H18z"/>
+<path fill="#fbf3e0" d="M53 10h10v26H53zM37 44h10v26H37zM20 27h26v10H20zM54 43h26v10H54z"/>
+</g>
+<path fill="none" stroke-width="7" d="M50 40h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-windmill" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-windmill" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

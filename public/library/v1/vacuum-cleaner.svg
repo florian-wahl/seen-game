@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>vacuum cleaner</title>
+<defs>
+<g id="seen-vacuum-cleaner">
+<path fill="none" d="M42 10h16M50 10v22"/>
+<path fill="#7d5fd0" d="M36 30h28a4 4 0 0 1 4 4v40H32V34a4 4 0 0 1 4-4z"/>
+<path fill="#c3a8f0" d="M40 38h20v24H40z"/>
+<path fill="#4d5968" d="M22 72h56a6 6 0 0 1 6 6v6H16v-6a6 6 0 0 1 6-6z"/>
+<circle fill="#1c1b22" cx="28" cy="86" r="5"/>
+<circle fill="#1c1b22" cx="72" cy="86" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-vacuum-cleaner" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-vacuum-cleaner" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

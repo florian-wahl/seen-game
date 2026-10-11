@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>Ferris wheel</title>
+<defs>
+<g id="seen-ferris-wheel">
+<g transform="translate(5 5) scale(.9)">
+<path fill="none" d="M50 46L26 90M50 46l24 44"/>
+<path fill="none" d="M14 46a36 36 0 1 0 72 0a36 36 0 1 0-72 0"/>
+<path fill="none" d="M50 10v72M14 46h72M25 21l50 50M75 21L25 71"/>
+<path fill="#e0559a" d="M44 10a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM80 46a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM44 82a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM8 46a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+<path fill="#3f9fdc" d="M69 21a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM69 71a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM19 71a6 6 0 1 0 12 0a6 6 0 1 0-12 0zM19 21a6 6 0 1 0 12 0a6 6 0 1 0-12 0z"/>
+<path fill="none" stroke-width="7" d="M50 46h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ferris-wheel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ferris-wheel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

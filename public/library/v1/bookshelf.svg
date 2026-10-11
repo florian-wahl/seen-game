@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bookshelf</title>
+<defs>
+<g id="seen-bookshelf">
+<path fill="#a9683c" d="M14 8h72v84H14z"/>
+<path fill="#e5484d" d="M20 14h8v28h-8zM60 54h8v30h-8z"/>
+<path fill="#4a66d4" d="M30 18h8v24h-8zM70 58h8v26h-8z"/>
+<path fill="#2f9e6b" d="M40 16h8v26h-8zM20 56h8v28h-8z"/>
+<path fill="#f5b93f" d="M52 22l7-2 8 22-7 2zM30 54h8v30h-8z"/>
+<path fill="none" d="M14 46h72M14 88h72"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bookshelf" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bookshelf" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

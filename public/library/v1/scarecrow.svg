@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>scarecrow</title>
+<defs>
+<g id="seen-scarecrow">
+<path fill="#6f3f1f" d="M46 40h8v52h-8z"/>
+<path fill="#f5b93f" d="M14 42l-6-3v14l6-3zM86 42l6-3v14l-6-3z"/>
+<path fill="#e5484d" d="M14 40h72v14H62v24H38V54H14z"/>
+<path fill="#4a66d4" d="M44 58h10v10H44z"/>
+<circle fill="#e8d5b0" cx="50" cy="28" r="12"/>
+<path fill="#a9683c" d="M38 21l4-13h16l4 13zM28 20h44v6H28z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-scarecrow" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-scarecrow" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

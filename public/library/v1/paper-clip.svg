@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>paper clip</title>
+<defs>
+<g id="seen-paper-clip">
+<g transform="translate(50 50) rotate(-40) scale(.85) translate(-50 -52)">
+<path fill="#7d5fd0" d="M59 34V70A10 10 0 0 1 39 70V22A17 17 0 0 1 73 22V76A23 23 0 0 1 27 76V30A3 3 0 0 1 33 30V76A17 17 0 0 0 67 76V22A11 11 0 0 0 45 22V70A4 4 0 0 0 53 70V34A3 3 0 0 1 59 34Z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-paper-clip" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-paper-clip" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

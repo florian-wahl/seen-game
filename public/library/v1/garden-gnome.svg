@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>garden gnome</title>
+<defs>
+<g id="seen-garden-gnome">
+<path fill="#6f3f1f" d="M26 84h20v6H26zM54 84h20v6H54z"/>
+<path fill="#4a66d4" d="M30 56h40l6 30H24z"/>
+<path fill="#ffb074" d="M34 36h32v10H34z"/>
+<path fill="#ffffff" d="M32 42h36c0 18-8 30-18 30S32 60 32 42z"/>
+<path fill="#e5484d" d="M50 8l20 32H30z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-garden-gnome" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-garden-gnome" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

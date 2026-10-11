@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>corn on the cob</title>
+<defs>
+<g id="seen-corn-on-the-cob">
+<g transform="rotate(-40 50 50)">
+<path fill="#f5b93f" d="M30 50c0-10 16-16 34-16 16 0 28 8 28 16s-12 16-28 16c-18 0-34-6-34-16z"/>
+<path fill="none" d="M58 37v26M70 35v30M82 38v24M50 50h40"/>
+<path fill="#2f9e6b" d="M50 50C42 36 22 30 6 34c10 4 16 10 18 16-2 6-8 12-18 16 16 4 36-2 44-16z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-corn-on-the-cob" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-corn-on-the-cob" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

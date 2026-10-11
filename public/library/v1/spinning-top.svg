@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>spinning top</title>
+<defs>
+<g id="seen-spinning-top">
+<path fill="#6f3f1f" d="M46 8h8v20h-8z"/>
+<path fill="#2f9e6b" d="M14 44c0-12 16-20 36-20s36 8 36 20c0 8-4 12-10 16L54 86c-2 4-6 4-8 0L24 60c-6-4-10-8-10-16z"/>
+<path fill="#f5b93f" d="M15 46h70c-1 4-3 7-7 10H22c-4-3-6-6-7-10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-spinning-top" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-spinning-top" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

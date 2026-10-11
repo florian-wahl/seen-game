@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>triangle</title>
+<defs>
+<g id="seen-triangle">
+<path fill="none" d="M50 8v10M68 30l22-14"/>
+<path fill="#e5484d" d="M44 6h12v6H44z"/>
+<path fill="#8d99a6" fill-rule="evenodd" d="M50 16L88 82H12zM50 30L76 76H24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-triangle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-triangle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

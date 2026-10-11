@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>doghouse</title>
+<defs>
+<g id="seen-doghouse">
+<path fill="#d9a47a" d="M18 44h64v46H18z"/>
+<path fill="#4a66d4" d="M8 48L50 14l42 34z"/>
+<path fill="#1c1b22" d="M38 90V68a12 12 0 0 1 24 0v22z"/>
+<path fill="#ffffff" d="M42 52h16v8H42z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-doghouse" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-doghouse" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

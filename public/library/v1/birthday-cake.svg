@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>birthday cake</title>
+<defs>
+<g id="seen-birthday-cake">
+<path fill="#93a8f0" d="M30 26h6v16h-6zM47 22h6v20h-6zM64 26h6v16h-6z"/>
+<path fill="#f5b93f" d="M33 26c-5-3-4-9 0-14 4 5 5 11 0 14zM50 22c-5-3-4-9 0-14 4 5 5 11 0 14zM67 26c-5-3-4-9 0-14 4 5 5 11 0 14z"/>
+<path fill="#fbf3e0" d="M14 48a6 6 0 0 1 6-6h60a6 6 0 0 1 6 6v34H14z"/>
+<path fill="#c3a8f0" d="M14 48a6 6 0 0 1 6-6h60a6 6 0 0 1 6 6v6c-6 0-6 8-12 8s-6-8-12-8-6 8-12 8-6-8-12-8-6 8-12 8-6-8-12-8z"/>
+<path fill="#8d99a6" d="M10 82h80a3 3 0 0 1 0 6H10a3 3 0 0 1 0-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-birthday-cake" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-birthday-cake" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

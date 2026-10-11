@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>band-aid</title>
+<defs>
+<g id="seen-band-aid">
+<g transform="rotate(-40 50 50)">
+<path fill="#ffb074" d="M20 36h60a14 14 0 0 1 0 28H20a14 14 0 0 1 0-28z"/>
+<path fill="#fbf3e0" d="M38 40h24v20H38z"/>
+<path fill="none" stroke-width="5" d="M18 46h.01M18 54h.01M26 50h.01M74 50h.01M82 46h.01M82 54h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-band-aid" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-band-aid" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

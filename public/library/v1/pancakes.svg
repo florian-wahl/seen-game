@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pancakes</title>
+<defs>
+<g id="seen-pancakes">
+<path fill="#8d99a6" d="M12 82h76a4 4 0 0 1 0 8H12a4 4 0 0 1 0-8z"/>
+<path fill="#ffb074" d="M16 70h68a6 6 0 0 1 0 12H16a6 6 0 0 1 0-12z"/>
+<path fill="#ffb074" d="M16 58h68a6 6 0 0 1 0 12H16a6 6 0 0 1 0-12z"/>
+<path fill="#ffb074" d="M16 46h68a6 6 0 0 1 0 12H16a6 6 0 0 1 0-12z"/>
+<path fill="#c25e12" d="M18 40h64a6 6 0 0 1 0 12c-6 0-6 10-12 10s-6-10-12-10H50c-4 0-4 6-8 6s-4-6-8-6H18a6 6 0 0 1 0-12z"/>
+<path fill="#ffe07a" d="M40 30h20v10H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pancakes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pancakes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

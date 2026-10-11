@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>birdcage</title>
+<defs>
+<g id="seen-birdcage">
+<path fill="none" d="M44 12a6 6 0 1 1 12 0"/>
+<path fill="#fbf3e0" d="M20 80V44c0-18 14-30 30-30s30 12 30 30v36z"/>
+<path fill="none" d="M35 20v60M50 14v66M65 20v60"/>
+<path fill="#f5b93f" d="M38 56c0-8 8-12 14-8l8-2-2 6c2 6-4 10-10 10-6 0-10-2-10-6z"/>
+<path fill="none" d="M30 66h40"/>
+<path fill="#a9683c" d="M14 78h72v10H14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-birdcage" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-birdcage" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

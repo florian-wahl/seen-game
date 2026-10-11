@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>shovel</title>
+<defs>
+<g id="seen-shovel">
+<g transform="rotate(30 50 50)">
+<path fill="#a9683c" d="M46 18h8v42h-8z"/>
+<path fill="#1c1b22" fill-rule="evenodd" d="M36 6h28v14H36zM42 10h16v6H42z"/>
+<path fill="#2f9e6b" d="M32 60h36v14c0 8-8 16-18 18-10-2-18-10-18-18z"/>
+<path fill="#4d5968" d="M44 56h12v8H44z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-shovel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-shovel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

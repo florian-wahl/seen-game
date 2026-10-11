@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>Christmas stocking</title>
+<defs>
+<g id="seen-christmas-stocking">
+<path fill="#e5484d" d="M30 22h32v38l16 10c8 6 4 20-6 20H46c-10 0-16-8-16-18z"/>
+<path fill="#ffffff" d="M30 42h32v6H30z"/>
+<path fill="#ffffff" d="M30 10h32a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-christmas-stocking" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-christmas-stocking" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

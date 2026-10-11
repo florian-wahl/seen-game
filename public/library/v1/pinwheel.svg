@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pinwheel</title>
+<defs>
+<g id="seen-pinwheel">
+<path fill="#e8d5b0" d="M47 46h6v46h-6z"/>
+<path fill="#e5484d" d="M50 40V12c12 0 20 8 22 18z"/>
+<path fill="#4a66d4" d="M50 40h28c0 12-8 20-18 22z"/>
+<path fill="#f5b93f" d="M50 40v28c-12 0-20-8-22-18z"/>
+<path fill="#2f9e6b" d="M50 40H22c0-12 8-20 18-22z"/>
+<path fill="none" stroke-width="7" d="M50 40h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pinwheel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pinwheel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

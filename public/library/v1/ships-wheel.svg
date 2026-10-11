@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ship's wheel</title>
+<defs>
+<g id="seen-ships-wheel">
+<path fill="none" d="M50 12v76M12 50h76M23 23l54 54M77 23L23 77"/>
+<path fill="#a9683c" fill-rule="evenodd" d="M20 50a30 30 0 1 0 60 0a30 30 0 1 0-60 0zM27 50a23 23 0 1 0 46 0a23 23 0 1 0-46 0z"/>
+<circle fill="#6f3f1f" cx="50" cy="50" r="9"/>
+<path fill="none" stroke-width="7" d="M50 10h.01M50 90h.01M10 50h.01M90 50h.01M22 22h.01M78 78h.01M78 22h.01M22 78h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ships-wheel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ships-wheel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

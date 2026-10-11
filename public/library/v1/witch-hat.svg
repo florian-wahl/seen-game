@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>witch hat</title>
+<defs>
+<g id="seen-witch-hat">
+<path fill="#53389a" d="M8 74c0-6 18-10 42-10s42 4 42 10-18 10-42 10S8 80 8 74z"/>
+<path fill="#53389a" d="M26 72L50 18c4-8 14-12 24-6-8 0-12 4-14 10l12 50z"/>
+<path fill="#9bc53d" d="M31 60h40l2 10H28z"/>
+<path fill="#f5b93f" d="M44 58h12v14H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-witch-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-witch-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hourglass</title>
+<defs>
+<g id="seen-hourglass">
+<path fill="#ffffff" d="M28 16h44c0 20-16 26-16 34s16 14 16 34H28c0-20 16-26 16-34s-16-14-16-34z"/>
+<path fill="#f5b93f" d="M38 34h24c-4 6-12 10-12 16 0-6-8-10-12-16zM34 82c2-10 10-16 16-18 6 2 14 8 16 18z"/>
+<path fill="#a9683c" d="M20 8h60v8H20zM20 84h60v8H20z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hourglass" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hourglass" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

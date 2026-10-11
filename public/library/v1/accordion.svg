@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>accordion</title>
+<defs>
+<g id="seen-accordion">
+<path fill="#ffffff" d="M26 26l8-4 8 4 8-4 8 4 8-4 8 4v48l-8 4-8-4-8 4-8-4-8 4-8-4z"/>
+<path fill="none" d="M34 22v56M50 22v56M66 22v56"/>
+<path fill="#e5484d" d="M8 22h18v56H8z"/>
+<path fill="#e5484d" d="M74 22h18v56H74z"/>
+<path fill="#ffffff" d="M12 28h10v6H12zM12 40h10v6H12zM12 52h10v6H12zM12 64h10v6H12z"/>
+<path fill="none" stroke-width="6" d="M83 32h.01M83 44h.01M83 56h.01M83 68h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-accordion" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-accordion" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

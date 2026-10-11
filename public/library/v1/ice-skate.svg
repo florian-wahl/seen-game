@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ice skate</title>
+<defs>
+<g id="seen-ice-skate">
+<path fill="#cfd6dc" d="M12 76h70c6 0 8-4 8-8h4c0 10-6 16-14 16H12z"/>
+<path fill="none" d="M26 72v4M66 72v4"/>
+<path fill="#ffffff" d="M22 12h22v36l26 6c10 2 14 8 14 14v4H22z"/>
+<path fill="none" d="M30 22h10M30 32h10M30 42h10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ice-skate" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ice-skate" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

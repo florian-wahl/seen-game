@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>receipt</title>
+<defs>
+<g id="seen-receipt">
+<g transform="translate(5 5) scale(.9)">
+<g transform="rotate(10 50 50)">
+<path fill="#ffffff" d="M26 8h48v80l-6-4-6 4-6-4-6 4-6-4-6 4-6-4-6 4z"/>
+<path fill="none" d="M34 20h32M34 30h20M34 40h28M34 50h24"/>
+<path fill="#1c1b22" d="M34 62h32v6H34z"/>
+</g>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-receipt" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-receipt" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

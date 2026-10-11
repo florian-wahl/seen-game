@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>map</title>
+<defs>
+<g id="seen-map">
+<path fill="#fbf3e0" d="M8 20l26-8 32 8 26-8v68l-26 8-32-8-26 8z"/>
+<path fill="#9bc53d" d="M14 40c8-8 20-6 22 4s-8 16-14 12-12-8-8-16z"/>
+<path fill="none" d="M34 12v68M66 20v68"/>
+<path fill="none" stroke-width="5" d="M30 68h.01M38 64h.01M46 60h.01M54 56h.01M62 52h.01"/>
+<path fill="none" d="M66 34l10 10M76 34L66 44"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-map" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-map" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

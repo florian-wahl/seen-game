@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fishing rod</title>
+<defs>
+<g id="seen-fishing-rod">
+<path fill="none" d="M84 12c4 20 4 40 0 60v8a4 4 0 0 1-8 0"/>
+<path fill="#2c3f96" d="M14 82L82 10l4 4-68 72z"/>
+<path fill="#1c1b22" d="M10 82l12-12 6 6-12 12z"/>
+<circle fill="#8d99a6" cx="32" cy="68" r="7"/>
+<circle fill="#e5484d" cx="85" cy="58" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fishing-rod" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fishing-rod" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

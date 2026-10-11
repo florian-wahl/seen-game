@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>harmonica</title>
+<defs>
+<g id="seen-harmonica">
+<g transform="translate(6 6) scale(.88)">
+<g transform="rotate(-15 50 50)">
+<path fill="#e5484d" d="M10 40h80v20H10z"/>
+<path fill="#1c1b22" d="M16 47h6v6h-6zM28 47h6v6h-6zM40 47h6v6h-6zM52 47h6v6h-6zM64 47h6v6h-6zM76 47h6v6h-6z"/>
+<path fill="#cfd6dc" d="M8 32h84v10H8z"/>
+<path fill="#cfd6dc" d="M8 58h84v10H8z"/>
+</g>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-harmonica" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-harmonica" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

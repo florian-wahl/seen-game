@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>seashell</title>
+<defs>
+<g id="seen-seashell">
+<path fill="#f7a8cf" d="M40 80h20l-4 10H44z"/>
+<path fill="#f7a8cf" d="M50 84L14 44c0-18 16-32 36-32s36 14 36 32z"/>
+<path fill="none" d="M50 84L28 18M50 84L40 13M50 84l10-71M50 84l22-66M50 84L18 32M50 84l32-52"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-seashell" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-seashell" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

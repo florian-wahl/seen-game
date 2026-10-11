@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>stapler</title>
+<defs>
+<g id="seen-stapler">
+<path fill="#4d5968" d="M8 70h80a4 4 0 0 1 4 4v4H8z"/>
+<path fill="#e5484d" d="M10 66c0-14 6-22 18-24l56-2c4 0 8 4 8 8v6c0 4-4 6-8 6H22z"/>
+<path fill="none" d="M30 50h40"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-stapler" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-stapler" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

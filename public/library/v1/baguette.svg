@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baguette</title>
+<defs>
+<g id="seen-baguette">
+<g transform="rotate(-40 50 50)">
+<path fill="#d9a47a" d="M6 50c0-8 6-12 14-12h60c8 0 14 4 14 12s-6 12-14 12H20c-8 0-14-4-14-12z"/>
+<path fill="none" d="M22 56l10-12M40 56l10-12"/>
+<path fill="none" d="M58 56l10-12M76 56l8-10"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baguette" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baguette" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clothes hanger</title>
+<defs>
+<g id="seen-clothes-hanger">
+<path fill="none" d="M50 30v-6c0-6 8-6 8-12s-6-8-10-6"/>
+<path fill="#a9683c" fill-rule="evenodd" d="M50 28L14 64c-4 4-2 10 4 10h64c6 0 8-6 4-10zM50 38L24 66h52z"/>
+<path fill="#a9683c" d="M46 26h8v6h-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clothes-hanger" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clothes-hanger" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

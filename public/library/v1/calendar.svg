@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>calendar</title>
+<defs>
+<g id="seen-calendar">
+<path fill="#ffffff" d="M14 20h72a4 4 0 0 1 4 4v62a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4z"/>
+<path fill="#4a66d4" d="M14 20h72a4 4 0 0 1 4 4v14H10V24a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M30 12v14M70 12v14"/>
+<path fill="#f5b93f" d="M48 60h12v12H48z"/>
+<path fill="none" stroke-width="6" d="M24 52h.01M38 52h.01M54 52h.01M70 52h.01M24 66h.01M38 66h.01M70 66h.01M24 80h.01M38 80h.01M54 80h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-calendar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-calendar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

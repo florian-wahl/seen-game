@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tire</title>
+<defs>
+<g id="seen-tire">
+<circle fill="#1c1b22" cx="50" cy="50" r="40"/>
+<circle fill="#8d99a6" cx="50" cy="50" r="22"/>
+<path fill="none" d="M50 30v12M50 58v12M30 50h12M58 50h12"/>
+<circle fill="#4d5968" cx="50" cy="50" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tire" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tire" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>graduation cap</title>
+<defs>
+<g id="seen-graduation-cap">
+<path fill="#1c1b22" d="M28 46v20c0 6 10 10 22 10s22-4 22-10V46z"/>
+<path fill="#4d5968" d="M50 18l42 18-42 18-42-18z"/>
+<path fill="none" d="M50 36l26 6v18"/>
+<path fill="#f5b93f" d="M72 58h8l2 16H70z"/>
+<path fill="none" stroke-width="6" d="M50 36h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-graduation-cap" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-graduation-cap" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

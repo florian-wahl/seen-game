@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>igloo</title>
+<defs>
+<g id="seen-igloo">
+<path fill="#ffffff" d="M10 80c0-30 18-50 40-50s40 20 40 50z"/>
+<path fill="none" d="M14 64h72M22 48h56M40 31v17M60 31v17M30 48v16M70 48v16M20 64v16M80 64v16"/>
+<path fill="#ffffff" d="M34 80V62c0-10 6-16 16-16s16 6 16 16v18z"/>
+<path fill="#1c1b22" d="M42 80V68a8 8 0 0 1 16 0v12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-igloo" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-igloo" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

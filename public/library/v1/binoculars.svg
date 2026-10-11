@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>binoculars</title>
+<defs>
+<g id="seen-binoculars">
+<path fill="#1c1b22" d="M18 16h20v18H18zM62 16h20v18H62z"/>
+<path fill="#8d99a6" d="M42 42h16v16H42z"/>
+<path fill="#1b6b49" d="M18 34h20a6 6 0 0 1 6 6v40a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V40a6 6 0 0 1 6-6z"/>
+<path fill="#1b6b49" d="M62 34h20a6 6 0 0 1 6 6v40a6 6 0 0 1-6 6H62a6 6 0 0 1-6-6V40a6 6 0 0 1 6-6z"/>
+<path fill="#3f9fdc" d="M16 74h24v8H16zM60 74h24v8H60z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-binoculars" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-binoculars" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

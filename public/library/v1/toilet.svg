@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>toilet</title>
+<defs>
+<g id="seen-toilet">
+<path fill="#ffffff" d="M20 12h34a4 4 0 0 1 4 4v28H16V16a4 4 0 0 1 4-4z"/>
+<path fill="#ffffff" d="M30 70h28l4 18H26z"/>
+<path fill="#ffffff" d="M14 44h72c0 16-14 28-36 28S14 60 14 44z"/>
+<path fill="#cfd6dc" d="M12 40h76a4 4 0 0 1 0 8H12a4 4 0 0 1 0-8z"/>
+<path fill="none" d="M24 22h8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-toilet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-toilet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

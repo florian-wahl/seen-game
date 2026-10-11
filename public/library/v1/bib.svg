@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bib</title>
+<defs>
+<g id="seen-bib">
+<path fill="none" d="M34 16l-8-8M66 16l8-8"/>
+<path fill="#f7a8cf" d="M22 22c4-4 8-6 12-6h6c0 6 4 10 10 10s10-4 10-10h6c4 0 8 2 12 6v40c0 16-12 26-28 26S22 78 22 62z"/>
+<path fill="none" d="M28 64c0 12 10 18 22 18s22-6 22-18"/>
+<path fill="#e0559a" d="M36 52h28v10a8 8 0 0 1-8 8H44a8 8 0 0 1-8-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bib" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bib" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>padlock</title>
+<defs>
+<g id="seen-padlock">
+<path fill="#8d99a6" d="M28 46V30a22 22 0 0 1 44 0v16h-8V30a14 14 0 0 0-28 0v16z"/>
+<path fill="#4a66d4" d="M20 44h60a4 4 0 0 1 4 4v36a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V48a4 4 0 0 1 4-4z"/>
+<path fill="#1c1b22" d="M50 56a6 6 0 0 1 3 11l2 9H45l2-9a6 6 0 0 1 3-11z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-padlock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-padlock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

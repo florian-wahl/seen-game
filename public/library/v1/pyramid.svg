@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pyramid</title>
+<defs>
+<g id="seen-pyramid">
+<path fill="#f5b93f" d="M50 14L8 84h50z"/>
+<path fill="#c98a0c" d="M50 14l42 70H58z"/>
+<path fill="none" d="M24 60h32M36 40h18"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pyramid" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pyramid" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

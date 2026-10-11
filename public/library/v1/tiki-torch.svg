@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tiki torch</title>
+<defs>
+<g id="seen-tiki-torch">
+<path fill="#d9a47a" d="M46 40h8v52h-8z"/>
+<path fill="none" d="M46 58h8M46 74h8"/>
+<path fill="#a9683c" d="M34 30h32l-6 14H40z"/>
+<path fill="#f08a3c" d="M50 6c8 8 12 14 12 20a12 12 0 0 1-24 0c0-6 4-12 12-20z"/>
+<path fill="#f5b93f" d="M50 18c4 4 6 6 6 10a6 6 0 0 1-12 0c0-4 2-6 6-10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tiki-torch" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tiki-torch" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

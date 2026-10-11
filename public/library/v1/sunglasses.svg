@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sunglasses</title>
+<defs>
+<g id="seen-sunglasses">
+<path fill="none" d="M44 40q6-4 12 0M12 40L6 34M88 40l6-6"/>
+<path fill="#1c1b22" d="M12 36h32v12c0 10-6 16-16 16S12 58 12 48z"/>
+<path fill="#1c1b22" d="M56 36h32v12c0 10-6 16-16 16s-16-6-16-16z"/>
+<path fill="none" d="M18 44l8-6M62 44l8-6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sunglasses" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sunglasses" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

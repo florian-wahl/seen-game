@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>handsaw</title>
+<defs>
+<g id="seen-handsaw">
+<path fill="#cfd6dc" d="M34 26l58 12v12l-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5-3 5-3-5L34 66z"/>
+<path fill="#a9683c" fill-rule="evenodd" d="M8 30c0-6 4-10 10-10h20v52H18c-6 0-10-4-10-10zM16 34h14v22H16z"/>
+<path fill="none" stroke-width="5" d="M34 30h.01M34 64h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-handsaw" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-handsaw" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

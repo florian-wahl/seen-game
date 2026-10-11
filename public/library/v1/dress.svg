@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dress</title>
+<defs>
+<g id="seen-dress">
+<path fill="none" d="M38 22l-2-12M62 22l2-12"/>
+<path fill="#e0559a" d="M36 20h28l-2 20 22 46H16l22-46z"/>
+<path fill="#a52c69" d="M38 38h24v8H38z"/>
+<path fill="none" d="M24 74c18 6 34 6 52 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dress" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dress" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pencil sharpener</title>
+<defs>
+<g id="seen-pencil-sharpener">
+<path fill="#9bc53d" d="M22 30h56a4 4 0 0 1 4 4v38a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V34a4 4 0 0 1 4-4z"/>
+<circle fill="#1c1b22" cx="44" cy="53" r="9"/>
+<path fill="#cfd6dc" d="M58 34h18v14H58z"/>
+<path fill="#f5b93f" d="M8 47h30l6 6-6 6H8z"/>
+<path fill="none" stroke-width="5" d="M67 41h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pencil-sharpener" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pencil-sharpener" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>playing cards</title>
+<defs>
+<g id="seen-playing-cards">
+<g transform="translate(5 5) scale(.9) rotate(-14 40 60)">
+<path fill="#ffffff" d="M18 18h36a6 6 0 0 1 6 6v54a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6z"/>
+<path fill="#1c1b22" d="M36 34c-6 8-12 12-12 18a6 6 0 0 0 10 4l-2 6h8l-2-6a6 6 0 0 0 10-4c0-6-6-10-12-18z"/>
+</g>
+<g transform="translate(5 5) scale(.9) rotate(12 60 60)">
+<path fill="#ffffff" d="M46 14h36a6 6 0 0 1 6 6v54a6 6 0 0 1-6 6H46a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/>
+<path fill="#e5484d" d="M64 60c-10-8-16-14-16-20a7 7 0 0 1 16-4 7 7 0 0 1 16 4c0 6-6 12-16 20z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-playing-cards" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-playing-cards" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

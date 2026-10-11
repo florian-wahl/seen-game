@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>shrimp</title>
+<defs>
+<g id="seen-shrimp">
+<path fill="none" d="M80 38c4-8 6-16 4-24"/>
+<path fill="#e5484d" d="M48 66l20 6-6 16-16-8z"/>
+<path fill="#ff8f8a" d="M82 40C76 18 48 12 30 24 12 38 16 66 36 76c6 4 12 4 16 2l-4-14c-12 2-20-8-18-20 2-10 12-16 22-14 8 2 12 8 14 14z"/>
+<path fill="none" d="M46 22l2 14M28 34l12 8M22 54h14"/>
+<path fill="none" stroke-width="5" d="M74 34h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-shrimp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-shrimp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

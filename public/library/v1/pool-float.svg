@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pool float</title>
+<defs>
+<g id="seen-pool-float">
+<path fill="#f7a8cf" fill-rule="evenodd" d="M10 64a36 22 0 1 0 72 0a36 22 0 1 0-72 0zM28 64a18 9 0 1 0 36 0a18 9 0 1 0-36 0z"/>
+<path fill="#f7a8cf" d="M68 56c0-14 0-30 10-34 6-2 10 2 10 8h-8c-4 2-4 14-4 26z"/>
+<path fill="#f5b93f" d="M84 24h8l-3 9z"/>
+<path fill="none" stroke-width="5" d="M80 26h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pool-float" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pool-float" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

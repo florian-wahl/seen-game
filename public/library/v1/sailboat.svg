@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sailboat</title>
+<defs>
+<g id="seen-sailboat">
+<path fill="none" d="M49 10v60"/>
+<path fill="#ffffff" d="M46 14v52H16z"/>
+<path fill="#fbf3e0" d="M53 22l28 44H53z"/>
+<path fill="#e5484d" d="M49 8h12l-4 5 4 5H49z"/>
+<path fill="#4a66d4" d="M10 68h80l-12 18H22z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sailboat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sailboat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

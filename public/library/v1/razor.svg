@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>razor</title>
+<defs>
+<g id="seen-razor">
+<path fill="#2aa7a0" d="M44 40h12v44a6 6 0 0 1-12 0z"/>
+<path fill="#1c1b22" d="M44 34h12v8H44z"/>
+<path fill="#7fdcd3" d="M20 14h60a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M22 24h56"/>
+<path fill="none" d="M50 52v24"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-razor" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-razor" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>castle</title>
+<defs>
+<g id="seen-castle">
+<path fill="none" d="M50 38V12"/>
+<path fill="#e5484d" d="M50 12h14l-4 5 4 5H50z"/>
+<path fill="#e8d5b0" d="M26 90V38h8v6h8v-6h8v6h8v-6h8v6h8v-6v52z"/>
+<path fill="#d9a47a" d="M10 90V22h6v6h8v-6h6v68zM70 90V22h6v6h8v-6h6v68z"/>
+<path fill="#6f3f1f" d="M42 90V72a8 8 0 0 1 16 0v18z"/>
+<path fill="#1c1b22" d="M17 40h6v10h-6zM77 40h6v10h-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-castle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-castle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

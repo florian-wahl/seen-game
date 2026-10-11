@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>arcade cabinet</title>
+<defs>
+<g id="seen-arcade-cabinet">
+<path fill="#4a66d4" d="M24 8h52v84H24z"/>
+<path fill="#f5b93f" d="M28 12h44v10H28z"/>
+<path fill="#1c1b22" d="M30 26h40v26H30z"/>
+<path fill="#9bc53d" d="M40 34h8v8h-8zM54 40h6v6h-6z"/>
+<path fill="#2c3f96" d="M18 58h64v10H18z"/>
+<circle fill="#e5484d" cx="34" cy="54" r="4"/>
+<path fill="none" stroke-width="6" d="M56 63h.01M66 63h.01"/>
+<path fill="#1c1b22" d="M44 76h12v6H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-arcade-cabinet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-arcade-cabinet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

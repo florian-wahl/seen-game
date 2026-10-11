@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>feather</title>
+<defs>
+<g id="seen-feather">
+<g transform="translate(50 50) rotate(-45) scale(1.15) translate(-50 -50)">
+<path fill="#2aa7a0" d="M18 50C30 34 70 34 90 50 70 66 30 66 18 50z"/>
+<path fill="none" d="M8 50h82"/>
+<path fill="none" d="M50 38l-6 12M66 40l-6 10M40 62l6-12M60 60l-4-10"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-feather" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-feather" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

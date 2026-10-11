@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>barbecue grill</title>
+<defs>
+<g id="seen-barbecue-grill">
+<path fill="none" d="M36 70L24 90M64 70l12 20M50 72v18"/>
+<path fill="#1c1b22" d="M14 50h72c0 16-16 28-36 28S14 66 14 50z"/>
+<path fill="#e5484d" d="M18 46c0-16 14-28 32-28s32 12 32 28z"/>
+<path fill="#8d99a6" d="M12 45h76v6H12z"/>
+<path fill="#4d5968" d="M44 12h12v7H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-barbecue-grill" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-barbecue-grill" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

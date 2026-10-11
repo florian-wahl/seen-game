@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>price tag</title>
+<defs>
+<g id="seen-price-tag">
+<g transform="rotate(-45 50 50)">
+<path fill="none" d="M24 50c-8 0-14-6-12-12"/>
+<path fill="#f08a3c" fill-rule="evenodd" d="M30 36h54a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H30L16 50zM24 50a5 5 0 1 0 10 0a5 5 0 1 0-10 0z"/>
+<path fill="none" d="M44 46h32M44 54h20"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-price-tag" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-price-tag" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

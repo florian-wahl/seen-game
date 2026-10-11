@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>helicopter</title>
+<defs>
+<g id="seen-helicopter">
+<path fill="none" d="M14 16h72M52 16v12M10 34v18M36 64l-4 10M64 64l4 10M22 74h56"/>
+<path fill="#f5b93f" d="M30 40H10v8h20z"/>
+<path fill="#f5b93f" d="M28 30h32c12 0 20 8 20 18s-8 16-18 16H40c-8 0-12-6-12-12z"/>
+<path fill="#8fd0f5" d="M60 34c8 0 14 6 16 12H60z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-helicopter" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-helicopter" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>
