@@ -83,6 +83,23 @@ begin
   perform tests.login(tests.cur(gid));
   r := public.draw_target(gid);
   perform tests.logout();
+  -- skip the 1.2 s draw reveal (taps before drawn_at are uncounted): backdate a fresh draw
+  if r ->> 'already_drawn' = 'false' then
+    update public.turns set drawn_at = drawn_at - interval '1200 ms', deadline_at = deadline_at - interval '1200 ms'
+     where id = (r ->> 'turn_id')::uuid;
+    r := r || (select jsonb_build_object('drawn_at', t.drawn_at, 'deadline_at', t.deadline_at)
+                 from public.turns t where t.id = (r ->> 'turn_id')::uuid);
+  end if;
+  return r;
+end $$;
+
+-- draw WITHOUT skipping the reveal (tests of the reveal window itself)
+create function tests.draw_raw(gid uuid) returns jsonb language plpgsql as $$
+declare r jsonb;
+begin
+  perform tests.login(tests.cur(gid));
+  r := public.draw_target(gid);
+  perform tests.logout();
   return r;
 end $$;
 
@@ -267,6 +284,37 @@ select tests.login(tests.get('u5')::int);
 select is((public.game_state(tests.gid()) -> 'turns' -> 4 ->> 'status'), 'capped', 'game_state lazily caps expired live turn');
 select tests.logout();
 select is((select score_ms from public.turns where id = tests.get('t5')::uuid), 90000, 'lazily capped turn scores 90000');
+
+-- ------------------------------------------------------------ draw reveal
+-- drawn_at is the official start = draw time + 1.2 s; the clock (and deadline) follow it
+select tests.put('dr', tests.draw_raw(tests.gid())::text);
+select tests.put('t6', tests.cur_turn(tests.gid())::text);
+select ok((select t.drawn_at - (tests.get('dr')::jsonb ->> 'server_now')::timestamptz
+             from public.turns t where t.id = tests.get('t6')::uuid) between interval '1000 ms' and interval '1200 ms',
+          'drawn_at = draw time + 1.2 s reveal');
+select is((tests.get('dr')::jsonb ->> 'drawn_at')::timestamptz,
+          (select drawn_at from public.turns where id = tests.get('t6')::uuid), 'draw_target returns the official drawn_at');
+select is((select deadline_at - drawn_at from public.turns where id = tests.get('t6')::uuid),
+          interval '90 seconds', 'deadline = drawn_at + cap');
+
+-- taps during the reveal: recorded, uncounted, no penalty, turn stays live
+select tests.put('dl', (select deadline_at::text from public.turns where id = tests.get('t6')::uuid));
+select tests.put('w', tests.tap(tests.gid(), tests.wrong_pic(tests.gid()), 1)::text);
+select is((tests.get('w')::jsonb ->> 'counted')::boolean, false, 'wrong tap during reveal is not counted');
+select is(tests.get('w')::jsonb -> 'turn' ->> 'wrong_taps', '0', 'reveal tap: no penalty in the result');
+select is((select wrong_taps from public.turns where id = tests.get('t6')::uuid), 0, 'reveal tap: wrong_taps unchanged');
+select is((select deadline_at::text from public.turns where id = tests.get('t6')::uuid), tests.get('dl'), 'reveal tap: deadline unchanged');
+select tests.put('w2', tests.tap(tests.gid(), tests.target(tests.gid()), 2)::text);
+select is((tests.get('w2')::jsonb ->> 'counted')::boolean, false, 'correct tap during reveal is not counted');
+select is(tests.get('w2')::jsonb -> 'turn' ->> 'status', 'live', 'correct tap during reveal does not close the turn');
+select is((select count(*)::int from public.taps where turn_id = tests.get('t6')::uuid and not counted), 2, 'reveal taps stored uncounted');
+
+-- 3 s after the draw = 1.8 s after drawn_at: the score counts from drawn_at
+select tests.age(tests.gid(), interval '3 seconds');
+select tests.put('r6', tests.tap(tests.gid(), tests.target(tests.gid()), 3)::text);
+select is(tests.get('r6')::jsonb -> 'turn' ->> 'status', 'found', 'correct tap after drawn_at -> found');
+select ok((tests.get('r6')::jsonb -> 'turn' ->> 'score_ms')::int between 1700 and 2400,
+          'score counts from drawn_at (got ' || (tests.get('r6')::jsonb -> 'turn' ->> 'score_ms') || ')');
 
 select * from finish();
 rollback;

@@ -86,8 +86,16 @@ begin
   perform tests.login(tests.cur(gid));
   r := public.draw_target(gid);
   perform tests.logout();
+  -- skip the 1.2 s draw reveal (taps before drawn_at are uncounted): backdate a fresh draw
+  if r ->> 'already_drawn' = 'false' then
+    update public.turns set drawn_at = drawn_at - interval '1200 ms', deadline_at = deadline_at - interval '1200 ms'
+     where id = (r ->> 'turn_id')::uuid;
+    r := r || (select jsonb_build_object('drawn_at', t.drawn_at, 'deadline_at', t.deadline_at)
+                 from public.turns t where t.id = (r ->> 'turn_id')::uuid);
+  end if;
   return r;
 end $$;
+
 
 -- current player taps; leaves role = postgres
 create function tests.tap(gid uuid, pic text, seq int default 1) returns jsonb language plpgsql as $$

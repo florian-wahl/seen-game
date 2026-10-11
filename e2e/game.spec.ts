@@ -103,6 +103,7 @@ test.describe("game loop", () => {
     expect(libraryRequests.length).toBeLessThanOrEqual(2);
     await draw.click();
     await expect(pageA.getByTestId("round-screen")).toBeVisible();
+    await expect(pageA.getByTestId("reveal")).toHaveCount(0); // reveal over: board playable
     const turn = await openTurn(game.gameId);
     expect(turn?.status).toBe("live");
     const targetId = turn!.target_picture_id!;
@@ -145,6 +146,7 @@ test.describe("game loop", () => {
     await expect(pageA.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
     await pageA.getByTestId("draw").click();
     await expect(pageA.getByTestId("round-screen")).toBeVisible();
+    await expect(pageA.getByTestId("reveal")).toHaveCount(0);
     const t2 = await openTurn(game.gameId);
     const target2 = t2!.target_picture_id!;
     expect(target2).not.toBe(targetId);
@@ -186,6 +188,7 @@ test.describe("game loop", () => {
     await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
     await page.getByTestId("draw").click();
     await expect(page.getByTestId("round-screen")).toBeVisible();
+    await expect(page.getByTestId("reveal")).toHaveCount(0);
     const t1 = (await openTurn(game.gameId))!;
     await page.evaluate((id) => window.__seenTest!.tap(id), t1.target_picture_id!);
     await expect(page.getByTestId("round-result")).toBeVisible();
@@ -202,11 +205,59 @@ test.describe("game loop", () => {
     await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
     await page.getByTestId("draw").click();
     await expect(page.getByTestId("round-screen")).toBeVisible();
+    await expect(page.getByTestId("reveal")).toHaveCount(0);
     const t2 = (await openTurn(game.gameId))!;
     expect(t2.round).toBe(2);
     await expect(page.getByTestId("target")).toHaveAttribute("data-picture-id", t2.target_picture_id!);
     await page.evaluate((id) => window.__seenTest!.tap(id), t2.target_picture_id!);
     await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
+  });
+
+  test("draw reveal: big target over a hidden board, then flies to the slot; clock starts after", async ({ browser }) => {
+    test.setTimeout(90_000);
+    const game = await createStartedGame({
+      emails: [uniqueEmail("e2e-r"), uniqueEmail("e2e-s")],
+      names: ["Rae", "Sam"],
+      rounds: 3,
+      size: 100,
+    });
+    const a = game.firstUser;
+    const page = await asUser(browser, a, `/g/${game.gameId}/play`);
+    await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
+    const clickedAt = Date.now();
+    await page.getByTestId("draw").click();
+
+    // During the reveal: big target card, opaque cover over the board, clock frozen at 0.0.
+    const reveal = page.getByTestId("reveal");
+    await expect(reveal).toBeVisible();
+    await expect(page.getByTestId("reveal-cover")).toBeVisible();
+    const turn = (await openTurn(game.gameId))!;
+    const targetId = turn.target_picture_id!;
+    await expect(page.getByTestId("reveal-card")).toHaveAttribute("data-picture-id", targetId);
+    const card = (await page.getByTestId("reveal-card").boundingBox())!;
+    const vp = page.viewportSize()!;
+    expect(card.width).toBeGreaterThan(vp.width * 0.6);
+    await expect(page.getByTestId("clock")).toHaveText("0.0 s");
+    // Taps during the reveal do nothing (also not a penalty).
+    await page.evaluate((id) => window.__seenTest!.tap(id), targetId);
+
+    // Reveal ends: overlay gone, target in the header slot, clock running, round playable.
+    await expect(reveal).toHaveCount(0, { timeout: 5_000 });
+    await expect(page.getByTestId("reveal-cover")).toHaveCount(0);
+    await expect(page.getByTestId("target")).toHaveAttribute("data-picture-id", targetId);
+    await expect(page.getByTestId("target")).toBeVisible();
+    await expect.poll(async () => seconds(await page.getByTestId("clock").textContent()), { timeout: 10_000 }).toBeGreaterThan(0);
+    await expect(page.getByTestId("wrong-count")).toContainText("0 wrong");
+
+    // The official start (drawn_at) is ~1.2 s after the draw.
+    const live = (await openTurn(game.gameId))!;
+    expect(Date.parse(live.drawn_at!)).toBeGreaterThanOrEqual(clickedAt + 1000);
+
+    await page.evaluate((id) => window.__seenTest!.tap(id), targetId);
+    await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
+    const score = seconds(await page.getByTestId("result-score").textContent());
+    expect(score).toBeGreaterThan(0);
+    expect(score).toBeLessThan(30);
   });
 
   test("round caps locally at the deadline and shows the closed turn", async ({ browser }) => {

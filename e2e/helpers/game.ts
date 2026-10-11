@@ -157,9 +157,22 @@ export async function gameState(user: TestUser, gameId: string): Promise<GameSta
   return rpc<GameState>(user.client, "game_state", { game_id: gameId });
 }
 
+/** Skip the 1.2 s draw reveal of a live turn by moving its official start into the past (test-only). */
+export async function skipReveal(turnId: string, ms = 1200): Promise<void> {
+  const { data, error } = await admin().from("turns").select("drawn_at,deadline_at").eq("id", turnId).single();
+  if (error) throw error;
+  const shift = (iso: string) => new Date(Date.parse(iso) - ms).toISOString();
+  const { error: e2 } = await admin()
+    .from("turns")
+    .update({ drawn_at: shift(data.drawn_at), deadline_at: shift(data.deadline_at) })
+    .eq("id", turnId);
+  if (e2) throw e2;
+}
+
 /** Play the current turn as `user` over RPC: draw, optional wrong taps, then the correct tap. */
 export async function playTurnViaRpc(user: TestUser, gameId: string, wrongTaps = 0): Promise<TapResult> {
   const d = await rpc<DrawResult>(user.client, "draw_target", { game_id: gameId });
+  await skipReveal(d.turn_id); // taps before drawn_at (the reveal) are uncounted
   const wrong = d.tiles.filter((t) => t.pictureId !== d.target_picture_id).slice(0, wrongTaps);
   let seq = 1;
   for (const w of wrong) {

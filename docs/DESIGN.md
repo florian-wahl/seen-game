@@ -33,8 +33,10 @@ Constants copied onto each `games` row at creation: `penalty_ms = 5000`,
 when the turn became current).
 
 **A turn:** Ready screen (nothing timed) → player taps "Draw" → server picks a
-random board picture not yet used as a target in this game, starts the clock →
-target + board appear → pan/zoom, tap a picture → correct tap stops the clock;
+random board picture not yet used as a target in this game → the target is shown
+large over a hidden board for a fixed 1.2 s reveal (it flies into the header slot),
+and the clock starts when the reveal ends (the server sets that instant as the official
+start) → board appears → pan/zoom, tap a picture → correct tap stops the clock;
 wrong tap adds 5 s and play continues → result shown, turn passes on.
 
 **Round score:** `min(t_end − t_draw + w·penalty, cap)` where t are server
@@ -148,8 +150,8 @@ end-of-game rules, otherwise inserts the next `pending` turn and queues a
 | `create_game(rounds int, board_size int)` | host | inserts game (`lobby`), host as player, invite; returns game id + token |
 | `join_game(token text)` | invitee | checks lobby, expiry, 6-player limit; inserts game_players; idempotent |
 | `start_game_internal(game_id uuid, tiles jsonb)` | service role only (Next.js server action) | action checks host & ≥2 players; this assigns random seats, inserts tiles, creates turn seq 1, sets `in_progress` |
-| `draw_target(game_id uuid)` | current player | pending → picks random unused tile picture, `drawn_at = now()`, deadline, `live`, sets `board_unlocked_at` on first draw. Already live → returns same turn. Returns target, tiles, `deadline_at`, `server_now` |
-| `submit_tap(turn_id uuid, picture_id text, client_seq int, client_elapsed_ms int)` | current player | repeated client_seq → returns earlier result. Past deadline → `capped`. Correct → `found` with score. Wrong → wrong_taps+1, deadline earlier, cap if passed. Returns turn state |
+| `draw_target(game_id uuid)` | current player | pending → picks random unused tile picture, `drawn_at = now() + 1.2 s reveal` (the official start), `deadline_at = drawn_at + cap`, `live`, sets `board_unlocked_at` on first draw. Already live → returns same turn. Returns target, tiles, `deadline_at`, `server_now` |
+| `submit_tap(turn_id uuid, picture_id text, client_seq int, client_elapsed_ms int)` | current player | repeated client_seq → returns earlier result. Before `drawn_at` (during the reveal) → recorded uncounted, no penalty, turn stays live. Past deadline → `capped`. Correct → `found` with score. Wrong → wrong_taps+1, deadline earlier, cap if passed. Returns turn state |
 | `retire(game_id uuid)` | member | see Leaving rule |
 | `rematch(game_id uuid)` | member of finished game | see Rematch rule |
 | `advance(game_id uuid)` | internal | see turn states |
@@ -158,6 +160,10 @@ end-of-game rules, otherwise inserts the next `pending` turn and queues a
 
 **Lazy close:** `draw_target`, `submit_tap` and `game_state` close an expired
 `live` turn before answering.
+
+**Draw reveal:** the board is hidden for a fixed 1.2 s after Draw (`private.reveal_ms()`).
+`drawn_at` = draw time + 1.2 s, so scores stay pure search time and the sweeper (which
+uses `deadline_at = drawn_at + cap`) is unchanged. Taps before `drawn_at` are uncounted.
 
 **Client timing:** `offset = server_now − Date.now()` at receipt. Display clock =
 `now + offset − drawn_at + wrong_taps × 5 s`, redrawn every frame, 0.1 s
