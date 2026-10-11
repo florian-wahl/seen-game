@@ -1,18 +1,21 @@
 import Link from "next/link";
 import type { ButtonHTMLAttributes, ComponentProps } from "react";
 
-export type ButtonVariant = "primary" | "secondary" | "danger" | "ghost";
+export type ButtonVariant = "primary" | "secondary" | "danger" | "ghost" | "light";
 
 const base =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 text-base font-semibold " +
-  "transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 " +
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600";
+  "inline-flex min-h-12 items-center justify-center gap-2 px-5 text-base transition active:scale-[0.98] " +
+  "disabled:cursor-not-allowed disabled:opacity-50 " +
+  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard";
+
+const pill = "min-h-14 rounded-full font-wide font-black uppercase tracking-wide";
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "bg-indigo-600 text-white shadow-sm hover:bg-indigo-700",
-  secondary: "bg-white text-slate-900 ring-1 ring-slate-300 hover:bg-slate-50",
-  danger: "bg-white text-red-700 ring-1 ring-red-300 hover:bg-red-50",
-  ghost: "text-indigo-700 hover:bg-indigo-50",
+  primary: `${pill} bg-mustard text-ink hover:brightness-105`,
+  secondary: `${pill} bg-transparent text-cream shadow-[inset_0_0_0_2px_var(--color-line-strong)] hover:bg-raised`,
+  danger: "rounded-full bg-transparent font-bold text-[#f08aba] hover:bg-raised",
+  ghost: "rounded-full font-bold text-cream hover:bg-raised",
+  light: `${pill} bg-cream text-ink hover:brightness-95`,
 };
 
 export function buttonClass(variant: ButtonVariant = "primary", extra = "") {

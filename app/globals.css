@@ -1,24 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+@theme {
+  --color-ink: #1c1b22;
+  --color-surface: #2a2932;
+  --color-raised: #34333d;
+  --color-line: #3d3b46;
+  --color-line-strong: #4a4854;
+  --color-dim: #6b6875;
+  --color-muted: #b8b2c0;
+  --color-soft: #d9d3df;
+  --color-cream: #fbf3e0;
+  --color-paper: #f4f1ea;
+  --color-mustard: #f5b93f;
+  --color-magenta: #e0559a;
+  --color-teal: #2aa7a0;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+/* Wide display face (Archivo wdth axis). */
+@utility font-wide {
+  font-stretch: 125%;
+}
+
+:root {
+  color-scheme: dark;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  background: var(--color-ink);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-ink);
+  color: var(--color-cream);
   font-family: var(--font-sans);
   overscroll-behavior-y: none;
 }

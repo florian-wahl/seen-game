@@ -46,11 +46,11 @@ export function ShareLink({ path, title, text }: { path: string; title: string; 
       <p
         id="share-link-text"
         data-testid="invite-link"
-        className="break-all rounded-xl bg-slate-100 px-3 py-3 font-mono text-sm text-slate-800 select-all"
+        className="break-all rounded-xl bg-ink px-3 py-3 font-mono text-sm text-muted select-all"
       >
         {url}
       </p>
-      <Button onClick={share} data-testid="share-button">
+      <Button variant="secondary" onClick={share} data-testid="share-button">
         {copied ? "Copied!" : "Share invite link"}
       </Button>
     </div>

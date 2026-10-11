@@ -28,12 +28,24 @@ export function Header({
         <Link
           href={back}
           aria-label={backLabel}
-          className="-ml-2 inline-flex min-h-12 min-w-12 items-center justify-center rounded-xl text-2xl text-indigo-700 hover:bg-indigo-50"
+          className="-ml-2 inline-flex min-h-12 min-w-12 items-center justify-center rounded-xl text-cream hover:bg-raised focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
         >
-          <span aria-hidden>‹</span>
+          <svg
+            aria-hidden
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
         </Link>
       ) : null}
-      <h1 className="flex-1 truncate text-xl font-bold tracking-tight">{title}</h1>
+      <h1 className="flex-1 truncate font-wide text-2xl font-black uppercase tracking-tight text-cream">{title}</h1>
       {right}
     </header>
   );
@@ -41,7 +53,7 @@ export function Header({
 
 export function PageSpinner({ label = "Loading…" }: { label?: string }) {
   return (
-    <div className="flex flex-1 items-center justify-center p-10 text-slate-500" role="status">
+    <div className="flex flex-1 items-center justify-center p-10 text-muted" role="status">
       {label}
     </div>
   );

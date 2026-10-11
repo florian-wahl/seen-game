@@ -1,10 +1,10 @@
 const COLORS = [
-  "bg-rose-200 text-rose-900",
-  "bg-amber-200 text-amber-900",
-  "bg-emerald-200 text-emerald-900",
-  "bg-sky-200 text-sky-900",
-  "bg-violet-200 text-violet-900",
-  "bg-orange-200 text-orange-900",
+  "bg-[#e0559a]",
+  "bg-[#8fd0f5]",
+  "bg-[#9bc53d]",
+  "bg-[#ffb074]",
+  "bg-[#2aa7a0]",
+  "bg-[#b9a6ee]",
 ];
 
 function colorFor(name: string) {
@@ -31,7 +31,7 @@ export function Avatar({
     <span
       aria-hidden
       style={style}
-      className={`inline-flex shrink-0 items-center justify-center rounded-full font-bold ${colorFor(name)}`}
+      className={`inline-flex shrink-0 items-center justify-center rounded-full font-black text-ink ${colorFor(name)}`}
     >
       {(name.trim()[0] ?? "?").toUpperCase()}
     </span>

@@ -34,6 +34,26 @@ function isIosNotInstalled() {
   return ios && !standalone && !pushSupported();
 }
 
+function BellIcon() {
+  return (
+    <svg
+      aria-hidden
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="shrink-0 text-teal"
+    >
+      <path d="M6 9a6 6 0 1 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9z" />
+      <path d="M10 20a2.2 2.2 0 0 0 4 0" />
+    </svg>
+  );
+}
+
 /** Home-screen card to turn on web push. Asks for permission only on tap, never on load. */
 export function EnableNotifications() {
   const [state, setState] = useState<State>("checking");
@@ -104,7 +124,7 @@ export function EnableNotifications() {
 
   if (state === "checking" || state === "unsupported") return null;
 
-  const card = "flex flex-col gap-3 rounded-2xl bg-white p-4 text-sm text-slate-700 ring-1 ring-slate-200";
+  const card = "flex flex-col gap-3 rounded-2xl bg-surface p-4 text-sm text-soft";
 
   if (state === "ios-install") {
     return (
@@ -135,9 +155,17 @@ export function EnableNotifications() {
 
   return (
     <div className={card}>
-      <p>Get a ping when it is your turn. We also email you.</p>
-      {state === "error" ? <p className="text-red-700">Could not turn notifications on. Try again.</p> : null}
-      <Button onClick={enable} disabled={state === "busy"} data-testid="enable-notifications">
+      <div className="flex items-center gap-3">
+        <BellIcon />
+        <p className="flex-1">Get a ping when it is your turn. We also email you.</p>
+      </div>
+      {state === "error" ? <p className="text-[#f08aba]">Could not turn notifications on. Try again.</p> : null}
+      <Button
+        onClick={enable}
+        disabled={state === "busy"}
+        className="min-h-12 bg-teal text-sm text-ink hover:bg-teal hover:brightness-110"
+        data-testid="enable-notifications"
+      >
         {state === "busy" ? "Turning on…" : "Turn on notifications"}
       </Button>
     </div>
