@@ -23,8 +23,8 @@ supabase db push -p "$SUPABASE_DB_PASSWORD"          # new migrations
 npx tsx --env-file=.env.prod-secrets scripts/import-library.ts   # after manifest/picture changes
 ```
 
-Vault secrets (once, or when NOTIFY_SECRET changes): `notify_url` = `https://seen.imjustbored.com/api/jobs/notify`,
-`notify_secret` = `$NOTIFY_SECRET` (same SQL as `scripts/setup-local-notify.ts`).
+Vault secrets (once, or when NOTIFY_SECRET changes): `bash scripts/setup-remote-notify.sh` sets `notify_url`
+(`https://seen.imjustbored.com/api/jobs/notify`) and `notify_secret` (`$NOTIFY_SECRET`); needs local Supabase running.
 
 ## Auth (Supabase dashboard → Authentication)
 
