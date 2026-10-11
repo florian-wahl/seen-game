@@ -4,6 +4,7 @@ import { requireUserId } from "@/lib/auth/session";
 import { supabaseServer } from "@/lib/supabase/server";
 import { groupGames, joinNames, type HomeGame } from "@/lib/game/home";
 import { Avatar } from "@/components/ui/Avatar";
+import { DoodleStrip } from "@/components/ui/DoodleStrip";
 import { LinkButton } from "@/components/ui/Button";
 import { Page, PageSpinner } from "@/components/ui/Shell";
 import { EnableNotifications } from "@/components/notifications/EnableNotifications";
@@ -69,33 +70,44 @@ async function Home() {
   return (
     <Page>
       <header className="flex min-h-12 items-center gap-3">
-        <Avatar name={me.name} url={me.avatar} size={40} />
-        <div className="min-w-0 flex-1">
-          <p className="text-xs text-slate-500">Signed in as</p>
-          <p className="truncate font-semibold" data-testid="me-name">{me.name}</p>
+        <h1 className="min-w-0 flex-1 font-wide text-3xl font-black uppercase leading-none tracking-tight text-cream">
+          Seen<span className="text-mustard">!</span>
+        </h1>
+        <div className="flex min-w-0 items-center gap-2">
+          <Avatar name={me.name} url={me.avatar} size={40} />
+          <p className="max-w-24 truncate text-sm font-bold text-cream" data-testid="me-name">{me.name}</p>
         </div>
         <form action="/auth/signout" method="post">
-          <button type="submit" className="min-h-12 rounded-xl px-3 text-sm font-medium text-slate-600 hover:bg-slate-100">
+          <button
+            type="submit"
+            className="min-h-12 rounded-xl px-2 text-sm font-semibold text-muted hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
+          >
             Sign out
           </button>
         </form>
       </header>
 
-      <div>
-        <h1 className="text-4xl font-extrabold tracking-tight text-indigo-700">Seen!</h1>
-      </div>
-
-      <LinkButton href="/new" className="min-h-14 w-full text-lg" data-testid="new-game">
-        New game
-      </LinkButton>
-
       <EnableNotifications />
 
       {empty ? (
-        <div className="flex flex-col items-center gap-2 rounded-2xl bg-white p-8 text-center ring-1 ring-slate-200">
-          <p className="text-4xl" aria-hidden>🔎</p>
-          <h2 className="text-lg font-bold">No games yet</h2>
-          <p className="text-slate-600">Start a game and send the invite link to your friends. You can play at your own pace.</p>
+        <div className="flex flex-col items-center gap-2 rounded-3xl bg-surface p-8 text-center">
+          <svg
+            aria-hidden
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-mustard"
+          >
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="M15.5 15.5L21 21" />
+          </svg>
+          <h2 className="font-wide text-lg font-black uppercase text-cream">No games yet</h2>
+          <p className="text-soft">Start a game and send the invite link to your friends. You can play at your own pace.</p>
         </div>
       ) : null}
 
@@ -103,6 +115,12 @@ async function Home() {
       <Section title="Waiting for others" games={groups.waiting} me={me.id} tone="wait" />
       <Section title="Lobbies" games={groups.lobbies} me={me.id} tone="lobby" />
       <Section title="Recently finished" games={groups.finished} me={me.id} tone="done" />
+
+      <div className="sticky bottom-0 mt-auto -mx-4 bg-gradient-to-t from-ink from-70% to-transparent px-4 pt-6" style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}>
+        <LinkButton href="/new" className="min-h-14 w-full text-lg" data-testid="new-game">
+          New game
+        </LinkButton>
+      </div>
     </Page>
   );
 }
@@ -111,7 +129,7 @@ function Section({ title, games, me, tone }: { title: string; games: HomeGame[];
   if (games.length === 0) return null;
   return (
     <section className="flex flex-col gap-2" aria-label={title}>
-      <h2 className="px-1 text-sm font-semibold uppercase tracking-wide text-slate-500">{title}</h2>
+      <h2 className="px-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">{title}</h2>
       <ul className="flex flex-col gap-2">
         {games.map((g) => (
           <li key={g.id}>
@@ -127,28 +145,53 @@ function GameRow({ game, me, tone }: { game: HomeGame; me: string; tone: "turn" 
   const others = game.players.filter((p) => p.userId !== me).map((p) => p.name);
   const title = others.length ? `with ${joinNames(others)}` : "Just you so far";
   const turnName = game.players.find((p) => p.userId === game.turnUserId)?.name;
-  const badge =
-    tone === "turn"
-      ? { text: "Your turn", cls: "bg-indigo-600 text-white" }
-      : tone === "wait"
-        ? { text: turnName ? `${turnName}'s turn` : "In progress", cls: "bg-slate-100 text-slate-700" }
-        : tone === "lobby"
-          ? { text: `Lobby · ${game.players.length}/6`, cls: "bg-amber-100 text-amber-900" }
-          : { text: "Finished", cls: "bg-emerald-100 text-emerald-900" };
+  const status =
+    tone === "wait"
+      ? turnName
+        ? `${turnName}'s turn`
+        : "In progress"
+      : tone === "lobby"
+        ? `Lobby · ${game.players.length}/6`
+        : "Finished";
+  if (tone === "turn") {
+    return (
+      <Link
+        href={`/g/${game.id}`}
+        className="block overflow-hidden rounded-3xl bg-surface shadow-[inset_0_0_0_2px_var(--color-mustard)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
+      >
+        <DoodleStrip height={132} seed={game.players.length} />
+        <div className="flex items-center gap-3 p-4">
+          <div className="min-w-0 flex-1">
+            <p className="font-wide text-lg font-black uppercase leading-tight text-mustard">Your turn</p>
+            <p className="truncate text-soft">{title}</p>
+          </div>
+          <span aria-hidden className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-mustard text-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z" />
+            </svg>
+          </span>
+        </div>
+      </Link>
+    );
+  }
   return (
     <Link
       href={`/g/${game.id}`}
-      className={`flex min-h-16 items-center gap-3 rounded-2xl bg-white p-3 shadow-sm ring-1 hover:bg-slate-50 ${tone === "turn" ? "ring-2 ring-indigo-500" : "ring-slate-200"}`}
+      className={`flex min-h-16 items-center gap-3 rounded-2xl p-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard ${
+        tone === "done" ? "bg-transparent shadow-[inset_0_0_0_1px_var(--color-line)] hover:bg-surface" : "bg-surface hover:bg-raised"
+      }`}
     >
-      <div className="flex -space-x-2">
+      <div className="flex shrink-0 -space-x-2">
         {game.players.slice(0, 3).map((p) => (
-          <span key={p.userId} className="rounded-full ring-2 ring-white">
+          <span key={p.userId} className={`rounded-full ring-2 ${tone === "done" ? "ring-ink" : "ring-surface"}`}>
             <Avatar name={p.name} size={36} />
           </span>
         ))}
       </div>
-      <span className="min-w-0 flex-1 truncate font-medium">{title}</span>
-      <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${badge.cls}`}>{badge.text}</span>
+      <span className="min-w-0 flex-1">
+        <span className="block truncate font-bold text-cream">{title}</span>
+        <span className="block truncate text-sm text-muted">{status}</span>
+      </span>
     </Link>
   );
 }

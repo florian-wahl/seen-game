@@ -30,7 +30,8 @@ export function DoodleStrip({
   return (
     <div aria-hidden className={`relative overflow-hidden bg-paper ${className}`} style={{ height }}>
       {items.map((d, i) => {
-        const px = Math.round(height * d.size);
+        // Doodles stay picture-sized (the prototype's ~55–80px) however tall the strip is.
+        const px = Math.round(Math.min(height * d.size, 56 + d.size * 40));
         const rot = d.rot + (((seed + i) * 7) % 11) - 5;
         return (
           // eslint-disable-next-line @next/next/no-img-element -- decorative static SVG

@@ -35,9 +35,12 @@ async function Game({ params }: { params: PageProps<"/g/[id]">["params"] }) {
       <nav className="mx-auto flex w-full max-w-md items-center px-2 pt-[env(safe-area-inset-top)]">
         <Link
           href="/"
-          className="inline-flex min-h-12 items-center gap-1 rounded-xl px-3 font-medium text-indigo-700 hover:bg-indigo-50"
+          className="inline-flex min-h-12 items-center gap-1 rounded-xl px-3 font-bold text-cream hover:bg-raised focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
         >
-          <span aria-hidden>‹</span> Home
+          <svg aria-hidden width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+          Home
         </Link>
       </nav>
       {state.game.status === "lobby" ? (

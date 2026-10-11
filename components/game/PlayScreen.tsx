@@ -13,6 +13,7 @@ import { formatTotal } from "@/lib/game/format";
 import type { DrawResult, GameState, Turn } from "@/lib/game/types";
 import type { Tile } from "@/lib/board/types";
 import { testHooksEnabled } from "@/lib/testHooks";
+import { LinkButton } from "@/components/ui/Button";
 import { DrawReveal } from "@/components/game/DrawReveal";
 
 export interface PlayScreenProps {
@@ -316,48 +317,65 @@ export function PlayScreen(props: PlayScreenProps) {
   if (phase === "blocked") {
     return (
       <Centered>
-        <h1 className="text-xl font-bold">Cannot continue</h1>
-        <p className="text-stone-600" data-testid="error-message">
+        <h1 className="font-wide text-2xl font-black uppercase">Cannot continue</h1>
+        <p className="text-soft" data-testid="error-message">
           {message}
         </p>
-        <Link href={backHref} className="rounded-full bg-stone-900 px-6 py-3 font-semibold text-white" data-testid="back-to-game">
+        <LinkButton href={backHref} variant="light" data-testid="back-to-game">
           Back to game
-        </Link>
+        </LinkButton>
       </Centered>
     );
   }
 
   if (phase === "ready" || phase === "drawing") {
+    const points: { icon: React.ReactNode; text: string }[] = [
+      { icon: <ClockIcon />, text: "Nothing is timed yet. The picture is shown for a moment, then the clock starts." },
+      { icon: <MagnifierIcon />, text: "Find the picture on the board as fast as you can. A wrong tap adds 5 seconds." },
+      { icon: <MoveIcon />, text: "The board is bigger than your screen. Drag it to move around." },
+    ];
+    const drawDisabled = !ready || phase === "drawing";
     return (
       <Centered>
-        <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
+        <p className="font-wide text-sm font-bold uppercase tracking-widest text-muted">
           Round {initialTurn.round} of {rounds}
         </p>
-        <h1 className="text-3xl font-extrabold">Ready?</h1>
-        <p className="max-w-xs text-stone-600">
-          Nothing is timed yet. The picture is shown for a moment, then the clock starts. Find the picture on the board as fast as you can.
-          A wrong tap adds 5 seconds.
-        </p>
+        <h1 className="font-wide text-[64px] font-black uppercase leading-none">
+          Ready<span className="text-mustard">?</span>
+        </h1>
+        <div className="flex h-[132px] w-[132px] items-center justify-center rounded-[28px] bg-paper" aria-hidden="true">
+          <span className="font-wide text-[88px] font-black leading-none text-[#c9c3b8]">?</span>
+        </div>
+        <ul className="flex w-full max-w-xs flex-col gap-3 text-left">
+          {points.map((pt) => (
+            <li key={pt.text} className="flex items-start gap-3 text-soft">
+              <span className="mt-0.5 shrink-0 text-mustard">{pt.icon}</span>
+              <span>{pt.text}</span>
+            </li>
+          ))}
+        </ul>
         <div className="w-full max-w-xs" aria-live="polite">
-          <div className="h-2 overflow-hidden rounded-full bg-stone-200">
+          <div className="h-2 overflow-hidden rounded-full bg-surface">
             <div
-              className="h-full bg-emerald-500 transition-[width]"
+              className="h-full bg-teal transition-[width]"
               style={{ width: `${total ? Math.round((loaded / total) * 100) : 0}%` }}
               data-testid="preload-bar"
             />
           </div>
-          <p className="mt-1 text-xs text-stone-500">{ready ? "Pictures ready" : `Loading pictures… ${loaded}/${total || "?"}`}</p>
+          <p className="mt-1 text-xs text-muted">{ready ? "Pictures ready" : `Loading pictures… ${loaded}/${total || "?"}`}</p>
         </div>
-        {message && <p className="text-sm text-red-700">{message}</p>}
+        {message && <p className="text-sm text-[#f08aba]">{message}</p>}
         <button
-          className="w-full max-w-xs rounded-2xl bg-emerald-600 px-6 py-5 text-2xl font-extrabold text-white shadow disabled:bg-stone-300 disabled:shadow-none"
-          disabled={!ready || phase === "drawing"}
+          className={`min-h-[76px] w-full max-w-xs rounded-full font-wide text-[30px] font-black uppercase tracking-wide transition active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard disabled:cursor-not-allowed ${
+            drawDisabled ? "bg-surface text-dim" : "bg-mustard text-ink shadow-[0_0_36px_rgba(245,185,63,.35)]"
+          }`}
+          disabled={drawDisabled}
           onClick={() => void draw()}
           data-testid="draw"
         >
           {phase === "drawing" ? "Drawing…" : "Draw"}
         </button>
-        <Link href={backHref} className="text-sm text-stone-500 underline">
+        <Link href={backHref} className="inline-flex min-h-11 items-center text-sm text-muted underline">
           Back to game
         </Link>
       </Centered>
@@ -366,10 +384,23 @@ export function PlayScreen(props: PlayScreenProps) {
 
   // round | closing | result
   const timeUp = closed ? closed.status !== "found" : phase === "closing";
+  const resultFound = phase === "result" && closed?.status === "found";
+  const wrongTaps = round?.wrongTaps ?? 0;
+  const penaltySecs = ((wrongTaps * penaltyMs) / 1000).toFixed(0);
+  const clockColor =
+    phase === "reveal" ? "text-dim" : timeUp ? "text-magenta" : phase === "result" ? "text-cream" : "text-mustard";
+  const ring = resultFound
+    ? "shadow-[0_0_0_3px_var(--color-teal),0_0_24px_rgba(42,167,160,.45)]"
+    : "shadow-[0_0_0_3px_var(--color-mustard),0_0_24px_rgba(245,185,63,.4)]";
+  const roundNo = round?.round ?? 1;
   return (
-    <div className="fixed inset-0 flex flex-col bg-white text-stone-900" style={{ overscrollBehavior: "none" }} data-testid="round-screen">
-      <div className="flex items-center gap-3 border-b border-stone-200 px-3 py-2" style={{ paddingTop: "max(0.5rem, env(safe-area-inset-top))" }}>
-        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-stone-100">
+    <div className="fixed inset-0 flex flex-col bg-ink text-cream" style={{ overscrollBehavior: "none" }} data-testid="round-screen">
+      <div className="flex items-center gap-4 bg-ink px-4 pb-3" style={{ paddingTop: "max(0.75rem, env(safe-area-inset-top))" }}>
+        <div
+          className={`flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-[18px] ${
+            phase === "reveal" ? "bg-surface" : `bg-paper ${ring}`
+          }`}
+        >
           {targetUrl && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -384,19 +415,39 @@ export function PlayScreen(props: PlayScreenProps) {
           )}
         </div>
         <div className="min-w-0 flex-1">
-          <div className={`font-mono text-3xl tabular-nums ${timeUp ? "text-red-600" : ""}`} data-testid="clock">
-            {formatSeconds(shownMs)} s
+          <div className={`font-wide text-5xl font-extrabold leading-none tabular-nums ${clockColor}`} data-testid="clock">
+            {formatSeconds(shownMs)}
+            <span className="text-2xl"> s</span>
           </div>
-          <div className="text-xs text-stone-500" data-testid="wrong-count">
-            {round?.wrongTaps ?? 0} wrong · +{(((round?.wrongTaps ?? 0) * penaltyMs) / 1000).toFixed(0)} s
+          <div className="mt-1.5 flex items-center gap-2 text-xs text-muted">
+            {wrongTaps > 0 && (
+              <span className="rounded-full bg-magenta px-2 py-0.5 font-wide text-[12px] font-black uppercase text-ink">
+                +{penaltySecs} S
+              </span>
+            )}
+            <span data-testid="wrong-count">{wrongTaps} wrong</span>
           </div>
         </div>
-        <div className="text-right text-xs text-stone-500">
-          Round {round?.round}/{rounds}
-          {busy && <div className="text-stone-400">…</div>}
+        <div className="flex flex-col items-end gap-1.5">
+          <div className="font-wide text-[20px] font-black leading-none">
+            {roundNo}
+            <span className="text-dim">/{rounds}</span>
+          </div>
+          <div className="flex gap-1" aria-hidden="true">
+            {Array.from({ length: rounds }, (_, i) => (
+              <span
+                key={i}
+                className={`h-1 w-3 rounded-full ${i < roundNo - 1 ? "bg-cream" : i === roundNo - 1 ? "bg-mustard" : "bg-line-strong"}`}
+              />
+            ))}
+          </div>
+          {busy && <div className="text-dim">…</div>}
         </div>
       </div>
-      <div className="relative min-h-0 flex-1">
+      <div
+        className="relative mx-2 mb-2 min-h-0 flex-1 overflow-hidden rounded-[22px]"
+        style={{ marginBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
+      >
         {board && images && (
           <BoardCanvas
             ref={boardRef}
@@ -408,11 +459,11 @@ export function PlayScreen(props: PlayScreenProps) {
         )}
         {phase === "reveal" && (
           // Opaque cover: the board stays hidden and untappable until the reveal ends.
-          <div className="absolute inset-0 z-30 bg-[#f4f1ea]" data-testid="reveal-cover" />
+          <div className="absolute inset-0 z-30 bg-paper" data-testid="reveal-cover" />
         )}
         {phase === "closing" && (
           <div className="absolute inset-x-0 top-4 text-center">
-            <span className="rounded-full bg-red-600 px-4 py-2 font-bold text-white">Time&apos;s up</span>
+            <span className="rounded-full bg-magenta px-4 py-2 font-wide font-black uppercase text-ink">Time&apos;s up</span>
           </div>
         )}
         {showResult && closed && (
@@ -445,48 +496,92 @@ function ResultSheet({
   const found = turn.status === "found";
   return (
     <div
-      className="absolute inset-x-0 bottom-0 max-h-[85%] overflow-y-auto rounded-t-3xl border-t border-stone-200 bg-white p-5 shadow-2xl"
+      className="absolute inset-x-0 bottom-0 max-h-[85%] overflow-y-auto rounded-t-[22px] bg-ink p-5 text-cream shadow-[0_-12px_40px_rgba(28,27,34,.35)]"
       style={{ paddingBottom: "max(1.25rem, env(safe-area-inset-bottom))" }}
       data-testid="round-result"
       data-status={turn.status}
     >
-      <h2 className={`text-2xl font-extrabold ${found ? "text-emerald-700" : "text-red-600"}`}>
-        {found ? "Found it!" : turn.status === "capped" ? "Time's up" : "Round over"}
-      </h2>
-      <div className="mt-1 flex items-baseline gap-4">
-        <span className="font-mono text-4xl tabular-nums" data-testid="result-score">
-          {formatTotal(turn.score_ms ?? 0)}
-        </span>
-        <span className="text-sm text-stone-500" data-testid="result-wrong">
-          {turn.wrong_taps} wrong {turn.wrong_taps === 1 ? "tap" : "taps"}
+      <div className="flex items-center justify-between gap-3">
+        <h2 className={`whitespace-nowrap font-wide text-[26px] font-black uppercase ${found ? "text-teal" : "text-magenta"}`}>
+          {found ? "Found it!" : turn.status === "capped" ? "Time's up" : "Round over"}
+        </h2>
+        <span className="whitespace-nowrap font-wide text-[44px] font-extrabold leading-none tabular-nums" data-testid="result-score">
+          {formatTotal(turn.score_ms ?? 0).replace(/ s$/, "")}
+          <span className="text-xl"> s</span>
         </span>
       </div>
+      <p className="mt-1 text-right text-[13px] text-muted" data-testid="result-wrong">
+        {turn.wrong_taps} wrong {turn.wrong_taps === 1 ? "tap" : "taps"}
+      </p>
       {standings && (
-        <ol className="mt-4 flex flex-col gap-1 text-sm" data-testid="standings">
-          {standings.players.map((p) => (
-            <li key={p.user_id} className={`flex items-center justify-between rounded-lg px-3 py-1.5 ${p.user_id === standings.me.user_id ? "bg-stone-100 font-semibold" : ""}`}>
-              <span className="truncate">
-                {p.status === "retired" ? "–" : (p.rank ?? "")} {p.display_name}
-              </span>
-              <span className="tabular-nums">{p.turns_done > 0 ? formatTotal(p.total_ms) : "—"}</span>
-            </li>
-          ))}
+        <ol className="mt-4 flex flex-col gap-1.5 text-sm" data-testid="standings">
+          {standings.players.map((p) => {
+            const me = p.user_id === standings.me.user_id;
+            return (
+              <li
+                key={p.user_id}
+                className={`flex items-center justify-between rounded-xl px-3 py-2.5 ${me ? "bg-mustard font-black text-ink" : "bg-surface"}`}
+              >
+                <span className="truncate">
+                  <span className={`font-wide font-black ${me ? "text-ink" : "text-muted"}`}>
+                    {p.status === "retired" ? "–" : (p.rank ?? "")}
+                  </span>{" "}
+                  {p.display_name}
+                </span>
+                <span className="font-wide font-extrabold tabular-nums">{p.turns_done > 0 ? formatTotal(p.total_ms) : "—"}</span>
+              </li>
+            );
+          })}
         </ol>
       )}
-      <Link
-        href={backHref}
-        className="mt-5 block rounded-2xl bg-stone-900 px-6 py-4 text-center text-lg font-bold text-white"
-        data-testid="back-to-game"
-      >
+      <LinkButton href={backHref} variant="light" className="mt-5 w-full" data-testid="back-to-game">
         {gameFinished ? "See final results" : "Back to game"}
-      </Link>
+      </LinkButton>
     </div>
+  );
+}
+
+const iconProps = {
+  width: 20,
+  height: 20,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2.4,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  "aria-hidden": true,
+};
+
+function ClockIcon() {
+  return (
+    <svg {...iconProps}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </svg>
+  );
+}
+
+function MagnifierIcon() {
+  return (
+    <svg {...iconProps}>
+      <circle cx="10.5" cy="10.5" r="6.5" />
+      <path d="M20 20l-4.9-4.9" />
+    </svg>
+  );
+}
+
+function MoveIcon() {
+  return (
+    <svg {...iconProps}>
+      <path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3" />
+    </svg>
   );
 }
 
 function Centered({ children }: { children: React.ReactNode }) {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-1 flex-col items-center justify-center gap-4 p-6 text-center">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-1 flex-col items-center justify-center gap-5 bg-ink p-6 text-center text-cream">
       {children}
     </main>
   );

@@ -1,7 +1,7 @@
 "use client";
 // Read-only board for studying between rounds. Taps do nothing.
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { LinkButton } from "@/components/ui/Button";
 import { BoardCanvas } from "@/components/board/BoardCanvas";
 import { boardFromTiles } from "@/lib/game/boardFromTiles";
 import { loadImageMap } from "@/lib/library";
@@ -35,25 +35,30 @@ export function BoardStudy({ gameId, tiles, boardSize }: { gameId: string; tiles
   if (!unlocked) {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-md flex-1 flex-col items-center justify-center gap-4 p-6 text-center" data-testid="board-locked">
-        <h1 className="text-xl font-bold">The board unlocks after your first round</h1>
-        <p className="text-stone-600">Everyone plays on the same board. Once you have drawn your first picture you can study it here between rounds.</p>
-        <Link href={`/g/${gameId}`} className="rounded-full bg-stone-900 px-6 py-3 font-semibold text-white" data-testid="back-to-game">
+        <h1 className="font-wide text-xl font-black uppercase tracking-tight text-cream">The board unlocks after your first round</h1>
+        <p className="text-muted">Everyone plays on the same board. Once you have drawn your first picture you can study it here between rounds.</p>
+        <LinkButton href={`/g/${gameId}`} variant="light" data-testid="back-to-game">
           Back to game
-        </Link>
+        </LinkButton>
       </main>
     );
   }
 
   return (
-    <div className="fixed inset-0 flex flex-col bg-white text-stone-900" data-testid="board-study">
-      <div className="flex items-center justify-between border-b border-stone-200 px-3 py-2" style={{ paddingTop: "max(0.5rem, env(safe-area-inset-top))" }}>
-        <span className="font-semibold">Board</span>
-        <Link href={`/g/${gameId}`} className="rounded-full bg-stone-900 px-4 py-1.5 text-sm font-semibold text-white" data-testid="back-to-game">
+    <div className="fixed inset-0 flex flex-col bg-ink text-cream" data-testid="board-study">
+      <div className="flex items-center justify-between gap-3 px-4 py-2" style={{ paddingTop: "max(0.5rem, env(safe-area-inset-top))" }}>
+        <div className="min-w-0">
+          <span className="block font-wide text-xl font-black uppercase tracking-tight text-cream">Board</span>
+          <span className="block text-xs text-muted">Study it between rounds. Taps do nothing.</span>
+        </div>
+        <LinkButton href={`/g/${gameId}`} variant="light" className="min-h-11 px-5 text-sm" data-testid="back-to-game">
           Back
-        </Link>
+        </LinkButton>
       </div>
-      <div className="relative min-h-0 flex-1">
-        {images && <BoardCanvas board={board} images={images} onTap={noop} className="absolute inset-0" />}
+      <div className="mx-2 mb-2 min-h-0 flex-1 overflow-hidden rounded-[22px]" style={{ marginBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}>
+        <div className="relative h-full min-h-0">
+          {images && <BoardCanvas board={board} images={images} onTap={noop} className="absolute inset-0" />}
+        </div>
       </div>
     </div>
   );

@@ -25,9 +25,16 @@ async function Onboarding({ searchParams }: { searchParams: PageProps<"/onboardi
 
   return (
     <Page className="justify-center">
+      <p className="text-center font-wide text-xl font-black uppercase leading-none tracking-tight text-cream" aria-hidden>
+        Seen<span className="text-mustard">!</span>
+      </p>
+      <div className="mx-auto flex h-36 w-36 items-center justify-center rounded-[28px] bg-paper shadow-[0_0_0_3px_var(--color-mustard),0_0_40px_rgba(245,185,63,0.3)]">
+        {/* eslint-disable-next-line @next/next/no-img-element -- decorative static SVG */}
+        <img src="/library/v1/necktie.svg" alt="" aria-hidden width={104} height={104} draggable={false} className="-rotate-6" />
+      </div>
       <div className="flex flex-col gap-2 text-center">
-        <h1 className="text-3xl font-extrabold tracking-tight">What should friends call you?</h1>
-        <p className="text-slate-600">This is the name other players see in games.</p>
+        <h1 className="font-wide text-3xl font-black uppercase leading-tight tracking-tight text-cream">What should friends call you?</h1>
+        <p className="text-soft">This is the name other players see in games.</p>
       </div>
       <NameForm next={next} defaultName={data?.display_name ?? ""} />
     </Page>

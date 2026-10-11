@@ -10,7 +10,7 @@ export function NameForm({ next, defaultName }: { next: string; defaultName: str
     <form action={action} className="flex flex-col gap-4">
       <input type="hidden" name="next" value={next} />
       <ErrorNote>{state.error}</ErrorNote>
-      <label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
+      <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-[0.12em] text-muted">
         Your name
         <input
           name="name"
@@ -18,7 +18,7 @@ export function NameForm({ next, defaultName }: { next: string; defaultName: str
           maxLength={60}
           defaultValue={defaultName}
           autoComplete="nickname"
-          className="min-h-12 rounded-xl border-0 bg-white px-4 text-slate-900 ring-1 ring-slate-300 focus:ring-2 focus:ring-indigo-600 focus:outline-none"
+          className="min-h-14 rounded-2xl border-0 bg-surface px-4 text-base font-normal normal-case tracking-normal text-cream placeholder:text-dim focus:outline-none focus:shadow-[inset_0_0_0_2px_var(--color-mustard)]"
         />
       </label>
       <Button type="submit" disabled={pending}>

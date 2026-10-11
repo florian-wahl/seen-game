@@ -65,29 +65,29 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
   return (
     <Page>
       <div>
-        <h1 className="text-3xl font-extrabold tracking-tight">Game lobby</h1>
-        <p className="mt-1 text-slate-600" data-testid="settings">
+        <h1 className="font-wide text-3xl font-black uppercase tracking-tight text-cream">Game lobby</h1>
+        <p className="mt-1 text-muted" data-testid="settings">
           {state.game.rounds_per_player} rounds each · {state.game.board_size} pictures
         </p>
       </div>
 
       <Card className="flex flex-col gap-1">
         <div className="mb-1 flex items-baseline justify-between">
-          <h2 className="font-semibold">Players</h2>
-          <span className="text-sm text-slate-500" data-testid="player-count">
-            {players.length} of {MAX_PLAYERS}
+          <h2 className="text-xs font-bold uppercase tracking-[0.12em] text-muted">Players</h2>
+          <span className="font-wide text-sm font-extrabold tabular-nums text-cream" data-testid="player-count">
+            {players.length} <span className="text-dim">/ {MAX_PLAYERS}</span>
           </span>
         </div>
         <ul className="flex flex-col" data-testid="player-list">
           {players.map((p) => (
-            <li key={p.user_id} className="flex min-h-12 items-center gap-3">
+            <li key={p.user_id} className="flex min-h-14 items-center gap-3 border-b border-line last:border-0">
               <Avatar name={p.display_name} url={p.avatar_url} size={36} />
-              <span className="min-w-0 flex-1 truncate font-medium">
+              <span className="min-w-0 flex-1 truncate font-bold text-cream">
                 {p.display_name}
                 {p.user_id === state.me.user_id ? " (you)" : ""}
               </span>
               {p.is_host ? (
-                <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900">
+                <span className="rounded-full bg-mustard px-2.5 py-1 font-wide text-[11px] font-black uppercase tracking-wide text-ink">
                   Host
                 </span>
               ) : null}
@@ -98,8 +98,8 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
 
       {isHost && token ? (
         <Card className="flex flex-col gap-3">
-          <h2 className="font-semibold">Invite friends</h2>
-          <p className="text-sm text-slate-600">Anyone with this link can join until the game starts.</p>
+          <h2 className="text-xs font-bold uppercase tracking-[0.12em] text-muted">Invite friends</h2>
+          <p className="text-sm text-soft">Anyone with this link can join until the game starts.</p>
           <ShareLink
             path={`/join/${token}`}
             title="Join my game of Seen!"
@@ -111,11 +111,11 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
       <ErrorNote>{error}</ErrorNote>
 
       {confirm ? (
-        <Card className="flex flex-col gap-3" role="alertdialog" aria-label="Confirm">
-          <p className="font-semibold">
+        <Card className="flex flex-col gap-3 shadow-[inset_0_0_0_2px_var(--color-magenta)]" role="alertdialog" aria-label="Confirm">
+          <p className="font-bold text-cream">
             {isHost ? "Cancel this game for everyone?" : "Leave this game?"}
           </p>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-soft">
             {isHost
               ? "The lobby will be closed and the invite link stops working."
               : "You can rejoin later with the invite link while the lobby is open."}
@@ -133,11 +133,11 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
         <div className="flex flex-col gap-3">
           {isHost ? (
             <>
-              <Button onClick={start} disabled={!canStart || starting} className="min-h-14 text-lg" data-testid="start-game">
+              <Button onClick={start} disabled={!canStart || starting} data-testid="start-game">
                 {starting ? "Starting…" : "Start game"}
               </Button>
               {!canStart ? (
-                <p className="text-center text-sm text-slate-500">
+                <p className="text-center text-sm text-muted">
                   Waiting for at least {MIN_PLAYERS} players. Share the invite link above.
                 </p>
               ) : null}
@@ -147,7 +147,7 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
             </>
           ) : (
             <>
-              <p className="rounded-2xl bg-white p-4 text-center text-slate-700 ring-1 ring-slate-200" data-testid="waiting-host">
+              <p className="rounded-2xl bg-surface p-4 text-center text-soft" data-testid="waiting-host">
                 Waiting for the host to start the game…
               </p>
               <Button variant="danger" onClick={() => setConfirm(true)} data-testid="leave-game">

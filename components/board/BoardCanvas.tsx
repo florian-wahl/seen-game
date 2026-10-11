@@ -117,7 +117,7 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
       ctx.save();
       ctx.translate(s.x, s.y);
       ctx.rotate(s.rot);
-      ctx.strokeStyle = "#16a34a";
+      ctx.strokeStyle = "#2aa7a0";
       ctx.lineWidth = Math.max(3, s.size * 0.06);
       ctx.beginPath();
       ctx.roundRect(-s.size / 2, -s.size / 2, s.size, s.size, s.size * 0.18);
@@ -137,7 +137,7 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
       ctx.save();
       ctx.translate(p.x, p.y);
       ctx.rotate((tile.rotation * Math.PI) / 180);
-      ctx.fillStyle = `rgba(220, 38, 38, ${0.5 * (1 - t)})`;
+      ctx.fillStyle = `rgba(224, 85, 154, ${0.5 * (1 - t)})`;
       ctx.beginPath();
       ctx.roundRect(-size / 2, -size / 2, size, size, size * 0.18);
       ctx.fill();
@@ -152,7 +152,7 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
       ctx.lineWidth = 4;
       ctx.strokeStyle = "#ffffff";
       ctx.strokeText("+5 s", p.x, ty);
-      ctx.fillStyle = "#dc2626";
+      ctx.fillStyle = "#e0559a";
       ctx.fillText("+5 s", p.x, ty);
       ctx.restore();
     }

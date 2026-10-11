@@ -24,9 +24,9 @@ function Choice({
             defaultChecked={o.value === defaultValue}
             className="peer sr-only"
           />
-          <span className="flex min-h-16 flex-col items-center justify-center rounded-2xl bg-white px-2 py-2 text-center ring-1 ring-slate-300 peer-checked:bg-indigo-50 peer-checked:ring-2 peer-checked:ring-indigo-600 peer-focus-visible:outline-2 peer-focus-visible:outline-indigo-600">
-            <span className="text-xl font-bold">{o.label}</span>
-            <span className="text-xs text-slate-500">{o.hint}</span>
+          <span className="flex min-h-24 flex-col items-center justify-center gap-1 rounded-2xl bg-surface px-2 py-3 text-center text-cream transition hover:bg-raised peer-checked:bg-mustard peer-checked:text-ink peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-mustard">
+            <span className="font-wide text-3xl font-black leading-none tabular-nums">{o.label}</span>
+            <span className="text-xs font-semibold opacity-80">{o.hint}</span>
           </span>
         </label>
       ))}
@@ -40,7 +40,7 @@ export function NewGameForm() {
     <form action={action} className="flex flex-col gap-6">
       <ErrorNote>{state.error}</ErrorNote>
       <fieldset className="flex flex-col gap-2">
-        <legend className="mb-1 font-semibold">Rounds per player</legend>
+        <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Rounds per player</legend>
         <Choice
           name="rounds"
           defaultValue={5}
@@ -52,7 +52,7 @@ export function NewGameForm() {
         />
       </fieldset>
       <fieldset className="flex flex-col gap-2">
-        <legend className="mb-1 font-semibold">Pictures on the board</legend>
+        <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Pictures on the board</legend>
         <Choice
           name="board_size"
           defaultValue={200}
@@ -63,7 +63,7 @@ export function NewGameForm() {
           ]}
         />
       </fieldset>
-      <Button type="submit" disabled={pending} className="min-h-14 text-lg" data-testid="create-game">
+      <Button type="submit" disabled={pending} className="min-h-14 w-full text-lg" data-testid="create-game">
         {pending ? "Creating…" : "Create game"}
       </Button>
     </form>

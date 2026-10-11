@@ -1,12 +1,12 @@
 "use client";
 // Rendered by app/g/[id]/page.tsx when the game is in_progress, finished or abandoned.
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useGameState } from "@/lib/game/useGameState";
 import type { GameState } from "@/lib/game/types";
 import { buildScoreboard } from "@/lib/game/scoreboard";
 import { timeAgo } from "@/lib/game/format";
 import { friendlyError, retireFromGame } from "@/lib/game/rpc";
+import { LinkButton } from "@/components/ui/Button";
 import { FinalResults } from "./FinalResults";
 import { Legend, ScoreTable } from "./ScoreTable";
 
@@ -19,11 +19,11 @@ export function GameView({ gameId, initial }: { gameId: string; initial: GameSta
   if (status === "abandoned") {
     return (
       <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center gap-4 p-6 text-center">
-        <h1 className="text-2xl font-bold">Game abandoned</h1>
-        <p className="text-stone-600">This game was cancelled before it finished.</p>
-        <Link href="/" className="rounded-full bg-stone-900 px-6 py-3 font-semibold text-white">
+        <h1 className="font-wide text-2xl font-black uppercase tracking-tight text-cream">Game abandoned</h1>
+        <p className="text-muted">This game was cancelled before it finished.</p>
+        <LinkButton href="/" variant="light">
           Back home
-        </Link>
+        </LinkButton>
       </main>
     );
   }
@@ -62,34 +62,33 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
   return (
     <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-4 p-4 pb-8" data-testid="game-view">
       <header>
-        <h1 className="text-2xl font-bold">Scoreboard</h1>
-        <p className="text-sm text-stone-600" data-testid="turn-line">
+        <h1 className="font-wide text-2xl font-black uppercase tracking-tight text-cream">Scoreboard</h1>
+        <p className={`text-sm ${state.is_my_turn ? "font-bold text-mustard" : "text-muted"}`} data-testid="turn-line">
           {turnLine}
         </p>
       </header>
 
       {state.is_my_turn && !iAmRetired && (
-        <Link
-          href={`/g/${gameId}/play`}
-          className="rounded-2xl bg-emerald-600 px-6 py-4 text-center text-lg font-bold text-white shadow active:bg-emerald-700"
-          data-testid="play-turn"
-        >
+        <LinkButton href={`/g/${gameId}/play`} data-testid="play-turn">
+          <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z" />
+          </svg>
           Play my turn
-        </Link>
+        </LinkButton>
       )}
 
       <ScoreTable rows={sb.rows} rounds={sb.rounds} />
       <Legend />
 
       <section aria-label="Turn order">
-        <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-stone-500">Turn order</h2>
+        <h2 className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-muted">Turn order</h2>
         <ol className="flex flex-wrap gap-2" data-testid="turn-order">
           {turnOrder.map((r) => (
             <li
               key={r.userId}
               data-current={r.isCurrent ? "true" : undefined}
-              className={`rounded-full border px-3 py-1 text-sm ${
-                r.isCurrent ? "border-emerald-600 bg-emerald-50 font-semibold text-emerald-800" : "border-stone-200 bg-white text-stone-700"
+              className={`rounded-full px-3 py-1.5 text-sm ${
+                r.isCurrent ? "bg-mustard font-bold text-ink" : "bg-surface text-soft"
               }`}
             >
               {r.seat}. {r.name}
@@ -99,15 +98,11 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
       </section>
 
       {state.board_unlocked ? (
-        <Link
-          href={`/g/${gameId}/board`}
-          className="rounded-2xl border border-stone-300 bg-white px-6 py-3 text-center font-semibold"
-          data-testid="view-board"
-        >
+        <LinkButton href={`/g/${gameId}/board`} variant="secondary" data-testid="view-board">
           View board
-        </Link>
+        </LinkButton>
       ) : (
-        <p className="text-center text-sm text-stone-500">The board unlocks after your first round.</p>
+        <p className="text-center text-sm text-muted">The board unlocks after your first round.</p>
       )}
 
       {!iAmRetired && <LeaveGame gameId={gameId} onDone={refresh} />}
@@ -136,28 +131,28 @@ function LeaveGame({ gameId, onDone }: { gameId: string; onDone: () => Promise<v
 
   if (!confirming) {
     return (
-      <button className="mt-2 text-sm text-stone-500 underline" onClick={() => setConfirming(true)} data-testid="leave-game">
+      <button className="mt-2 min-h-11 text-sm text-muted underline" onClick={() => setConfirming(true)} data-testid="leave-game">
         Leave game
       </button>
     );
   }
   return (
-    <div className="rounded-2xl border border-red-200 bg-red-50 p-4" role="alertdialog" aria-label="Leave game">
-      <p className="font-semibold text-red-900">Leave this game?</p>
-      <p className="mt-1 text-sm text-red-800">
+    <div className="rounded-2xl bg-surface p-4 shadow-[inset_0_0_0_2px_var(--color-magenta)]" role="alertdialog" aria-label="Leave game">
+      <p className="font-bold text-cream">Leave this game?</p>
+      <p className="mt-1 text-sm text-soft">
         You will be removed from the turn order and your open round counts as forfeited. You cannot rejoin.
       </p>
-      {err && <p className="mt-2 text-sm text-red-700">{err}</p>}
+      {err && <p className="mt-2 text-sm text-[#f08aba]">{err}</p>}
       <div className="mt-3 flex gap-2">
         <button
-          className="flex-1 rounded-full bg-red-600 px-4 py-2 font-semibold text-white disabled:opacity-60"
+          className="min-h-12 flex-1 rounded-full bg-magenta px-4 py-2 font-bold text-ink disabled:opacity-60"
           onClick={leave}
           disabled={busy}
           data-testid="leave-confirm"
         >
           {busy ? "Leaving…" : "Yes, leave"}
         </button>
-        <button className="flex-1 rounded-full border border-stone-300 bg-white px-4 py-2" onClick={() => setConfirming(false)} disabled={busy}>
+        <button className="min-h-12 flex-1 rounded-full px-4 py-2 font-bold text-cream shadow-[inset_0_0_0_2px_var(--color-line-strong)] hover:bg-raised disabled:opacity-60" onClick={() => setConfirming(false)} disabled={busy}>
           Stay
         </button>
       </div>
