@@ -38,8 +38,9 @@ async function main() {
   const { data: existing, error: exErr } = await db.from("pictures").select("id");
   if (exErr) throw exErr;
   const stale = (existing ?? []).map((r) => r.id).filter((id) => !ids.has(id));
-  if (stale.length) {
-    const { error } = await db.from("pictures").update({ review_status: "rejected" }).in("id", stale);
+  // Batched: ids go in the query string, and a whole library at once exceeds the URI limit.
+  for (let i = 0; i < stale.length; i += 100) {
+    const { error } = await db.from("pictures").update({ review_status: "rejected" }).in("id", stale.slice(i, i + 100));
     if (error) throw error;
   }
 

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "library:build": "tsx scripts/build-library.ts",
+    "library:build": "tsx --env-file-if-exists=.env.local scripts/build-library.ts",
     "predev": "npm run library:build",
     "dev": "next dev",
     "prebuild": "npm run library:build",
