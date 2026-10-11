@@ -99,22 +99,16 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
         <p className="text-center text-sm text-muted">The board unlocks after your first round.</p>
       )}
 
-      {!iAmRetired && <LeaveGame gameId={gameId} onDone={refresh} />}
-
       {state.is_my_turn && !iAmRetired && (
-        // Pinned to the bottom of the screen, like "New game" on Home.
-        <div
-          className="sticky bottom-0 -mx-4 mt-auto bg-gradient-to-t from-ink from-70% to-transparent px-4 pt-6"
-          style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
-        >
-          <LinkButton href={`/g/${gameId}/play`} className="w-full" data-testid="play-turn">
-            <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z" />
-            </svg>
-            Play my turn
-          </LinkButton>
-        </div>
+        <LinkButton href={`/g/${gameId}/play`} className="w-full" data-testid="play-turn">
+          <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z" />
+          </svg>
+          Play my turn
+        </LinkButton>
       )}
+
+      {!iAmRetired && <LeaveGame gameId={gameId} onDone={refresh} />}
     </main>
   );
 }

@@ -102,16 +102,13 @@ export function FinalResults({ gameId, state }: { gameId: string; state: GameSta
           {busy ? "Setting up…" : "Rematch"}
         </Button>
       )}
-      <div className="flex justify-center gap-6 text-sm text-cream">
-        {state.board_unlocked && (
+      {state.board_unlocked && (
+        <div className="flex justify-center text-sm text-cream">
           <Link href={`/g/${gameId}/board`} className="inline-flex min-h-11 items-center underline">
             View board
           </Link>
-        )}
-        <Link href="/" className="inline-flex min-h-11 items-center underline">
-          Home
-        </Link>
-      </div>
+        </div>
+      )}
     </main>
   );
 }
