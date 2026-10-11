@@ -14,11 +14,17 @@ import {
 
 const E2E_BASE_URL = process.env.E2E_BASE_URL ?? "http://localhost:3006";
 
-async function asUser(browser: Browser, user: TestUser, next: string): Promise<Page> {
+async function asUser(
+  browser: Browser,
+  user: TestUser,
+  next: string,
+  beforeGoto?: (page: Page) => void,
+): Promise<Page> {
   const { defaultBrowserType: _ignored, ...iphone } = devices["iPhone 14"];
   void _ignored;
   const ctx = await browser.newContext({ ...iphone, baseURL: E2E_BASE_URL });
   const page = await ctx.newPage();
+  beforeGoto?.(page);
   await page.goto(`/dev/login?email=${encodeURIComponent(user.email)}&name=${user.name}&next=${encodeURIComponent(next)}`);
   return page;
 }
@@ -82,9 +88,19 @@ test.describe("game loop", () => {
     await pageB.goto(`/dev/game/${game.gameId}`);
 
     // A: ready screen, draw enabled after preload.
-    const pageA = await asUser(browser, a, `/g/${game.gameId}/play`);
+    const libraryRequests: string[] = [];
+    const pageA = await asUser(browser, a, `/g/${game.gameId}/play`, (pg) =>
+      pg.on("request", (r) => {
+        const u = new URL(r.url());
+        if (u.pathname.startsWith("/library/")) libraryRequests.push(u.pathname);
+      }),
+    );
     const draw = pageA.getByTestId("draw");
     await expect(draw).toBeEnabled({ timeout: 30_000 });
+    // Picture library = one hashed bundle (+ the current.json pointer), never per-picture SVG requests.
+    expect(libraryRequests.filter((p) => /^\/library\/bundles\/library-.*\.json$/.test(p))).toHaveLength(1);
+    expect(libraryRequests.filter((p) => p.endsWith(".svg"))).toEqual([]);
+    expect(libraryRequests.length).toBeLessThanOrEqual(2);
     await draw.click();
     await expect(pageA.getByTestId("round-screen")).toBeVisible();
     const turn = await openTurn(game.gameId);

@@ -11,6 +11,19 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  async headers() {
+    return [
+      {
+        // Content-hashed bundles never change.
+        source: "/library/bundles/:file(library-.*\\.json)",
+        headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
+      },
+      {
+        source: "/library/bundles/current.json",
+        headers: [{ key: "Cache-Control", value: "no-cache" }],
+      },
+    ];
+  },
   turbopack: {
     rules: {
       "*.css": {

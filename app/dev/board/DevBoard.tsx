@@ -4,13 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoardCanvas, type BoardCanvasHandle, type BoardCanvasStats } from "@/components/board/BoardCanvas";
 import { generateBoard } from "@/lib/board/generate";
 import type { LibraryManifest } from "@/lib/board/types";
-import manifestJson from "@/public/library/placeholder/manifest.json";
-
-const manifest = manifestJson as unknown as LibraryManifest;
-const LIBRARY_ROOT = "/library/placeholder";
-const ALL_IMAGES: Record<string, string> = Object.fromEntries(
-  manifest.pictures.map((p) => [p.id, `${LIBRARY_ROOT}/${p.file}`]),
-);
+import { loadImageMap, loadManifest } from "@/lib/library";
 
 const SIZES = [100, 200, 300] as const;
 
@@ -20,7 +14,17 @@ function pickTarget(ids: string[], avoid?: string | null): string {
   return id;
 }
 
+/** Loads the picture bundle (same loader as the game), then renders the board. */
 export default function DevBoard() {
+  const [lib, setLib] = useState<{ manifest: LibraryManifest; images: Record<string, string> } | null>(null);
+  useEffect(() => {
+    void Promise.all([loadManifest(), loadImageMap()]).then(([manifest, images]) => setLib({ manifest, images }));
+  }, []);
+  if (!lib) return <div className="p-4 text-sm">Loading pictures…</div>;
+  return <DevBoardInner manifest={lib.manifest} images={lib.images} />;
+}
+
+function DevBoardInner({ manifest, images }: { manifest: LibraryManifest; images: Record<string, string> }) {
   const [size, setSize] = useState<(typeof SIZES)[number]>(200);
   const board = useMemo(
     () =>
@@ -30,9 +34,8 @@ export default function DevBoard() {
         size,
         seed: `dev-${size}`,
       }),
-    [size],
+    [size, manifest],
   );
-  const images = ALL_IMAGES;
   const ids = useMemo(() => board.tiles.map((t) => t.pictureId), [board]);
 
   const [target, setTarget] = useState<string | null>(null);

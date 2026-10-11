@@ -31,7 +31,7 @@ export default defineConfig({
   // build time. NEVER set that flag for a deployed build (see lib/testHooks.ts).
   webServer: startServer
     ? {
-        command: "npx next build && npx next start -p 3006",
+        command: "npm run build && npx next start -p 3006",
         env: { NEXT_PUBLIC_E2E_TEST_HOOKS: "1" },
         url: baseURL,
         reuseExistingServer: false,

@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { generateBoard, countCategoryConflicts, findConfusableViolations } from "../lib/board/generate";
 import type { LibraryManifest } from "../lib/board/types";
+import { LIBRARY_SOURCE_PATH } from "../lib/library/config";
 
 function arg(name: string, fallback?: string): string | undefined {
   const i = process.argv.indexOf(`--${name}`);
@@ -12,7 +13,7 @@ function arg(name: string, fallback?: string): string | undefined {
 function main(): number {
   const size = Number(arg("size", "200"));
   const seed = arg("seed", "demo")!;
-  const lib = path.resolve(process.cwd(), arg("library", "public/library/placeholder")!);
+  const lib = path.resolve(process.cwd(), arg("library", LIBRARY_SOURCE_PATH)!);
   const out = arg("out");
   const manifest = JSON.parse(readFileSync(path.join(lib, "manifest.json"), "utf8")) as LibraryManifest;
 

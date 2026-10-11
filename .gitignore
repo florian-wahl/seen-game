@@ -46,3 +46,6 @@ next-env.d.ts
 # playwright
 /test-results/
 /playwright-report/
+
+# built picture bundles (npm run library:build)
+/public/library/bundles/

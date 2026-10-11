@@ -1,11 +1,12 @@
 // Imports a picture library manifest into the database (pictures + confusables).
-// Usage: npx tsx --env-file=.env.local scripts/import-library.ts [--library public/library/placeholder]
+// Usage: npx tsx --env-file=.env.local scripts/import-library.ts [--library <dir>] (default: public/library/$NEXT_PUBLIC_LIBRARY_DIR or placeholder)
 // Idempotent: upserts every manifest picture; pictures missing from the manifest are marked rejected.
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import type { Database } from "../lib/supabase/database.types";
 import type { LibraryManifest } from "../lib/board/types";
+import { LIBRARY_SOURCE_PATH } from "../lib/library/config";
 
 const arg = (name: string, fallback: string) => {
   const i = process.argv.indexOf(`--${name}`);
@@ -13,7 +14,7 @@ const arg = (name: string, fallback: string) => {
 };
 
 async function main() {
-  const root = arg("library", "public/library/placeholder");
+  const root = arg("library", LIBRARY_SOURCE_PATH);
   const manifest = JSON.parse(readFileSync(path.join(root, "manifest.json"), "utf8")) as LibraryManifest;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SECRET_KEY;

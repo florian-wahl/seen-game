@@ -1,0 +1,12 @@
+/**
+ * Single source of truth for which picture library is live: a folder under
+ * `public/library/`. `placeholder` until the final set (`v1`) is switched on by
+ * setting NEXT_PUBLIC_LIBRARY_DIR (inlined at build time on the client).
+ */
+export const LIBRARY_DIR: string = process.env.NEXT_PUBLIC_LIBRARY_DIR || "placeholder";
+
+/** Repo-relative folder holding the manifest and the per-picture SVGs. */
+export const LIBRARY_SOURCE_PATH = `public/library/${LIBRARY_DIR}`;
+
+/** URL folder for the built bundles (build output, gitignored). */
+export const BUNDLE_URL_ROOT = "/library/bundles";

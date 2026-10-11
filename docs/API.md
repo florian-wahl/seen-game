@@ -57,5 +57,5 @@ Payloads carry no game data (Supabase adds a random message `id`): clients re-fe
 `useGameState(gameId)` in `lib/game/useGameState.ts` wraps this (plus a 20 s polling fallback).
 
 ## Pictures
-Picture files are served by the Next app from `LIBRARY_ROOT` (`lib/library/index.ts`); `loadImageMap()` gives
-pictureId → URL. DB `pictures` rows are imported from the manifest by `scripts/import-library.ts`.
+Pictures ship as one versioned bundle built by `npm run library:build` (`public/library/bundles/`, gitignored; live set chosen by `lib/library/config.ts` / `NEXT_PUBLIC_LIBRARY_DIR`). `loadImageMap()` (`lib/library/index.ts`) fetches it once and gives
+pictureId → Blob URL. DB `pictures` rows are imported from the manifest by `scripts/import-library.ts`.
