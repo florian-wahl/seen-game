@@ -13,6 +13,7 @@ import { formatTotal } from "@/lib/game/format";
 import type { DrawResult, GameState, Turn } from "@/lib/game/types";
 import type { Tile } from "@/lib/board/types";
 import { testHooksEnabled } from "@/lib/testHooks";
+import { DrawReveal } from "@/components/game/DrawReveal";
 
 export interface PlayScreenProps {
   gameId: string;
@@ -27,6 +28,8 @@ export interface PlayScreenProps {
 interface Round {
   turnId: string;
   drawnAtMs: number;
+  /** Client-clock (Date.now()) time at which the reveal ends = drawn_at - offset. */
+  revealEndMs: number;
   offsetMs: number;
   target: string;
   wrongTaps: number;
@@ -34,7 +37,7 @@ interface Round {
   round: number;
 }
 
-type Phase = "ready" | "drawing" | "round" | "closing" | "result" | "blocked";
+type Phase = "ready" | "drawing" | "reveal" | "round" | "closing" | "result" | "blocked";
 
 const PRELOAD_CHUNK = 40;
 
@@ -152,7 +155,7 @@ export function PlayScreen(props: PlayScreenProps) {
 
   // Draw (idempotent: also resumes a live round after reload).
   const draw = useCallback(async () => {
-    if (phaseRef.current === "drawing" || phaseRef.current === "round") return;
+    if (phaseRef.current === "drawing" || phaseRef.current === "reveal" || phaseRef.current === "round") return;
     setPhaseBoth("drawing");
     try {
       const d: DrawResult = await withRetry(() => drawTarget(gameId));
@@ -164,6 +167,7 @@ export function PlayScreen(props: PlayScreenProps) {
       const r: Round = {
         turnId: d.turn_id,
         drawnAtMs: Date.parse(d.drawn_at),
+        revealEndMs: Date.parse(d.drawn_at) - offset,
         offsetMs: offset,
         target: d.target_picture_id,
         wrongTaps: d.wrong_taps,
@@ -172,7 +176,10 @@ export function PlayScreen(props: PlayScreenProps) {
       };
       roundRef.current = r;
       setRound(r);
-      setPhaseBoth("round");
+      setDisplay(0);
+      // Still inside the reveal (fresh draw, or reload within 1.2 s): show the card, board covered.
+      // Otherwise (reload later) there is no reveal at all.
+      setPhaseBoth(Date.now() < r.revealEndMs ? "reveal" : "round");
     } catch (e) {
       block(e);
     }
@@ -207,6 +214,24 @@ export function PlayScreen(props: PlayScreenProps) {
       await new Promise((r) => setTimeout(r, 600));
     }
   }, [gameId, finish, block, setPhaseBoth]);
+
+  // End of the reveal, driven by the server's drawn_at (client time), not by a fixed delay.
+  useEffect(() => {
+    if (phase !== "reveal") return;
+    let timer = 0;
+    const check = () => {
+      const r = roundRef.current;
+      if (!r || phaseRef.current !== "reveal") return;
+      const left = r.revealEndMs - Date.now();
+      if (left <= 0) setPhaseBoth("round");
+      else timer = window.setTimeout(check, left);
+    };
+    check();
+    return () => window.clearTimeout(timer);
+  }, [phase, setPhaseBoth]);
+
+  const targetRef = useRef<HTMLImageElement>(null);
+  const getTargetRect = useCallback(() => targetRef.current?.getBoundingClientRect() ?? null, []);
 
   // Running clock, 0.1 s precision, rAF driven.
   useEffect(() => {
@@ -310,7 +335,7 @@ export function PlayScreen(props: PlayScreenProps) {
         </p>
         <h1 className="text-3xl font-extrabold">Ready?</h1>
         <p className="max-w-xs text-stone-600">
-          Nothing is timed yet. The clock starts the moment you tap <b>Draw</b>. Find the picture on the board as fast as you can.
+          Nothing is timed yet. The picture is shown for a moment, then the clock starts. Find the picture on the board as fast as you can.
           A wrong tap adds 5 seconds.
         </p>
         <div className="w-full max-w-xs" aria-live="polite">
@@ -347,7 +372,15 @@ export function PlayScreen(props: PlayScreenProps) {
         <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-stone-100">
           {targetUrl && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={targetUrl} alt="Find this picture" className="h-14 w-14" data-testid="target" data-picture-id={round?.target} />
+            <img
+              ref={targetRef}
+              src={targetUrl}
+              alt="Find this picture"
+              className="h-14 w-14"
+              style={{ visibility: phase === "reveal" ? "hidden" : "visible" }}
+              data-testid="target"
+              data-picture-id={round?.target}
+            />
           )}
         </div>
         <div className="min-w-0 flex-1">
@@ -373,6 +406,10 @@ export function PlayScreen(props: PlayScreenProps) {
             className="absolute inset-0"
           />
         )}
+        {phase === "reveal" && (
+          // Opaque cover: the board stays hidden and untappable until the reveal ends.
+          <div className="absolute inset-0 z-30 bg-[#f4f1ea]" data-testid="reveal-cover" />
+        )}
         {phase === "closing" && (
           <div className="absolute inset-x-0 top-4 text-center">
             <span className="rounded-full bg-red-600 px-4 py-2 font-bold text-white">Time&apos;s up</span>
@@ -387,6 +424,9 @@ export function PlayScreen(props: PlayScreenProps) {
           />
         )}
       </div>
+      {phase === "reveal" && round && (
+        <DrawReveal src={targetUrl} pictureId={round.target} endAtMs={round.revealEndMs} getTargetRect={getTargetRect} />
+      )}
     </div>
   );
 }

@@ -32,13 +32,16 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
   Requires `pictures` rows for every tile.
 - `draw_target({game_id})` → `{turn_id, turn, target_picture_id, drawn_at, deadline_at, wrong_taps, server_now,
   already_drawn, tiles: Tile[]}` — second call returns the same target/deadline with `already_drawn: true`
-  (use this to resume after reload).
+  (use this to resume after reload). `drawn_at` is the OFFICIAL START = draw time + 1.2 s reveal, so on a
+  fresh draw it is ~1.2 s after `server_now` (clients show the target over a hidden board until then);
+  `deadline_at = drawn_at + 90 s`. If `server_now >= drawn_at` (reload later) there is no reveal.
 - `submit_tap({turn_id, picture_id, client_seq, client_elapsed_ms})` → `{turn, client_seq, picture_id, correct,
   counted, replayed, game_status, current_turn_id, server_now}`.
   `turn` = `{id, game_id, user_id, seq, round, status, became_current_at, drawn_at, deadline_at, ended_at,
   target_picture_id, wrong_taps, score_ms, reminded_at}`. `turn.status`: `live` after a wrong tap (deadline
   moved 5 s earlier), `found` after a correct tap, `capped` (score 90000) when late or a penalty exhausted the time.
-  `counted:false` = tap arrived at/after the deadline or on a closed turn. `replayed:true` = same client_seq resent.
+  `counted:false` = tap arrived before `drawn_at` (during the reveal; turn stays `live`, no penalty), at/after the
+  deadline, or on a closed turn. `replayed:true` = same client_seq resent.
 - `retire({game_id})` → `{game_id, status, left:true}` (status = game status afterwards; host leaving lobby → `abandoned`).
 - `rematch({game_id})` → `{game_id, token, expires_at, previous_game_id, players:[uuid]}`.
 - `update_profile({display_name?, avatar_url?})` → `{id, display_name, avatar_url}` (only way to edit a profile).
