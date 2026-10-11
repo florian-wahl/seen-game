@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { requireUserId } from "@/lib/auth/session";
 import { supabaseServer } from "@/lib/supabase/server";
 import { groupGames, joinNames, type HomeGame } from "@/lib/game/home";
+import { AccountMenu } from "@/components/ui/AccountMenu";
 import { Avatar } from "@/components/ui/Avatar";
 import { DoodleStrip } from "@/components/ui/DoodleStrip";
 import { LinkButton } from "@/components/ui/Button";
@@ -73,18 +74,7 @@ async function Home() {
         <h1 className="min-w-0 flex-1 font-wide text-3xl font-black uppercase leading-none tracking-tight text-cream">
           Seen<span className="text-mustard">!</span>
         </h1>
-        <div className="flex min-w-0 items-center gap-2">
-          <Avatar name={me.name} url={me.avatar} size={40} />
-          <p className="max-w-24 truncate text-sm font-bold text-cream" data-testid="me-name">{me.name}</p>
-        </div>
-        <form action="/auth/signout" method="post">
-          <button
-            type="submit"
-            className="min-h-12 rounded-xl px-2 text-sm font-semibold text-muted hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
-          >
-            Sign out
-          </button>
-        </form>
+        <AccountMenu name={me.name} avatarUrl={me.avatar} />
       </header>
 
       <EnableNotifications />

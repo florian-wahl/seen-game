@@ -49,9 +49,10 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
   const whose = state.players.find((p) => p.user_id === state.whose_turn);
   const iAmRetired = state.me.status === "retired";
 
-  let turnLine: string;
+  // No line for a plain "your turn": the "Play my turn" button already says it.
+  let turnLine: string | null;
   if (state.is_my_turn) {
-    turnLine = cur?.status === "live" ? "Your round is running. Pick it up!" : "It is your turn.";
+    turnLine = cur?.status === "live" ? "Your round is running. Pick it up!" : iAmRetired ? "It is your turn." : null;
   } else if (whose) {
     const since = cur && now !== null ? ` Waiting since ${timeAgo(cur.became_current_at, now)}.` : "";
     turnLine = cur?.status === "live" ? `${whose.display_name} is playing right now.` : `Waiting for ${whose.display_name}.${since}`;
@@ -63,9 +64,11 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
     <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-4 p-4 pb-8" data-testid="game-view">
       <header>
         <h1 className="font-wide text-2xl font-black uppercase tracking-tight text-cream">Scoreboard</h1>
-        <p className={`text-sm ${state.is_my_turn ? "font-bold text-mustard" : "text-muted"}`} data-testid="turn-line">
-          {turnLine}
-        </p>
+        {turnLine && (
+          <p className={`text-sm ${state.is_my_turn ? "font-bold text-mustard" : "text-muted"}`} data-testid="turn-line">
+            {turnLine}
+          </p>
+        )}
       </header>
 
       {state.is_my_turn && !iAmRetired && (

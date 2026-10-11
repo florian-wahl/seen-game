@@ -107,6 +107,7 @@ test("real magic-link flow through Mailpit, with onboarding", async ({ page }: {
 
   await page.goto("/");
   await expect(page.getByTestId("me-name")).toHaveText("Magic Mia");
+  await page.getByTestId("account-menu").click();
   await page.getByRole("button", { name: "Sign out" }).click();
   await expect(page).toHaveURL(/\/signin/);
 });
