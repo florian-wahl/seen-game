@@ -18,8 +18,9 @@ async function main() {
     ({ data, error } = await admin.auth.admin.generateLink({ type: "invite", email }));
   }
   if (error) throw error;
-  const type = data.properties.verification_type;
-  console.log(`${app}/auth/callback?token_hash=${data.properties.hashed_token}&type=${type}`);
+  const props = data.properties;
+  if (!props) throw new Error("no link properties returned");
+  console.log(`${app}/auth/callback?token_hash=${props.hashed_token}&type=${props.verification_type}`);
 }
 
 main().catch((e) => {
