@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { deliver, resolvePrefs, type DeliveryDeps } from "./deliver";
+import { channelsFor, deliver, resolvePrefs, type DeliveryDeps } from "./deliver";
 import type { Message } from "./messages";
 
 const message = {
@@ -26,6 +26,21 @@ describe("resolvePrefs", () => {
   });
   it("keeps the stored choices", () => {
     expect(resolvePrefs({ email: false, push: true })).toEqual({ email: false, push: true });
+  });
+});
+
+describe("channelsFor", () => {
+  const both = { email: true, push: true };
+  it("sends your_turn by push only", () => {
+    expect(channelsFor("your_turn", both)).toEqual({ email: false, push: true });
+  });
+  it("emails the reminder and the final results", () => {
+    expect(channelsFor("reminder", both)).toEqual(both);
+    expect(channelsFor("game_finished", both)).toEqual(both);
+  });
+  it("never turns on a channel the player turned off", () => {
+    expect(channelsFor("reminder", { email: false, push: false })).toEqual({ email: false, push: false });
+    expect(channelsFor("your_turn", { email: true, push: false })).toEqual({ email: false, push: false });
   });
 });
 

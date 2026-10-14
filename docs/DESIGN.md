@@ -221,7 +221,8 @@ Service worker (Serwist) caches it forever.
   Resend (email) and `web-push` (VAPID), skipping any channel the player turned off
   in `notification_prefs` (still marked sent), marks sent; deletes push subscriptions on
   404/410. pg_cron runs `sweep_turns()` every minute and retries outbox rows
-  unsent > 5 min.
+  unsent > 5 min. `your_turn` goes by push only, never email (it would be one email per
+  turn); the 24 h reminder and `game_finished` go by both.
 
 ## 8. Milestones
 
@@ -232,5 +233,5 @@ Service worker (Serwist) caches it forever.
 | 3 | Solo timed round | reload mid-round returns same target with clock running; wrong tap +5 s; round ends at 90 s |
 | 4 | Accounts and invites | two people on two phones join the same lobby from one link |
 | 5 | Full game loop | 2-player 5-round game completes; no drawing out of turn; board hidden before first round, viewable after |
-| 6 | Notifications and stalled turns | "Your turn" email; reminder at 24 h; forfeit after 72 h |
+| 6 | Notifications and stalled turns | "Your turn" push; reminder email + push at 24 h; forfeit after 72 h |
 | 7 | Final library + friends beta | real game with 3+ friends finishes with no manual fixes |

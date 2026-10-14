@@ -1,4 +1,4 @@
-import type { Message } from "./messages";
+import type { Message, OutboxKind } from "./messages";
 import type { PushPayload, PushResult, StoredSubscription } from "./push";
 
 /** A player's channel choices; a missing notification_prefs row means both are on. */
@@ -9,6 +9,14 @@ export interface NotifyPrefs {
 
 export function resolvePrefs(row: { email: boolean; push: boolean } | null | undefined): NotifyPrefs {
   return { email: row?.email ?? true, push: row?.push ?? true };
+}
+
+/** Kinds sent by push only. "Your turn" would be an email every turn; the 24 h reminder covers email. */
+const PUSH_ONLY: ReadonlySet<OutboxKind> = new Set<OutboxKind>(["your_turn"]);
+
+/** The channels one message goes out on: the player's choices, minus email for push-only kinds. */
+export function channelsFor(kind: OutboxKind, prefs: NotifyPrefs): NotifyPrefs {
+  return { email: prefs.email && !PUSH_ONLY.has(kind), push: prefs.push };
 }
 
 export interface DeliveryInput {
@@ -28,7 +36,7 @@ export interface DeliveryResult {
   /** False only when an email was due and failed: the caller answers 500 so the sweep retries. */
   emailOk: boolean;
   emailError?: string;
-  /** "off" when the player turned the channel off. */
+  /** "off" when the player turned the channel off, or the kind is push only. */
   emailStatus: "sent" | "off" | "no_address" | "failed";
   push: PushResult | "off";
 }

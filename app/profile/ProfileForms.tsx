@@ -113,7 +113,7 @@ export function NotificationPrefs({ initial, email }: { initial: Prefs; email: s
       <Switch
         id="pref-email"
         label="Email"
-        hint={email ? `Sent to ${email}` : "Sent to your sign-in address"}
+        hint={`A reminder after 24 hours and the final results, sent to ${email ?? "your sign-in address"}`}
         checked={prefs.email}
         disabled={pending}
         onChange={(v) => change({ email: v })}
@@ -121,7 +121,7 @@ export function NotificationPrefs({ initial, email }: { initial: Prefs; email: s
       <Switch
         id="pref-push"
         label="Push notifications"
-        hint={prefs.push ? "On every device where you turned them on" : "Off on all your devices"}
+        hint={prefs.push ? "Also when it's your turn, on every device where you turned them on" : "Off on all your devices"}
         checked={prefs.push}
         disabled={pending}
         onChange={(v) => change({ push: v })}

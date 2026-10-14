@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { isAuthorized } from "@/lib/notify/auth";
-import { deliver, resolvePrefs } from "@/lib/notify/deliver";
+import { channelsFor, deliver, resolvePrefs } from "@/lib/notify/deliver";
 import { sendEmail } from "@/lib/notify/email";
 import { buildMessage, type OutboxKind } from "@/lib/notify/messages";
 import { sendPush } from "@/lib/notify/push";
@@ -12,7 +12,8 @@ import { sendPush } from "@/lib/notify/push";
  *
  * - 401 without the shared secret
  * - 200 when delivered (or already delivered: idempotent). A channel the player turned off
- *   (notification_prefs) is skipped and counts as delivered.
+ *   (notification_prefs) is skipped and counts as delivered. "your_turn" never goes by email
+ *   (push only); the 24 h reminder is the email nudge.
  * - 500 when the email failed, so the sweep retries
  */
 export async function POST(request: NextRequest) {
@@ -60,8 +61,9 @@ export async function POST(request: NextRequest) {
   const otherNames = (players.data ?? [])
     .filter((p) => p.user_id !== row.user_id)
     .map((p) => p.profiles?.display_name ?? "Player");
+  const kind = row.kind as OutboxKind;
   const message = buildMessage({
-    kind: row.kind as OutboxKind,
+    kind,
     payload: (row.payload ?? {}) as Record<string, unknown>,
     gameId: row.game_id,
     appUrl: process.env.APP_URL ?? new URL(request.url).origin,
@@ -70,7 +72,12 @@ export async function POST(request: NextRequest) {
   });
 
   const result = await deliver(
-    { message, email: user.data.user?.email, subscriptions: subs.data ?? [], prefs: resolvePrefs(prefs.data) },
+    {
+      message,
+      email: user.data.user?.email,
+      subscriptions: subs.data ?? [],
+      prefs: channelsFor(kind, resolvePrefs(prefs.data)),
+    },
     { sendEmail, sendPush },
   );
   if (result.emailError) console.error(`notify ${id}: email failed: ${result.emailError}`);
