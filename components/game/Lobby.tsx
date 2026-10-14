@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/Button";
 import { Card, ErrorNote } from "@/components/ui/Card";
 import { ShareLink } from "@/components/ui/ShareLink";
 import { Page } from "@/components/ui/Shell";
+import { MonochromeBadge } from "./MonochromeBadge";
 
 const MIN_PLAYERS = 2;
 const MAX_PLAYERS = 6;
@@ -69,6 +70,7 @@ export function Lobby({ gameId, initial }: { gameId: string; initial: GameState 
         <p className="mt-1 text-muted" data-testid="settings">
           {state.game.rounds_per_player} rounds each · {state.game.board_size} pictures
         </p>
+        {state.game.monochrome && <MonochromeBadge className="mt-2" />}
       </div>
 
       <Card className="flex flex-col gap-1">

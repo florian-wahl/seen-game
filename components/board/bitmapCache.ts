@@ -1,6 +1,8 @@
 /**
  * SVG URL -> rasterized bitmap cache. 128 px base resolution, 256 px on demand
  * for tiles drawn larger than 128 device px. Cached by picture id + resolution.
+ * A monochrome cache (issue #1) desaturates each picture once, when it is rasterized,
+ * so the board's colored highlights stay in color.
  */
 
 export type Raster = ImageBitmap | HTMLCanvasElement | HTMLImageElement;
@@ -18,8 +20,16 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   });
 }
 
-/** Rasterize an SVG at `size` px (contain-fit in a square). */
-export async function rasterize(url: string, size: number): Promise<Raster> {
+/** Desaturate RGBA pixels in place (Rec. 709 luma); alpha is kept. */
+export function toGrayscale(data: Uint8ClampedArray): void {
+  for (let i = 0; i < data.length; i += 4) {
+    const y = 0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2];
+    data[i] = data[i + 1] = data[i + 2] = y;
+  }
+}
+
+/** Rasterize an SVG at `size` px (contain-fit in a square), in grayscale when `mono`. */
+export async function rasterize(url: string, size: number, mono = false): Promise<Raster> {
   const img = await loadImage(url);
   try {
     const canvas = document.createElement("canvas");
@@ -33,6 +43,11 @@ export async function rasterize(url: string, size: number): Promise<Raster> {
     const w = nw * k;
     const h = nh * k;
     ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+    if (mono) {
+      const pixels = ctx.getImageData(0, 0, size, size);
+      toGrayscale(pixels.data);
+      ctx.putImageData(pixels, 0, 0);
+    }
     if (typeof createImageBitmap === "function") {
       try {
         return await createImageBitmap(canvas);
@@ -52,6 +67,8 @@ export class BitmapCache {
   private pending = new Map<string, Promise<void>>();
   private listeners = new Set<() => void>();
 
+  constructor(readonly mono = false) {}
+
   /** Notifies `fn` whenever a new bitmap becomes available. Returns unsubscribe. */
   subscribe(fn: () => void): () => void {
     this.listeners.add(fn);
@@ -67,7 +84,7 @@ export class BitmapCache {
     if (this.ready.has(key)) return Promise.resolve();
     let p = this.pending.get(key);
     if (!p) {
-      p = rasterize(url, size)
+      p = rasterize(url, size, this.mono)
         .then((r) => {
           this.ready.set(key, r);
           for (const fn of this.listeners) fn();
@@ -116,7 +133,13 @@ export class BitmapCache {
  * rendered after "Draw" never waits on rasterizing (the clock is running).
  */
 export const sharedBitmapCache = new BitmapCache();
+const sharedMonoBitmapCache = new BitmapCache(true);
 
-export function preload(images: Record<string, string>): Promise<void> {
-  return sharedBitmapCache.preload(images);
+/** The shared cache for a game's color mode. */
+export function bitmapCacheFor(monochrome: boolean): BitmapCache {
+  return monochrome ? sharedMonoBitmapCache : sharedBitmapCache;
+}
+
+export function preload(images: Record<string, string>, monochrome = false): Promise<void> {
+  return bitmapCacheFor(monochrome).preload(images);
 }

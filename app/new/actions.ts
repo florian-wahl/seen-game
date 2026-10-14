@@ -12,8 +12,9 @@ export async function createGame(_prev: NewGameState, formData: FormData): Promi
   await requireUserId("/new");
   const rounds = Number(formData.get("rounds"));
   const boardSize = Number(formData.get("board_size"));
+  const monochrome = formData.get("monochrome") === "on";
   const supabase = await supabaseServer();
-  const { data, error } = await supabase.rpc("create_game", { rounds, board_size: boardSize });
+  const { data, error } = await supabase.rpc("create_game", { rounds, board_size: boardSize, monochrome });
   if (error) return { error: rpcErrorMessage(error) };
   const gameId = (data as unknown as { game_id: string }).game_id;
   redirect(`/g/${gameId}`);

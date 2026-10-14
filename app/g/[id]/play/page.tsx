@@ -43,6 +43,7 @@ async function Loaded({ params }: { params: Promise<{ id: string }> }) {
       capMs={state.game.cap_ms}
       boardSize={state.game.board_size}
       rounds={state.game.rounds_per_player}
+      monochrome={state.game.monochrome}
     />
   );
 }

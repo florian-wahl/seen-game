@@ -9,7 +9,17 @@ import type { Tile } from "@/lib/board/types";
 
 const noop = () => {};
 
-export function BoardStudy({ gameId, tiles, boardSize }: { gameId: string; tiles: Tile[]; boardSize: number }) {
+export function BoardStudy({
+  gameId,
+  tiles,
+  boardSize,
+  monochrome,
+}: {
+  gameId: string;
+  tiles: Tile[];
+  boardSize: number;
+  monochrome: boolean;
+}) {
   const [images, setImages] = useState<Record<string, string> | null>(null);
   const board = useMemo(() => boardFromTiles(tiles, boardSize), [tiles, boardSize]);
   const unlocked = tiles.length > 0;
@@ -57,7 +67,7 @@ export function BoardStudy({ gameId, tiles, boardSize }: { gameId: string; tiles
       </div>
       <div className="mx-2 mb-2 min-h-0 flex-1 overflow-hidden rounded-[22px]" style={{ marginBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}>
         <div className="relative h-full min-h-0">
-          {images && <BoardCanvas board={board} images={images} onTap={noop} fullZoomOut className="absolute inset-0" />}
+          {images && <BoardCanvas board={board} images={images} onTap={noop} fullZoomOut monochrome={monochrome} className="absolute inset-0" />}
         </div>
       </div>
     </div>
