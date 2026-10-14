@@ -2,6 +2,7 @@ import type { Viewport } from "next";
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { BoardStudy } from "@/components/game/BoardStudy";
+import { requireUserId } from "@/lib/auth/session";
 import type { GameState } from "@/lib/game/types";
 import type { Tile } from "@/lib/board/types";
 import { supabaseServer } from "@/lib/supabase/server";
@@ -24,6 +25,7 @@ export default function BoardPage({ params }: PageProps<"/g/[id]/board">) {
 
 async function Loaded({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  await requireUserId(`/g/${id}/board`);
   const supabase = await supabaseServer();
   const { data, error } = await supabase.rpc("game_state", { game_id: id });
   if (error || !data) redirect(`/g/${id}`);
