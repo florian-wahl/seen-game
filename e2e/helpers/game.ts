@@ -168,6 +168,19 @@ export async function openTurn(gameId: string) {
   } | null;
 }
 
+/** Make the open (pending) turn 25 h old and run the sweep, which queues its 24 h reminder (test-only). */
+export async function remindOpenTurn(gameId: string): Promise<void> {
+  const turn = await openTurn(gameId);
+  if (!turn) throw new Error(`No open turn in game ${gameId}`);
+  const { error } = await admin()
+    .from("turns")
+    .update({ became_current_at: new Date(Date.now() - 25 * 3600_000).toISOString() })
+    .eq("id", turn.id);
+  if (error) throw error;
+  const { error: e2 } = await admin().rpc("sweep_turns");
+  if (e2) throw e2;
+}
+
 export async function gameState(user: TestUser, gameId: string): Promise<GameState> {
   return rpc<GameState>(user.client, "game_state", { game_id: gameId });
 }
