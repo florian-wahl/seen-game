@@ -11,8 +11,8 @@ export function resolvePrefs(row: { email: boolean; push: boolean } | null | und
   return { email: row?.email ?? true, push: row?.push ?? true };
 }
 
-/** Kinds sent by push only. "Your turn" would be an email every turn; the 24 h reminder covers email. */
-const PUSH_ONLY: ReadonlySet<OutboxKind> = new Set<OutboxKind>(["your_turn"]);
+/** Kinds sent by push only, to keep email volume down: only the 24 h reminder goes by email. */
+const PUSH_ONLY: ReadonlySet<OutboxKind> = new Set<OutboxKind>(["your_turn", "game_finished"]);
 
 /** The channels one message goes out on: the player's choices, minus email for push-only kinds. */
 export function channelsFor(kind: OutboxKind, prefs: NotifyPrefs): NotifyPrefs {

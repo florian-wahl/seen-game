@@ -221,8 +221,8 @@ Service worker (Serwist) caches it forever.
   Resend (email) and `web-push` (VAPID), skipping any channel the player turned off
   in `notification_prefs` (still marked sent), marks sent; deletes push subscriptions on
   404/410. pg_cron runs `sweep_turns()` every minute and retries outbox rows
-  unsent > 5 min. `your_turn` goes by push only, never email (it would be one email per
-  turn); the 24 h reminder and `game_finished` go by both.
+  unsent > 5 min. `your_turn` and `game_finished` go by push only, never email (to keep
+  email volume down); only the 24 h reminder goes by both.
 
 ## 8. Milestones
 

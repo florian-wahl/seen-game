@@ -12,8 +12,8 @@ import { sendPush } from "@/lib/notify/push";
  *
  * - 401 without the shared secret
  * - 200 when delivered (or already delivered: idempotent). A channel the player turned off
- *   (notification_prefs) is skipped and counts as delivered. "your_turn" never goes by email
- *   (push only); the 24 h reminder is the email nudge.
+ *   (notification_prefs) is skipped and counts as delivered. "your_turn" and "game_finished"
+ *   never go by email (push only); only the 24 h reminder is emailed.
  * - 500 when the email failed, so the sweep retries
  */
 export async function POST(request: NextRequest) {

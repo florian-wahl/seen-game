@@ -31,12 +31,12 @@ describe("resolvePrefs", () => {
 
 describe("channelsFor", () => {
   const both = { email: true, push: true };
-  it("sends your_turn by push only", () => {
+  it("sends your_turn and game_finished by push only", () => {
     expect(channelsFor("your_turn", both)).toEqual({ email: false, push: true });
+    expect(channelsFor("game_finished", both)).toEqual({ email: false, push: true });
   });
-  it("emails the reminder and the final results", () => {
+  it("emails the reminder", () => {
     expect(channelsFor("reminder", both)).toEqual(both);
-    expect(channelsFor("game_finished", both)).toEqual(both);
   });
   it("never turns on a channel the player turned off", () => {
     expect(channelsFor("reminder", { email: false, push: false })).toEqual({ email: false, push: false });
