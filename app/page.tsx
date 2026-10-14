@@ -21,13 +21,17 @@ export default function HomePage() {
 const GAME_COLUMNS =
   "id, host_id, status, current_turn_id, created_at, finished_at, game_players(user_id, status)";
 
-async function loadGames(): Promise<{ me: { id: string; name: string; avatar: string | null }; games: HomeGame[] }> {
+async function loadGames(): Promise<{
+  me: { id: string; name: string; avatar: string | null; pushOn: boolean };
+  games: HomeGame[];
+}> {
   const meId = await requireUserId("/");
   const supabase = await supabaseServer();
-  const [open, done, profile] = await Promise.all([
+  const [open, done, profile, prefs] = await Promise.all([
     supabase.from("games").select(GAME_COLUMNS).in("status", ["lobby", "in_progress"]).order("created_at", { ascending: false }).limit(50),
     supabase.from("games").select(GAME_COLUMNS).eq("status", "finished").order("finished_at", { ascending: false }).limit(10),
     supabase.from("profiles").select("display_name, avatar_url").eq("id", meId).single(),
+    supabase.from("notification_prefs").select("push").eq("user_id", meId).maybeSingle(),
   ]);
   const rows = [...(open.data ?? []), ...(done.data ?? [])];
 
@@ -58,7 +62,12 @@ async function loadGames(): Promise<{ me: { id: string; name: string; avatar: st
     })),
   }));
   return {
-    me: { id: meId, name: profile.data?.display_name ?? "You", avatar: profile.data?.avatar_url ?? null },
+    me: {
+      id: meId,
+      name: profile.data?.display_name ?? "You",
+      avatar: profile.data?.avatar_url ?? null,
+      pushOn: prefs.data?.push ?? true,
+    },
     games,
   };
 }
@@ -77,7 +86,8 @@ async function Home() {
         <AccountMenu name={me.name} avatarUrl={me.avatar} />
       </header>
 
-      <EnableNotifications />
+      {/* Players who turned push off on their profile are not nudged to turn it on here. */}
+      {me.pushOn ? <EnableNotifications /> : null}
 
       {empty ? (
         <div className="flex flex-col items-center gap-2 rounded-3xl bg-surface p-8 text-center">

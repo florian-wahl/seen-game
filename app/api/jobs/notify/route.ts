@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase/admin";
 import { isAuthorized } from "@/lib/notify/auth";
+import { deliver, resolvePrefs } from "@/lib/notify/deliver";
 import { sendEmail } from "@/lib/notify/email";
 import { buildMessage, type OutboxKind } from "@/lib/notify/messages";
 import { sendPush } from "@/lib/notify/push";
@@ -10,7 +11,8 @@ import { sendPush } from "@/lib/notify/push";
  * an insert and again by sweep_turns() for rows still unsent after 5 minutes (max 10 attempts).
  *
  * - 401 without the shared secret
- * - 200 when delivered (or already delivered: idempotent)
+ * - 200 when delivered (or already delivered: idempotent). A channel the player turned off
+ *   (notification_prefs) is skipped and counts as delivered.
  * - 500 when the email failed, so the sweep retries
  */
 export async function POST(request: NextRequest) {
@@ -41,12 +43,14 @@ export async function POST(request: NextRequest) {
       .is("sent_at", null);
   };
 
-  const [game, players, user, subs] = await Promise.all([
+  const [game, players, user, subs, prefs] = await Promise.all([
     db.from("games").select("id, rounds_per_player").eq("id", row.game_id).maybeSingle(),
     db.from("game_players").select("user_id, profiles(display_name)").eq("game_id", row.game_id),
     db.auth.admin.getUserById(row.user_id),
     db.from("push_subscriptions").select("id, endpoint, p256dh, auth").eq("user_id", row.user_id),
+    db.from("notification_prefs").select("email, push").eq("user_id", row.user_id).maybeSingle(),
   ]);
+  if (prefs.error) return NextResponse.json({ error: prefs.error.message }, { status: 500 });
   if (!game.data) {
     // Game vanished (cascade should have removed the row too): nothing to say.
     await markSent();
@@ -65,35 +69,18 @@ export async function POST(request: NextRequest) {
     roundsPerPlayer: game.data.rounds_per_player,
   });
 
-  // Push is best effort and runs alongside the email. A retry after an email failure may
-  // push again, but the shared `tag` makes the device replace the earlier notification.
-  const pushPromise = sendPush(subs.data ?? [], {
-    title: message.pushTitle,
-    body: message.pushBody,
-    url: message.url,
-    tag: message.tag,
-  });
+  const result = await deliver(
+    { message, email: user.data.user?.email, subscriptions: subs.data ?? [], prefs: resolvePrefs(prefs.data) },
+    { sendEmail, sendPush },
+  );
+  if (result.emailError) console.error(`notify ${id}: email failed: ${result.emailError}`);
+  const push = result.push;
+  if (push !== "off" && push.gone.length) await db.from("push_subscriptions").delete().in("id", push.gone);
 
-  let emailOk = false;
-  let emailError: string | undefined;
-  const email = user.data.user?.email;
-  if (!email) {
-    emailOk = true; // nobody to email (should not happen); do not retry forever
-  } else {
-    try {
-      await sendEmail(email, message);
-      emailOk = true;
-    } catch (e) {
-      emailError = e instanceof Error ? e.message : String(e);
-      console.error(`notify ${id}: email failed: ${emailError}`);
-    }
+  if (!result.emailOk) {
+    return NextResponse.json({ error: "email_failed", detail: result.emailError, push }, { status: 500 });
   }
 
-  const push = await pushPromise;
-  if (push.gone.length) await db.from("push_subscriptions").delete().in("id", push.gone);
-
-  if (!emailOk) return NextResponse.json({ error: "email_failed", detail: emailError, push }, { status: 500 });
-
   await markSent();
-  return NextResponse.json({ ok: true, push });
+  return NextResponse.json({ ok: true, email: result.emailStatus, push });
 }

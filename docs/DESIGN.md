@@ -121,6 +121,7 @@ authenticated.
 | `turns` | `id`, `game_id`, `user_id`, `seq`, `round`, `status`, `became_current_at`, `drawn_at`, `deadline_at`, `ended_at`, `target_picture_id`, `wrong_taps`, `score_ms`, `reminded_at` | via view `turns_public` only |
 | `taps` | `turn_id`, `client_seq`, `picture_id`, `server_at`, `correct`, `client_elapsed_ms` | the turn's own player |
 | `push_subscriptions` | `user_id`, `endpoint`, `p256dh`, `auth` | owner |
+| `notification_prefs` | `user_id`, `email`, `push`, `updated_at` (no row = both on) | owner |
 | `notification_outbox` | `id`, `kind` (your_turn/reminder/game_finished), `user_id`, `game_id`, `payload`, `created_at`, `sent_at`, `attempts` | service role |
 
 Integrity:
@@ -211,11 +212,13 @@ Service worker (Serwist) caches it forever.
 ## 7. Back end
 
 - Supabase Auth: email magic link + Google OAuth. Trigger on `auth.users`
-  creates `profiles`. Display name set on first sign-in.
+  creates `profiles`. Display name set on first sign-in; `/profile` (from the Home
+  account menu) changes it and the per-channel notification preferences.
 - Storage: public read-only `pictures` bucket; private `avatars` bucket.
 - Outbox: SQL inserts `notification_outbox` rows; `after insert` trigger uses
   `pg_net` to POST `/api/jobs/notify` with a shared secret; route sends via
-  Resend (email) and `web-push` (VAPID), marks sent; deletes push subscriptions on
+  Resend (email) and `web-push` (VAPID), skipping any channel the player turned off
+  in `notification_prefs` (still marked sent), marks sent; deletes push subscriptions on
   404/410. pg_cron runs `sweep_turns()` every minute and retries outbox rows
   unsent > 5 min.
 

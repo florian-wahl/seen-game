@@ -1,8 +1,9 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { Avatar } from "./Avatar";
 
-/** Avatar + name button that opens a small dropdown holding "Sign out". */
+/** Avatar + name button that opens a small dropdown with "Profile" and "Sign out". */
 export function AccountMenu({ name, avatarUrl }: { name: string; avatarUrl: string | null }) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -64,6 +65,17 @@ export function AccountMenu({ name, avatarUrl }: { name: string; avatarUrl: stri
         className="absolute right-0 top-full z-20 mt-2 w-48 rounded-2xl bg-raised p-2 shadow-[0_12px_32px_rgba(0,0,0,.45)]"
       >
         <p className="truncate px-3 pb-2 pt-1 text-xs text-muted">Signed in as {name}</p>
+        <Link
+          href="/profile"
+          className="flex min-h-11 w-full items-center gap-2 rounded-xl px-3 text-left text-sm font-bold text-cream hover:bg-line focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard"
+          data-testid="profile-link"
+        >
+          <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21a8 8 0 0 1 16 0" />
+          </svg>
+          Profile
+        </Link>
         <form action="/auth/signout" method="post">
           <button
             type="submit"

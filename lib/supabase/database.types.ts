@@ -153,6 +153,26 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"notification_prefs": {
+                  Row: {
+                    "email": boolean,"push": boolean,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "email"?: boolean,"push"?: boolean,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "email"?: boolean,"push"?: boolean,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "notification_prefs_user_id_fkey"
+      columns: ["user_id"]
+isOneToOne: true
+      referencedRelation: "profiles"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"picture_confusables": {
                   Row: {
                     "picture_a": string,"picture_b": string
@@ -320,6 +340,9 @@ isOneToOne: false
             "create_game":
 { Args: { "board_size": number,"rounds": number }; Returns: Json
                            },
+"delete_push_subscription":
+{ Args: { "endpoint": string }; Returns: undefined
+                           },
 "draw_target":
 { Args: { "game_id": string }; Returns: Json
                            },
@@ -335,6 +358,12 @@ isOneToOne: false
 "retire":
 { Args: { "game_id": string }; Returns: Json
                            },
+"save_push_subscription":
+{ Args: { "auth": string,"endpoint": string,"p256dh": string }; Returns: undefined
+                           },
+"set_notification_prefs":
+{ Args: { "email"?: boolean,"push"?: boolean }; Returns: Json
+                           },
 "start_game_internal":
 { Args: { "game_id": string,"tiles": Json }; Returns: Json
                            },
@@ -346,12 +375,6 @@ isOneToOne: false
                            },
 "update_profile":
 { Args: { "avatar_url"?: string,"display_name"?: string }; Returns: Json
-                           },
-"save_push_subscription":
-{ Args: { "auth": string,"endpoint": string,"p256dh": string }; Returns: undefined
-                           },
-"delete_push_subscription":
-{ Args: { "endpoint": string }; Returns: undefined
                            }
           }
           Enums: {

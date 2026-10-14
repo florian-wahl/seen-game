@@ -157,7 +157,7 @@ export function EnableNotifications() {
     <div className={card}>
       <div className="flex items-center gap-3">
         <BellIcon />
-        <p className="flex-1">Get a ping when it is your turn. We also email you.</p>
+        <p className="flex-1">Get a ping on this device when it is your turn.</p>
       </div>
       {state === "error" ? <p className="text-[#f08aba]">Could not turn notifications on. Try again.</p> : null}
       <Button
