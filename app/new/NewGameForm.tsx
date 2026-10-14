@@ -1,5 +1,5 @@
 "use client";
-import { useActionState } from "react";
+import { useActionState, type ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
 import { ErrorNote } from "@/components/ui/Card";
 import { createGame, type NewGameState } from "./actions";
@@ -31,6 +31,22 @@ function Choice({
         </label>
       ))}
     </div>
+  );
+}
+
+function Toggle({ name, title, children }: { name: string; title: string; children: ReactNode }) {
+  return (
+    <label className="flex cursor-pointer items-center gap-4 rounded-2xl bg-surface p-4 hover:bg-raised">
+      <span className="min-w-0 flex-1">
+        <span className="block font-bold text-cream">{title}</span>
+        <span className="block text-sm text-soft">{children}</span>
+      </span>
+      <input type="checkbox" role="switch" name={name} className="peer sr-only" data-testid={name} />
+      <span
+        aria-hidden
+        className="relative h-8 w-14 shrink-0 rounded-full bg-line-strong transition after:absolute after:left-1 after:top-1 after:h-6 after:w-6 after:rounded-full after:bg-cream after:shadow after:transition-[left] peer-checked:bg-teal peer-checked:after:left-7 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-mustard"
+      />
+    </label>
   );
 }
 
@@ -67,17 +83,12 @@ export function NewGameForm() {
             ]}
           />
         </fieldset>
-        <label className="flex cursor-pointer items-center gap-4 rounded-2xl bg-surface p-4 hover:bg-raised">
-          <span className="min-w-0 flex-1">
-            <span className="block font-bold text-cream">Monochrome</span>
-            <span className="block text-sm text-soft">Every picture in black and white. Find it by its shape alone.</span>
-          </span>
-          <input type="checkbox" role="switch" name="monochrome" className="peer sr-only" data-testid="monochrome" />
-          <span
-            aria-hidden
-            className="relative h-8 w-14 shrink-0 rounded-full bg-line-strong transition after:absolute after:left-1 after:top-1 after:h-6 after:w-6 after:rounded-full after:bg-cream after:shadow after:transition-[left] peer-checked:bg-teal peer-checked:after:left-7 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-mustard"
-          />
-        </label>
+        <Toggle name="monochrome" title="Monochrome">
+          Every picture in black and white. Find it by its shape alone.
+        </Toggle>
+        <Toggle name="scatter" title="Scattered board">
+          No rows or columns: the pictures are strewn across the board.
+        </Toggle>
       </section>
       <Button type="submit" disabled={pending} className="min-h-14 w-full text-lg" data-testid="create-game">
         {pending ? "Creating…" : "Create game"}

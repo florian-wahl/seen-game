@@ -3,7 +3,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import { generateBoard } from "../../lib/board/generate";
+import { generateBoard, type Layout } from "../../lib/board/generate";
 import type { ConfusablePair, Picture, Tile } from "../../lib/board/types";
 import type { DrawResult, GameState, TapResult } from "../../lib/game/types";
 
@@ -99,6 +99,7 @@ export interface CreateGameOptions {
   rounds?: 3 | 5 | 10 | 20;
   size?: 100 | 200 | 300 | 500;
   monochrome?: boolean;
+  layout?: Layout;
 }
 
 /** create_game as host, join_game as the others, start_game_internal via admin. */
@@ -117,13 +118,18 @@ export async function createStartedGame(opts: CreateGameOptions): Promise<TestGa
   // The table still accepts the legacy short settings; set the requested ones directly.
   const { error: settingsError } = await admin()
     .from("games")
-    .update({ rounds_per_player: rounds, board_size: size, monochrome: opts.monochrome ?? false })
+    .update({
+      rounds_per_player: rounds,
+      board_size: size,
+      monochrome: opts.monochrome ?? false,
+      layout: opts.layout ?? "grid",
+    })
     .eq("id", created.game_id);
   if (settingsError) throw settingsError;
   for (const u of others) await rpc(u.client, "join_game", { token: created.token });
 
   const lib = await loadLibrary();
-  const board = generateBoard({ ...lib, size, seed: created.game_id });
+  const board = generateBoard({ ...lib, size, seed: created.game_id, layout: opts.layout });
   const started = await rpc<{ first_user_id: string; seats: { user_id: string; seat: number }[] }>(
     admin(),
     "start_game_internal",

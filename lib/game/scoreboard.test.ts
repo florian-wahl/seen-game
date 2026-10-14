@@ -20,7 +20,7 @@ function turn(user: string, round: number, status: Turn["status"], score: number
 }
 function state(players: GamePlayer[], turns: Turn[], over: Partial<GameState> = {}): GameState {
   return {
-    server_now: "", game: { id: "g", host_id: A, status: "in_progress", rounds_per_player: 3, board_size: 100, monochrome: false, penalty_ms: 5000,
+    server_now: "", game: { id: "g", host_id: A, status: "in_progress", rounds_per_player: 3, board_size: 100, monochrome: false, layout: "grid", penalty_ms: 5000,
       cap_ms: 90000, current_turn_id: null, created_at: "", started_at: null, finished_at: null },
     players, turns, current_turn: null, whose_turn: null, is_my_turn: false,
     me: { user_id: A, status: "active", seat: 1, rank: null, board_unlocked: false },

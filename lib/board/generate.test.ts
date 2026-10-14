@@ -5,12 +5,16 @@ import {
   ROTATION_MAX,
   SCALE_MAX,
   SCALE_MIN,
+  SCATTER_MARGIN,
+  SCATTER_MIN_DIST,
   countCategoryConflicts,
+  countNearbyCategoryConflicts,
   findConfusableViolations,
   generateBoard,
+  minTileDistance,
 } from "./generate";
 import { hashString, mulberry32 } from "./prng";
-import { CELL, type ConfusablePair, type Picture } from "./types";
+import { CELL, type Board, type ConfusablePair, type Picture } from "./types";
 
 const CATEGORIES = 15;
 
@@ -130,6 +134,87 @@ describe("generateBoard", () => {
         expect(countCategoryConflicts(board, pictures)).toBe(0);
       }),
       { numRuns: 15 },
+    );
+  });
+});
+
+describe("generateBoard, scatter layout", () => {
+  const { pictures, confusables } = makeLibrary(650);
+  const scatter = (size: number, seed: string) =>
+    generateBoard({ pictures, confusables, size, seed, layout: "scatter" });
+
+  for (const size of [100, 200, 300, 500]) {
+    it(`builds a valid board of ${size} over the same area as the grid`, () => {
+      const board = scatter(size, `scatter-${size}`);
+      const grid = generateBoard({ pictures, confusables, size, seed: `scatter-${size}` });
+      expect(board.tiles).toHaveLength(size);
+      expect(new Set(board.tiles.map((t) => t.pictureId)).size).toBe(size);
+      expect([board.cols, board.rows, board.width, board.height]).toEqual([grid.cols, grid.rows, grid.width, grid.height]);
+      expect(findConfusableViolations(board, confusables)).toEqual([]);
+      expect(countNearbyCategoryConflicts(board, pictures)).toBe(0);
+      expect(minTileDistance(board)).toBeGreaterThanOrEqual(SCATTER_MIN_DIST);
+    });
+  }
+
+  it("keeps tiles inside the margin and within scale and rotation limits", () => {
+    const board = scatter(300, "bounds");
+    for (const t of board.tiles) {
+      expect(t.x).toBeGreaterThanOrEqual(SCATTER_MARGIN);
+      expect(t.x).toBeLessThanOrEqual(board.width - SCATTER_MARGIN);
+      expect(t.y).toBeGreaterThanOrEqual(SCATTER_MARGIN);
+      expect(t.y).toBeLessThanOrEqual(board.height - SCATTER_MARGIN);
+      expect(t.scale).toBeGreaterThanOrEqual(SCALE_MIN);
+      expect(t.scale).toBeLessThanOrEqual(SCALE_MAX);
+      expect(Math.abs(t.rotation)).toBeLessThanOrEqual(ROTATION_MAX);
+    }
+  });
+
+  it("has no rows or columns", () => {
+    // Most tiles on one line (centres within ±10 units across): a full row or column on the
+    // grid, clearly fewer when scattered.
+    const lineCount = (board: Board, axis: "x" | "y") =>
+      Math.max(...board.tiles.map((t) => board.tiles.filter((u) => Math.abs(u[axis] - t[axis]) <= 10).length));
+    for (const size of [300, 500]) {
+      const grid = generateBoard({ pictures, confusables, size, seed: "lines" });
+      expect(lineCount(grid, "y")).toBeGreaterThanOrEqual(grid.cols - 1);
+      for (const seed of ["l1", "l2", "l3"]) {
+        const board = scatter(size, seed);
+        expect(lineCount(board, "x")).toBeLessThan(board.rows * 0.75);
+        expect(lineCount(board, "y")).toBeLessThan(board.cols * 0.75);
+      }
+    }
+  });
+
+  it("spreads tiles evenly: no large empty patch", () => {
+    // Every point inside the margin has a tile centre within 1.3 cells (the grid's empty cells
+    // leave gaps of about one cell).
+    const board = scatter(300, "even");
+    for (let x = SCATTER_MARGIN; x <= board.width - SCATTER_MARGIN; x += 20) {
+      for (let y = SCATTER_MARGIN; y <= board.height - SCATTER_MARGIN; y += 20) {
+        const near = board.tiles.some((t) => (t.x - x) ** 2 + (t.y - y) ** 2 <= (1.3 * CELL) ** 2);
+        expect(near).toBe(true);
+      }
+    }
+  });
+
+  it("is deterministic per seed and differs across seeds and from the grid", () => {
+    const a = scatter(200, "same");
+    expect(scatter(200, "same")).toEqual(a);
+    expect(scatter(200, "other")).not.toEqual(a);
+    expect(generateBoard({ pictures, confusables, size: 200, seed: "same" })).not.toEqual(a);
+  });
+
+  it("property: valid boards for arbitrary seeds and sizes", () => {
+    fc.assert(
+      fc.property(fc.string(), fc.constantFrom(100, 200, 300, 500), (seed, size) => {
+        const board = scatter(size, seed);
+        expect(board.tiles).toHaveLength(size);
+        expect(new Set(board.tiles.map((t) => t.pictureId)).size).toBe(size);
+        expect(findConfusableViolations(board, confusables)).toEqual([]);
+        expect(countNearbyCategoryConflicts(board, pictures)).toBe(0);
+        expect(minTileDistance(board)).toBeGreaterThanOrEqual(SCATTER_MIN_DIST);
+      }),
+      { numRuns: 25 },
     );
   });
 });

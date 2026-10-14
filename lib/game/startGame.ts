@@ -44,7 +44,7 @@ export async function startGame(gameId: string): Promise<StartGameResult> {
 
   let tiles;
   try {
-    tiles = generateBoard({ pictures, confusables, size: state.game.board_size, seed: state.game.id }).tiles;
+    tiles = generateBoard({ pictures, confusables, size: state.game.board_size, seed: state.game.id, layout: state.game.layout }).tiles;
   } catch {
     return { ok: false, error: "There are not enough pictures in the library for this board size." };
   }
