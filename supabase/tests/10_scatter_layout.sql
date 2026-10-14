@@ -33,7 +33,6 @@ select col_not_null('public', 'games', 'layout', 'games.layout is not null');
 select col_default_is('public', 'games', 'layout', 'grid', 'games.layout defaults to grid');
 select hasnt_function('public', 'create_game', array['integer', 'integer', 'boolean'],
                       'the three-argument create_game is replaced, not overloaded');
-select throws_ok($$update public.games set layout = 'spiral'$$, '23514', null, 'only grid and scatter are allowed');
 
 -- ============================================================= create_game
 set local role anon;
@@ -49,6 +48,8 @@ select throws_ok($$select public.create_game(rounds => 5, board_size => 200, lay
                  'SN010', 'invalid_argument', 'unknown layout rejected');
 select tests.logout();
 select is((select layout from public.games where id = tests.gid('plain')), 'grid', 'grid by default');
+select throws_ok($$update public.games set layout = 'spiral' where id = tests.gid('plain')$$, '23514', null,
+                 'only grid and scatter are allowed');
 select is((select layout from public.games where id = tests.gid('scatter')), 'scatter', 'scatter is saved on the game');
 select is((select row(monochrome, layout)::text from public.games where id = tests.gid('both')), row(true, 'scatter')::text,
           'monochrome and scatter together');
