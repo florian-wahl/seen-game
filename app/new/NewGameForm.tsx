@@ -43,11 +43,11 @@ export function NewGameForm() {
         <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Rounds per player</legend>
         <Choice
           name="rounds"
-          defaultValue={5}
+          defaultValue={10}
           options={[
-            { value: 3, label: "3", hint: "Quick" },
-            { value: 5, label: "5", hint: "Classic" },
-            { value: 10, label: "10", hint: "Marathon" },
+            { value: 5, label: "5", hint: "Quick" },
+            { value: 10, label: "10", hint: "Classic" },
+            { value: 20, label: "20", hint: "Marathon" },
           ]}
         />
       </fieldset>
@@ -55,11 +55,11 @@ export function NewGameForm() {
         <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Pictures on the board</legend>
         <Choice
           name="board_size"
-          defaultValue={200}
+          defaultValue={300}
           options={[
-            { value: 100, label: "100", hint: "Easier" },
-            { value: 200, label: "200", hint: "Classic" },
-            { value: 300, label: "300", hint: "Tough" },
+            { value: 200, label: "200", hint: "Easier" },
+            { value: 300, label: "300", hint: "Classic" },
+            { value: 500, label: "500", hint: "Tough" },
           ]}
         />
       </fieldset>

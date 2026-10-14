@@ -56,13 +56,16 @@ begin
   perform tests.mkusers(nplayers);
   perform tests.seed_pictures();
   perform tests.login(1);
-  g := public.create_game(rounds, size);
+  g := public.create_game(5, 200);
   gid := (g ->> 'game_id')::uuid;
   for i in 2..nplayers loop
     perform tests.login(i);
     perform public.join_game(g ->> 'token');
   end loop;
   perform tests.logout();
+  -- Tests default to a short legacy game (3 rounds, 100 pictures) for speed. create_game only offers
+  -- 5/10/20 and 200/300/500, but the table still accepts the old values, so set them directly.
+  update public.games set rounds_per_player = rounds, board_size = size where id = gid;
   perform public.start_game_internal(gid, tests.tiles(size));
   return gid;
 end $$;
@@ -161,8 +164,11 @@ select throws_ok('select public.create_game(5, 200)', 'SN001', 'not_authenticate
 select tests.logout();
 
 select tests.login(1);
-select throws_ok('select public.create_game(4, 200)', 'SN010', 'invalid_argument', 'rounds must be 3/5/10');
-select throws_ok('select public.create_game(5, 150)', 'SN010', 'invalid_argument', 'board size must be 100/200/300');
+select throws_ok('select public.create_game(4, 200)', 'SN010', 'invalid_argument', 'rounds must be 5/10/20');
+select throws_ok('select public.create_game(3, 200)', 'SN010', 'invalid_argument', '3 rounds is no longer offered');
+select throws_ok('select public.create_game(5, 150)', 'SN010', 'invalid_argument', 'board size must be 200/300/500');
+select throws_ok('select public.create_game(5, 100)', 'SN010', 'invalid_argument', '100 pictures is no longer offered');
+select is((select (public.create_game(20, 500) ->> 'game_id') is not null), true, 'create_game accepts 20 rounds and 500 pictures');
 select tests.put('g', public.create_game(5, 200)::text);
 select tests.logout();
 select matches(tests.get('g')::jsonb ->> 'token', '^[A-Za-z0-9_-]{22}$', 'token is 22 url-safe chars');
@@ -231,14 +237,14 @@ select tests.logout();
 
 -- fewer than 2 players
 select tests.login(8);
-select tests.put('solo', public.create_game(3, 100) ->> 'game_id');
+select tests.put('solo', public.create_game(5, 200) ->> 'game_id');
 select tests.logout();
 select throws_ok(format('select public.start_game_internal(%L, %L::jsonb)', tests.get('solo')::uuid, tests.tiles(100)::text),
                  'SN015', 'not_enough_players', 'need at least 2 players');
 
 -- ======================================================= leaving the lobby
 select tests.login(7);
-select tests.put('l', public.create_game(3, 100)::text);
+select tests.put('l', public.create_game(5, 200)::text);
 select tests.logout();
 select tests.login(6);
 select public.join_game(tests.get('l')::jsonb ->> 'token');

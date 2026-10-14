@@ -56,7 +56,7 @@ describe("camera", () => {
     expect(zoomAround(cam, { x: 0, y: 0 }, 0.0001, vp, lim).zoom).toBeCloseTo(lim.min);
   });
 
-  it.each([100, 200, 300])("limits for a %i board on 390x700", (n) => {
+  it.each([100, 200, 300, 500])("limits for a %i board on 390x700", (n) => {
     const b = board(n);
     const lim = zoomLimits(b, vp);
     expect(lim.min * b.width).toBeCloseTo(390); // full width fits
@@ -67,7 +67,7 @@ describe("camera", () => {
     expect(lim.default).toBeLessThan(lim.max);
   });
 
-  it.each([100, 200, 300])("keeps the smallest picture >= 44 CSS px at default zoom (%i)", (n) => {
+  it.each([100, 200, 300, 500])("keeps the smallest picture >= 44 CSS px at default zoom (%i)", (n) => {
     const lim = zoomLimits(board(n), vp);
     expect(lim.default * CELL * 0.78).toBeGreaterThanOrEqual(44 - 1e-9);
   });

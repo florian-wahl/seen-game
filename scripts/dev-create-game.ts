@@ -13,8 +13,8 @@ async function main() {
   const g = await createStartedGame({
     emails,
     names: emails.map((_, i) => `Dev${i + 1}`),
-    rounds: arg("rounds", 3) as 3 | 5 | 10,
-    size: arg("size", 100) as 100 | 200 | 300,
+    rounds: arg("rounds", 3) as 3 | 5 | 10 | 20,
+    size: arg("size", 100) as 100 | 200 | 300 | 500,
   });
   const base = "http://localhost:3002";
   console.log(`game ${g.gameId}; first to play: ${g.firstUser.email}`);

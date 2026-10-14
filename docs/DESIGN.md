@@ -23,8 +23,8 @@ per-game picture generation, Sign in with Apple, SMS sign-in.
 | Setting | Default | Options |
 |---|---|---|
 | Players | — | 2 to 6 |
-| Rounds per player | 5 | 3, 5, 10 |
-| Board size | 200 pictures | 100, 200, 300 |
+| Rounds per player | 10 | 5, 10, 20 |
+| Board size | 300 pictures | 200, 300, 500 |
 | Board layout | fixed for the whole game | — |
 | Turn order | random seats at start, then strict | — |
 

@@ -33,7 +33,7 @@ test("two players: create, invite, join live, start", async ({ browser }) => {
   await expect(host).toHaveURL(/\/new$/);
   await host.getByTestId("create-game").click();
   await expect(host).toHaveURL(/\/g\/[0-9a-f-]{36}$/);
-  await expect(host.getByTestId("settings")).toHaveText(/5 rounds each · 200 pictures/);
+  await expect(host.getByTestId("settings")).toHaveText(/10 rounds each · 300 pictures/);
   await expect(host.getByTestId("start-game")).toBeDisabled();
 
   const link = (await host.getByTestId("invite-link").innerText()).trim();

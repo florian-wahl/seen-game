@@ -6,7 +6,7 @@ import { generateBoard } from "@/lib/board/generate";
 import type { LibraryManifest } from "@/lib/board/types";
 import { loadImageMap, loadManifest } from "@/lib/library";
 
-const SIZES = [100, 200, 300] as const;
+const SIZES = [200, 300, 500] as const;
 
 function pickTarget(ids: string[], avoid?: string | null): string {
   let id = ids[Math.floor(Math.random() * ids.length)];
