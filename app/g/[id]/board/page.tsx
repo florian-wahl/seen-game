@@ -44,5 +44,5 @@ async function Loaded({ params }: { params: Promise<{ id: string }> }) {
     scale: r.scale,
   }));
 
-  return <BoardStudy gameId={id} tiles={tiles} boardSize={state.game.board_size} />;
+  return <BoardStudy gameId={id} tiles={tiles} boardSize={state.game.board_size} monochrome={state.game.monochrome} />;
 }

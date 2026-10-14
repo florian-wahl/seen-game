@@ -15,7 +15,7 @@ import {
   type Viewport,
 } from "./camera";
 import { hitTest } from "./hitTest";
-import { sharedBitmapCache, type BitmapCache } from "./bitmapCache";
+import { bitmapCacheFor, type BitmapCache } from "./bitmapCache";
 import { useBoardGestures } from "./useBoardGestures";
 
 export interface BoardCanvasHandle {
@@ -39,6 +39,8 @@ export interface BoardCanvasProps {
   onStats?(stats: BoardCanvasStats): void;
   /** Allow zooming out to the whole board width (board study). Rounds stop at the starting zoom. */
   fullZoomOut?: boolean;
+  /** Draw every picture in grayscale (monochrome game). Highlights keep their color. */
+  monochrome?: boolean;
   className?: string;
   ref?: Ref<BoardCanvasHandle>;
 }
@@ -51,7 +53,16 @@ interface Flash {
   start: number;
 }
 
-export function BoardCanvas({ board, images, onTap, onStats, fullZoomOut = false, className, ref }: BoardCanvasProps) {
+export function BoardCanvas({
+  board,
+  images,
+  onTap,
+  onStats,
+  fullZoomOut = false,
+  monochrome = false,
+  className,
+  ref,
+}: BoardCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cameraRef = useRef<Camera | null>(null);
   const viewportRef = useRef<Viewport>({ width: 0, height: 0 });
@@ -209,7 +220,7 @@ export function BoardCanvas({ board, images, onTap, onStats, fullZoomOut = false
 
   // Shared bitmap cache (warmed by the Ready screen); load anything missing.
   useEffect(() => {
-    const cache = sharedBitmapCache;
+    const cache = bitmapCacheFor(monochrome);
     const unsubscribe = cache.subscribe(requestRender);
     cacheRef.current = cache;
     void cache.preload(images);
@@ -218,7 +229,7 @@ export function BoardCanvas({ board, images, onTap, onStats, fullZoomOut = false
       unsubscribe();
       cacheRef.current = null;
     };
-  }, [images, requestRender]);
+  }, [images, monochrome, requestRender]);
 
   // Board change: re-index, reset view and overlays.
   useEffect(() => {

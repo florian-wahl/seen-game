@@ -39,30 +39,46 @@ export function NewGameForm() {
   return (
     <form action={action} className="flex flex-col gap-6">
       <ErrorNote>{state.error}</ErrorNote>
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Rounds per player</legend>
-        <Choice
-          name="rounds"
-          defaultValue={10}
-          options={[
-            { value: 5, label: "5", hint: "Quick" },
-            { value: 10, label: "10", hint: "Classic" },
-            { value: 20, label: "20", hint: "Marathon" },
-          ]}
-        />
-      </fieldset>
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Pictures on the board</legend>
-        <Choice
-          name="board_size"
-          defaultValue={300}
-          options={[
-            { value: 200, label: "200", hint: "Easier" },
-            { value: 300, label: "300", hint: "Classic" },
-            { value: 500, label: "500", hint: "Tough" },
-          ]}
-        />
-      </fieldset>
+      <section className="flex flex-col gap-6" aria-labelledby="game-settings-title">
+        <h2 id="game-settings-title" className="font-wide text-lg font-black uppercase tracking-tight text-cream">
+          Game settings
+        </h2>
+        <fieldset className="flex flex-col gap-2">
+          <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Rounds per player</legend>
+          <Choice
+            name="rounds"
+            defaultValue={10}
+            options={[
+              { value: 5, label: "5", hint: "Quick" },
+              { value: 10, label: "10", hint: "Classic" },
+              { value: 20, label: "20", hint: "Marathon" },
+            ]}
+          />
+        </fieldset>
+        <fieldset className="flex flex-col gap-2">
+          <legend className="mb-1 text-xs font-bold uppercase tracking-[0.12em] text-muted">Pictures on the board</legend>
+          <Choice
+            name="board_size"
+            defaultValue={300}
+            options={[
+              { value: 200, label: "200", hint: "Easier" },
+              { value: 300, label: "300", hint: "Classic" },
+              { value: 500, label: "500", hint: "Tough" },
+            ]}
+          />
+        </fieldset>
+        <label className="flex cursor-pointer items-center gap-4 rounded-2xl bg-surface p-4 hover:bg-raised">
+          <span className="min-w-0 flex-1">
+            <span className="block font-bold text-cream">Monochrome</span>
+            <span className="block text-sm text-soft">Every picture in black and white. Find it by its shape alone.</span>
+          </span>
+          <input type="checkbox" role="switch" name="monochrome" className="peer sr-only" data-testid="monochrome" />
+          <span
+            aria-hidden
+            className="relative h-8 w-14 shrink-0 rounded-full bg-line-strong transition after:absolute after:left-1 after:top-1 after:h-6 after:w-6 after:rounded-full after:bg-cream after:shadow after:transition-[left] peer-checked:bg-teal peer-checked:after:left-7 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-mustard"
+          />
+        </label>
+      </section>
       <Button type="submit" disabled={pending} className="min-h-14 w-full text-lg" data-testid="create-game">
         {pending ? "Creating…" : "Create game"}
       </Button>

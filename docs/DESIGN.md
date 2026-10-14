@@ -25,6 +25,7 @@ per-game picture generation, Sign in with Apple, SMS sign-in.
 | Players | — | 2 to 6 |
 | Rounds per player | 10 | 5, 10, 20 |
 | Board size | 300 pictures | 200, 300, 500 |
+| Monochrome | off | on: every picture (board, reveal, header target) in grayscale; highlights keep their color |
 | Board layout | fixed for the whole game | — |
 | Turn order | random seats at start, then strict | — |
 
@@ -114,7 +115,7 @@ authenticated.
 | `profiles` | `id` (= auth.users.id), `display_name`, `avatar_url` | any signed-in user |
 | `pictures` | `id` text, `name`, `category`, `file_path`, `review_status` (draft/approved/rejected), `library_version` | any signed-in user |
 | `picture_confusables` | `picture_a`, `picture_b`, check a < b | service role only |
-| `games` | `id`, `host_id`, `status`, `rounds_per_player`, `board_size`, `penalty_ms`, `cap_ms`, `current_turn_id`, `created_at`, `started_at`, `finished_at` | members |
+| `games` | `id`, `host_id`, `status`, `rounds_per_player`, `board_size`, `monochrome`, `penalty_ms`, `cap_ms`, `current_turn_id`, `created_at`, `started_at`, `finished_at` | members |
 | `game_players` | `game_id`, `user_id`, `seat`, `status` (active/retired), `turns_done`, `total_ms`, `wrong_taps`, `board_unlocked_at` | members |
 | `invites` | `game_id`, `token`, `expires_at` | host |
 | `board_tiles` | `game_id`, `picture_id`, `x`, `y`, `rotation`, `scale` | members whose `board_unlocked_at` is set |
@@ -148,7 +149,7 @@ end-of-game rules, otherwise inserts the next `pending` turn and queues a
 
 | Function | Caller | Behaviour |
 |---|---|---|
-| `create_game(rounds int, board_size int)` | host | inserts game (`lobby`), host as player, invite; returns game id + token |
+| `create_game(rounds int, board_size int, monochrome boolean default false)` | host | inserts game (`lobby`), host as player, invite; returns game id + token |
 | `join_game(token text)` | invitee | checks lobby, expiry, 6-player limit; inserts game_players; idempotent |
 | `start_game_internal(game_id uuid, tiles jsonb)` | service role only (Next.js server action) | action checks host & ≥2 players; this assigns random seats, inserts tiles, creates turn seq 1, sets `in_progress` |
 | `draw_target(game_id uuid)` | current player | pending → picks random unused tile picture, `drawn_at = now() + 1.2 s reveal` (the official start), `deadline_at = drawn_at + cap`, `live`, sets `board_unlocked_at` on first draw. Already live → returns same turn. Returns target, tiles, `deadline_at`, `server_now` |
@@ -180,7 +181,7 @@ code — it has breaking changes vs older versions), Tailwind 4, `@supabase/ssr`
 |---|---|---|
 | `/signin` | Sign in | magic link, Google |
 | `/` | Home: my games, whose turn, New game button | |
-| `/new` | New game: rounds + board size, share link (`navigator.share`, copy fallback) | `create_game` |
+| `/new` | New game: Game settings (rounds, board size, Monochrome), share link (`navigator.share`, copy fallback) | `create_game` |
 | `/join/[token]` | Invite landing → sign-in if needed → `join_game` → lobby | |
 | `/g/[id]` | Lobby / game scoreboard / final results by status | `game_state` + Realtime `game:{id}` |
 | `/g/[id]/play` | Ready, Round, Round result | `draw_target`, `submit_tap` |

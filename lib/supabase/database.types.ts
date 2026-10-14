@@ -77,14 +77,14 @@ isOneToOne: false
                   ]
                 },"games": {
                   Row: {
-                    "board_size": number,"cap_ms": number,"created_at": string,"current_turn_id": string | null,"finished_at": string | null,"host_id": string,"id": string,"last_activity_at": string,"penalty_ms": number,"rounds_per_player": number,"started_at": string | null,"status": Database["public"]['Enums']["game_status"]
+                    "board_size": number,"cap_ms": number,"created_at": string,"current_turn_id": string | null,"finished_at": string | null,"host_id": string,"id": string,"last_activity_at": string,"monochrome": boolean,"penalty_ms": number,"rounds_per_player": number,"started_at": string | null,"status": Database["public"]['Enums']["game_status"]
                   }
                   ComputedFields: never
                   Insert: {
-                    "board_size": number,"cap_ms"?: number,"created_at"?: string,"current_turn_id"?: string | null,"finished_at"?: string | null,"host_id": string,"id"?: string,"last_activity_at"?: string,"penalty_ms"?: number,"rounds_per_player": number,"started_at"?: string | null,"status"?: Database["public"]['Enums']["game_status"]
+                    "board_size": number,"cap_ms"?: number,"created_at"?: string,"current_turn_id"?: string | null,"finished_at"?: string | null,"host_id": string,"id"?: string,"last_activity_at"?: string,"monochrome"?: boolean,"penalty_ms"?: number,"rounds_per_player": number,"started_at"?: string | null,"status"?: Database["public"]['Enums']["game_status"]
                   }
                   Update: {
-                    "board_size"?: number,"cap_ms"?: number,"created_at"?: string,"current_turn_id"?: string | null,"finished_at"?: string | null,"host_id"?: string,"id"?: string,"last_activity_at"?: string,"penalty_ms"?: number,"rounds_per_player"?: number,"started_at"?: string | null,"status"?: Database["public"]['Enums']["game_status"]
+                    "board_size"?: number,"cap_ms"?: number,"created_at"?: string,"current_turn_id"?: string | null,"finished_at"?: string | null,"host_id"?: string,"id"?: string,"last_activity_at"?: string,"monochrome"?: boolean,"penalty_ms"?: number,"rounds_per_player"?: number,"started_at"?: string | null,"status"?: Database["public"]['Enums']["game_status"]
                   }
                   Relationships: [
                     {
@@ -338,7 +338,7 @@ isOneToOne: false
           }
           Functions: {
             "create_game":
-{ Args: { "board_size": number,"rounds": number }; Returns: Json
+{ Args: { "board_size": number,"monochrome"?: boolean,"rounds": number }; Returns: Json
                            },
 "delete_push_subscription":
 { Args: { "endpoint": string }; Returns: undefined

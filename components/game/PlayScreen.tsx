@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoardCanvas, type BoardCanvasHandle } from "@/components/board/BoardCanvas";
-import { sharedBitmapCache } from "@/components/board/bitmapCache";
+import { bitmapCacheFor } from "@/components/board/bitmapCache";
 import { loadImageMap } from "@/lib/library";
 import { boardFromTiles } from "@/lib/game/boardFromTiles";
 import { clockOffset, displayMs, formatSeconds, isExpired, type ClockInput } from "@/lib/game/clock";
@@ -24,6 +24,8 @@ export interface PlayScreenProps {
   capMs: number;
   boardSize: number;
   rounds: number;
+  /** Every picture in grayscale (game setting). */
+  monochrome: boolean;
 }
 
 interface Round {
@@ -50,7 +52,7 @@ declare global {
 }
 
 export function PlayScreen(props: PlayScreenProps) {
-  const { gameId, initialTurn, penaltyMs, capMs, boardSize, rounds } = props;
+  const { gameId, initialTurn, penaltyMs, capMs, boardSize, rounds, monochrome } = props;
 
   const [images, setImages] = useState<Record<string, string> | null>(null);
   const [loaded, setLoaded] = useState(0);
@@ -98,7 +100,7 @@ export function PlayScreen(props: PlayScreenProps) {
         setImages(map);
         setTotal(entries.length);
         for (let i = 0; i < entries.length; i += PRELOAD_CHUNK) {
-          await sharedBitmapCache.preload(Object.fromEntries(entries.slice(i, i + PRELOAD_CHUNK)));
+          await bitmapCacheFor(monochrome).preload(Object.fromEntries(entries.slice(i, i + PRELOAD_CHUNK)));
           if (cancelled) return;
           setLoaded(Math.min(entries.length, i + PRELOAD_CHUNK));
         }
@@ -109,7 +111,7 @@ export function PlayScreen(props: PlayScreenProps) {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [monochrome]);
 
   // Keyed on the tiles, not the round: each tap result replaces `round`, and a new board object
   // would make BoardCanvas reset the view and drop the wrong-tap flash.
@@ -410,7 +412,7 @@ export function PlayScreen(props: PlayScreenProps) {
               ref={targetRef}
               src={targetUrl}
               alt="Find this picture"
-              className="h-14 w-14"
+              className={`h-14 w-14 ${monochrome ? "grayscale" : ""}`}
               style={{ visibility: phase === "reveal" ? "hidden" : "visible" }}
               data-testid="target"
               data-picture-id={round?.target}
@@ -457,6 +459,7 @@ export function PlayScreen(props: PlayScreenProps) {
             board={board}
             images={images}
             onTap={(id) => void onTap(id)}
+            monochrome={monochrome}
             className="absolute inset-0"
           />
         )}
@@ -479,7 +482,7 @@ export function PlayScreen(props: PlayScreenProps) {
         )}
       </div>
       {phase === "reveal" && round && (
-        <DrawReveal src={targetUrl} pictureId={round.target} endAtMs={round.revealEndMs} getTargetRect={getTargetRect} />
+        <DrawReveal src={targetUrl} pictureId={round.target} endAtMs={round.revealEndMs} getTargetRect={getTargetRect} monochrome={monochrome} />
       )}
     </div>
   );

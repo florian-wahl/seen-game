@@ -98,6 +98,7 @@ export interface CreateGameOptions {
   /** 3 and 100 are legacy values (no longer offered by create_game), kept for fast tests. */
   rounds?: 3 | 5 | 10 | 20;
   size?: 100 | 200 | 300 | 500;
+  monochrome?: boolean;
 }
 
 /** create_game as host, join_game as the others, start_game_internal via admin. */
@@ -116,7 +117,7 @@ export async function createStartedGame(opts: CreateGameOptions): Promise<TestGa
   // The table still accepts the legacy short settings; set the requested ones directly.
   const { error: settingsError } = await admin()
     .from("games")
-    .update({ rounds_per_player: rounds, board_size: size })
+    .update({ rounds_per_player: rounds, board_size: size, monochrome: opts.monochrome ?? false })
     .eq("id", created.game_id);
   if (settingsError) throw settingsError;
   for (const u of others) await rpc(u.client, "join_game", { token: created.token });

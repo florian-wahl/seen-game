@@ -45,6 +45,8 @@ export interface Game {
   status: GameStatus;
   rounds_per_player: number;
   board_size: number;
+  /** every picture shown in grayscale (issue #1) */
+  monochrome: boolean;
   penalty_ms: number;
   cap_ms: number;
   current_turn_id: string | null;

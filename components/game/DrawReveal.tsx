@@ -14,9 +14,11 @@ export interface DrawRevealProps {
   endAtMs: number;
   /** Bounding rect of the small target slot in the round header. */
   getTargetRect(): DOMRect | null;
+  /** Show the picture in grayscale (monochrome game). */
+  monochrome?: boolean;
 }
 
-export function DrawReveal({ src, pictureId, endAtMs, getTargetRect }: DrawRevealProps) {
+export function DrawReveal({ src, pictureId, endAtMs, getTargetRect, monochrome = false }: DrawRevealProps) {
   const cardRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
@@ -69,7 +71,7 @@ export function DrawReveal({ src, pictureId, endAtMs, getTargetRect }: DrawRevea
           alt=""
           data-testid="reveal-card"
           data-picture-id={pictureId}
-          className="will-change-transform"
+          className={`will-change-transform ${monochrome ? "grayscale" : ""}`}
           style={{ width: "min(70vw, 70dvh)", height: "min(70vw, 70dvh)", objectFit: "contain" }}
         />
       )}

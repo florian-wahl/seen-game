@@ -323,4 +323,74 @@ test.describe("game loop", () => {
     await expect(page.getByTestId("rematch")).toBeVisible();
     await page.screenshot({ path: test.info().outputPath("final.png"), fullPage: true });
   });
+
+  test("monochrome: board, reveal and target are grayscale; highlights keep their color", async ({ browser }) => {
+    test.setTimeout(90_000);
+    const game = await createStartedGame({
+      emails: [uniqueEmail("e2e-m"), uniqueEmail("e2e-n")],
+      names: ["Moe", "Nia"],
+      rounds: 3,
+      size: 100,
+      monochrome: true,
+    });
+    const a = game.firstUser;
+    const page = await asUser(browser, a, `/g/${game.gameId}`);
+    await expect(page.getByTestId("monochrome-badge")).toBeVisible();
+    await page.getByTestId("play-turn").click();
+    await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
+    await page.getByTestId("draw").click();
+    await expect(page.getByTestId("reveal-card")).toHaveClass(/\bgrayscale\b/);
+    await expect(page.getByTestId("reveal")).toHaveCount(0, { timeout: 5_000 });
+    await expect(page.getByTestId("target")).toHaveClass(/\bgrayscale\b/);
+
+    // Every drawn picture pixel is gray. The paper background (#f4f1ea) is only slightly warm.
+    const colorful = async () =>
+      page.locator("canvas").evaluate((c: HTMLCanvasElement) => {
+        const { data } = c.getContext("2d")!.getImageData(0, 0, c.width, c.height);
+        let ink = 0;
+        let saturated = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          const [r, g, b] = [data[i], data[i + 1], data[i + 2]];
+          if (Math.max(r, g, b) < 120) ink++;
+          if (Math.max(r, g, b) - Math.min(r, g, b) > 12) saturated++;
+        }
+        return { ink, saturated };
+      });
+    await expect.poll(async () => (await colorful()).ink, { timeout: 10_000 }).toBeGreaterThan(1000);
+    expect((await colorful()).saturated).toBe(0);
+
+    // A wrong tap flashes pink on top of the gray board: highlights keep their color.
+    const turn = (await openTurn(game.gameId))!;
+    const wrong = await wrongTileOnScreen(page, game, turn.target_picture_id!);
+    // Watch the tapped tile every frame while the 600 ms flash plays.
+    const watch = page.locator("canvas").evaluate(
+      (c: HTMLCanvasElement, at: { x: number; y: number }) =>
+        new Promise<number>((resolve) => {
+          const rect = c.getBoundingClientRect();
+          const k = c.width / rect.width;
+          const [sx, sy] = [Math.round((at.x - rect.left - 15) * k), Math.round((at.y - rect.top - 15) * k)];
+          const ctx = c.getContext("2d")!;
+          let most = 0;
+          const end = performance.now() + 2500;
+          const tick = () => {
+            const { data } = ctx.getImageData(sx, sy, Math.round(30 * k), Math.round(30 * k));
+            let n = 0;
+            for (let i = 0; i < data.length; i += 4) {
+              if (Math.max(data[i], data[i + 1], data[i + 2]) - Math.min(data[i], data[i + 1], data[i + 2]) > 12) n++;
+            }
+            most = Math.max(most, n);
+            if (performance.now() < end) requestAnimationFrame(tick);
+            else resolve(most);
+          };
+          tick();
+        }),
+      { x: wrong.x, y: wrong.y },
+    );
+    await page.touchscreen.tap(wrong.x, wrong.y);
+    await expect(page.getByTestId("wrong-count")).toContainText("1 wrong");
+    expect(await watch).toBeGreaterThan(50);
+
+    await page.evaluate((id) => window.__seenTest!.tap(id), turn.target_picture_id!);
+    await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
+  });
 });
