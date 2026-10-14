@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ironing board</title>
+<defs>
+<g id="seen-ironing-board">
+<path fill="none" d="M26 46l40 42M66 46 26 88M16 88h18M58 88h18"/>
+<path fill="#7d5fd0" d="M10 34h62q20 0 20 6t-20 6H10z"/>
+<path fill="none" d="M20 40h44"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ironing-board" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ironing-board" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

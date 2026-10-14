@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>garbage truck</title>
+<defs>
+<g id="seen-garbage-truck">
+<path fill="#2f9e6b" d="M8 30h56v40H8z"/>
+<path fill="none" d="M20 30v40M32 30v40M44 30v40M56 30v40"/>
+<path fill="#1b6b49" d="M64 40h16l10 14v16H64z"/>
+<path fill="#8fd0f5" d="M68 44h10l6 10H68z"/>
+<circle fill="#4d5968" cx="22" cy="74" r="10"/>
+<circle fill="#4d5968" cx="76" cy="74" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-garbage-truck" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-garbage-truck" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

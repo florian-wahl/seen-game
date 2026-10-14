@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cruise ship</title>
+<defs>
+<g id="seen-cruise-ship">
+<path fill="#e5484d" d="M36 20h8v14h-8zM54 20h8v14h-8z"/>
+<path fill="#ffffff" d="M26 34h46v10H26z"/>
+<path fill="#ffffff" d="M18 44h62v12H18z"/>
+<path fill="#2c3f96" d="M8 56h84l-8 22H18z"/>
+<path fill="none" stroke-width="5" d="M26 50h.01M36 50h.01M46 50h.01M56 50h.01M66 50h.01"/>
+<path fill="none" d="M20 66h60"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cruise-ship" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cruise-ship" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

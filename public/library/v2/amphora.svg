@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>amphora</title>
+<defs>
+<g id="seen-amphora">
+<path fill="none" d="M38 26q-14 2-12 18M62 26q14 2 12 18"/>
+<path fill="#c25e12" d="M40 14h20v10q20 10 20 34 0 20-30 30-30-10-30-30 0-24 20-34z"/>
+<path fill="#c25e12" d="M36 10h28v6H36z"/>
+<path fill="none" d="M24 46h52M26 62h48"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-amphora" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-amphora" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tow truck</title>
+<defs>
+<g id="seen-tow-truck">
+<path fill="#4d5968" d="M50 56l30-34 5 4-28 32z"/>
+<path fill="none" d="M84 24v24q0 8 6 8"/>
+<path fill="#f08a3c" d="M44 56h40v14H44z"/>
+<path fill="#f08a3c" d="M10 40q0-4 4-4h20l10 14v20H10z"/>
+<path fill="#8fd0f5" d="M16 40h14l6 10H16z"/>
+<circle fill="#4d5968" cx="24" cy="74" r="10"/>
+<circle fill="#4d5968" cx="72" cy="74" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tow-truck" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tow-truck" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

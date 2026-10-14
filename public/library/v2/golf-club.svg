@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>golf club</title>
+<defs>
+<g id="seen-golf-club">
+<path fill="#8d99a6" d="M70 14l5 3-36 60-5-3z"/>
+<path fill="#1c1b22" d="M66 10l8 5-6 10-8-5z"/>
+<path fill="#4d5968" d="M16 78q0-6 6-6h16l4 8q0 6-6 6H22q-6 0-6-8z"/>
+<circle fill="#ffffff" cx="64" cy="80" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-golf-club" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-golf-club" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>onigiri</title>
+<defs>
+<g id="seen-onigiri">
+<path fill="#ffffff" d="M50 12c8 0 40 54 40 64a10 10 0 0 1-10 10H20a10 10 0 0 1-10-10c0-10 32-64 40-64z"/>
+<path fill="#1b6b49" d="M34 58h32v28H34z"/>
+<path fill="none" stroke-width="5" d="M44 36h.01M56 42h.01M40 48h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-onigiri" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-onigiri" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sled</title>
+<defs>
+<g id="seen-sled">
+<path fill="none" d="M24 56v16M58 56v16M80 50q10-14 2-26"/>
+<path fill="#a9683c" d="M12 48h68v8H12z"/>
+<path fill="#e5484d" d="M8 72h64q12 0 12-12v-4h6v4q0 18-18 18H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sled" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sled" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

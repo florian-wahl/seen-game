@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>stand mixer</title>
+<defs>
+<g id="seen-stand-mixer">
+<path fill="#cfd6dc" d="M40 54h40q-2 28-20 28T40 54z"/>
+<path fill="none" d="M60 40v18"/>
+<path fill="#7fd3a0" d="M14 34h18v48H14z"/>
+<path fill="#7fd3a0" d="M20 16h56q10 0 10 10v6q0 8-8 8H14V22q0-6 6-6z"/>
+<path fill="#2f9e6b" d="M12 82h72v8H12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-stand-mixer" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-stand-mixer" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

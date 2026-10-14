@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>floppy disk</title>
+<defs>
+<g id="seen-floppy-disk">
+<path fill="#4a66d4" d="M10 14a4 4 0 0 1 4-4h62l14 14v62a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z"/>
+<path fill="#cfd6dc" d="M28 10h40v26H28z"/>
+<path fill="#4d5968" d="M54 16h8v14h-8z"/>
+<path fill="#ffffff" d="M22 52h56v38H22z"/>
+<path fill="none" d="M30 64h40M30 76h40"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-floppy-disk" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-floppy-disk" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

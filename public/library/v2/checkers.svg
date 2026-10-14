@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>checkers</title>
+<defs>
+<g id="seen-checkers">
+<path fill="#fbf3e0" d="M12 12h76v76H12z"/>
+<path fill="#e5484d" d="M12 12h19v19H12zM50 12h19v19H50zM31 31h19v19H31zM69 31h19v19H69zM12 50h19v19H12zM50 50h19v19H50zM31 69h19v19H31zM69 69h19v19H69z"/>
+<circle fill="#4d5968" cx="21.5" cy="59.5" r="7"/>
+<circle fill="#ffffff" cx="78.5" cy="40.5" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-checkers" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-checkers" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

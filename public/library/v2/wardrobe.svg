@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wardrobe</title>
+<defs>
+<g id="seen-wardrobe">
+<path fill="#4a66d4" d="M18 14h64v70H18z"/>
+<path fill="#2c3f96" d="M14 8h72v8H14z"/>
+<path fill="#2c3f96" d="M22 84h8v6h-8zM70 84h8v6h-8z"/>
+<path fill="none" d="M50 16v68"/>
+<path fill="none" stroke-width="6" d="M44 50h.01M56 50h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wardrobe" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wardrobe" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

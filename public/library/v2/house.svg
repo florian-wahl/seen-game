@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>house</title>
+<defs>
+<g id="seen-house">
+<path fill="#6f3f1f" d="M64 20h8v18h-8z"/>
+<path fill="#fbf3e0" d="M24 46h52v40H24z"/>
+<path fill="#e5484d" d="M16 48L50 16l34 32z"/>
+<path fill="#a9683c" d="M44 62h12v24H44z"/>
+<path fill="#8fd0f5" d="M62 58h9v9h-9z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-house" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-house" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

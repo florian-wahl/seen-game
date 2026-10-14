@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>roller skate</title>
+<defs>
+<g id="seen-roller-skate">
+<path fill="#e0559a" d="M24 12h28v34l26 6q8 2 8 10v8H18V18a6 6 0 0 1 6-6z"/>
+<path fill="none" d="M30 24h16M30 34h16"/>
+<path fill="#4d5968" d="M16 70h72v6H16z"/>
+<circle fill="#f5b93f" cx="30" cy="83" r="8"/>
+<circle fill="#f5b93f" cx="72" cy="83" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-roller-skate" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-roller-skate" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

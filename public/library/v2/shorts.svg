@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>shorts</title>
+<defs>
+<g id="seen-shorts">
+<path fill="#f08a3c" d="M18 22h64l8 64H58l-8-38-8 38H10z"/>
+<path fill="#c25e12" d="M18 12h64v10H18z"/>
+<path fill="none" d="M50 22v14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-shorts" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-shorts" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

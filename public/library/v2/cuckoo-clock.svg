@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cuckoo clock</title>
+<defs>
+<g id="seen-cuckoo-clock">
+<path fill="none" d="M38 68v12M62 68v8M50 68v14"/>
+<path fill="#f5b93f" d="M34 80h8v10h-8zM58 76h8v10h-8z"/>
+<path fill="#a9683c" d="M20 32h60v36H20z"/>
+<path fill="#6f3f1f" d="M10 36 50 8l40 28z"/>
+<circle fill="#fbf3e0" cx="50" cy="50" r="12"/>
+<path fill="none" d="M50 50v-8M50 50h6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cuckoo-clock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cuckoo-clock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

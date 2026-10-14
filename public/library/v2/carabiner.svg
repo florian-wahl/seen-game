@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>carabiner</title>
+<defs>
+<g id="seen-carabiner">
+<g transform="rotate(30 50 50)">
+<path fill="#7d5fd0" fill-rule="evenodd" d="M38 10h24q20 0 20 20v40q0 20-20 20H38q-20 0-20-20V30q0-20 20-20zM40 22h20q10 0 10 10v36q0 10-10 10H40q-10 0-10-10V32q0-10 10-10z"/>
+<path fill="#cfd6dc" d="M16 36h16v28H16z"/>
+<path fill="none" d="M24 40v20"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-carabiner" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-carabiner" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

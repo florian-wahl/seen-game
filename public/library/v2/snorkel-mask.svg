@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>snorkel mask</title>
+<defs>
+<g id="seen-snorkel-mask">
+<path fill="#f08a3c" d="M76 70V14a6 6 0 0 1 12 0v56q0 14-14 14h-6V74h6q2 0 2-4z"/>
+<path fill="#4a66d4" d="M20 34h48a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8H50l-6-8-6 8H20a8 8 0 0 1-8-8V42a8 8 0 0 1 8-8z"/>
+<path fill="#8fd0f5" d="M20 40h48v16H48l-4-6-4 6H20z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-snorkel-mask" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-snorkel-mask" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

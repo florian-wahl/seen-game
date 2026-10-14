@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hammock</title>
+<defs>
+<g id="seen-hammock">
+<path fill="none" d="M8 24l12 20M92 24 80 44"/>
+<path fill="none" stroke-width="7" d="M8 24h.01M92 24h.01"/>
+<path fill="#f08a3c" d="M20 44q30 30 60 0l4 6q-34 34-68 0z"/>
+<path fill="none" d="M30 54q20 18 40 0"/>
+<path fill="#a9683c" d="M14 40h14v7H14zM72 40h14v7H72z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hammock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hammock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

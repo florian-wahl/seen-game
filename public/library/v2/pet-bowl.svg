@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pet bowl</title>
+<defs>
+<g id="seen-pet-bowl">
+<path fill="#a9683c" d="M24 50q4-10 10-6 4-8 12-4 6-6 12 0 8-4 12 4 6-2 8 6z"/>
+<path fill="#4a66d4" d="M18 50h64l8 28H10z"/>
+<path fill="#2c3f96" d="M14 46h72v8H14z"/>
+<path fill="none" d="M24 66h52"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pet-bowl" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pet-bowl" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

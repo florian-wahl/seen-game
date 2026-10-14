@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>toy wagon</title>
+<defs>
+<g id="seen-toy-wagon">
+<path fill="none" d="M70 52 86 22h6"/>
+<path fill="#e5484d" d="M12 42h58v24H12z"/>
+<path fill="none" d="M12 52h58"/>
+<circle fill="#4d5968" cx="24" cy="74" r="10"/>
+<circle fill="#4d5968" cx="58" cy="74" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-toy-wagon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-toy-wagon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

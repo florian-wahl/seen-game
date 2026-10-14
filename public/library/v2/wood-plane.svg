@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wood plane</title>
+<defs>
+<g id="seen-wood-plane">
+<path fill="#a9683c" d="M24 46q-2-22 14-26h6q-12 8-10 26z"/>
+<path fill="#8d99a6" d="M46 28h12l4 18H44z"/>
+<circle fill="#a9683c" cx="76" cy="40" r="7"/>
+<path fill="#3f9fdc" d="M20 46h56l6 14H14z"/>
+<path fill="#4d5968" d="M10 60h80v14H10z"/>
+<path fill="none" d="M86 56q6-8 0-14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wood-plane" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wood-plane" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

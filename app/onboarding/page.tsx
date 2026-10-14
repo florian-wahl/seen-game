@@ -30,7 +30,7 @@ async function Onboarding({ searchParams }: { searchParams: PageProps<"/onboardi
       </p>
       <div className="mx-auto flex h-36 w-36 items-center justify-center rounded-[28px] bg-paper shadow-[0_0_0_3px_var(--color-mustard),0_0_40px_rgba(245,185,63,0.3)]">
         {/* eslint-disable-next-line @next/next/no-img-element -- decorative static SVG */}
-        <img src="/library/v1/necktie.svg" alt="" aria-hidden width={104} height={104} draggable={false} className="-rotate-6" />
+        <img src="/library/v2/necktie.svg" alt="" aria-hidden width={104} height={104} draggable={false} className="-rotate-6" />
       </div>
       <div className="flex flex-col gap-2 text-center">
         <h1 className="font-wide text-3xl font-black uppercase leading-tight tracking-tight text-cream">What should friends call you?</h1>

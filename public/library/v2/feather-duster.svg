@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>feather duster</title>
+<defs>
+<g id="seen-feather-duster">
+<path fill="#a9683c" d="M46 54h8v36h-8z"/>
+<path fill="#f7a8cf" d="M50 56c-16 0-26-8-26-18 0-8 4-12 8-14-2-8 6-14 12-12 2-8 10-8 12 0 6-2 14 4 12 12 4 2 8 6 8 14 0 10-10 18-26 18z"/>
+<path fill="none" d="M50 52V28M40 48l-6-14M60 48l6-14"/>
+<path fill="#f5b93f" d="M43 54h14v7H43z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-feather-duster" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-feather-duster" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

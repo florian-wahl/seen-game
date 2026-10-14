@@ -39,9 +39,9 @@ export function FinalResults({ gameId, state }: { gameId: string; state: GameSta
     <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-4 p-4 pb-8" data-testid="final-results">
       <header className="relative overflow-hidden rounded-3xl bg-paper px-5 py-6 pr-24 text-left text-ink" data-testid="winner">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/library/v1/disco-ball.svg" alt="" aria-hidden className="pointer-events-none absolute -right-2 -top-1 h-20 w-20 rotate-12" />
+        <img src="/library/v2/disco-ball.svg" alt="" aria-hidden className="pointer-events-none absolute -right-2 -top-1 h-20 w-20 rotate-12" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/library/v1/tambourine.svg" alt="" aria-hidden className="pointer-events-none absolute -bottom-3 right-14 h-16 w-16 -rotate-12" />
+        <img src="/library/v2/tambourine.svg" alt="" aria-hidden className="pointer-events-none absolute -bottom-3 right-14 h-16 w-16 -rotate-12" />
         <p className="relative text-xs font-bold uppercase tracking-[0.12em] text-ink/60">Game over</p>
         {f.winners.length > 0 ? (
           <>

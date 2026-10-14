@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rain boot</title>
+<defs>
+<g id="seen-rain-boot">
+<path fill="#2f9e6b" d="M26 10h30v50l26 8q8 3 8 12v4H22V14a4 4 0 0 1 4-4z"/>
+<path fill="#1b6b49" d="M22 80h68v8H22z"/>
+<path fill="#7fd3a0" d="M24 10h34v10H24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rain-boot" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rain-boot" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

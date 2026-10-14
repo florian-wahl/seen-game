@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ice cream cart</title>
+<defs>
+<g id="seen-ice-cream-cart">
+<path fill="none" d="M50 30v14M84 50h6"/>
+<path fill="#f7a8cf" d="M14 32q36-32 72 0z"/>
+<path fill="#ffffff" d="M16 44h68v30H16z"/>
+<path fill="#e0559a" d="M16 54h68v8H16z"/>
+<circle fill="#4d5968" cx="30" cy="80" r="8"/>
+<circle fill="#4d5968" cx="70" cy="80" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ice-cream-cart" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ice-cream-cart" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

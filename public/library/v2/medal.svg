@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>medal</title>
+<defs>
+<g id="seen-medal">
+<path fill="#3f9fdc" d="M28 8h14l14 34H42z"/>
+<path fill="#e5484d" d="M72 8H58L44 42h14z"/>
+<circle fill="#f5b93f" cx="50" cy="62" r="24"/>
+<path fill="#c98a0c" d="M50 48l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-medal" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-medal" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

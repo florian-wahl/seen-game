@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>party hat</title>
+<defs>
+<g id="seen-party-hat">
+<path fill="#4a66d4" d="M50 18 80 84H20z"/>
+<path fill="#ffffff" d="M44 46a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM34 66a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM56 62a4 4 0 1 0 8 0a4 4 0 1 0-8 0zM46 78a4 4 0 1 0 8 0a4 4 0 1 0-8 0z"/>
+<circle fill="#f5b93f" cx="50" cy="14" r="8"/>
+<path fill="#e0559a" d="M18 80h64v8H18z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-party-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-party-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

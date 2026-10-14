@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>peach</title>
+<defs>
+<g id="seen-peach">
+<path fill="#2f9e6b" d="M52 26c4-12 18-14 24-10-4 10-14 14-24 10z"/>
+<path fill="#ffb074" d="M50 26c-20-6-38 8-38 30 0 20 18 32 38 32s38-12 38-32c0-22-18-36-38-30z"/>
+<path fill="none" d="M50 28q-10 26 0 56"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-peach" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-peach" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

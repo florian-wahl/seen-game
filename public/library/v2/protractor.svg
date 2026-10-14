@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>protractor</title>
+<defs>
+<g id="seen-protractor">
+<path fill="#8fd0f5" d="M10 72a40 40 0 0 1 80 0z"/>
+<path fill="none" d="M26 72a24 24 0 0 1 48 0"/>
+<path fill="none" d="M84.6 52l-6.9 4M70 37.4l-4 6.9M50 32v8M30 37.4l4 6.9M15.4 52l6.9 4"/>
+<path fill="none" stroke-width="6" d="M50 72h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-protractor" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-protractor" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fig</title>
+<defs>
+<g id="seen-fig">
+<path fill="#2f9e6b" d="M46 8h8v10h-8z"/>
+<path fill="#7d5fd0" d="M50 14c6 0 6 10 10 16 12 14 26 22 26 38 0 14-16 22-36 22S14 82 14 68c0-16 14-24 26-38 4-6 4-16 10-16z"/>
+<path fill="none" d="M38 44q-8 14-6 30M62 44q8 14 6 30"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fig" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fig" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

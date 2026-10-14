@@ -37,7 +37,7 @@ export function DoodleStrip({
           // eslint-disable-next-line @next/next/no-img-element -- decorative static SVG
           <img
             key={`${d.file}-${i}`}
-            src={`/library/v1/${d.file}.svg`}
+            src={`/library/v2/${d.file}.svg`}
             alt=""
             aria-hidden
             width={px}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>kaleidoscope</title>
+<defs>
+<g id="seen-kaleidoscope">
+<g transform="rotate(-30 50 50)">
+<path fill="#4d5968" d="M6 44h8v12H6z"/>
+<path fill="#7d5fd0" d="M14 38h64v24H14z"/>
+<path fill="#f5b93f" d="M28 38h8v24h-8zM50 38h8v24h-8z"/>
+<path fill="#e0559a" d="M78 34h10v32H78z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-kaleidoscope" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-kaleidoscope" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

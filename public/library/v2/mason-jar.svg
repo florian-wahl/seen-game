@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>mason jar</title>
+<defs>
+<g id="seen-mason-jar">
+<path fill="#8fd0f5" d="M30 22h40v6q8 4 8 14v38a8 8 0 0 1-8 8H30a8 8 0 0 1-8-8V42q0-10 8-14z"/>
+<path fill="#c98a0c" d="M28 10h44v12H28z"/>
+<path fill="none" d="M36 10v12M50 10v12M64 10v12"/>
+<path fill="none" d="M32 48q0-8 6-10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-mason-jar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-mason-jar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

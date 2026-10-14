@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rug</title>
+<defs>
+<g id="seen-rug">
+<path fill="none" d="M18 24V14M30 24V14M42 24V14M54 24V14M66 24V14M78 24V14M18 76v10M30 76v10M42 76v10M54 76v10M66 76v10M78 76v10"/>
+<path fill="#1f6ea8" d="M12 24h76v52H12z"/>
+<path fill="#f5b93f" d="M50 32l24 18-24 18-24-18z"/>
+<path fill="#e5484d" d="M50 42l10 8-10 8-10-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rug" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rug" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

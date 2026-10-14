@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clock tower</title>
+<defs>
+<g id="seen-clock-tower">
+<path fill="#2c3f96" d="M30 30 50 6l20 24z"/>
+<path fill="#e8d5b0" d="M32 30h36v60H32z"/>
+<circle fill="#ffffff" cx="50" cy="46" r="11"/>
+<path fill="none" d="M50 46v-7M50 46h6"/>
+<path fill="#a9683c" d="M44 76a6 6 0 0 1 12 0v14H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clock-tower" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clock-tower" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

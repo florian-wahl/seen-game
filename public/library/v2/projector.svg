@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>projector</title>
+<defs>
+<g id="seen-projector">
+<circle fill="#4d5968" cx="32" cy="26" r="14"/>
+<circle fill="#4d5968" cx="64" cy="26" r="14"/>
+<path fill="none" stroke-width="6" d="M32 26h.01M64 26h.01"/>
+<path fill="#2aa7a0" d="M14 44h60a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V50a6 6 0 0 1 6-6z"/>
+<path fill="#4d5968" d="M80 52h10v20H80z"/>
+<path fill="none" d="M20 80v8M68 80v8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-projector" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-projector" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>shuttlecock</title>
+<defs>
+<g id="seen-shuttlecock">
+<g transform="rotate(20 50 50)">
+<path fill="#ffffff" d="M26 12h48L60 62H40z"/>
+<path fill="none" d="M40 12l6 50M60 12l-6 50M50 12v50M30 26h40"/>
+<path fill="#e5484d" d="M38 56h24v8H38z"/>
+<path fill="#fbf3e0" d="M38 64h24v6q0 16-12 16T38 70z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-shuttlecock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-shuttlecock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

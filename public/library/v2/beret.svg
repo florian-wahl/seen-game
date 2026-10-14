@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>beret</title>
+<defs>
+<g id="seen-beret">
+<path fill="none" d="M52 26q2-8 8-10"/>
+<path fill="#2c3f96" d="M10 52c0-18 22-30 44-28s36 14 36 26c0 6-12 8-20 8H20c-6 0-10-2-10-6z"/>
+<path fill="#4a66d4" d="M26 58h44v8a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-beret" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-beret" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

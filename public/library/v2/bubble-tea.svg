@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bubble tea</title>
+<defs>
+<g id="seen-bubble-tea">
+<path fill="#e0559a" d="M54 8h9v32h-9z"/>
+<path fill="#e8d5b0" d="M24 34h52l-6 54H30z"/>
+<path fill="#ffffff" d="M22 34q28-24 56 0z"/>
+<path fill="none" stroke-width="7" d="M38 78h.01M48 82h.01M58 78h.01M44 70h.01M56 68h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bubble-tea" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bubble-tea" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

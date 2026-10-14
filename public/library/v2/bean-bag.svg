@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bean bag</title>
+<defs>
+<g id="seen-bean-bag">
+<path fill="#9bc53d" d="M20 84c-10 0-12-10-8-20 6-16 16-40 34-44 20-4 30 16 38 36 6 14 4 28-8 28z"/>
+<path fill="#6a8f1a" d="M30 62q20-10 40 0q4 16-20 16t-20-16z"/>
+<path fill="none" d="M44 30q4 12 2 24"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bean-bag" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bean-bag" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

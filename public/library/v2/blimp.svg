@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>blimp</title>
+<defs>
+<g id="seen-blimp">
+<path fill="#e5484d" d="M8 32l18 14v8L8 68z"/>
+<path fill="#4d5968" d="M46 64h20v9H46z"/>
+<ellipse fill="#4a66d4" cx="54" cy="48" rx="36" ry="20"/>
+<path fill="none" d="M24 48h60M34 36q20-4 40 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-blimp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-blimp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

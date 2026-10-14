@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>excavator</title>
+<defs>
+<g id="seen-excavator">
+<path fill="#f5b93f" d="M38 44 64 16l6 5-26 28z"/>
+<path fill="#f5b93f" d="M64 18l20 30-6 4-20-30z"/>
+<path fill="#4d5968" d="M72 48h18l-4 14H76z"/>
+<path fill="#f5b93f" d="M14 40h30v22H14z"/>
+<path fill="#8fd0f5" d="M30 44h10v10H30z"/>
+<path fill="#4d5968" d="M10 70q0-8 8-8h40q8 0 8 8t-8 8H18q-8 0-8-8z"/>
+<path fill="none" stroke-width="6" d="M22 70h.01M38 70h.01M54 70h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-excavator" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-excavator" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

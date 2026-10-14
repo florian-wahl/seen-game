@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sawhorse</title>
+<defs>
+<g id="seen-sawhorse">
+<path fill="#a9683c" d="M22 40h8L20 88h-8zM70 40h8l10 48h-8z"/>
+<path fill="none" d="M18 66h64"/>
+<path fill="#d9a47a" d="M8 30h84v10H8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sawhorse" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sawhorse" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

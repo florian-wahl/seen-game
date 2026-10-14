@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wallet</title>
+<defs>
+<g id="seen-wallet">
+<path fill="#3f9fdc" d="M22 18h46v20H22z"/>
+<path fill="#a9683c" d="M14 30h72a4 4 0 0 1 4 4v46a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V34a4 4 0 0 1 4-4z"/>
+<path fill="#6f3f1f" d="M62 44h28v20H62a6 6 0 0 1-6-6v-8a6 6 0 0 1 6-6z"/>
+<path fill="none" stroke-width="6" d="M66 54h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wallet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wallet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

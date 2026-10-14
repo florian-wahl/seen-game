@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>daisy</title>
+<defs>
+<g id="seen-daisy">
+<path fill="none" d="M50 56v34"/>
+<path fill="#2f9e6b" d="M50 78c-8-10-20-8-24-2 8 6 18 6 24 2z"/>
+<path fill="#ffffff" d="M59 38a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM53.7 50.7a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM41 56a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM28.3 50.7a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM23 38a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM28.3 25.3a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM41 20a9 9 0 1 0 18 0a9 9 0 1 0-18 0zM53.7 25.3a9 9 0 1 0 18 0a9 9 0 1 0-18 0z"/>
+<circle fill="#f5b93f" cx="50" cy="38" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-daisy" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-daisy" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

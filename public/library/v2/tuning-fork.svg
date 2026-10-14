@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tuning fork</title>
+<defs>
+<g id="seen-tuning-fork">
+<g transform="rotate(-30 50 50)">
+<path fill="#8d99a6" d="M38 10h8v38a4 4 0 0 0 8 0V10h8v38a12 12 0 0 1-8 11.3V84h-8V59.3A12 12 0 0 1 38 48z"/>
+<path fill="none" d="M42 16v28"/>
+<circle fill="#4d5968" cx="50" cy="86" r="6"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tuning-fork" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tuning-fork" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

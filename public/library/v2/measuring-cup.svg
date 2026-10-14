@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>measuring cup</title>
+<defs>
+<g id="seen-measuring-cup">
+<path fill="none" d="M70 32h10a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H68"/>
+<path fill="#7fdcd3" d="M12 22h60l-4 64H24l-6-56z"/>
+<path fill="none" d="M30 40h14M30 52h10M30 64h14M30 76h10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-measuring-cup" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-measuring-cup" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

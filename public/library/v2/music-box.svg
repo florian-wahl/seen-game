@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>music box</title>
+<defs>
+<g id="seen-music-box">
+<path fill="#f7a8cf" d="M16 40l6-26h48l6 26z"/>
+<path fill="#e0559a" d="M12 42h64v40H12z"/>
+<path fill="none" d="M12 54h64M76 62h8V48h6"/>
+<path fill="none" stroke-width="7" d="M90 48h.01M44 68h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-music-box" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-music-box" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

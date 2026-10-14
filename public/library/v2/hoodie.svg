@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hoodie</title>
+<defs>
+<g id="seen-hoodie">
+<path fill="#9bc53d" d="M32 20 14 34l-4 38h12l4-24v40h48V48l4 24h12l-4-38-18-14z"/>
+<path fill="#6a8f1a" d="M32 22c0-16 36-16 36 0q-18 14-36 0z"/>
+<path fill="#6a8f1a" d="M38 64h24l4 14H34z"/>
+<path fill="none" d="M44 28v14M56 28v14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hoodie" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hoodie" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

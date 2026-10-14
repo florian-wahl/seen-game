@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>catapult</title>
+<defs>
+<g id="seen-catapult">
+<path fill="#d9a47a" d="M24 66 74 20l5 5-50 46z"/>
+<circle fill="#6f3f1f" cx="80" cy="18" r="10"/>
+<path fill="none" d="M40 62l12-22 12 22"/>
+<path fill="#a9683c" d="M12 62h76v10H12z"/>
+<circle fill="#6f3f1f" cx="26" cy="76" r="10"/>
+<circle fill="#6f3f1f" cx="74" cy="76" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-catapult" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-catapult" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

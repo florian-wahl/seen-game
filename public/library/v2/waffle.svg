@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>waffle</title>
+<defs>
+<g id="seen-waffle">
+<circle fill="#d9a47a" cx="50" cy="52" r="38"/>
+<path fill="none" d="M34 18v69M50 14v76M66 18v69M16 36h68M12 52h76M16 68h68"/>
+<path fill="#ffe07a" d="M40 42h20v18H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-waffle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-waffle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

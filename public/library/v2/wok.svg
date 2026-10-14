@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>wok</title>
+<defs>
+<g id="seen-wok">
+<path fill="#a9683c" d="M68 42l22-8 3 7-22 8z"/>
+<path fill="#9bc53d" d="M24 42q6-10 12 0z"/>
+<path fill="#e5484d" d="M42 36h8v8h-8z"/>
+<path fill="#4d5968" d="M8 44h62q0 30-31 30T8 44z"/>
+<path fill="none" d="M18 54q21 8 42 0"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-wok" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-wok" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

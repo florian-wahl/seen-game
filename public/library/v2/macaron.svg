@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>macaron</title>
+<defs>
+<g id="seen-macaron">
+<path fill="#9bc53d" d="M14 44q0-24 36-24t36 24z"/>
+<path fill="#9bc53d" d="M14 62h72q0 20-36 20T14 62z"/>
+<path fill="#ffffff" d="M16 44h68v18H16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-macaron" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-macaron" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

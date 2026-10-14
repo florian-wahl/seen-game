@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tuk tuk</title>
+<defs>
+<g id="seen-tuk-tuk">
+<path fill="#f5b93f" d="M16 18h58q6 0 8 6l2 10H14l2-10z"/>
+<path fill="none" d="M20 34v16M50 34v16M74 34l8 16"/>
+<path fill="#2f9e6b" d="M12 50h62l14 6v16H12z"/>
+<circle fill="#4d5968" cx="26" cy="74" r="10"/>
+<circle fill="#4d5968" cx="76" cy="74" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tuk-tuk" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tuk-tuk" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

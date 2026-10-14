@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>jester hat</title>
+<defs>
+<g id="seen-jester-hat">
+<path fill="#e5484d" d="M26 66q-8-26-16-34 20 0 30 34z"/>
+<path fill="#e5484d" d="M74 66q8-26 16-34-20 0-30 34z"/>
+<path fill="#4a66d4" d="M36 66q4-30 14-50 10 20 14 50z"/>
+<path fill="#f5b93f" d="M22 64h56v14H22z"/>
+<circle fill="#f5b93f" cx="12" cy="32" r="6"/>
+<circle fill="#f5b93f" cx="50" cy="15" r="6"/>
+<circle fill="#f5b93f" cx="88" cy="32" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-jester-hat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-jester-hat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>grandfather clock</title>
+<defs>
+<g id="seen-grandfather-clock">
+<path fill="#a9683c" d="M28 26q0-18 22-18t22 18v12H28z"/>
+<circle fill="#fbf3e0" cx="50" cy="26" r="11"/>
+<path fill="none" d="M50 26v-7M50 26l5 3"/>
+<path fill="#a9683c" d="M34 38h32v44H34z"/>
+<path fill="#fbf3e0" d="M40 46h20v28H40z"/>
+<path fill="none" d="M50 46v16"/>
+<circle fill="#f5b93f" cx="50" cy="66" r="5"/>
+<path fill="#6f3f1f" d="M28 82h44v8H28z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-grandfather-clock" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-grandfather-clock" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

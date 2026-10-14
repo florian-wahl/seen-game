@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>milk churn</title>
+<defs>
+<g id="seen-milk-churn">
+<path fill="none" d="M26 46h-8v12h8M74 46h8v12h-8"/>
+<path fill="#4a66d4" d="M40 16h20v14H40z"/>
+<path fill="#4a66d4" d="M40 30h20l14 12v40a6 6 0 0 1-6 6H32a6 6 0 0 1-6-6V42z"/>
+<path fill="#ffffff" d="M26 56h48v10H26z"/>
+<path fill="#2c3f96" d="M36 8h28v8H36z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-milk-churn" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-milk-churn" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

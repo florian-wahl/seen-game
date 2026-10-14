@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>greenhouse</title>
+<defs>
+<g id="seen-greenhouse">
+<path fill="#8fd0f5" d="M14 40 50 12l36 28v48H14z"/>
+<path fill="none" d="M14 40h72M32 26v62M50 12v54M68 26v62M14 64h72"/>
+<path fill="#2f9e6b" d="M42 66h16v22H42z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-greenhouse" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-greenhouse" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

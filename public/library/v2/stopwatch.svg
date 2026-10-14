@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>stopwatch</title>
+<defs>
+<g id="seen-stopwatch">
+<path fill="#4d5968" d="M42 6h16v8H42z"/>
+<path fill="#4d5968" d="M47 14h6v10h-6z"/>
+<path fill="#4d5968" d="M72 20l6-6 7 7-6 6z"/>
+<circle fill="#2aa7a0" cx="50" cy="56" r="34"/>
+<circle fill="#ffffff" cx="50" cy="56" r="26"/>
+<path fill="none" d="M50 56V36M50 30v4M76 56h-4M50 82v-4M24 56h4"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-stopwatch" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-stopwatch" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

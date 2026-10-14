@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>snowmobile</title>
+<defs>
+<g id="seen-snowmobile">
+<path fill="none" d="M70 66v14"/>
+<path fill="#4d5968" d="M14 66h34a6 6 0 0 1 0 12H14a6 6 0 0 1 0-12z"/>
+<path fill="#4d5968" d="M44 80h36q6 0 6-6h4q0 12-10 12H44z"/>
+<path fill="#8fd0f5" d="M56 50l10-16h6l-4 16z"/>
+<path fill="#7d5fd0" d="M12 48h42l24 8q10 4 10 12H12z"/>
+<path fill="#1c1b22" d="M14 40h28v8H14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-snowmobile" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-snowmobile" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

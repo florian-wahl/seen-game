@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tugboat</title>
+<defs>
+<g id="seen-tugboat">
+<path fill="#f5b93f" d="M66 24h10v36H66z"/>
+<path fill="#1c1b22" d="M66 24h10v8H66z"/>
+<path fill="#ffffff" d="M30 38h32v22H30z"/>
+<path fill="#8fd0f5" d="M36 44h8v8h-8zM50 44h8v8h-8z"/>
+<path fill="#e5484d" d="M8 60h84l-10 22H18z"/>
+<circle fill="none" cx="26" cy="70" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tugboat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tugboat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

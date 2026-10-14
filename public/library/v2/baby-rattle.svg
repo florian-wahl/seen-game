@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baby rattle</title>
+<defs>
+<g id="seen-baby-rattle">
+<g transform="rotate(-35 50 50)">
+<path fill="#f7a8cf" fill-rule="evenodd" d="M36 78a14 14 0 1 0 28 0a14 14 0 1 0-28 0zM43 78a7 7 0 1 0 14 0a7 7 0 1 0-14 0z"/>
+<path fill="#f7a8cf" d="M46 48h8v18h-8z"/>
+<circle fill="#e0559a" cx="50" cy="30" r="20"/>
+<path fill="none" stroke-width="5" d="M42 24h.01M56 22h.01M50 36h.01M40 38h.01M60 34h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baby-rattle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baby-rattle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

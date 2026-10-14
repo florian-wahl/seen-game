@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chess rook</title>
+<defs>
+<g id="seen-chess-rook">
+<path fill="#fbf3e0" d="M26 10h10v8h8v-8h12v8h8v-8h10v24H26z"/>
+<path fill="#fbf3e0" d="M32 34h36l4 40H28z"/>
+<path fill="#fbf3e0" d="M18 74h64a4 4 0 0 1 4 4v10H14V78a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M34 46h32"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chess-rook" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chess-rook" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

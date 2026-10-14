@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>papaya</title>
+<defs>
+<g id="seen-papaya">
+<g transform="rotate(-30 50 50)">
+<ellipse fill="#9bc53d" cx="50" cy="50" rx="40" ry="22"/>
+<ellipse fill="#f08a3c" cx="50" cy="50" rx="34" ry="16"/>
+<path fill="#ffb074" d="M28 50q22-16 44 0q-22 16-44 0z"/>
+<path fill="none" stroke-width="6" d="M38 50h.01M48 50h.01M58 50h.01M44 44h.01M54 56h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-papaya" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-papaya" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

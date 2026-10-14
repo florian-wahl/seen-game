@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fortune cookie</title>
+<defs>
+<g id="seen-fortune-cookie">
+<path fill="#ffffff" d="M44 54l38 14-3 8-38-14z"/>
+<path fill="#f5b93f" d="M12 60c0-22 18-36 38-36s38 14 38 36c0 8-8 12-14 8-8-6-16-8-24-8s-16 2-24 8c-6 4-14 0-14-8z"/>
+<path fill="none" d="M50 26q-8 16 0 34"/>
+<path fill="none" d="M60 66l14 5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fortune-cookie" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fortune-cookie" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

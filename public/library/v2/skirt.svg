@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>skirt</title>
+<defs>
+<g id="seen-skirt">
+<path fill="#e0559a" d="M30 26h40l18 58H12z"/>
+<path fill="#a52c69" d="M28 14h44v12H28z"/>
+<path fill="none" d="M42 26l-8 58M58 26l8 58M50 26v58"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-skirt" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-skirt" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

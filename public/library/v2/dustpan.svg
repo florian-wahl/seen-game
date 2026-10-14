@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dustpan</title>
+<defs>
+<g id="seen-dustpan">
+<path fill="#2aa7a0" d="M44 12h12v34H44z"/>
+<path fill="#2aa7a0" d="M14 88l8-44h56l8 44z"/>
+<path fill="#17736f" d="M22 44h56v8H22z"/>
+<path fill="none" stroke-width="6" d="M50 20h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dustpan" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dustpan" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

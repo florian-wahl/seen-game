@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>silo</title>
+<defs>
+<g id="seen-silo">
+<path fill="#e8d5b0" d="M26 26h48v62H26z"/>
+<path fill="#3f9fdc" d="M26 28q0-22 24-22t24 22z"/>
+<path fill="none" d="M26 44h48M26 60h48M26 76h48"/>
+<path fill="#4d5968" d="M44 74h12v14H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-silo" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-silo" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

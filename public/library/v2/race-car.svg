@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>race car</title>
+<defs>
+<g id="seen-race-car">
+<path fill="none" d="M14 44v14"/>
+<path fill="#1c1b22" d="M8 38h16v6H8z"/>
+<circle fill="#f5b93f" cx="56" cy="46" r="7"/>
+<path fill="#4a66d4" d="M10 58l14-8h30l8-6h10l12 14h6v8H10z"/>
+<circle fill="#4d5968" cx="26" cy="68" r="11"/>
+<circle fill="#4d5968" cx="76" cy="68" r="11"/>
+<path fill="none" stroke-width="6" d="M26 68h.01M76 68h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-race-car" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-race-car" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pomegranate</title>
+<defs>
+<g id="seen-pomegranate">
+<path fill="#b3262d" d="M40 28l-4-16 8 6 6-8 6 8 8-6-4 16z"/>
+<circle fill="#b3262d" cx="50" cy="56" r="32"/>
+<path fill="none" d="M30 50q2-12 12-16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pomegranate" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pomegranate" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

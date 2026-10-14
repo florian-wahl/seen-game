@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>picnic table</title>
+<defs>
+<g id="seen-picnic-table">
+<path fill="none" d="M38 42 20 88M62 42l18 46M14 64h72"/>
+<path fill="#a9683c" d="M8 58h22v8H8zM70 58h22v8H70z"/>
+<path fill="#e5484d" d="M10 30h80v12H10z"/>
+<path fill="none" d="M30 30v12M50 30v12M70 30v12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-picnic-table" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-picnic-table" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

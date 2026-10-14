@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gramophone</title>
+<defs>
+<g id="seen-gramophone">
+<path fill="#f5b93f" d="M40 56 58 22q16-10 30 2 2 16-10 24z"/>
+<ellipse fill="#c98a0c" cx="74" cy="30" rx="14" ry="8" transform="rotate(40 74 30)"/>
+<path fill="#a9683c" d="M10 62h60v26H10z"/>
+<ellipse fill="#1c1b22" cx="38" cy="60" rx="24" ry="5"/>
+<path fill="none" stroke-width="7" d="M40 74h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gramophone" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gramophone" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bread loaf</title>
+<defs>
+<g id="seen-bread-loaf">
+<path fill="#d9a47a" d="M10 58q0-32 40-32t40 32v14a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z"/>
+<path fill="none" d="M30 40q6 6 4 14M48 36q6 6 4 14M66 40q6 6 4 14"/>
+<path fill="#a9683c" d="M10 64h80v8a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bread-loaf" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bread-loaf" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

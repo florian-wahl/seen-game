@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>canteen</title>
+<defs>
+<g id="seen-canteen">
+<path fill="none" d="M22 46q-8-38 28-38t28 38"/>
+<path fill="#4d5968" d="M42 12h16v8H42z"/>
+<path fill="#6a8f1a" d="M44 20h12v10H44z"/>
+<circle fill="#6a8f1a" cx="50" cy="58" r="32"/>
+<circle fill="none" cx="50" cy="58" r="24"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-canteen" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-canteen" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

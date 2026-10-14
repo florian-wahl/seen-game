@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>plumb bob</title>
+<defs>
+<g id="seen-plumb-bob">
+<path fill="none" d="M50 6v18"/>
+<path fill="#4d5968" d="M42 24h16v8H42z"/>
+<path fill="#f5b93f" d="M36 32h28v16L50 90 36 48z"/>
+<path fill="none" d="M36 44h28"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-plumb-bob" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-plumb-bob" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

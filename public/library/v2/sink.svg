@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sink</title>
+<defs>
+<g id="seen-sink">
+<path fill="none" d="M38 30V20a8 8 0 0 1 8-8h14v8"/>
+<path fill="#cfd6dc" d="M32 28h12v8H32z"/>
+<path fill="#ffffff" d="M10 36h80v8q0 22-40 22T10 44z"/>
+<path fill="#7fdcd3" d="M20 44h60q-4 14-30 14T20 44z"/>
+<path fill="#ffffff" d="M42 64h16v24H42z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sink" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sink" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cauldron</title>
+<defs>
+<g id="seen-cauldron">
+<path fill="#7fd3a0" d="M18 38c0-10 14-8 16-4 4-10 18-10 22-2 4-6 18-4 16 6z"/>
+<path fill="none" d="M28 76l-6 10M72 76l6 10"/>
+<path fill="#4d5968" d="M14 40h72q0 40-36 40T14 40z"/>
+<path fill="#4d5968" d="M14 34h72a4 4 0 0 1 0 8H14a4 4 0 0 1 0-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cauldron" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cauldron" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

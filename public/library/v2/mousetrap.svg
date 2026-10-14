@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>mousetrap</title>
+<defs>
+<g id="seen-mousetrap">
+<path fill="none" d="M24 56V36h40v20"/>
+<path fill="#f5b93f" d="M62 56l20-18v18z"/>
+<path fill="#d9a47a" d="M10 56h80v14H10z"/>
+<path fill="#a9683c" d="M10 70h80v8H10z"/>
+<circle fill="#8d99a6" cx="44" cy="56" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-mousetrap" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-mousetrap" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

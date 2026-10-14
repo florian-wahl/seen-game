@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>turntable</title>
+<defs>
+<g id="seen-turntable">
+<path fill="#e8d5b0" d="M14 14h72a6 6 0 0 1 6 6v60a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/>
+<circle fill="#1c1b22" cx="42" cy="50" r="28"/>
+<circle fill="#e5484d" cx="42" cy="50" r="8"/>
+<path fill="none" d="M80 22v40l-16 8"/>
+<circle fill="#cfd6dc" cx="80" cy="22" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-turntable" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-turntable" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>
