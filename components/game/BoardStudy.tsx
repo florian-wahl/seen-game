@@ -57,7 +57,7 @@ export function BoardStudy({ gameId, tiles, boardSize }: { gameId: string; tiles
       </div>
       <div className="mx-2 mb-2 min-h-0 flex-1 overflow-hidden rounded-[22px]" style={{ marginBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}>
         <div className="relative h-full min-h-0">
-          {images && <BoardCanvas board={board} images={images} onTap={noop} className="absolute inset-0" />}
+          {images && <BoardCanvas board={board} images={images} onTap={noop} fullZoomOut className="absolute inset-0" />}
         </div>
       </div>
     </div>

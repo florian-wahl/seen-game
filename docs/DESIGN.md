@@ -189,8 +189,9 @@ code — it has breaking changes vs older versions), Tailwind 4, `@supabase/ssr`
 **Board renderer (`components/board/`):** one Canvas 2D, camera `{x, y, zoom}`;
 each frame clears and `drawImage`s visible tiles only; `devicePixelRatio`
 aware. SVG → `ImageBitmap` at 128 px; re-rasterize at 256 px when a tile exceeds
-128 device px; cache by picture id. Zoom: min = full board width; default = half
-the board width (~quarter of the board); max = tile ≈ 160 px. Wrong tap: red
+128 device px; cache by picture id. Zoom: default = half the board width (~quarter
+of the board); during a round, zoom out stops at the default (seeing more makes it too easy);
+the board study screen can zoom out to the full board width; max = tile ≈ 160 px. Wrong tap: red
 flash + floating "+5 s" (600 ms). Correct: green ring.
 
 **Gestures (`useBoardGestures`):** Pointer Events, `touch-action: none`. One
