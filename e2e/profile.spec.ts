@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { admin, createStartedGame, openTurn, playTurnViaRpc, uniqueEmail } from "./helpers/game";
+import { admin, createStartedGame, openTurn, playTurnViaRpc, remindOpenTurn, uniqueEmail } from "./helpers/game";
 
 const MAILPIT = process.env.E2E_MAILPIT_URL ?? "http://127.0.0.1:54324";
 
@@ -46,7 +46,7 @@ test("profile: rename from the account menu; preferences persist", async ({ page
   await expect(page.getByTestId("enable-notifications")).toHaveCount(0); // push is off: no nudge on Home
 });
 
-test("email off: no 'Your turn' email, and the outbox row is still marked sent", async ({ page }) => {
+test("email off: no reminder email, and the outbox row is still marked sent", async ({ page }) => {
   const quiet = uniqueEmail("quiet");
   const loud = uniqueEmail("loud");
   await page.goto(`/dev/login?email=${quiet}&name=Quiet&next=/profile`);
@@ -62,25 +62,28 @@ test("email off: no 'Your turn' email, and the outbox row is still marked sent",
     "Vault secret notify_url is not set: run `npm run db:setup-notify` (and start the dev server) to enable this test",
   );
 
-  // Make sure the quiet player has had a turn come up.
   const quietUser = g.users.find((u) => u.email === quiet)!;
   const loudUser = g.users.find((u) => u.email === loud)!;
+  const reminderSent = (userId: string) => async () => {
+    const { data } = await admin()
+      .from("notification_outbox")
+      .select("sent_at")
+      .eq("game_id", g.gameId)
+      .eq("user_id", userId)
+      .eq("kind", "reminder");
+    return !!data?.length && data.every((r) => r.sent_at);
+  };
+
+  // Control: with email on, the loud player's reminder arrives. Then the quiet player is up.
   if (g.firstUser.id !== quietUser.id) {
     expect((await openTurn(g.gameId))?.user_id).toBe(loudUser.id);
+    await remindOpenTurn(g.gameId);
+    await expect.poll(reminderSent(loudUser.id)).toBe(true);
+    await expect.poll(() => mailCount(loud, g.gameId)).toBe(1);
     await playTurnViaRpc(loudUser, g.gameId);
   }
   expect((await openTurn(g.gameId))?.user_id).toBe(quietUser.id);
-
-  const quietRow = async () =>
-    (
-      await admin()
-        .from("notification_outbox")
-        .select("sent_at")
-        .eq("game_id", g.gameId)
-        .eq("user_id", quietUser.id)
-        .eq("kind", "your_turn")
-    ).data ?? [];
-  await expect.poll(async () => (await quietRow()).length > 0 && (await quietRow()).every((r) => r.sent_at)).toBe(true);
+  await remindOpenTurn(g.gameId);
+  await expect.poll(reminderSent(quietUser.id)).toBe(true);
   expect(await mailCount(quiet, g.gameId)).toBe(0);
-  if (g.firstUser.id !== quietUser.id) expect(await mailCount(loud, g.gameId)).toBeGreaterThan(0); // control: email works
 });
