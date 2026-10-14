@@ -422,15 +422,16 @@ export function PlayScreen(props: PlayScreenProps) {
         <div className="min-w-0 flex-1">
           <div className={`font-wide text-5xl font-extrabold leading-none tabular-nums ${clockColor}`} data-testid="clock">
             {formatSeconds(shownMs)}
-            <span className="text-2xl"> s</span>
           </div>
           <div className="mt-1.5 flex items-center gap-2 text-xs text-muted">
             {wrongTaps > 0 && (
-              <span className="rounded-full bg-magenta px-2 py-0.5 font-wide text-[12px] font-black uppercase text-ink">
-                +{penaltySecs} S
+              <span className="whitespace-nowrap rounded-full bg-magenta px-2 py-0.5 font-wide text-[12px] font-black text-ink">
+                +{penaltySecs}
               </span>
             )}
-            <span data-testid="wrong-count">{wrongTaps} wrong</span>
+            <span className="whitespace-nowrap" data-testid="wrong-count">
+              {wrongTaps} wrong
+            </span>
           </div>
         </div>
         <div className="flex flex-col items-end gap-1.5">
@@ -438,11 +439,12 @@ export function PlayScreen(props: PlayScreenProps) {
             {roundNo}
             <span className="text-dim">/{rounds}</span>
           </div>
-          <div className="flex gap-1" aria-hidden="true">
+          {/* 20 full-size dots would be wider than the space a phone leaves next to the clock. */}
+          <div className={`flex ${rounds > 10 ? "gap-0.5" : "gap-1"}`} aria-hidden="true">
             {Array.from({ length: rounds }, (_, i) => (
               <span
                 key={i}
-                className={`h-1 w-3 rounded-full ${i < roundNo - 1 ? "bg-cream" : i === roundNo - 1 ? "bg-mustard" : "bg-line-strong"}`}
+                className={`h-1 ${rounds > 10 ? "w-1.5" : "w-3"} rounded-full ${i < roundNo - 1 ? "bg-cream" : i === roundNo - 1 ? "bg-mustard" : "bg-line-strong"}`}
               />
             ))}
           </div>
