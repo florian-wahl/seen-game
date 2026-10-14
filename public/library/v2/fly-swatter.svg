@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fly swatter</title>
+<defs>
+<g id="seen-fly-swatter">
+<g transform="rotate(-40 50 50)">
+<path fill="#e0559a" d="M6 46h52v8H6z"/>
+<path fill="#9bc53d" d="M56 30h34v40H56z"/>
+<path fill="none" d="M64 30v40M73 30v40M82 30v40M56 40h34M56 50h34M56 60h34"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fly-swatter" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fly-swatter" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

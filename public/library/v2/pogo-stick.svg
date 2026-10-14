@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pogo stick</title>
+<defs>
+<g id="seen-pogo-stick">
+<path fill="#4d5968" d="M30 10h40v8H30z"/>
+<path fill="#e5484d" d="M46 18h8v48h-8z"/>
+<path fill="#4d5968" d="M30 54h40v7H30z"/>
+<path fill="none" d="M44 66l12 4-12 4 12 4-12 4"/>
+<path fill="#1c1b22" d="M46 84h8v6h-8z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pogo-stick" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pogo-stick" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

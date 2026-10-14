@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bike helmet</title>
+<defs>
+<g id="seen-bike-helmet">
+<path fill="none" d="M30 64q4 22 20 22M68 64q-4 22-18 22"/>
+<path fill="#9bc53d" d="M10 64q0-42 42-42 38 0 40 32l-4 10z"/>
+<path fill="#1c1b22" d="M30 40l8-8h8l-6 10zM50 32h10l2 10H52zM68 34l8 4-2 8-8-4z"/>
+<path fill="#6a8f1a" d="M10 60h28v6H10z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bike-helmet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bike-helmet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

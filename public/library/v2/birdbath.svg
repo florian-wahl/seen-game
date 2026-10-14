@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>birdbath</title>
+<defs>
+<g id="seen-birdbath">
+<path fill="#e8d5b0" d="M42 50h16l-4 30h-8z"/>
+<path fill="#e8d5b0" d="M28 80h44v8H28z"/>
+<path fill="#e8d5b0" d="M10 30h80q-4 22-40 22T10 30z"/>
+<path fill="#8fd0f5" d="M18 30h64q-8 10-32 10T18 30z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-birdbath" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-birdbath" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

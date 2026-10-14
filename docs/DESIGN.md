@@ -74,7 +74,7 @@ A lobby idle 7 days is abandoned.
 
 ## 3. Board and picture library
 
-- Library: 400–500 illustrations of everyday objects, one consistent style, one
+- Library: ~750 illustrations of everyday objects, one consistent style, one
   object per picture, transparent background, SVG. Each picture: id, name,
   category, review status (draft/approved/rejected). Confusable pairs are flagged
   and never share a board. Development uses placeholder images.

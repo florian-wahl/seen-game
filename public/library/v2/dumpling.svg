@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dumpling</title>
+<defs>
+<g id="seen-dumpling">
+<path fill="#2aa7a0" d="M8 72h84l-6 12H14z"/>
+<path fill="#fbf3e0" d="M10 66c0-24 18-40 40-40s40 16 40 40q-40 14-80 0z"/>
+<path fill="none" d="M30 36l4 10M42 30l2 10M56 30l-2 10M68 36l-4 10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dumpling" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dumpling" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

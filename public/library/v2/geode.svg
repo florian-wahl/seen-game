@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>geode</title>
+<defs>
+<g id="seen-geode">
+<path fill="#8d99a6" d="M10 56c0-22 18-38 40-38s40 16 40 38-18 30-40 30-40-8-40-30z"/>
+<path fill="#ffffff" d="M20 56c0-16 14-28 30-28s30 12 30 28-14 22-30 22-30-6-30-22z"/>
+<path fill="#7d5fd0" d="M28 56c0-12 10-20 22-20s22 8 22 20-10 16-22 16-22-4-22-16z"/>
+<path fill="none" d="M34 52l6 6 6-10 6 12 6-8 6 6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-geode" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-geode" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

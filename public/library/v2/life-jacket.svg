@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>life jacket</title>
+<defs>
+<g id="seen-life-jacket">
+<path fill="#f08a3c" d="M30 12h12q0 14 8 14t8-14h12l14 18v52a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6V30z"/>
+<path fill="none" d="M50 26v62"/>
+<path fill="#4d5968" d="M16 50h68v6H16zM16 68h68v6H16z"/>
+<path fill="#cfd6dc" d="M44 48h12v10H44zM44 66h12v10H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-life-jacket" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-life-jacket" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

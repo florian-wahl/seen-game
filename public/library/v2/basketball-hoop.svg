@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>basketball hoop</title>
+<defs>
+<g id="seen-basketball-hoop">
+<path fill="#ffffff" d="M14 8h72v44H14z"/>
+<path fill="none" d="M38 28h24v16H38z"/>
+<path fill="#ffffff" d="M32 56h36l-6 30H38z"/>
+<path fill="none" d="M41 56l4 30M50 56v30M59 56l-4 30M34 66h32M36 76h28"/>
+<path fill="#f08a3c" d="M28 50h44v7H28z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-basketball-hoop" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-basketball-hoop" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

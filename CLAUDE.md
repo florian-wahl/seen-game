@@ -20,5 +20,5 @@
 - Worktrees: copy env with `cp /Users/flwahl/Code/seen-game/.env.local .` and run `npm install`.
 - Contracts for front end: `docs/API.md` (RPCs, errors, Realtime), `lib/game/types.ts`.
 - Dev sign-in (local only): open `/dev/login?email=alice@test.local&name=Alice&next=/` to become that user.
-- Pictures: `public/library/v1/` is the live set (owner's art; `manifest.json` holds categories + confusables); `placeholder/` is for dev via `NEXT_PUBLIC_LIBRARY_DIR=placeholder`. Stage explicit paths, not `git add -A`.
+- Pictures: `public/library/v2/` is the live set: the owner's 500 v1 pictures plus 250 added for issue #4 in the same style (`seen-object-svg` skill); `manifest.json` holds categories + confusables; `placeholder/` is for dev via `NEXT_PUBLIC_LIBRARY_DIR=placeholder`. Stage explicit paths, not `git add -A`.
 - Notifications (M6): `npm run db:setup-notify` stores Vault secrets `notify_url` (→ `host.docker.internal:3004`) and `notify_secret` so the outbox trigger can POST `/api/jobs/notify`; env: `NOTIFY_SECRET`, `APP_URL` (base URL for links; fallback is the request origin), `RESEND_API_KEY` + `EMAIL_FROM` (without a key, email goes by SMTP to Mailpit on `SMTP_PORT`, default 54325), `NEXT_PUBLIC_VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY`/`VAPID_SUBJECT`. Icons: `npx tsx scripts/make-icons.ts`.

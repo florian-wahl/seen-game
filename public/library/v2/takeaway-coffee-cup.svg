@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>coffee cup</title>
+<defs>
+<g id="seen-takeaway-coffee-cup">
+<path fill="#ffffff" d="M24 24h52l-6 64H30z"/>
+<path fill="#a9683c" d="M26 42h48l-2 24H28z"/>
+<path fill="#4d5968" d="M30 10h40v8H30z"/>
+<path fill="#4d5968" d="M20 16h60a4 4 0 0 1 4 4v6H16v-6a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-takeaway-coffee-cup" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-takeaway-coffee-cup" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>set square</title>
+<defs>
+<g id="seen-set-square">
+<path fill="#2aa7a0" fill-rule="evenodd" d="M12 86V14l74 72zM24 74h33L24 41z"/>
+<path fill="none" d="M12 30h6M12 46h6M12 62h6M30 86v-6M50 86v-6M70 86v-6"/>
+<path fill="none" d="M24 74h33L24 41z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-set-square" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-set-square" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

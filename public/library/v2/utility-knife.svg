@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>utility knife</title>
+<defs>
+<g id="seen-utility-knife">
+<g transform="rotate(-35 50 50)">
+<path fill="#cfd6dc" d="M68 44h14l8 12H68z"/>
+<path fill="#f5b93f" d="M8 40h56a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H8a4 4 0 0 1-4-4V44a4 4 0 0 1 4-4z"/>
+<path fill="#4d5968" d="M30 34h12v8H30z"/>
+<path fill="none" d="M14 50h40"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-utility-knife" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-utility-knife" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

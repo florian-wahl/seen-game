@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sleigh</title>
+<defs>
+<g id="seen-sleigh">
+<path fill="none" d="M26 68v12M62 68v12"/>
+<path fill="#f5b93f" d="M8 80h64q12 0 12-12v-2h6v2q0 18-18 18H8z"/>
+<path fill="#e5484d" d="M12 30q0-6 6-6h10q4 0 4 6v22h40q14 0 14-14h6q0 32-30 32H24q-12 0-12-12z"/>
+<path fill="none" d="M18 60h56"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sleigh" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sleigh" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

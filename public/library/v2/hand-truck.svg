@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>hand truck</title>
+<defs>
+<g id="seen-hand-truck">
+<path fill="none" d="M30 12q-8-2-10 6"/>
+<path fill="#d9a47a" d="M50 42h30v38H50z"/>
+<path fill="none" d="M50 56h30"/>
+<path fill="#e5484d" d="M30 10l8-2 14 72-8 2z"/>
+<path fill="#e5484d" d="M42 78h40v7H42z"/>
+<circle fill="#4d5968" cx="44" cy="84" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-hand-truck" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-hand-truck" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

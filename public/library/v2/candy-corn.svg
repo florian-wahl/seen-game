@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>candy corn</title>
+<defs>
+<g id="seen-candy-corn">
+<path fill="#f5b93f" d="M50 10c10 0 34 58 34 66 0 8-14 12-34 12s-34-4-34-12c0-8 24-66 34-66z"/>
+<path fill="#f08a3c" d="M50 10c6 0 18 28 26 48H24c8-20 20-48 26-48z"/>
+<path fill="#ffffff" d="M50 10c4 0 10 12 14 22H36c4-10 10-22 14-22z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-candy-corn" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-candy-corn" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

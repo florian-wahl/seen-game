@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>fanny pack</title>
+<defs>
+<g id="seen-fanny-pack">
+<path fill="none" d="M8 46q42-12 84 0"/>
+<path fill="#2aa7a0" d="M22 40h56a8 8 0 0 1 8 8q0 30-36 30q-36 0-36-30a8 8 0 0 1 8-8z"/>
+<path fill="none" d="M20 54q30 10 60 0"/>
+<path fill="#f5b93f" d="M62 58h7v12h-7z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-fanny-pack" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-fanny-pack" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

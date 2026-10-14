@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>video camera</title>
+<defs>
+<g id="seen-video-camera">
+<path fill="none" d="M20 30v-8h30v8"/>
+<path fill="#4d5968" d="M16 30h46a6 6 0 0 1 6 6v36a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V36a6 6 0 0 1 6-6z"/>
+<path fill="#cfd6dc" d="M68 42l20-8v40l-20-8z"/>
+<path fill="#2aa7a0" d="M16 38h22v16H16z"/>
+<circle fill="#e5484d" cx="54" cy="44" r="5"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-video-camera" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-video-camera" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>genie lamp</title>
+<defs>
+<g id="seen-genie-lamp">
+<path fill="none" d="M74 52q16-2 14 12-2 10-14 8"/>
+<path fill="#f5b93f" d="M34 60L10 46l4-4 28 10z"/>
+<path fill="#f5b93f" d="M26 62q0-14 24-14t24 14q0 12-24 12T26 62z"/>
+<path fill="#c98a0c" d="M40 50q10-10 20 0z"/>
+<path fill="none" stroke-width="7" d="M50 40h.01"/>
+<path fill="#c98a0c" d="M42 74h16l4 8H38z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-genie-lamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-genie-lamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>stool</title>
+<defs>
+<g id="seen-stool">
+<path fill="#a9683c" d="M28 26h8l-8 62h-8zM64 26h8l8 62h-8z"/>
+<path fill="none" d="M50 26v62M26 64h48"/>
+<path fill="#f08a3c" d="M22 14h56a6 6 0 0 1 0 12H22a6 6 0 0 1 0-12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-stool" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-stool" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

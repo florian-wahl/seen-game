@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pill bottle</title>
+<defs>
+<g id="seen-pill-bottle">
+<path fill="#f08a3c" d="M26 30h48v50a8 8 0 0 1-8 8H34a8 8 0 0 1-8-8z"/>
+<path fill="#ffffff" d="M26 10h48a4 4 0 0 1 4 4v16H22V14a4 4 0 0 1 4-4z"/>
+<path fill="#ffffff" d="M26 46h48v24H26z"/>
+<path fill="none" d="M34 16v8M44 16v8M54 16v8M64 16v8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pill-bottle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pill-bottle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

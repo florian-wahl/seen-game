@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dump truck</title>
+<defs>
+<g id="seen-dump-truck">
+<path fill="#f5b93f" d="M8 24l50 8-4 30H14z"/>
+<path fill="#e5484d" d="M60 36h18l12 16v18H60z"/>
+<path fill="#8fd0f5" d="M64 40h12l8 12H64z"/>
+<path fill="#4d5968" d="M10 62h80v8H10z"/>
+<circle fill="#4d5968" cx="26" cy="76" r="10"/>
+<circle fill="#4d5968" cx="74" cy="76" r="10"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dump-truck" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dump-truck" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

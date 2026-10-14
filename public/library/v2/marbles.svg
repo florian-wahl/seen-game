@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>marbles</title>
+<defs>
+<g id="seen-marbles">
+<circle fill="#9bc53d" cx="56" cy="30" r="16"/>
+<circle fill="#3f9fdc" cx="32" cy="62" r="20"/>
+<circle fill="#e5484d" cx="70" cy="68" r="16"/>
+<path fill="none" d="M20 60q0-10 10-12M60 66q0-8 8-9M46 28q0-8 8-9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-marbles" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-marbles" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

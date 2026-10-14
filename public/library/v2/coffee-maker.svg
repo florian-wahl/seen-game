@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>coffee maker</title>
+<defs>
+<g id="seen-coffee-maker">
+<path fill="#17736f" d="M14 10h62a4 4 0 0 1 4 4v14H14z"/>
+<path fill="#17736f" d="M14 28h20v52H14z"/>
+<path fill="none" d="M72 56h6v14h-6"/>
+<path fill="#6f3f1f" d="M40 46h32v30H40z"/>
+<path fill="#17736f" d="M14 78h66v10H14z"/>
+<path fill="none" stroke-width="6" d="M24 40h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-coffee-maker" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-coffee-maker" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

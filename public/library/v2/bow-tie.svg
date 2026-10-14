@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bow tie</title>
+<defs>
+<g id="seen-bow-tie">
+<path fill="#4a66d4" d="M44 44 12 24v52l32-20z"/>
+<path fill="#4a66d4" d="M56 44l32-20v52L56 56z"/>
+<path fill="none" d="M22 38l10 12-10 12M78 38l-10 12 10 12"/>
+<path fill="#2c3f96" d="M46 40h8a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V44a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bow-tie" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bow-tie" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

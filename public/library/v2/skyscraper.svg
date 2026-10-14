@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>skyscraper</title>
+<defs>
+<g id="seen-skyscraper">
+<path fill="none" d="M50 4v8"/>
+<path fill="#93a8f0" d="M12 46h20v44H12zM68 56h20v34H68z"/>
+<path fill="#3f9fdc" d="M38 10h24v6H38z"/>
+<path fill="#3f9fdc" d="M32 16h36v74H32z"/>
+<path fill="none" d="M32 28h36M32 40h36M32 52h36M32 64h36M32 76h36M44 16v74M56 16v74"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-skyscraper" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-skyscraper" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tree stump</title>
+<defs>
+<g id="seen-tree-stump">
+<path fill="#a9683c" d="M20 40v36q-8 10-12 12h84q-4-2-12-12V40z"/>
+<ellipse fill="#d9a47a" cx="50" cy="40" rx="30" ry="10"/>
+<ellipse fill="none" cx="50" cy="40" rx="16" ry="5"/>
+<path fill="none" d="M32 56v18M50 54v22M68 56v18"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-tree-stump" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-tree-stump" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

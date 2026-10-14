@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>spray paint</title>
+<defs>
+<g id="seen-spray-paint">
+<path fill="none" stroke-width="7" d="M56 10h.01"/>
+<path fill="#e0559a" d="M34 26q0-14 16-14t16 14z"/>
+<path fill="#2aa7a0" d="M30 26h40v58a6 6 0 0 1-6 6H36a6 6 0 0 1-6-6z"/>
+<path fill="#ffffff" d="M30 44h40v24H30z"/>
+<path fill="#e0559a" d="M38 52h24v8H38z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-spray-paint" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-spray-paint" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

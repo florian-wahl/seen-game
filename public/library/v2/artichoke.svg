@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>artichoke</title>
+<defs>
+<g id="seen-artichoke">
+<path fill="#1b6b49" d="M46 76h8v14h-8z"/>
+<path fill="#2aa7a0" d="M50 12c14 10 32 26 32 44 0 14-14 24-32 24S18 70 18 56c0-18 18-34 32-44z"/>
+<path fill="none" d="M36 34l7-7 7 7 7-7 7 7M26 50l8-8 8 8 8-8 8 8 8-8 8 8M22 66l9-9 9 9 9-9 9 9 9-9 9 9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-artichoke" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-artichoke" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

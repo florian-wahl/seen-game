@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>chicken coop</title>
+<defs>
+<g id="seen-chicken-coop">
+<path fill="none" d="M22 70v18M78 70v18"/>
+<path fill="#d9a47a" d="M18 40h64v30H18z"/>
+<path fill="#e5484d" d="M8 42 50 14l42 28z"/>
+<path fill="#6f3f1f" d="M42 50h16v20H42z"/>
+<path fill="#a9683c" d="M44 68h12L32 90H20z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-chicken-coop" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-chicken-coop" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

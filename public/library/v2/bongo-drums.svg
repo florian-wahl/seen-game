@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bongo drums</title>
+<defs>
+<g id="seen-bongo-drums">
+<path fill="#a9683c" d="M10 30h36l-4 54H14z"/>
+<path fill="#a9683c" d="M50 40h34l-4 44H54z"/>
+<ellipse fill="#fbf3e0" cx="28" cy="30" rx="18" ry="6"/>
+<ellipse fill="#fbf3e0" cx="67" cy="40" rx="17" ry="5"/>
+<path fill="none" d="M14 52h30M54 60h28M46 58h6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bongo-drums" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bongo-drums" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

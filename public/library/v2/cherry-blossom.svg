@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>cherry blossom</title>
+<defs>
+<g id="seen-cherry-blossom">
+<path fill="none" d="M10 84q30-10 40-34t36-30M36 70l-10 4"/>
+<path fill="#f7a8cf" d="M33 48a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM40.6 53.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM37.7 62.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM28.3 62.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM25.4 53.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0z"/>
+<path fill="#f7a8cf" d="M63 18a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM70.6 23.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM67.7 32.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM58.3 32.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0zM55.4 23.5a7 7 0 1 0 14 0a7 7 0 1 0-14 0z"/>
+<circle fill="#e0559a" cx="24" cy="76" r="6"/>
+<path fill="none" stroke-width="6" d="M40 56h.01M70 26h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-cherry-blossom" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-cherry-blossom" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

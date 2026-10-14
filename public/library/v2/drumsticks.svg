@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>drumsticks</title>
+<defs>
+<g id="seen-drumsticks">
+<path fill="#d9a47a" d="M18 82 76 18l6 5-58 64z"/>
+<path fill="#a9683c" d="M82 82 24 18l-6 5 58 64z"/>
+<circle fill="#d9a47a" cx="80" cy="18" r="6"/>
+<circle fill="#a9683c" cx="20" cy="18" r="6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-drumsticks" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-drumsticks" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

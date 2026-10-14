@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>kettle</title>
+<defs>
+<g id="seen-kettle">
+<path fill="#9bc53d" d="M66 26h14a6 6 0 0 1 6 6v32a6 6 0 0 1-6 6H68v-8h10V34H66z"/>
+<path fill="#9bc53d" d="M28 26l-16-6 2 12 14 6z"/>
+<path fill="#9bc53d" d="M28 22h38l4 56H24z"/>
+<path fill="#6a8f1a" d="M32 14h30v8H32z"/>
+<path fill="none" d="M36 38v30"/>
+<path fill="#4d5968" d="M18 78h58v10H18z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-kettle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-kettle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

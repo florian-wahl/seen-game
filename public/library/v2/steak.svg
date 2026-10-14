@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>steak</title>
+<defs>
+<g id="seen-steak">
+<path fill="#fbf3e0" d="M20 30c14-16 50-16 64 0 12 14 6 40-14 50-20 10-46 6-56-10-8-14-6-28 6-40z"/>
+<path fill="#e5484d" d="M28 36c10-10 38-12 50 0 10 10 4 30-12 38-16 8-36 4-42-8-6-10-4-22 4-30z"/>
+<path fill="#ffffff" d="M60 30h8v44h-8z"/>
+<path fill="none" d="M30 58q8-8 20-6"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-steak" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-steak" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

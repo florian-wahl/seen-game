@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>armchair</title>
+<defs>
+<g id="seen-armchair">
+<path fill="#2aa7a0" d="M24 16h52a8 8 0 0 1 8 8v32H16V24a8 8 0 0 1 8-8z"/>
+<path fill="#7fdcd3" d="M24 54h52v18H24z"/>
+<path fill="#17736f" d="M18 38a8 8 0 0 1 8 8v34H10V46a8 8 0 0 1 8-8zM82 38a8 8 0 0 1 8 8v34H74V46a8 8 0 0 1 8-8z"/>
+<path fill="none" d="M18 80v8M82 80v8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-armchair" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-armchair" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

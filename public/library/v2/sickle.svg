@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>sickle</title>
+<defs>
+<g id="seen-sickle">
+<path fill="#cfd6dc" d="M34 64C14 42 26 10 58 10c18 0 32 14 32 30-8-14-20-20-34-20-22 0-32 24-16 42z"/>
+<path fill="#a9683c" d="M32 58l8 6-20 26-8-6z"/>
+<path fill="none" stroke-width="5" d="M30 70h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-sickle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-sickle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

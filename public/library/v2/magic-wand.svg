@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>magic wand</title>
+<defs>
+<g id="seen-magic-wand">
+<path fill="#1c1b22" d="M14 80l42-42 6 6-42 42z"/>
+<path fill="#ffffff" d="M14 80l6-6 6 6-6 6z"/>
+<path fill="#f5b93f" d="M66 12L70.7 25.5 85 25.8 73.6 34.5 77.8 48.2 66 40 54.2 48.2 58.4 34.5 47 25.8 61.3 25.5z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-magic-wand" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-magic-wand" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

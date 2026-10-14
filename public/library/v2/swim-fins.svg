@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>swim fins</title>
+<defs>
+<g id="seen-swim-fins">
+<path fill="#3f9fdc" d="M18 12h16v28l12 44q-20 6-40 0l12-44z"/>
+<path fill="#3f9fdc" d="M62 12h16v28l12 44q-20 6-40 0l12-44z"/>
+<path fill="#1f6ea8" d="M18 12h16v18H18zM62 12h16v18H62z"/>
+<path fill="none" d="M26 50v30M70 50v30"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-swim-fins" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-swim-fins" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

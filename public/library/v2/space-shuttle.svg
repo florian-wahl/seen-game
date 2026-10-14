@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>space shuttle</title>
+<defs>
+<g id="seen-space-shuttle">
+<path fill="#4d5968" d="M40 76h20l3 12H37z"/>
+<path fill="#cfd6dc" d="M42 48 16 78h26zM58 48l26 30H58z"/>
+<path fill="#ffffff" d="M42 26q0-18 8-18t8 18v52H42z"/>
+<path fill="#4d5968" d="M42 26q0-18 8-18t8 18z"/>
+<path fill="none" d="M46 40h8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-space-shuttle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-space-shuttle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>filing cabinet</title>
+<defs>
+<g id="seen-filing-cabinet">
+<path fill="#8d99a6" d="M22 8h56v80H22z"/>
+<path fill="#cfd6dc" d="M28 14h44v20H28zM28 38h44v20H28zM28 62h44v20H28z"/>
+<path fill="none" d="M42 28h16M42 52h16M42 76h16"/>
+<path fill="#ffffff" d="M44 18h12v5H44zM44 42h12v5H44zM44 66h12v5H44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-filing-cabinet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-filing-cabinet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

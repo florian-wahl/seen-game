@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>diamond</title>
+<defs>
+<g id="seen-diamond">
+<path fill="#8fd0f5" d="M26 20h48l18 22-42 46L8 42z"/>
+<path fill="#ffffff" d="M38 20h24l8 22H30z"/>
+<path fill="none" d="M8 42h84M30 42l20 46 20-46"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-diamond" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-diamond" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

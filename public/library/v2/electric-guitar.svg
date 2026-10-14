@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>electric guitar</title>
+<defs>
+<g id="seen-electric-guitar">
+<g transform="rotate(-40 50 50)">
+<path fill="#d9a47a" d="M44 46h40v8H44z"/>
+<path fill="#6f3f1f" d="M82 42h8v16h-8z"/>
+<path fill="#e5484d" d="M10 50c0-12 8-18 16-14 4-10 18-10 22 0 4 4 4 24 0 28-4 10-18 10-22 0-8 4-16-2-16-14z"/>
+<path fill="#1c1b22" d="M22 44h6v12h-6zM32 44h6v12h-6z"/>
+<path fill="none" d="M14 50h30"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-electric-guitar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-electric-guitar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

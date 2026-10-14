@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>snowflake</title>
+<defs>
+<g id="seen-snowflake">
+<path fill="none" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<path fill="none" transform="rotate(60 50 50)" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<path fill="none" transform="rotate(120 50 50)" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<path fill="none" transform="rotate(180 50 50)" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<path fill="none" transform="rotate(240 50 50)" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<path fill="none" transform="rotate(300 50 50)" d="M50 50V12M42 20l8 8 8-8M44 32l6 6 6-6"/>
+<circle fill="#8fd0f5" cx="50" cy="50" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-snowflake" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-snowflake" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

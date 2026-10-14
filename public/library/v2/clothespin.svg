@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clothespin</title>
+<defs>
+<g id="seen-clothespin">
+<g transform="rotate(-50 50 50)">
+<path fill="#9bc53d" d="M10 38h72a5 5 0 0 1 0 10H10z"/>
+<path fill="#9bc53d" d="M10 52h72a5 5 0 0 1 0 10H10z"/>
+<path fill="#8d99a6" d="M48 32h10v36H48z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clothespin" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clothespin" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

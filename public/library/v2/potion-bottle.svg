@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>potion bottle</title>
+<defs>
+<g id="seen-potion-bottle">
+<path fill="#ffffff" d="M42 22h16v18H42z"/>
+<circle fill="#ffffff" cx="50" cy="62" r="26"/>
+<path fill="#9bc53d" d="M26 66h48a24 24 0 0 1-48 0z"/>
+<path fill="none" stroke-width="5" d="M42 76h.01M56 72h.01"/>
+<path fill="#a9683c" d="M40 10h20v12H40z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-potion-bottle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-potion-bottle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

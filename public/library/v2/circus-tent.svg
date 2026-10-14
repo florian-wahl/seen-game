@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>circus tent</title>
+<defs>
+<g id="seen-circus-tent">
+<path fill="none" d="M50 6v12"/>
+<path fill="#f5b93f" d="M50 6h12l-4 4 4 4H50z"/>
+<path fill="#ffffff" d="M16 50h68v38H16z"/>
+<path fill="#e5484d" d="M24 50h10v38H24zM45 50h10v38H45zM66 50h10v38H66z"/>
+<path fill="#e5484d" d="M50 16 88 52H12z"/>
+<path fill="#2c3f96" d="M42 88V70q8-8 16 0v18z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-circus-tent" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-circus-tent" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

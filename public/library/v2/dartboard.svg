@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dartboard</title>
+<defs>
+<g id="seen-dartboard">
+<circle fill="#2f9e6b" cx="46" cy="54" r="36"/>
+<circle fill="#fbf3e0" cx="46" cy="54" r="27"/>
+<path fill="none" d="M46 27v54M19 54h54M27 35l38 38M65 35 27 73"/>
+<circle fill="#e5484d" cx="46" cy="54" r="8"/>
+<path fill="none" d="M46 54l24-24"/>
+<path fill="#f5b93f" d="M68 32l4-18 14 14z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dartboard" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dartboard" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>earbuds</title>
+<defs>
+<g id="seen-earbuds">
+<path fill="none" d="M28 38q0 22 22 32M72 38q0 22-22 32M50 70v10"/>
+<circle fill="#9bc53d" cx="28" cy="26" r="13"/>
+<circle fill="#9bc53d" cx="72" cy="26" r="13"/>
+<circle fill="#6a8f1a" cx="28" cy="26" r="6"/>
+<circle fill="#6a8f1a" cx="72" cy="26" r="6"/>
+<path fill="#4d5968" d="M45 78h10v12H45z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-earbuds" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-earbuds" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

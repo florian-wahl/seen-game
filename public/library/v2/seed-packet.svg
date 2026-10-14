@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>seed packet</title>
+<defs>
+<g id="seen-seed-packet">
+<path fill="#ffffff" d="M24 14l6-4 6 4 6-4 6 4 6-4 6 4 6-4 6 4 6-4v80H24z"/>
+<path fill="#7fd3a0" d="M30 24h40v42H30z"/>
+<path fill="none" d="M50 48v16M32 78h36"/>
+<circle fill="#e0559a" cx="50" cy="40" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-seed-packet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-seed-packet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

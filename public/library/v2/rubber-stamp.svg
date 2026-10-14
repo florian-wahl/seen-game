@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>rubber stamp</title>
+<defs>
+<g id="seen-rubber-stamp">
+<circle fill="#e5484d" cx="50" cy="20" r="12"/>
+<path fill="#a9683c" d="M44 30h12v20H44z"/>
+<path fill="#a9683c" d="M20 50h60v18H20z"/>
+<path fill="#4d5968" d="M24 68h52v8H24z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-rubber-stamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-rubber-stamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

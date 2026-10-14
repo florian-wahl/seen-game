@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>pan flute</title>
+<defs>
+<g id="seen-pan-flute">
+<path fill="#d9a47a" d="M14 20h10v58H14zM26 20h10v50H26zM38 20h10v42H38zM50 20h10v36H50zM62 20h10v30H62zM74 20h10v24H74z"/>
+<path fill="#e5484d" d="M12 30h74v8H12z"/>
+<path fill="none" stroke-width="5" d="M19 24h.01M31 24h.01M43 24h.01M55 24h.01M67 24h.01M79 24h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-pan-flute" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-pan-flute" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

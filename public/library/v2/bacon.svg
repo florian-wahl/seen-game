@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>bacon</title>
+<defs>
+<g id="seen-bacon">
+<g transform="rotate(-30 50 50)">
+<path fill="#e5484d" d="M8 40q10-10 21 0t21 0 21 0 21 0v20q-10-10-21 0t-21 0-21 0-21 0z"/>
+<path fill="#fbf3e0" d="M8 46q10-10 21 0t21 0 21 0 21 0v7q-10-10-21 0t-21 0-21 0-21 0z"/>
+<path fill="none" d="M8 40v20"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-bacon" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-bacon" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

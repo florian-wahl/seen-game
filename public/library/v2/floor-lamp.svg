@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>floor lamp</title>
+<defs>
+<g id="seen-floor-lamp">
+<path fill="none" d="M24 86V40q0-28 28-28t24 22"/>
+<circle fill="#ffe07a" cx="76" cy="54" r="5"/>
+<path fill="#f08a3c" d="M60 52q0-18 16-18t16 18z"/>
+<path fill="#4d5968" d="M12 84h24a4 4 0 0 1 4 4v2H8v-2a4 4 0 0 1 4-4z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-floor-lamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-floor-lamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

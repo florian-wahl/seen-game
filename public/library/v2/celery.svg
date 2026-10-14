@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>celery</title>
+<defs>
+<g id="seen-celery">
+<path fill="#2f9e6b" d="M30 30c-10-6-8-20 2-20 2-6 12-6 14 0 4-6 14-4 14 2 8-4 16 4 12 12 6 4 2 14-6 14z"/>
+<path fill="#9bc53d" d="M32 30h10l2 58H34zM44 30h12v58H44zM58 30h10l-2 58H56z"/>
+<path fill="none" d="M38 40v40M50 40v40M62 40v40"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-celery" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-celery" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

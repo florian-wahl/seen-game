@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ramen bowl</title>
+<defs>
+<g id="seen-ramen-bowl">
+<path fill="none" d="M56 38l26-28M64 40l24-22"/>
+<path fill="#f5b93f" d="M18 44q5-10 10 0q5-10 10 0q5-10 10 0q5-10 10 0z"/>
+<ellipse fill="#ffffff" cx="68" cy="40" rx="11" ry="7"/>
+<circle fill="#f08a3c" cx="68" cy="40" r="4"/>
+<path fill="#4a66d4" d="M10 44h80q0 40-40 40T10 44z"/>
+<path fill="none" d="M22 58h56"/>
+<path fill="#2c3f96" d="M38 82h24v6H38z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ramen-bowl" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ramen-bowl" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

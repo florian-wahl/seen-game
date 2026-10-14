@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>handheld console</title>
+<defs>
+<g id="seen-handheld-console">
+<path fill="#7d5fd0" d="M28 8h44a8 8 0 0 1 8 8v68a8 8 0 0 1-8 8H28a8 8 0 0 1-8-8V16a8 8 0 0 1 8-8z"/>
+<path fill="#c9e265" d="M30 18h40v30H30z"/>
+<path fill="#1c1b22" d="M32 62h6v-6h6v6h6v6h-6v6h-6v-6h-6z"/>
+<path fill="none" stroke-width="7" d="M62 70h.01M70 60h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-handheld-console" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-handheld-console" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

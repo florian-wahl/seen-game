@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>quill</title>
+<defs>
+<g id="seen-quill">
+<path fill="#ffffff" d="M48 60 80 10q10 10-4 30-10 14-24 22z"/>
+<path fill="none" d="M48 60 78 16"/>
+<path fill="#2c3f96" d="M36 54h20v8H36z"/>
+<path fill="#2c3f96" d="M26 62h40v20a6 6 0 0 1-6 6H32a6 6 0 0 1-6-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-quill" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-quill" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

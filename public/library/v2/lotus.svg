@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lotus</title>
+<defs>
+<g id="seen-lotus">
+<path fill="#2f9e6b" d="M12 72q38-12 76 0q-38 14-76 0z"/>
+<path fill="#f7a8cf" d="M46 66c-16 4-30-2-36-12 12-2 26 2 36 12zM54 66c16 4 30-2 36-12-12-2-26 2-36 12z"/>
+<path fill="#f7a8cf" d="M48 64C30 62 20 48 20 34c14 2 26 14 28 30zM52 64c18-2 28-16 28-30-14 2-26 14-28 30z"/>
+<path fill="#e0559a" d="M50 20c10 12 12 30 0 44-12-14-10-32 0-44z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-lotus" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-lotus" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

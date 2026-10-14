@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>golf cart</title>
+<defs>
+<g id="seen-golf-cart">
+<path fill="none" d="M24 24v28M68 24l6 28M12 30v22"/>
+<path fill="#e5484d" d="M8 34h8v18H8z"/>
+<path fill="#ffffff" d="M18 16h56v8H18z"/>
+<path fill="#4d5968" d="M22 40h20v12H22z"/>
+<path fill="#9bc53d" d="M10 52h70q8 0 10 8v10H10z"/>
+<circle fill="#4d5968" cx="26" cy="74" r="9"/>
+<circle fill="#4d5968" cx="74" cy="74" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-golf-cart" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-golf-cart" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

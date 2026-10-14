@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>solar panel</title>
+<defs>
+<g id="seen-solar-panel">
+<path fill="none" d="M50 64v20M36 88h28"/>
+<path fill="#1f6ea8" d="M10 18h80v46H10z"/>
+<path fill="none" d="M10 34h80M10 48h80M30 18v46M50 18v46M70 18v46"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-solar-panel" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-solar-panel" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

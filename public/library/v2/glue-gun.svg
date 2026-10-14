@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>glue gun</title>
+<defs>
+<g id="seen-glue-gun">
+<path fill="#ffffff" d="M8 30h16v12H8z"/>
+<path fill="#8d99a6" d="M76 32h8l6 4-6 4h-8z"/>
+<path fill="#7d5fd0" d="M22 22h48a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H50l-4 32a4 4 0 0 1-4 4H32a4 4 0 0 1-4-4l2-32h-8z"/>
+<path fill="none" d="M50 50q4 10-4 14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-glue-gun" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-glue-gun" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

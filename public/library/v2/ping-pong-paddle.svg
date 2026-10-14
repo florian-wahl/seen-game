@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>ping pong paddle</title>
+<defs>
+<g id="seen-ping-pong-paddle">
+<g transform="rotate(-30 46 46)">
+<path fill="#a9683c" d="M40 62h12v28H40z"/>
+<circle fill="#e5484d" cx="46" cy="40" r="27"/>
+</g>
+<circle fill="#ffffff" cx="80" cy="76" r="8"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-ping-pong-paddle" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-ping-pong-paddle" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

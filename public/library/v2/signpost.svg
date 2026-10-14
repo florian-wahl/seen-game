@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>signpost</title>
+<defs>
+<g id="seen-signpost">
+<path fill="#a9683c" d="M46 12h8v78h-8z"/>
+<path fill="#f5b93f" d="M54 20h26l8 9-8 9H54z"/>
+<path fill="#2aa7a0" d="M46 44H20l-8 9 8 9h26z"/>
+<path fill="#e5484d" d="M54 66h20l8 7-8 7H54z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-signpost" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-signpost" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

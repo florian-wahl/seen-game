@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>burrito</title>
+<defs>
+<g id="seen-burrito">
+<g transform="rotate(-30 50 50)">
+<path fill="#e8d5b0" d="M26 32h44a18 18 0 0 1 0 36H26a18 18 0 0 1 0-36z"/>
+<path fill="none" d="M30 35q-6 15 0 30M48 33q5 17 0 34"/>
+<ellipse fill="#fbf3e0" cx="74" cy="50" rx="12" ry="16"/>
+<path fill="#a9683c" d="M68 40h7v7h-7z"/>
+<path fill="#e5484d" d="M74 52h7v7h-7z"/>
+<path fill="#9bc53d" d="M66 52h6v8h-6zM76 38l6 4-3 6-5-3z"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-burrito" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-burrito" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

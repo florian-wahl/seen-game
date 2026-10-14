@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>gold bar</title>
+<defs>
+<g id="seen-gold-bar">
+<path fill="#f5b93f" d="M10 84l6-20h28l6 20z"/>
+<path fill="#f5b93f" d="M50 84l6-20h28l6 20z"/>
+<path fill="#f5b93f" d="M30 64l6-20h28l6 20z"/>
+<path fill="none" d="M22 74h12M62 74h12M42 54h12"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-gold-bar" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-gold-bar" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>lab flask</title>
+<defs>
+<g id="seen-erlenmeyer-flask">
+<path fill="#ffffff" d="M40 14h20v24l26 44a6 6 0 0 1-5 8H19a6 6 0 0 1-5-8l26-44z"/>
+<path fill="#3f9fdc" d="M28 60h44l13 22a4 4 0 0 1-4 6H19a4 4 0 0 1-4-6z"/>
+<path fill="#cfd6dc" d="M36 8h28v8H36z"/>
+<path fill="none" stroke-width="5" d="M44 74h.01M56 70h.01M50 80h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-erlenmeyer-flask" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-erlenmeyer-flask" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>speedboat</title>
+<defs>
+<g id="seen-speedboat">
+<path fill="#4d5968" d="M8 44h8v22H8z"/>
+<path fill="#8fd0f5" d="M50 54l10-14h8l-6 14z"/>
+<path fill="#ffffff" d="M12 54h66l14-6q-6 26-34 30H22q-8-4-10-24z"/>
+<path fill="#e5484d" d="M14 62h74l-3 7H16z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-speedboat" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-speedboat" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

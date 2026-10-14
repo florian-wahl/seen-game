@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>clarinet</title>
+<defs>
+<g id="seen-clarinet">
+<g transform="rotate(-40 50 50)">
+<path fill="#4d5968" d="M6 47h10v6H6z"/>
+<path fill="#4d5968" d="M14 45h62v10H14z"/>
+<path fill="#4d5968" d="M74 45l16-7v24l-16-7z"/>
+<path fill="none" stroke-width="5" d="M28 50h.01M38 50h.01M48 50h.01M58 50h.01"/>
+</g>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-clarinet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-clarinet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>first aid kit</title>
+<defs>
+<g id="seen-first-aid-kit">
+<path fill="none" d="M38 26v-8a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v8"/>
+<path fill="#2f9e6b" d="M16 26h68a6 6 0 0 1 6 6v46a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V32a6 6 0 0 1 6-6z"/>
+<path fill="#ffffff" d="M44 38h12v12h12v12H56v12H44V62H32V50h12z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-first-aid-kit" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-first-aid-kit" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

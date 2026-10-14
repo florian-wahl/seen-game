@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>viking helmet</title>
+<defs>
+<g id="seen-viking-helmet">
+<path fill="#fbf3e0" d="M24 50q-16-6-14-30 8 10 20 16z"/>
+<path fill="#fbf3e0" d="M76 50q16-6 14-30-8 10-20 16z"/>
+<path fill="#8d99a6" d="M22 64q0-34 28-34t28 34z"/>
+<path fill="#a9683c" d="M20 60h60v10H20z"/>
+<path fill="#a9683c" d="M46 70h8v16h-8z"/>
+<path fill="none" stroke-width="5" d="M30 65h.01M70 65h.01"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-viking-helmet" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-viking-helmet" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

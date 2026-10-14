@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>scroll</title>
+<defs>
+<g id="seen-scroll">
+<path fill="#e8d5b0" d="M24 30h52v40H24z"/>
+<path fill="#d9a47a" d="M14 22h10a4 4 0 0 1 4 4v48a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z"/>
+<path fill="#d9a47a" d="M76 22h10a4 4 0 0 1 4 4v48a4 4 0 0 1-4 4H76a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M38 40h24M38 50h24M38 60h16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-scroll" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-scroll" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

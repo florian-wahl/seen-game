@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>seedling</title>
+<defs>
+<g id="seen-seedling">
+<path fill="none" d="M50 84V46"/>
+<path fill="#9bc53d" d="M50 56c-4-16-18-22-34-18 2 16 18 24 34 18z"/>
+<path fill="#2f9e6b" d="M50 46c2-18 18-28 36-24-2 18-18 28-36 24z"/>
+<path fill="#6f3f1f" d="M14 88q36-22 72 0z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-seedling" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-seedling" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

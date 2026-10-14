@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>coat rack</title>
+<defs>
+<g id="seen-coat-rack">
+<path fill="none" d="M46 26q-14 0-16-10M54 26q14 0 16-10M46 40q-10 0-12-6M54 40q10 0 12-6M50 80l-22 10M50 80l22 10"/>
+<path fill="#a9683c" d="M46 18h8v62h-8z"/>
+<circle fill="#a9683c" cx="50" cy="14" r="6"/>
+<path fill="#e5484d" d="M64 32h8v36l-4 6-4-6z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-coat-rack" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-coat-rack" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

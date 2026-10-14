@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>kettlebell</title>
+<defs>
+<g id="seen-kettlebell">
+<path fill="#4d5968" d="M24 48V30a14 14 0 0 1 14-14h24a14 14 0 0 1 14 14v18H66V30a6 6 0 0 0-6-6H40a6 6 0 0 0-6 6v18z"/>
+<circle fill="#f08a3c" cx="50" cy="62" r="28"/>
+<path fill="none" d="M34 56q2-10 10-14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-kettlebell" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-kettlebell" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

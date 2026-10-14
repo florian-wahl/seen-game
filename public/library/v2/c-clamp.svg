@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>C-clamp</title>
+<defs>
+<g id="seen-c-clamp">
+<path fill="#3f9fdc" d="M70 16H34q-16 0-16 16v42q0 16 16 16h36V76H36q-4 0-4-4V34q0-4 4-4h34z"/>
+<path fill="#8d99a6" d="M60 14h6v48h-6z"/>
+<path fill="#4d5968" d="M50 8h26v6H50z"/>
+<path fill="#4d5968" d="M54 62h18v6H54z"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-c-clamp" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-c-clamp" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

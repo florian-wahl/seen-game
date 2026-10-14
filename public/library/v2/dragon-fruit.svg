@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>dragon fruit</title>
+<defs>
+<g id="seen-dragon-fruit">
+<path fill="#9bc53d" d="M26 40l-14-6 14-4zM74 40l14-6-14-4zM28 68l-16 2 14 8zM72 68l16 2-14 8zM50 22l-6-14 12 4z"/>
+<ellipse fill="#e0559a" cx="50" cy="54" rx="28" ry="34"/>
+<path fill="none" d="M34 36q8 6 2 16M66 36q-8 6-2 16M40 64q8 4 4 14M60 64q-8 4-4 14"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-dragon-fruit" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-dragon-fruit" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

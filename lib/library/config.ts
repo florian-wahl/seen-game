@@ -1,9 +1,9 @@
 /**
  * Single source of truth for which picture library is live: a folder under
- * `public/library/`. Defaults to the final set (`v1`); override with
+ * `public/library/`. Defaults to the final set (`v2`); override with
  * NEXT_PUBLIC_LIBRARY_DIR (e.g. `placeholder`; inlined at build time on the client).
  */
-export const LIBRARY_DIR: string = process.env.NEXT_PUBLIC_LIBRARY_DIR || "v1";
+export const LIBRARY_DIR: string = process.env.NEXT_PUBLIC_LIBRARY_DIR || "v2";
 
 /** Repo-relative folder holding the manifest and the per-picture SVGs. */
 export const LIBRARY_SOURCE_PATH = `public/library/${LIBRARY_DIR}`;

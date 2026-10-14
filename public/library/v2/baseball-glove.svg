@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>baseball glove</title>
+<defs>
+<g id="seen-baseball-glove">
+<path fill="#a9683c" d="M20 42c-6-14 2-26 10-22 0-10 10-12 14-4 2-8 12-8 14 0 4-6 14-2 12 6 8 0 12 10 8 20l-4 30q-4 12-20 14H36q-16-2-18-16z"/>
+<path fill="none" d="M32 50l-2-24M44 48V18M56 48l2-28M66 52l6-22"/>
+<circle fill="#ffffff" cx="50" cy="66" r="13"/>
+<path fill="none" d="M42 58q4 8 0 16M58 58q-4 8 0 16"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-baseball-glove" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-baseball-glove" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

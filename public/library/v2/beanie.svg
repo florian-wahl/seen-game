@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>beanie</title>
+<defs>
+<g id="seen-beanie">
+<circle fill="#ffffff" cx="50" cy="18" r="10"/>
+<path fill="#e5484d" d="M16 66c0-24 16-40 34-40s34 16 34 40z"/>
+<path fill="#b3262d" d="M14 64h72a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V68a4 4 0 0 1 4-4z"/>
+<path fill="none" d="M26 64v22M42 64v22M58 64v22M74 64v22"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-beanie" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-beanie" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>

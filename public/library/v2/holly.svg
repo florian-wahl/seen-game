@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>holly</title>
+<defs>
+<g id="seen-holly">
+<path fill="#2f9e6b" d="M50 50q-4-10-12-8q-2-8-10-8q-2-8-12-6q2 10 8 12q-2 8 4 12q0 8 10 8q4 4 12-10z"/>
+<path fill="#2f9e6b" d="M50 50q4-10 12-8q2-8 10-8q2-8 12-6q-2 10-8 12q2 8-4 12q0 8-10 8q-4 4-12-10z"/>
+<path fill="none" d="M50 50 20 30M50 50l30-20"/>
+<circle fill="#e5484d" cx="43" cy="58" r="7"/>
+<circle fill="#e5484d" cx="57" cy="58" r="7"/>
+<circle fill="#e5484d" cx="50" cy="70" r="7"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-holly" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-holly" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</svg>
