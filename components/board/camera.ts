@@ -47,17 +47,23 @@ export function screenToWorld(camera: Camera, viewport: Viewport, p: Point): Poi
   };
 }
 
+export interface ZoomOptions {
+  /** Allow zooming out until the whole board width fits (board study). Default: zoom out stops at the default zoom. */
+  fullZoomOut?: boolean;
+}
+
 /**
- * min = whole board width fits the viewport width; default = half the board
- * width visible, but never so small that a picture drops under MIN_PICTURE_PX;
- * max = one tile (grid cell) is MAX_TILE_PX CSS px.
+ * default = half the board width visible, but never so small that a picture
+ * drops under MIN_PICTURE_PX; max = one tile (grid cell) is MAX_TILE_PX CSS px;
+ * min = the default zoom (seeing more of the board makes a round too easy), or
+ * with `fullZoomOut` the zoom at which the whole board width fits the viewport.
  */
-export function zoomLimits(board: Board, viewport: Viewport): ZoomLimits {
-  const min = viewport.width / board.width;
-  const max = Math.max(MAX_TILE_PX / CELL, min * 2);
+export function zoomLimits(board: Board, viewport: Viewport, options: ZoomOptions = {}): ZoomLimits {
+  const fit = viewport.width / board.width;
+  const max = Math.max(MAX_TILE_PX / CELL, fit * 2);
   const floor = MIN_PICTURE_PX / (SCALE_MIN * CELL);
-  const def = Math.min(Math.max(min * 2, floor), max);
-  return { min, default: def, max };
+  const def = Math.min(Math.max(fit * 2, floor), max);
+  return { min: options.fullZoomOut ? fit : def, default: def, max };
 }
 
 export function clampZoom(zoom: number, limits: ZoomLimits): number {

@@ -50,15 +50,25 @@ describe("camera", () => {
 
   it("zoomAround respects limits", () => {
     const b = board(200);
-    const lim = zoomLimits(b, vp);
+    const lim = zoomLimits(b, vp, { fullZoomOut: true });
     const cam = { x: 700, y: 600, zoom: lim.default };
     expect(zoomAround(cam, { x: 0, y: 0 }, 1000, vp, lim).zoom).toBeCloseTo(lim.max);
     expect(zoomAround(cam, { x: 0, y: 0 }, 0.0001, vp, lim).zoom).toBeCloseTo(lim.min);
   });
 
-  it.each([100, 200, 300, 500])("limits for a %i board on 390x700", (n) => {
+  it.each([100, 200, 300, 500])("rounds cap zoom out at the starting zoom (%i)", (n) => {
     const b = board(n);
     const lim = zoomLimits(b, vp);
+    expect(lim.min).toBe(lim.default);
+    expect(zoomLimits(b, vp, { fullZoomOut: true }).default).toBe(lim.default);
+    const cam = { x: b.width / 2, y: b.height / 2, zoom: lim.default };
+    expect(zoomAround(cam, { x: 195, y: 350 }, 0.1, vp, lim).zoom).toBe(lim.default); // pinch out: no change
+    expect(zoomAround(cam, { x: 195, y: 350 }, 1.5, vp, lim).zoom).toBeGreaterThan(lim.default); // pinch in still works
+  });
+
+  it.each([100, 200, 300, 500])("board study limits for a %i board on 390x700", (n) => {
+    const b = board(n);
+    const lim = zoomLimits(b, vp, { fullZoomOut: true });
     expect(lim.min * b.width).toBeCloseTo(390); // full width fits
     // half the width visible, raised so the smallest picture stays >= 44 px
     expect(lim.default).toBeCloseTo(Math.max(lim.min * 2, 44 / (0.78 * CELL)));
@@ -84,7 +94,7 @@ describe("camera", () => {
 
   it("clamps zoom and centres when the board is smaller than the viewport", () => {
     const b = board(200);
-    const lim = zoomLimits(b, vp);
+    const lim = zoomLimits(b, vp, { fullZoomOut: true });
     const c = clampCamera({ x: 0, y: 0, zoom: lim.min }, b, vp, lim);
     expect(c.x).toBeCloseTo(b.width / 2); // full width visible
     expect(c.zoom).toBe(lim.min);

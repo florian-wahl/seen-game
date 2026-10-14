@@ -37,6 +37,8 @@ export interface BoardCanvasProps {
   onTap(pictureId: string | null, worldPoint: Point): void;
   /** Optional perf probe, called at most ~2x per second while drawing. */
   onStats?(stats: BoardCanvasStats): void;
+  /** Allow zooming out to the whole board width (board study). Rounds stop at the starting zoom. */
+  fullZoomOut?: boolean;
   className?: string;
   ref?: Ref<BoardCanvasHandle>;
 }
@@ -49,7 +51,7 @@ interface Flash {
   start: number;
 }
 
-export function BoardCanvas({ board, images, onTap, onStats, className, ref }: BoardCanvasProps) {
+export function BoardCanvas({ board, images, onTap, onStats, fullZoomOut = false, className, ref }: BoardCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cameraRef = useRef<Camera | null>(null);
   const viewportRef = useRef<Viewport>({ width: 0, height: 0 });
@@ -63,9 +65,9 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
   const lastStatsRef = useRef(0);
 
   // Latest props, readable from long-lived callbacks.
-  const propsRef = useRef({ board, images, onTap, onStats });
+  const propsRef = useRef({ board, images, onTap, onStats, fullZoomOut });
   useEffect(() => {
-    propsRef.current = { board, images, onTap, onStats };
+    propsRef.current = { board, images, onTap, onStats, fullZoomOut };
   });
 
   const drawRef = useRef<(now: number) => void>(() => {});
@@ -180,7 +182,8 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
     if (!rafRef.current) rafRef.current = requestAnimationFrame((t) => drawRef.current(t));
   }, []);
 
-  const limits = () => zoomLimits(propsRef.current.board, viewportRef.current);
+  const limits = () =>
+    zoomLimits(propsRef.current.board, viewportRef.current, { fullZoomOut: propsRef.current.fullZoomOut });
   const setCamera = (c: Camera) => {
     cameraRef.current = clampCamera(c, propsRef.current.board, viewportRef.current, limits());
     requestRender();
@@ -247,7 +250,7 @@ export function BoardCanvas({ board, images, onTap, onStats, className, ref }: B
       canvas.height = Math.round(height * dpr);
       const b = propsRef.current.board;
       cameraRef.current = cameraRef.current
-        ? clampCamera(cameraRef.current, b, viewportRef.current, zoomLimits(b, viewportRef.current))
+        ? clampCamera(cameraRef.current, b, viewportRef.current, limits())
         : initialCamera(b, viewportRef.current);
       requestRender();
     };
