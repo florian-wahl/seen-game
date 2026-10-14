@@ -111,7 +111,10 @@ export function PlayScreen(props: PlayScreenProps) {
     };
   }, []);
 
-  const board = useMemo(() => (round ? boardFromTiles(round.tiles, boardSize) : null), [round, boardSize]);
+  // Keyed on the tiles, not the round: each tap result replaces `round`, and a new board object
+  // would make BoardCanvas reset the view and drop the wrong-tap flash.
+  const tiles = round?.tiles;
+  const board = useMemo(() => (tiles ? boardFromTiles(tiles, boardSize) : null), [tiles, boardSize]);
   const ready = images !== null && total > 0 && loaded >= total;
 
   const clockInput = useCallback(
