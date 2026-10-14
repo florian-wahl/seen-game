@@ -237,7 +237,7 @@ test.describe("game loop", () => {
     const card = (await page.getByTestId("reveal-card").boundingBox())!;
     const vp = page.viewportSize()!;
     expect(card.width).toBeGreaterThan(vp.width * 0.6);
-    await expect(page.getByTestId("clock")).toHaveText("0.0 s");
+    await expect(page.getByTestId("clock")).toHaveText("0.0");
     // Taps during the reveal do nothing (also not a penalty).
     await page.evaluate((id) => window.__seenTest!.tap(id), targetId);
 
