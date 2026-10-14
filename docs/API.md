@@ -25,7 +25,7 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
 
 ## RPCs
 
-- `create_game({rounds, board_size})` → `{game_id, token, expires_at}` — rounds ∈ {3,5,10}, board_size ∈ {100,200,300}.
+- `create_game({rounds, board_size})` → `{game_id, token, expires_at}` — rounds ∈ {5,10,20}, board_size ∈ {200,300,500}. Games created earlier may still carry 3 rounds or 100 pictures (rematches copy them).
 - `join_game({token})` → `{game_id, status, already_member}` — idempotent for members (even after start/expiry).
 - `start_game_internal({game_id, tiles})` — **service role only** (Next.js server action). tiles = `Tile[]`
   from `lib/board/types.ts`. → `{game_id, status:'in_progress', first_turn_id, first_user_id, seats:[{user_id, seat}]}`.

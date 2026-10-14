@@ -95,8 +95,9 @@ export interface CreateGameOptions {
   /** Emails; the first is the host. */
   emails: string[];
   names?: string[];
-  rounds?: 3 | 5 | 10;
-  size?: 100 | 200 | 300;
+  /** 3 and 100 are legacy values (no longer offered by create_game), kept for fast tests. */
+  rounds?: 3 | 5 | 10 | 20;
+  size?: 100 | 200 | 300 | 500;
 }
 
 /** create_game as host, join_game as the others, start_game_internal via admin. */
@@ -107,10 +108,17 @@ export async function createStartedGame(opts: CreateGameOptions): Promise<TestGa
   }
   const [host, ...others] = users;
   const size = opts.size ?? 100;
+  const rounds = opts.rounds ?? 3;
   const created = await rpc<{ game_id: string; token: string }>(host.client, "create_game", {
-    rounds: opts.rounds ?? 3,
-    board_size: size,
+    rounds: 5,
+    board_size: 200,
   });
+  // The table still accepts the legacy short settings; set the requested ones directly.
+  const { error: settingsError } = await admin()
+    .from("games")
+    .update({ rounds_per_player: rounds, board_size: size })
+    .eq("id", created.game_id);
+  if (settingsError) throw settingsError;
   for (const u of others) await rpc(u.client, "join_game", { token: created.token });
 
   const lib = await loadLibrary();

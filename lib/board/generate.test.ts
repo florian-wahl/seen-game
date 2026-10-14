@@ -49,9 +49,9 @@ describe("prng", () => {
 });
 
 describe("generateBoard", () => {
-  const { pictures, confusables } = makeLibrary(450);
+  const { pictures, confusables } = makeLibrary(650);
 
-  for (const size of [100, 200, 300]) {
+  for (const size of [100, 200, 300, 500]) {
     it(`builds a valid board of ${size}`, () => {
       const board = generateBoard({ pictures, confusables, size, seed: `game-${size}` });
       expect(board.tiles).toHaveLength(size);
@@ -106,7 +106,7 @@ describe("generateBoard", () => {
     const board = generateBoard({ pictures: mixed, confusables: [], size: 200, seed: "x" });
     const ids = new Set(mixed.filter((p) => p.reviewStatus === "approved").map((p) => p.id));
     expect(board.tiles.every((t) => ids.has(t.pictureId))).toBe(true);
-    expect(() => generateBoard({ pictures: mixed, confusables: [], size: 300, seed: "x" })).toThrow(
+    expect(() => generateBoard({ pictures: mixed, confusables: [], size: 400, seed: "x" })).toThrow(
       /approved/,
     );
   });

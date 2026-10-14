@@ -56,13 +56,16 @@ begin
   perform tests.mkusers(nplayers);
   perform tests.seed_pictures();
   perform tests.login(1);
-  g := public.create_game(rounds, size);
+  g := public.create_game(5, 200);
   gid := (g ->> 'game_id')::uuid;
   for i in 2..nplayers loop
     perform tests.login(i);
     perform public.join_game(g ->> 'token');
   end loop;
   perform tests.logout();
+  -- Tests default to a short legacy game (3 rounds, 100 pictures) for speed. create_game only offers
+  -- 5/10/20 and 200/300/500, but the table still accepts the old values, so set them directly.
+  update public.games set rounds_per_player = rounds, board_size = size where id = gid;
   perform public.start_game_internal(gid, tests.tiles(size));
   return gid;
 end $$;
