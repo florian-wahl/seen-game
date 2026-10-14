@@ -2,6 +2,7 @@ import type { Viewport } from "next";
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { PlayScreen } from "@/components/game/PlayScreen";
+import { requireUserId } from "@/lib/auth/session";
 import type { GameState } from "@/lib/game/types";
 import { supabaseServer } from "@/lib/supabase/server";
 
@@ -23,6 +24,7 @@ export default function PlayPage({ params }: PageProps<"/g/[id]/play">) {
 
 async function Loaded({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  await requireUserId(`/g/${id}/play`);
   const supabase = await supabaseServer();
   const { data, error } = await supabase.rpc("game_state", { game_id: id });
   if (error || !data) redirect(`/g/${id}`);
