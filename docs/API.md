@@ -44,7 +44,8 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
   deadline, or on a closed turn. `replayed:true` = same client_seq resent.
 - `retire({game_id})` → `{game_id, status, left:true}` (status = game status afterwards; host leaving lobby → `abandoned`).
 - `rematch({game_id})` → `{game_id, token, expires_at, previous_game_id, players:[uuid]}`.
-- `update_profile({display_name?, avatar_url?})` → `{id, display_name, avatar_url}` (only way to edit a profile).
+- `update_profile({display_name?, avatar_url?})` → `{id, display_name, avatar_url}` (only way to edit a profile; used by onboarding and `/profile`). Name is trimmed, 1–60 chars; blank keeps the old one.
+- `set_notification_prefs({email?, push?})` → `{email, push}`: upserts the caller's channel choices (null leaves a channel unchanged). Read your own row from `notification_prefs` (RLS: owner only); no row means both on.
 - `game_state({game_id})` → see `GameState` in `lib/game/types.ts`. Lazily closes an expired live turn.
 - `save_push_subscription({endpoint, p256dh, auth})` → void (upsert for the caller; https endpoints only). `delete_push_subscription({endpoint})` → void.
 - `sweep_turns()` — service role / cron only.
