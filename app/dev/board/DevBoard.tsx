@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoardCanvas, type BoardCanvasHandle, type BoardCanvasStats } from "@/components/board/BoardCanvas";
-import { generateBoard } from "@/lib/board/generate";
+import { generateBoard, type Layout } from "@/lib/board/generate";
 import type { LibraryManifest } from "@/lib/board/types";
 import { loadImageMap, loadManifest } from "@/lib/library";
 
@@ -26,6 +26,7 @@ export default function DevBoard() {
 
 function DevBoardInner({ manifest, images }: { manifest: LibraryManifest; images: Record<string, string> }) {
   const [size, setSize] = useState<(typeof SIZES)[number]>(200);
+  const [layout, setLayout] = useState<Layout>("grid");
   const board = useMemo(
     () =>
       generateBoard({
@@ -33,8 +34,9 @@ function DevBoardInner({ manifest, images }: { manifest: LibraryManifest; images
         confusables: manifest.confusables,
         size,
         seed: `dev-${size}`,
+        layout,
       }),
-    [size, manifest],
+    [size, layout, manifest],
   );
   const ids = useMemo(() => board.tiles.map((t) => t.pictureId), [board]);
 
@@ -119,18 +121,29 @@ function DevBoardInner({ manifest, images }: { manifest: LibraryManifest; images
             Next
           </button>
         ) : (
-          <select
-            className="rounded border border-neutral-300 px-2 py-1"
-            value={size}
-            onChange={(e) => setSize(Number(e.target.value) as (typeof SIZES)[number])}
-            aria-label="Board size"
-          >
-            {SIZES.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
+          <>
+            <select
+              className="rounded border border-neutral-300 px-2 py-1"
+              value={layout}
+              onChange={(e) => setLayout(e.target.value as Layout)}
+              aria-label="Layout"
+            >
+              <option value="grid">grid</option>
+              <option value="scatter">scatter</option>
+            </select>
+            <select
+              className="rounded border border-neutral-300 px-2 py-1"
+              value={size}
+              onChange={(e) => setSize(Number(e.target.value) as (typeof SIZES)[number])}
+              aria-label="Board size"
+            >
+              {SIZES.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </>
         )}
       </div>
       <div className="relative min-h-0 flex-1">

@@ -8,7 +8,7 @@ import { timeAgo } from "@/lib/game/format";
 import { friendlyError, retireFromGame } from "@/lib/game/rpc";
 import { LinkButton } from "@/components/ui/Button";
 import { FinalResults } from "./FinalResults";
-import { MonochromeBadge } from "./MonochromeBadge";
+import { SettingBadges } from "./SettingBadges";
 import { Legend, ScoreTable } from "./ScoreTable";
 
 export function GameView({ gameId, initial }: { gameId: string; initial: GameState }) {
@@ -66,7 +66,7 @@ function InProgress({ gameId, state, refresh }: { gameId: string; state: GameSta
       <header>
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h1 className="font-wide text-2xl font-black uppercase tracking-tight text-cream">Scoreboard</h1>
-          {state.game.monochrome && <MonochromeBadge />}
+          <SettingBadges game={state.game} />
         </div>
         {turnLine && (
           <p className={`text-sm ${state.is_my_turn ? "font-bold text-mustard" : "text-muted"}`} data-testid="turn-line">

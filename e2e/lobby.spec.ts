@@ -79,6 +79,26 @@ test("monochrome: chosen under Game settings, shown in the lobby", async ({ brow
   await expect(host.getByTestId("monochrome-badge")).toHaveCount(0);
 });
 
+test("scattered board: chosen under Game settings, shown in the lobby", async ({ browser }) => {
+  const host = await signedInPage(browser, "Scat");
+  await host.goto("/new");
+  const toggle = host.getByRole("switch", { name: /Scattered board/ });
+  await expect(toggle).not.toBeChecked();
+  await host.getByText("Scattered board", { exact: true }).click();
+  await expect(toggle).toBeChecked();
+  await host.getByTestId("create-game").click();
+  await expect(host).toHaveURL(/\/g\/[0-9a-f-]{36}$/);
+  await expect(host.getByTestId("scatter-badge")).toBeVisible();
+  await expect(host.getByTestId("monochrome-badge")).toHaveCount(0);
+
+  // Grid (the default) has no badge.
+  await host.goto("/new");
+  await host.getByTestId("create-game").click();
+  await expect(host).toHaveURL(/\/g\/[0-9a-f-]{36}$/);
+  await expect(host.getByTestId("settings")).toBeVisible();
+  await expect(host.getByTestId("scatter-badge")).toHaveCount(0);
+});
+
 test("join link while signed out goes through sign-in and back", async ({ browser, page }) => {
   const host = await signedInPage(browser, "Hostb");
   await host.goto("/new");

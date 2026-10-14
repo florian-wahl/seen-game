@@ -43,6 +43,13 @@ async function tileScreenPos(page: Page, game: TestGame, pictureId: string) {
   return { x: box.x + p.x, y: box.y + p.y, onScreen: p.x > 0 && p.y > 0 && p.x < vp.width && p.y < vp.height };
 }
 
+/** CSS px per board unit at the untouched initial camera. */
+async function unitPx(page: Page, game: TestGame) {
+  const box = (await page.locator("canvas").boundingBox())!;
+  const vp = { width: Math.round(box.width), height: Math.round(box.height) };
+  return initialCamera(boardFromTiles(game.tiles, 100), vp).zoom;
+}
+
 /** A visible non-target tile nearest the canvas centre. */
 async function wrongTileOnScreen(page: Page, game: TestGame, targetId: string) {
   const box = (await page.locator("canvas").boundingBox())!;
@@ -391,6 +398,63 @@ test.describe("game loop", () => {
     expect(await watch).toBeGreaterThan(50);
 
     await page.evaluate((id) => window.__seenTest!.tap(id), turn.target_picture_id!);
+    await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
+  });
+
+  test("scattered board: taps off a picture's centre still pick that picture", async ({ browser }) => {
+    test.setTimeout(90_000);
+    const game = await createStartedGame({
+      emails: [uniqueEmail("e2e-s"), uniqueEmail("e2e-t")],
+      names: ["Sal", "Tom"],
+      rounds: 3,
+      size: 100,
+      layout: "scatter",
+    });
+    const a = game.firstUser;
+    const page = await asUser(browser, a, `/g/${game.gameId}`);
+    await expect(page.getByTestId("scatter-badge")).toBeVisible();
+    await page.getByTestId("play-turn").click();
+    await expect(page.getByTestId("draw")).toBeEnabled({ timeout: 30_000 });
+    await page.getByTestId("draw").click();
+    await expect(page.getByTestId("round-screen")).toBeVisible();
+    await expect(page.getByTestId("reveal")).toHaveCount(0, { timeout: 5_000 });
+    // The clock runs: the round is live and taps count.
+    await expect.poll(async () => seconds(await page.getByTestId("clock").textContent())).toBeGreaterThan(0);
+    const turn = (await openTurn(game.gameId))!;
+    const target = turn.target_picture_id!;
+
+    // Three visible wrong pictures, tapped 30 board units off their centre (on the picture,
+    // nearer to it than to any neighbour): each tap must land on that picture.
+    const box = (await page.locator("canvas").boundingBox())!;
+    const cx = box.x + box.width / 2;
+    const cy = box.y + box.height / 2;
+    const visible: { id: string; x: number; y: number; d: number }[] = [];
+    for (const t of game.tiles) {
+      if (t.pictureId === target) continue;
+      const p = await tileScreenPos(page, game, t.pictureId);
+      if (p.onScreen) visible.push({ id: t.pictureId, x: p.x, y: p.y, d: Math.hypot(p.x - cx, p.y - cy) });
+    }
+    const picked = visible.sort((p, q) => p.d - q.d).slice(0, 3);
+    expect(picked).toHaveLength(3);
+    const offs = [
+      [1, 0],
+      [0, 1],
+      [-0.7, -0.7],
+    ];
+    const unit = await unitPx(page, game);
+    for (let i = 0; i < picked.length; i++) {
+      const [dx, dy] = offs[i];
+      await page.touchscreen.tap(picked[i].x + dx * 30 * unit, picked[i].y + dy * 30 * unit);
+      await expect(page.getByTestId("wrong-count")).toContainText(`${i + 1} wrong`);
+    }
+    const { data: taps } = await admin()
+      .from("taps")
+      .select("picture_id, client_seq")
+      .eq("turn_id", turn.id)
+      .order("client_seq");
+    expect((taps ?? []).map((t) => t.picture_id)).toEqual(picked.map((p) => p.id));
+
+    await page.evaluate((id) => window.__seenTest!.tap(id), target);
     await expect(page.getByTestId("round-result")).toHaveAttribute("data-status", "found");
   });
 });

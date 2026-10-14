@@ -1,4 +1,5 @@
 // Shapes returned by the database RPCs (see docs/API.md). Keep in sync with SQL.
+import type { Layout } from "@/lib/board/generate";
 import type { Tile } from "@/lib/board/types";
 
 export type GameStatus = "lobby" | "in_progress" | "finished" | "abandoned";
@@ -47,6 +48,8 @@ export interface Game {
   board_size: number;
   /** every picture shown in grayscale (issue #1) */
   monochrome: boolean;
+  /** "scatter": pictures with no rows or columns (issue #3) */
+  layout: Layout;
   penalty_ms: number;
   cap_ms: number;
   current_turn_id: string | null;

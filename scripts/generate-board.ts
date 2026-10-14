@@ -1,7 +1,14 @@
-// npx tsx scripts/generate-board.ts --size 200 --seed demo [--library dir] [--out board.svg]
+// npx tsx scripts/generate-board.ts --size 200 --seed demo [--layout grid|scatter] [--library dir] [--out board.svg]
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { generateBoard, countCategoryConflicts, findConfusableViolations } from "../lib/board/generate";
+import {
+  generateBoard,
+  countCategoryConflicts,
+  countNearbyCategoryConflicts,
+  findConfusableViolations,
+  minTileDistance,
+  type Layout,
+} from "../lib/board/generate";
 import type { LibraryManifest } from "../lib/board/types";
 import { LIBRARY_SOURCE_PATH } from "../lib/library/config";
 
@@ -15,6 +22,8 @@ function main(): number {
   const seed = arg("seed", "demo")!;
   const lib = path.resolve(process.cwd(), arg("library", LIBRARY_SOURCE_PATH)!);
   const out = arg("out");
+  const layout = arg("layout", "grid") as Layout;
+  if (layout !== "grid" && layout !== "scatter") throw new Error(`Unknown layout: ${layout}`);
   const manifest = JSON.parse(readFileSync(path.join(lib, "manifest.json"), "utf8")) as LibraryManifest;
 
   const board = generateBoard({
@@ -22,22 +31,28 @@ function main(): number {
     confusables: manifest.confusables,
     size,
     seed,
+    layout,
   });
 
   const violations = findConfusableViolations(board, manifest.confusables);
-  const conflicts = countCategoryConflicts(board, manifest.pictures);
+  const conflicts =
+    layout === "scatter"
+      ? countNearbyCategoryConflicts(board, manifest.pictures)
+      : countCategoryConflicts(board, manifest.pictures);
   const unique = new Set(board.tiles.map((t) => t.pictureId)).size;
   const problems: string[] = [];
   if (board.tiles.length !== size) problems.push(`tile count ${board.tiles.length} != ${size}`);
   if (unique !== board.tiles.length) problems.push("duplicate pictures on board");
   if (violations.length) problems.push(`${violations.length} confusable violation(s)`);
   if (conflicts > 0) problems.push(`${conflicts} adjacent same-category pair(s)`);
+  const minDist = minTileDistance(board);
 
   console.log(
     JSON.stringify(
       {
         size,
         seed,
+        layout,
         cols: board.cols,
         rows: board.rows,
         width: board.width,
@@ -46,6 +61,7 @@ function main(): number {
         uniquePictures: unique,
         confusableViolations: violations.length,
         categoryConflicts: conflicts,
+        minTileDistance: Math.round(minDist * 10) / 10,
         ok: problems.length === 0,
       },
       null,
