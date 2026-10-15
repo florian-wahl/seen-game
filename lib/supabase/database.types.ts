@@ -352,6 +352,9 @@ isOneToOne: false
 "join_game":
 { Args: { "token": string }; Returns: Json
                            },
+"my_best_times":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
 "rematch":
 { Args: { "game_id": string }; Returns: Json
                            },

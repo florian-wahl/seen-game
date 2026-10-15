@@ -84,3 +84,36 @@ test("email off: no 'Your turn' email, and the outbox row is still marked sent",
   expect(await mailCount(quiet, g.gameId)).toBe(0);
   if (g.firstUser.id !== quietUser.id) expect(await mailCount(loud, g.gameId)).toBeGreaterThan(0); // control: email works
 });
+
+test("best times: hidden before any finished game, then one line per game type", async ({ page }) => {
+  test.setTimeout(120_000);
+  const game = await createStartedGame({
+    emails: [uniqueEmail("best-a"), uniqueEmail("best-b")],
+    names: ["Bea", "Bo"],
+    rounds: 5,
+    size: 200,
+  });
+  const me = game.users[0];
+  await page.goto(`/dev/login?email=${encodeURIComponent(me.email)}&name=${me.name}&next=/profile`);
+  await expect(page.getByTestId("profile-name")).toBeVisible();
+  await expect(page.getByTestId("best-times")).toHaveCount(0);
+
+  // Play every turn to the end; one wrong tap each so the total includes penalties.
+  for (let turn = await openTurn(game.gameId); turn; turn = await openTurn(game.gameId)) {
+    await playTurnViaRpc(game.users.find((u) => u.id === turn!.user_id)!, game.gameId, 1);
+  }
+  const { data: mine } = await admin()
+    .from("game_players")
+    .select("total_ms")
+    .eq("game_id", game.gameId)
+    .eq("user_id", me.id)
+    .single();
+  const expected = `${(Math.round(mine!.total_ms / 100) / 10).toFixed(1)} s`;
+
+  await page.reload();
+  const line = page.getByTestId("best-time");
+  await expect(line).toHaveCount(1);
+  await expect(line).toContainText("5 rounds · 200 pictures");
+  await expect(line).toContainText("1 game");
+  await expect(line).toContainText(expected);
+});
