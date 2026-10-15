@@ -221,6 +221,7 @@ select tests.put('s', public.start_game_internal(tests.gid(), tests.tiles(200)):
 select is((select status::text from public.games where id = tests.gid()), 'in_progress', 'game started');
 select is((select count(*)::int from public.board_tiles where game_id = tests.gid()), 200, '200 tiles stored');
 select is((select array_agg(seat order by seat) from public.game_players where game_id = tests.gid()), array[1,2,3,4,5,6], 'six distinct seats');
+select is((select seat from public.game_players where game_id = tests.gid() and user_id = tests.u(1)), 1, 'host (user 1) has seat 1');
 select is((select count(*)::int from public.turns where game_id = tests.gid() and seq = 1 and status = 'pending'), 1, 'first pending turn created');
 select ok((select abs(extract(epoch from (now() - became_current_at))) < 5 from public.turns where game_id = tests.gid() and seq = 1),
           'became_current_at set at start');
@@ -288,6 +289,62 @@ select isnt(tests.get('rm')::jsonb ->> 'token', tests.get('g')::jsonb ->> 'token
 select tests.login(3);   -- the retired player can still join via the new link
 select is(public.join_game(tests.get('rm')::jsonb ->> 'token') ->> 'already_member', 'false', 'others join the rematch via invite');
 select tests.logout();
+
+-- ================================================================ turn order
+-- The host goes first, then the others in the order they joined. Inside one test transaction now()
+-- never moves, so joined_at is set explicitly (joins[i] joined i minutes in; the host is made the
+-- LATEST joiner to show that being host, not joining first, is what counts).
+create function tests.start_with_joins(host int, joins int[], out seats int[], out first_user int)
+language plpgsql as $$
+declare g jsonb; gid uuid; r jsonb;
+begin
+  perform tests.login(host);
+  g := public.create_game(5, 200);
+  gid := (g ->> 'game_id')::uuid;
+  for i in 1..array_length(joins, 1) loop
+    perform tests.login(joins[i]);
+    perform public.join_game(g ->> 'token');
+  end loop;
+  perform tests.logout();
+  for i in 1..array_length(joins, 1) loop
+    update public.game_players set joined_at = now() + i * interval '1 minute'
+     where game_id = gid and user_id = tests.u(joins[i]);
+  end loop;
+  update public.game_players set joined_at = now() + interval '1 hour'
+   where game_id = gid and user_id = tests.u(host);
+  update public.games set rounds_per_player = 3, board_size = 100 where id = gid;
+  r := public.start_game_internal(gid, tests.tiles(100));
+  seats := (select array_agg(tests.n(user_id) order by seat) from public.game_players where game_id = gid);
+  first_user := tests.n((r ->> 'first_user_id')::uuid);
+end $$;
+
+select is((select seats from tests.start_with_joins(8, array[5,6,7])), array[8,5,6,7],
+          'turn order: host takes seat 1 even though their joined_at is the latest');
+select is((select first_user from tests.start_with_joins(1, array[4,3,2])), 1,
+          'turn order: the first turn is the host''s');
+select is((select seats from tests.start_with_joins(2, array[7,3,5,4])), array[2,7,3,5,4],
+          'turn order: non-host players take seats in joined_at order, not user-number order');
+
+-- rematch: new host first, the others keep their previous seat order, a later joiner goes last
+select tests.put('gid', tests.new_game(3, 3, 100)::text);   -- seats 1, 2, 3 = users 1, 2, 3
+select tests.play_found(tests.gid()) from generate_series(1, 9);
+select is((select status::text from public.games where id = tests.gid()), 'finished', 'precondition: 3-player game finished');
+select tests.login(3);
+select tests.put('rm2', public.rematch(tests.gid())::text);
+select tests.logout();
+select is((select array_agg(tests.n(user_id) order by joined_at) from public.game_players where game_id = (tests.get('rm2')::jsonb ->> 'game_id')::uuid),
+          array[3,1,2], 'rematch: caller joins first, the others in their previous seat order');
+select is((select jsonb_agg(tests.n(x::uuid)) from jsonb_array_elements_text(tests.get('rm2')::jsonb -> 'players') x),
+          '[3,1,2]'::jsonb, 'rematch: returned players are in that order');
+select tests.login(4);
+select public.join_game(tests.get('rm2')::jsonb ->> 'token');
+select tests.logout();
+update public.game_players set joined_at = now() + interval '1 minute'
+ where game_id = (tests.get('rm2')::jsonb ->> 'game_id')::uuid and user_id = tests.u(4);
+select public.start_game_internal((tests.get('rm2')::jsonb ->> 'game_id')::uuid, tests.tiles(100));
+select is((select array_agg(tests.n(user_id) order by seat) from public.game_players where game_id = (tests.get('rm2')::jsonb ->> 'game_id')::uuid),
+          array[3,1,2,4], 'rematch: after start, seats are caller, previous order, then the late joiner');
+select is((select tests.n(g.host_id) from public.games g where g.id = (tests.get('rm2')::jsonb ->> 'game_id')::uuid), 3, 'rematch: caller is host');
 
 -- ==================================================================== profile
 select tests.login(1);
