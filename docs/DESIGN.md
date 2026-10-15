@@ -27,7 +27,7 @@ per-game picture generation, Sign in with Apple, SMS sign-in.
 | Board size | 300 pictures | 200, 300, 500 |
 | Monochrome | off | on: every picture (board, reveal, header target) in grayscale; highlights keep their color |
 | Board layout | grid | grid (rows and columns, small offsets), or scattered (no rows or columns); either way fixed for the whole game |
-| Turn order | random seats at start, then strict | — |
+| Turn order | the host first, then the others in the order they joined; then strict round-robin | — |
 
 Constants copied onto each `games` row at creation: `penalty_ms = 5000`,
 `cap_ms = 90000`, reminder after 24 h, forfeit after 72 h (both measured from
@@ -72,6 +72,8 @@ A lobby idle 7 days is abandoned.
 
 **Rematch:** new lobby, same settings; caller is host; the previous game's other
 (non-retired) players are added automatically; a new invite is returned for others.
+Seats follow the join order: the caller (host) first, then the others in their previous
+seat order, then anyone who joins the new lobby later.
 
 ## 3. Board and picture library
 
@@ -166,7 +168,7 @@ end-of-game rules, otherwise inserts the next `pending` turn and queues a
 |---|---|---|
 | `create_game(rounds int, board_size int, monochrome boolean default false, layout text default 'grid')` | host | inserts game (`lobby`), host as player, invite; returns game id + token |
 | `join_game(token text)` | invitee | checks lobby, expiry, 6-player limit; inserts game_players; idempotent |
-| `start_game_internal(game_id uuid, tiles jsonb)` | service role only (Next.js server action) | action checks host & ≥2 players; this assigns random seats, inserts tiles, creates turn seq 1, sets `in_progress` |
+| `start_game_internal(game_id uuid, tiles jsonb)` | service role only (Next.js server action) | action checks host & ≥2 players; this assigns seats (host first, then join order), inserts tiles, creates turn seq 1, sets `in_progress` |
 | `draw_target(game_id uuid)` | current player | pending → picks random unused tile picture, `drawn_at = now() + 1.2 s reveal` (the official start), `deadline_at = drawn_at + cap`, `live`, sets `board_unlocked_at` on first draw. Already live → returns same turn. Returns target, tiles, `deadline_at`, `server_now` |
 | `submit_tap(turn_id uuid, picture_id text, client_seq int, client_elapsed_ms int)` | current player | repeated client_seq → returns earlier result. Before `drawn_at` (during the reveal) → recorded uncounted, no penalty, turn stays live. Past deadline → `capped`. Correct → `found` with score. Wrong → wrong_taps+1, deadline earlier, cap if passed. Returns turn state |
 | `retire(game_id uuid)` | member | see Leaving rule |
