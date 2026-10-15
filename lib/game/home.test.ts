@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { groupGames, joinNames, type HomeGame } from "./home";
+import { finishedStatus, groupGames, joinNames, type HomeGame, type HomePlayer } from "./home";
 
 const mk = (id: string, over: Partial<HomeGame>): HomeGame => ({
   id, status: "in_progress", hostId: "h", players: [], turnUserId: null,
@@ -40,4 +40,18 @@ describe("joinNames", () => {
     expect(joinNames(["A", "B"])).toBe("A and B");
     expect(joinNames(["A", "B", "C"])).toBe("A, B and C");
   });
+});
+
+describe("finishedStatus", () => {
+  const pl = (userId: string, totalMs: number, wrongTaps = 0, status: HomePlayer["status"] = "active"): HomePlayer => ({
+    userId, name: userId.toUpperCase(), status, totalMs, wrongTaps,
+  });
+  const st = (players: HomePlayer[]) => finishedStatus(mk("g", { status: "finished", players }), "me");
+  it("you won", () => expect(st([pl("me", 100), pl("x", 200)])).toBe("Finished · You won"));
+  it("won by another uses their name", () => expect(st([pl("me", 300), pl("x", 200)])).toBe("Finished · Won by X"));
+  it("tie on time and wrong taps", () => expect(st([pl("me", 100, 1), pl("x", 100, 1)])).toBe("Finished · Tie"));
+  it("equal time, fewer wrong taps wins", () => expect(st([pl("me", 100, 2), pl("x", 100, 1)])).toBe("Finished · Won by X"));
+  it("ignores a retired player with the lowest time", () =>
+    expect(st([pl("me", 300), pl("x", 50, 0, "retired")])).toBe("Finished · You won"));
+  it("no active players", () => expect(st([pl("x", 50, 0, "retired")])).toBe("Finished"));
 });
