@@ -98,7 +98,7 @@ begin
   return n;
 end $$;
 
-select plan(14);
+select plan(25);
 
 create table tests.g as select tests.new_game(3, 3, 100) as id;
 grant select on tests.g to public;
@@ -118,15 +118,15 @@ select is((select count(*)::int from realtime.messages m, jsonb_object_keys(m.pa
 -- one statement touching several rows of one game = one message
 delete from realtime.messages;
 update public.game_players set joined_at = joined_at where game_id = (select id from tests.g);
-select is((select count(*)::int from realtime.messages where payload ->> 'table' = 'game_players'), 1,
+select is((select count(*)::int from realtime.messages where topic like 'game:%' and payload ->> 'table' = 'game_players'), 1,
           'multi-row statement sends a single message');
 
 delete from realtime.messages;
 update public.games set status = status where id = (select id from tests.g);
-select is((select count(*)::int from realtime.messages where payload ->> 'table' = 'games'), 1, 'games update broadcasts');
+select is((select count(*)::int from realtime.messages where topic like 'game:%' and payload ->> 'table' = 'games'), 1, 'games update broadcasts');
 delete from realtime.messages;
 update public.turns set status = status where game_id = (select id from tests.g);
-select ok((select count(*) from realtime.messages where payload ->> 'table' = 'turns') >= 1, 'turns update broadcasts');
+select ok((select count(*) from realtime.messages where topic like 'game:%' and payload ->> 'table' = 'turns') >= 1, 'turns update broadcasts');
 
 -- a real RPC flow produces a message, with no target info
 delete from realtime.messages;
@@ -154,6 +154,43 @@ select throws_ok($$insert into realtime.messages (topic, extension, event, priva
                    values ('game:x', 'broadcast', 'changed', true, '{}')$$, '42501', null,
                  'even members cannot send');
 select tests.logout();
+
+-- ---------------------------------------------------------- per-user topic (home page)
+-- users 1..3 are the members
+delete from realtime.messages;
+update public.games set status = status where id = (select id from tests.g);
+select set_eq($$select substr(topic, 6)::uuid from realtime.messages where topic like 'user:%' and payload ->> 'table' = 'games'$$,
+              $$select tests.u(i) from generate_series(1, 3) i$$, 'a games change messages every member on user:<id>');
+select is((select count(*)::int from realtime.messages where topic like 'user:%' and payload ->> 'game_id' = (select id::text from tests.g)), 3,
+          'one message per member, carrying the game id');
+select is((select count(*)::int from realtime.messages where topic = 'user:' || tests.u(4)), 0, 'a non-member gets nothing');
+
+delete from realtime.messages;
+update public.turns set status = status where game_id = (select id from tests.g);
+select ok((select count(*) from realtime.messages where topic = 'user:' || tests.u(3) and payload ->> 'table' = 'turns') >= 1,
+          'a turn change reaches every member, not just the player');
+
+-- a retired/removed player still hears about their own row going away
+delete from realtime.messages;
+delete from public.game_players where game_id = (select id from tests.g) and user_id = tests.u(3);
+select is((select count(*)::int from realtime.messages where topic = 'user:' || tests.u(3) and payload ->> 'table' = 'game_players'), 1,
+          'a removed member still gets one message');
+select is((select count(*)::int from realtime.messages where topic = 'user:' || tests.u(2) and payload ->> 'table' = 'game_players'), 1,
+          'remaining members get one too');
+
+delete from realtime.messages;
+insert into public.game_players (game_id, user_id) values ((select id from tests.g), tests.u(3));
+select is((select count(*)::int from realtime.messages where topic = 'user:' || tests.u(3) and payload ->> 'table' = 'game_players'), 1,
+          'a newly added member gets one message');
+
+-- RLS and can_receive_topic
+select tests.login(2);
+select ok(tests.msgs('user:' || tests.u(2)) >= 1, 'a user can select their own user topic');
+select is(tests.msgs('user:' || tests.u(1)), 0, 'a user cannot select someone else''s user topic');
+select ok(private.can_receive_topic('user:' || tests.u(2)) and not private.can_receive_topic('user:' || tests.u(1))
+          and not private.can_receive_topic('user:abc'), 'can_receive_topic: own user topic only; malformed is false');
+select tests.logout();
+select ok(not private.can_receive_topic('user:' || tests.u(2)), 'without a session no user topic is receivable');
 
 select * from finish();
 rollback;

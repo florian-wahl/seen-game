@@ -8,6 +8,8 @@ import { Avatar } from "@/components/ui/Avatar";
 import { DoodleStrip } from "@/components/ui/DoodleStrip";
 import { LinkButton } from "@/components/ui/Button";
 import { Page, PageSpinner } from "@/components/ui/Shell";
+import { HomeLive } from "@/components/home/HomeLive";
+import { TurnHighlight, TurnHighlightProvider } from "@/components/home/TurnHighlight";
 import { EnableNotifications } from "@/components/notifications/EnableNotifications";
 
 export default function HomePage() {
@@ -79,48 +81,51 @@ async function Home() {
 
   return (
     <Page>
-      <header className="flex min-h-12 items-center gap-3">
-        <h1 className="min-w-0 flex-1 font-wide text-3xl font-black uppercase leading-none tracking-tight text-cream">
-          Seen<span className="text-mustard">!</span>
-        </h1>
-        <AccountMenu name={me.name} avatarUrl={me.avatar} />
-      </header>
+      <HomeLive userId={me.id} />
+      <TurnHighlightProvider turnIds={groups.yourTurn.map((g) => g.id)}>
+        <header className="flex min-h-12 items-center gap-3">
+          <h1 className="min-w-0 flex-1 font-wide text-3xl font-black uppercase leading-none tracking-tight text-cream">
+            Seen<span className="text-mustard">!</span>
+          </h1>
+          <AccountMenu name={me.name} avatarUrl={me.avatar} />
+        </header>
 
-      {/* Players who turned push off on their profile are not nudged to turn it on here. */}
-      {me.pushOn ? <EnableNotifications /> : null}
+        {/* Players who turned push off on their profile are not nudged to turn it on here. */}
+        {me.pushOn ? <EnableNotifications /> : null}
 
-      {empty ? (
-        <div className="flex flex-col items-center gap-2 rounded-3xl bg-surface p-8 text-center">
-          <svg
-            aria-hidden
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-mustard"
-          >
-            <circle cx="10.5" cy="10.5" r="6.5" />
-            <path d="M15.5 15.5L21 21" />
-          </svg>
-          <h2 className="font-wide text-lg font-black uppercase text-cream">No games yet</h2>
-          <p className="text-soft">Start a game and send the invite link to your friends. You can play at your own pace.</p>
+        {empty ? (
+          <div className="flex flex-col items-center gap-2 rounded-3xl bg-surface p-8 text-center">
+            <svg
+              aria-hidden
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-mustard"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="M15.5 15.5L21 21" />
+            </svg>
+            <h2 className="font-wide text-lg font-black uppercase text-cream">No games yet</h2>
+            <p className="text-soft">Start a game and send the invite link to your friends. You can play at your own pace.</p>
+          </div>
+        ) : null}
+
+        <Section title="Your turn" games={groups.yourTurn} me={me.id} tone="turn" />
+        <Section title="Waiting for others" games={groups.waiting} me={me.id} tone="wait" />
+        <Section title="Lobbies" games={groups.lobbies} me={me.id} tone="lobby" />
+        <Section title="Recently finished" games={groups.finished} me={me.id} tone="done" />
+
+        <div className="sticky bottom-0 mt-auto -mx-4 bg-gradient-to-t from-ink from-70% to-transparent px-4 pt-6" style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}>
+          <LinkButton href="/new" className="min-h-14 w-full text-lg" data-testid="new-game">
+            New game
+          </LinkButton>
         </div>
-      ) : null}
-
-      <Section title="Your turn" games={groups.yourTurn} me={me.id} tone="turn" />
-      <Section title="Waiting for others" games={groups.waiting} me={me.id} tone="wait" />
-      <Section title="Lobbies" games={groups.lobbies} me={me.id} tone="lobby" />
-      <Section title="Recently finished" games={groups.finished} me={me.id} tone="done" />
-
-      <div className="sticky bottom-0 mt-auto -mx-4 bg-gradient-to-t from-ink from-70% to-transparent px-4 pt-6" style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}>
-        <LinkButton href="/new" className="min-h-14 w-full text-lg" data-testid="new-game">
-          New game
-        </LinkButton>
-      </div>
+      </TurnHighlightProvider>
     </Page>
   );
 }
@@ -133,7 +138,13 @@ function Section({ title, games, me, tone }: { title: string; games: HomeGame[];
       <ul className="flex flex-col gap-2">
         {games.map((g) => (
           <li key={g.id}>
-            <GameRow game={g} me={me} tone={tone} />
+            {tone === "turn" ? (
+              <TurnHighlight gameId={g.id}>
+                <GameRow game={g} me={me} tone={tone} />
+              </TurnHighlight>
+            ) : (
+              <GameRow game={g} me={me} tone={tone} />
+            )}
           </li>
         ))}
       </ul>
