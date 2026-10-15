@@ -54,8 +54,12 @@ function BellIcon() {
   );
 }
 
-/** Home-screen card to turn on web push. Asks for permission only on tap, never on load. */
-export function EnableNotifications() {
+/**
+ * Card to turn on web push. Asks for permission only on tap, never on load.
+ * With `hideWhenOn`, renders nothing once push is on for this device (Home); the mount effect still
+ * re-saves the subscription. The Profile page leaves it off so it can show "Turn off".
+ */
+export function EnableNotifications({ hideWhenOn = false }: { hideWhenOn?: boolean }) {
   const [state, setState] = useState<State>("checking");
 
   useEffect(() => {
@@ -135,6 +139,7 @@ export function EnableNotifications() {
   }
 
   if (state === "on") {
+    if (hideWhenOn) return null;
     return (
       <div className={`${card} sm:flex-row sm:items-center`} data-testid="notifications-on">
         <p className="flex-1">Notifications are on for this device.</p>
