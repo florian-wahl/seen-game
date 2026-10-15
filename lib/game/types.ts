@@ -104,3 +104,12 @@ export type RpcErrorCode =
   | "game_not_in_progress" | "game_not_in_lobby" | "lobby_full" | "invite_expired"
   | "invite_not_found" | "invalid_argument" | "turn_not_found" | "turn_not_live"
   | "game_not_finished" | "invalid_picture" | "not_enough_players";
+
+/** One line of `my_best_times()` (issue #16): the caller's lowest total for a game type. */
+export interface BestTime {
+  rounds: number;
+  board_size: number;
+  best_ms: number;
+  /** finished games of this type that counted */
+  games: number;
+}

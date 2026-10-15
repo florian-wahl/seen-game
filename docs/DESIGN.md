@@ -229,7 +229,11 @@ Service worker (Serwist) caches it forever.
 
 - Supabase Auth: email magic link + Google OAuth. Trigger on `auth.users`
   creates `profiles`. Display name set on first sign-in; `/profile` (from the Home
-  account menu) changes it and the per-channel notification preferences.
+  account menu) changes it and the per-channel notification preferences, and shows
+  the player's best times: the lowest total per game type (rounds × pictures, current
+  options only; Monochrome and Scattered count with plain games), from finished
+  games the player did not retire from and had no forfeited turn in, with how many
+  games counted. Hidden until there is one.
 - Storage: public read-only `pictures` bucket; private `avatars` bucket.
 - Outbox: SQL inserts `notification_outbox` rows; `after insert` trigger uses
   `pg_net` to POST `/api/jobs/notify` with a shared secret; route sends via

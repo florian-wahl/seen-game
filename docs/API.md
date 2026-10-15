@@ -45,6 +45,7 @@ Errors: `error.code` is the SQLSTATE, `error.message` the code string.
 - `retire({game_id})` → `{game_id, status, left:true}` (status = game status afterwards; host leaving lobby → `abandoned`).
 - `rematch({game_id})` → `{game_id, token, expires_at, previous_game_id, players:[uuid]}`.
 - `update_profile({display_name?, avatar_url?})` → `{id, display_name, avatar_url}` (only way to edit a profile; used by onboarding and `/profile`). Name is trimmed, 1–60 chars; blank keeps the old one.
+- `my_best_times()` → `[{rounds, board_size, best_ms, games}]`, ordered by rounds then board_size: the caller's lowest `total_ms` per game type. Counts finished games where the caller is `active` and has no `forfeited` turn; only rounds ∈ {5,10,20} and board_size ∈ {200,300,500}; Monochrome and Scattered games count with plain ones. `[]` when none.
 - `set_notification_prefs({email?, push?})` → `{email, push}`: upserts the caller's channel choices (null leaves a channel unchanged). Read your own row from `notification_prefs` (RLS: owner only); no row means both on.
 - `game_state({game_id})` → see `GameState` in `lib/game/types.ts`. Lazily closes an expired live turn.
 - `save_push_subscription({endpoint, p256dh, auth})` → void (upsert for the caller; https endpoints only). `delete_push_subscription({endpoint})` → void.
