@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>Seen!</title>
+<rect width="100" height="100" rx="22" fill="#f5b93f"/>
+<g transform="translate(7 7) scale(0.86)">
+
+<defs>
+<g id="seen-eyes">
+<circle fill="#ffffff" cx="31" cy="50" r="20"/>
+<circle fill="#ffffff" cx="69" cy="50" r="20"/>
+<circle fill="#1c1b22" cx="39" cy="57" r="9"/>
+<circle fill="#1c1b22" cx="77" cy="57" r="9"/>
+</g>
+</defs>
+<g stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+<use href="#seen-eyes" transform="translate(3 2.5)" stroke="none"/>
+<use href="#seen-eyes" stroke="#1c1b22" fill-opacity="0"/>
+</g>
+</g>
+</svg>
