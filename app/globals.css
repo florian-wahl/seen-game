@@ -59,3 +59,28 @@ textarea {
   /* 16px+ prevents iOS zoom-on-focus */
   font-size: 1rem;
 }
+
+/* A game that just became the player's turn: the mustard ring pulses for ~2 s (see TurnHighlight). */
+.just-turned {
+  animation: turn-pulse 1s ease-out 2;
+}
+@keyframes turn-pulse {
+  from {
+    box-shadow:
+      0 0 0 0 color-mix(in srgb, var(--color-mustard) 80%, transparent),
+      0 0 24px 4px color-mix(in srgb, var(--color-mustard) 55%, transparent);
+  }
+  to {
+    box-shadow:
+      0 0 0 14px transparent,
+      0 0 0 0 transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .just-turned {
+    animation: none;
+    box-shadow:
+      0 0 0 4px var(--color-mustard),
+      0 0 20px 2px color-mix(in srgb, var(--color-mustard) 50%, transparent);
+  }
+}

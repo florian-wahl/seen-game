@@ -61,6 +61,13 @@ Sent by DB triggers on `games`, `game_players`, `turns` changes. Only members ma
 Payloads carry no game data (Supabase adds a random message `id`): clients re-fetch `game_state` when they receive one.
 `useGameState(gameId)` in `lib/game/useGameState.ts` wraps this (plus a 20 s polling fallback).
 
+Private Broadcast channel per user: topic `user:<user_id>`, event `changed`, payload `{game_id, table}` (same triggers).
+Every statement that changes a game sends one message per (member, game) pair to each current member of that game.
+For `game_players` changes the users in the changed rows are notified as well, so a player who was just removed (or added)
+still hears about it even though they are no longer (or not yet) a member. Only the user themself may subscribe to their topic.
+The home page uses it through `components/home/HomeLive.tsx`, which calls `router.refresh()` on each message (150 ms debounce),
+on (re)subscribe, on window focus / the tab becoming visible, and every 20 s (the poll is skipped while the tab is hidden).
+
 ## Pictures
 Pictures ship as one versioned bundle built by `npm run library:build` (`public/library/bundles/`, gitignored; live set chosen by `lib/library/config.ts` / `NEXT_PUBLIC_LIBRARY_DIR`). `loadImageMap()` (`lib/library/index.ts`) fetches it once and gives
 pictureId → Blob URL. DB `pictures` rows are imported from the manifest by `scripts/import-library.ts`.
