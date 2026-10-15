@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { requireUserId } from "@/lib/auth/session";
 import { supabaseServer } from "@/lib/supabase/server";
-import { groupGames, joinNames, type HomeGame } from "@/lib/game/home";
+import { finishedStatus, groupGames, joinNames, type HomeGame } from "@/lib/game/home";
 import { AccountMenu } from "@/components/ui/AccountMenu";
 import { Avatar } from "@/components/ui/Avatar";
 import { DoodleStrip } from "@/components/ui/DoodleStrip";
@@ -19,7 +19,7 @@ export default function HomePage() {
 }
 
 const GAME_COLUMNS =
-  "id, host_id, status, current_turn_id, created_at, finished_at, game_players(user_id, status)";
+  "id, host_id, status, current_turn_id, created_at, finished_at, game_players(user_id, status, total_ms, wrong_taps)";
 
 async function loadGames(): Promise<{
   me: { id: string; name: string; avatar: string | null; pushOn: boolean };
@@ -59,6 +59,8 @@ async function loadGames(): Promise<{
       userId: p.user_id,
       name: names.get(p.user_id) ?? "Player",
       status: p.status,
+      totalMs: p.total_ms,
+      wrongTaps: p.wrong_taps,
     })),
   }));
   return {
@@ -152,7 +154,7 @@ function GameRow({ game, me, tone }: { game: HomeGame; me: string; tone: "turn" 
         : "In progress"
       : tone === "lobby"
         ? `Lobby · ${game.players.length}/6`
-        : "Finished";
+        : finishedStatus(game, me);
   if (tone === "turn") {
     return (
       <Link

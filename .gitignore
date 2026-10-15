@@ -49,3 +49,4 @@ next-env.d.ts
 
 # built picture bundles (npm run library:build)
 /public/library/bundles/
+.gstack/
