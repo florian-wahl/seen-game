@@ -92,8 +92,9 @@ async function Home() {
           <AccountMenu name={me.name} avatarUrl={me.avatar} />
         </header>
 
-        {/* Players who turned push off on their profile are not nudged to turn it on here. */}
-        {me.pushOn ? <EnableNotifications /> : null}
+        {/* Players who turned push off on their profile are not nudged to turn it on here.
+            Once it is on for this device there is nothing to show (turning it off lives on Profile). */}
+        {me.pushOn ? <EnableNotifications hideWhenOn /> : null}
 
         {empty ? (
           <div className="flex flex-col items-center gap-2 rounded-3xl bg-surface p-8 text-center">

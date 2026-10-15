@@ -120,3 +120,36 @@ test("best times: hidden before any finished game, then one line per game type",
   await expect(line).toContainText("1 game");
   await expect(line).toContainText(expected);
 });
+
+test("push already on for this device: Home shows nothing, Profile offers Turn off", async ({ page }) => {
+  // Stub a browser that has permission and an active push subscription.
+  await page.addInitScript(() => {
+    Object.defineProperty(Notification, "permission", { get: () => "granted", configurable: true });
+    if (!("PushManager" in window)) {
+      Object.defineProperty(window, "PushManager", { value: function PushManager() {}, configurable: true });
+    }
+    const sub = {
+      endpoint: "https://fcm.googleapis.com/fcm/send/e2e-fake",
+      toJSON: () => ({ keys: { p256dh: "x", auth: "y" } }),
+      unsubscribe: async () => true,
+    };
+    Object.defineProperty(navigator.serviceWorker, "ready", {
+      get: () => Promise.resolve({ pushManager: { getSubscription: async () => sub } }),
+      configurable: true,
+    });
+  });
+
+  const email = uniqueEmail("pushon");
+  // Home's mount check re-saves the subscription just before it switches to "on".
+  const saved = page.waitForResponse((r) => r.url().includes("save_push_subscription") && r.ok());
+  await page.goto(`/dev/login?email=${email}&name=PushOn&next=/`);
+  await expect(page.getByTestId("me-name")).toHaveText("PushOn");
+  await saved;
+  await page.waitForTimeout(300); // let React render the "on" state before asserting absence
+  await expect(page.getByTestId("notifications-on")).toHaveCount(0);
+  await expect(page.getByTestId("enable-notifications")).toHaveCount(0);
+
+  await page.goto("/profile");
+  await expect(page.getByTestId("notifications-on")).toBeVisible();
+  await expect(page.getByTestId("disable-notifications")).toBeVisible();
+});
